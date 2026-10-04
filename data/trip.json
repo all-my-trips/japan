@@ -1,0 +1,4035 @@
+{
+  "version": 1,
+  "meta": {
+    "title": "Japonia 8–27 listopada 2026",
+    "dateFrom": "2026-11-08",
+    "dateTo": "2026-11-27",
+    "timezone": "Asia/Tokyo",
+    "homeTimezone": "Europe/Warsaw",
+    "language": "pl",
+    "hardRule": "Zasada twarda: nie wychodzimy z hotelu wcześniej niż o 07:30. MUST → WANT → BONUS; gdy dzień się rozjeżdża, najpierw skreślamy BONUS.",
+    "source": "Japonia_plan_8-27_listopada_2026_wersja finalna 04.10.2026.xlsx",
+    "airport": {
+      "code": "NRT",
+      "name": "Narita"
+    },
+    "flights": [
+      {
+        "direction": "outbound",
+        "number": "LO79",
+        "dayId": "2026-11-08",
+        "to": "NRT",
+        "departure": "22:50",
+        "arrival": "~19:30 (+1)"
+      },
+      {
+        "direction": "return",
+        "number": "LO80",
+        "dayId": "2026-11-26",
+        "from": "NRT",
+        "departure": "23:05",
+        "arrival": null
+      }
+    ],
+    "hotels": [
+      {
+        "id": "mitsui-ueno",
+        "name": "Mitsui Garden Hotel Ueno",
+        "city": "Tokio",
+        "area": "Ueno",
+        "checkIn": "2026-11-09",
+        "checkOut": "2026-11-17",
+        "status": "confirmed",
+        "address": null
+      },
+      {
+        "id": "mimaru-kyoto",
+        "name": "MIMARU SUITES Kyoto Shijo",
+        "city": "Kioto",
+        "area": "Shijō",
+        "checkIn": "2026-11-17",
+        "checkOut": "2026-11-24",
+        "status": "confirmed",
+        "address": null
+      },
+      {
+        "id": "tokyo-final",
+        "name": null,
+        "city": "Tokio",
+        "area": null,
+        "checkIn": "2026-11-24",
+        "checkOut": "2026-11-26",
+        "status": "todo",
+        "address": null
+      }
+    ]
+  },
+  "legend": {
+    "priorities": [
+      {
+        "id": "must",
+        "label": "MUST",
+        "meaning": "Najważniejsze punkty dnia",
+        "usage": "Robimy nawet przy słabszym dniu",
+        "color": "green"
+      },
+      {
+        "id": "want",
+        "label": "WANT",
+        "meaning": "Plan przy normalnym przebiegu",
+        "usage": "Skreślamy po BONUS",
+        "color": "yellow"
+      },
+      {
+        "id": "bonus",
+        "label": "BONUS",
+        "meaning": "Tylko gdy jest energia i czas",
+        "usage": "Pierwsze do skreślenia",
+        "color": "orange"
+      }
+    ],
+    "booking": [
+      {
+        "id": "required",
+        "label": "🔴",
+        "meaning": "Rezerwować z wyprzedzeniem",
+        "usage": "Priorytet: bilety / transport mogą się wyprzedać",
+        "color": "red"
+      },
+      {
+        "id": "recommended",
+        "label": "🟠",
+        "meaning": "Zalecana rezerwacja",
+        "usage": "Nie zawsze konieczna, ale ułatwia dzień / daje miejsca razem",
+        "color": "orange"
+      },
+      {
+        "id": "none",
+        "label": "🟢",
+        "meaning": "Bez wcześniejszej rezerwacji",
+        "usage": "Bilet na miejscu albo atrakcja bez biletu",
+        "color": "green"
+      }
+    ],
+    "pace": [
+      {
+        "id": "light",
+        "label": "Lekko"
+      },
+      {
+        "id": "very-light",
+        "label": "Bardzo lekko"
+      },
+      {
+        "id": "medium",
+        "label": "Średnio"
+      },
+      {
+        "id": "long",
+        "label": "Długi"
+      },
+      {
+        "id": "medium-long",
+        "label": "Średnio / długi"
+      },
+      {
+        "id": "light-medium",
+        "label": "Lekko / średnio"
+      },
+      {
+        "id": "travel",
+        "label": "Podróż"
+      }
+    ],
+    "itemTypes": [
+      {
+        "id": "attraction",
+        "label": "Atrakcja",
+        "defaultPhoto": null
+      },
+      {
+        "id": "walk",
+        "label": "Spacer",
+        "defaultPhoto": null
+      },
+      {
+        "id": "meal",
+        "label": "Jedzenie",
+        "defaultPhoto": null
+      },
+      {
+        "id": "transport",
+        "label": "Przejazd",
+        "defaultPhoto": null
+      },
+      {
+        "id": "flight",
+        "label": "Lot",
+        "defaultPhoto": null
+      },
+      {
+        "id": "hotel",
+        "label": "Hotel",
+        "defaultPhoto": null
+      },
+      {
+        "id": "departure",
+        "label": "Wyjście",
+        "defaultPhoto": null
+      },
+      {
+        "id": "rest",
+        "label": "Odpoczynek",
+        "defaultPhoto": null
+      },
+      {
+        "id": "free",
+        "label": "Czas wolny",
+        "defaultPhoto": null
+      },
+      {
+        "id": "decision",
+        "label": "Decyzja",
+        "defaultPhoto": null
+      }
+    ]
+  },
+  "days": [
+    {
+      "id": "2026-11-08",
+      "dayNumber": 1,
+      "date": "2026-11-08",
+      "weekday": "niedziela",
+      "title": "Kraków → Tokio",
+      "base": "Kraków → Tokio",
+      "stay": null,
+      "earliestDeparture": "wieczór",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Dzień podróży. Spokojnie w domu, dojazd na lotnisko i wieczorny wylot LO79 do Tokio. Warto spróbować przespać jak najwięcej lotu, bo na miejscu ląduje się wieczorem czasu japońskiego i od razu kładzie spać, co pomaga szybciej przestawić się na nową strefę.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Lot",
+        "want": "—",
+        "bonus": "—"
+      },
+      "notes": "Dzień podróży.",
+      "booking": {
+        "level": "none",
+        "text": "Brak — lot jest już elementem planu; przed podróżą tylko odprawa online wg zasad linii."
+      },
+      "source": {
+        "orderText": "Spokojny dzień → lotnisko → 22:50 wylot"
+      },
+      "items": [
+        {
+          "id": "d01-01",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Spokojny dzień w domu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d01-02",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Dojazd na lotnisko",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d01-03",
+          "start": "22:50",
+          "end": null,
+          "approx": false,
+          "type": "flight",
+          "title": "Wylot do Tokio (LO79)",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-09",
+      "dayNumber": 2,
+      "date": "2026-11-09",
+      "weekday": "poniedziałek",
+      "title": "Tokio / Ueno",
+      "base": "Tokio / Ueno",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "~19:30 przylot",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Lądujemy na Naricie wieczorem, więc dziś nie planujemy żadnych atrakcji. Skyliner zawozi nas prosto do Ueno, gdzie meldujemy się w hotelu na pierwsze osiem nocy. Szybka kolacja w okolicy, może krótki spacer po pierwszych neonach, i sen. Celem jest dobrze wypocząć przed jutrem.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Dotarcie do hotelu + sen",
+        "want": "Szybkie jedzenie",
+        "bonus": "Krótki spacer przy hotelu"
+      },
+      "notes": "Bez planowania atrakcji po przylocie.",
+      "booking": {
+        "level": "recommended",
+        "text": "Transfer lotniskowy: jeśli NRT → warto kupić Skyliner/N'EX z miejscem; jeśli HND → zwykle bez wcześniejszej rezerwacji."
+      },
+      "source": {
+        "orderText": "19:30 przylot → transfer → Ueno → hotel → jedzenie → sen"
+      },
+      "items": [
+        {
+          "id": "d02-01",
+          "start": "19:30",
+          "end": null,
+          "approx": true,
+          "type": "flight",
+          "title": "Przylot na Naritę (LO79)",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d02-02",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Transfer z Narity do Ueno",
+          "priority": "must",
+          "placeId": null,
+          "note": "Skyliner z Narity jedzie prosto do Keisei Ueno; warto kupić bilety z miejscówką."
+        },
+        {
+          "id": "d02-03",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "hotel",
+          "title": "Zameldowanie: Mitsui Garden Hotel Ueno",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d02-04",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Szybkie jedzenie",
+          "priority": "want",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d02-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Krótki spacer przy hotelu",
+          "priority": "bonus",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d02-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "rest",
+          "title": "Sen",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-10",
+      "dayNumber": 3,
+      "date": "2026-11-10",
+      "weekday": "wtorek",
+      "title": "Tokio / Ueno",
+      "base": "Tokio / Ueno",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "09:30",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Pierwszy pełny dzień jest celowo spokojny, żeby organizm złapał japoński rytm. Wszystko jest kilka minut pieszo od hotelu: rano park Ueno z muzeami i stawem Shinobazu, po lunchu najstarsze zoo w Japonii. Jeśli starczy sił, na koniec spacer po Yanace i Nezu, czyli po starym Tokio drewnianych domów i małych świątyń, którego nie zniszczyła wojna.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Ueno Park",
+        "want": "Ueno Zoo",
+        "bonus": "Yanaka / Nezu"
+      },
+      "notes": "Pierwszy pełny dzień — celowo spokojny.",
+      "booking": {
+        "level": "none",
+        "text": "Ueno Zoo: rezerwacja niepotrzebna; bilet online jest opcjonalny, można też kupić na miejscu."
+      },
+      "source": {
+        "orderText": "09:30 wyjście → 10:00–11:30 Ueno Park → 12:00 lunch → 13:00–15:30 Ueno Zoo → 16:00+ spacer/powrót"
+      },
+      "items": [
+        {
+          "id": "d03-01",
+          "start": "09:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d03-02",
+          "start": "10:00",
+          "end": "11:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Ueno Park",
+          "priority": "must",
+          "placeId": "ueno-park",
+          "note": null
+        },
+        {
+          "id": "d03-03",
+          "start": "12:00",
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d03-04",
+          "start": "13:00",
+          "end": "15:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Ueno Zoo",
+          "priority": "want",
+          "placeId": "ueno-zoo",
+          "note": null
+        },
+        {
+          "id": "d03-05",
+          "start": "16:00",
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Spacer po Yanace / Nezu albo powrót",
+          "priority": "bonus",
+          "placeId": "yanaka-nezu",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-11",
+      "dayNumber": 4,
+      "date": "2026-11-11",
+      "weekday": "środa",
+      "title": "Tokio",
+      "base": "Tokio",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "08:00",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Dzień jedzenia i tradycji. Zaczynamy wcześnie na targu Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza ogrodu szogunów Hama Rikyu z matchą w herbaciarni na wodzie. Po przerwie jedziemy do Asakusy, do najstarszej świątyni Tokio Sensō-ji, a po zmroku, jeśli będzie ochota, idziemy nad Sumidę popatrzeć na podświetlone Skytree.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Tsukiji + Sensō-ji",
+        "want": "Hama Rikyu",
+        "bonus": "Sumida po zmroku"
+      },
+      "notes": "Tsukiji rano; Asakusa później bez gonienia.",
+      "booking": {
+        "level": "none",
+        "text": "Brak wcześniejszych rezerwacji dla Tsukiji / Hama Rikyu / Sensō-ji."
+      },
+      "source": {
+        "orderText": "08:00 wyjście → 08:45–10:30 Tsukiji → 11:00–12:30 Hama Rikyu → lunch/drzemka → 14:30–17:00 Asakusa + Sensō-ji"
+      },
+      "items": [
+        {
+          "id": "d04-01",
+          "start": "08:00",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d04-02",
+          "start": "08:45",
+          "end": "10:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tsukiji",
+          "priority": "must",
+          "placeId": "tsukiji",
+          "note": null
+        },
+        {
+          "id": "d04-03",
+          "start": "11:00",
+          "end": "12:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Hama Rikyu",
+          "priority": "want",
+          "placeId": "hama-rikyu",
+          "note": null
+        },
+        {
+          "id": "d04-04",
+          "start": "12:30",
+          "end": "14:30",
+          "approx": false,
+          "type": "rest",
+          "title": "Lunch / drzemka",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d04-05",
+          "start": "14:30",
+          "end": "17:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Asakusa + Sensō-ji",
+          "priority": "must",
+          "placeId": "senso-ji",
+          "note": null
+        },
+        {
+          "id": "d04-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Sumida po zmroku",
+          "priority": "bonus",
+          "placeId": "sumida",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-12",
+      "dayNumber": 5,
+      "date": "2026-11-12",
+      "weekday": "czwartek",
+      "title": "Fuji / Kawaguchiko",
+      "base": "Fuji / Kawaguchiko",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "07:30",
+      "pace": "long",
+      "paceLabel": "Długi",
+      "summary": "Wyjazd do Fuji, najdłuższy dzień pierwszego tygodnia. Rano pagoda Chureito, skąd jest najsłynniejszy widok na górę, potem lunch i powolny spacer brzegiem jeziora Kawaguchiko z Fuji odbijającą się w wodzie. Ten dzień zależy od pogody: gdy prognoza pokazuje chmury nad Fuji, lepiej zamienić go z innym dniem w Tokio, bo bez widoku na górę traci sens.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Kawaguchiko / widok na Fuji",
+        "want": "Chureito",
+        "bonus": "Oishi Park"
+      },
+      "notes": "Dzień zależny od pogody; przy słabej widoczności warto zamienić termin.",
+      "booking": {
+        "level": "required",
+        "text": "Transport do Fuji: jeśli Fuji Excursion → warto zarezerwować miejsce; JR East przyjmuje rezerwacje do 1 mies. naprzód, więc celuj od 12.10. Atrakcje bez rezerwacji."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~10:00–11:15 Chureito → 12:00 Kawaguchiko/lunch → 13:00–15:30 jezioro → 16:00–16:30 powrót → ~19:00–20:00 Tokio"
+      },
+      "items": [
+        {
+          "id": "d05-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d05-02",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Przejazd w rejon Fuji",
+          "priority": null,
+          "placeId": null,
+          "note": "Jeśli Fuji Excursion → zarezerwować miejsca."
+        },
+        {
+          "id": "d05-03",
+          "start": "10:00",
+          "end": "11:15",
+          "approx": true,
+          "type": "attraction",
+          "title": "Pagoda Chureito",
+          "priority": "want",
+          "placeId": "chureito",
+          "note": null
+        },
+        {
+          "id": "d05-04",
+          "start": "12:00",
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Kawaguchiko — lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d05-05",
+          "start": "13:00",
+          "end": "15:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Jezioro Kawaguchiko i widok na Fuji",
+          "priority": "must",
+          "placeId": "kawaguchiko",
+          "note": null
+        },
+        {
+          "id": "d05-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Oishi Park",
+          "priority": "bonus",
+          "placeId": "oishi-park",
+          "note": "Przy jeziorze, w ramach czasu nad Kawaguchiko."
+        },
+        {
+          "id": "d05-07",
+          "start": "16:00",
+          "end": "16:30",
+          "approx": false,
+          "type": "transport",
+          "title": "Powrót do Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d05-08",
+          "start": "19:00",
+          "end": "20:00",
+          "approx": true,
+          "type": "hotel",
+          "title": "Przyjazd do Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        }
+      ],
+      "dayTrip": {
+        "from": "Tokio",
+        "to": "Fuji i Kawaguchiko"
+      }
+    },
+    {
+      "id": "2026-11-13",
+      "dayNumber": 6,
+      "date": "2026-11-13",
+      "weekday": "piątek",
+      "title": "Tokio / zachód",
+      "base": "Tokio / zachód",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "08:30",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Dzień kontrastów zachodniego Tokio. Rano cisza leśnego chramu Meiji Jingu, potem kolorowe Harajuku z modą uliczną i elegancka aleja Omotesando z architekturą znanych projektantów. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i, z biletem, taras Shibuya Sky na dachu wieżowca, gdzie o zachodzie słońca zobaczymy Tokio za dnia i po zmroku.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Meiji Jingu + Shibuya",
+        "want": "Harajuku + Omotesando + Shibuya Sky",
+        "bonus": "—"
+      },
+      "notes": "Shinjuku przeniesione na 24.11. Shibuya Sky jako WANT; najlepiej celować w wejście ok. 15:30–16:00.",
+      "booking": {
+        "level": "required",
+        "text": "SHIBUYA SKY: rezerwować. Sprzedaż obejmuje 2 tyg. naprzód → 13.11 pojawi się od 30.10. Slot 15:30–16:00 brać możliwie od razu."
+      },
+      "source": {
+        "orderText": "08:30 wyjście → 09:15–10:45 Meiji Jingu → 11:00–12:30 Harajuku → lunch → 14:00 Omotesando → 15:30–18:30 Shibuya + Shibuya Sky (jeśli bilet)"
+      },
+      "items": [
+        {
+          "id": "d06-01",
+          "start": "08:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d06-02",
+          "start": "09:15",
+          "end": "10:45",
+          "approx": false,
+          "type": "attraction",
+          "title": "Meiji Jingu",
+          "priority": "must",
+          "placeId": "meiji-jingu",
+          "note": null
+        },
+        {
+          "id": "d06-03",
+          "start": "11:00",
+          "end": "12:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Harajuku",
+          "priority": "want",
+          "placeId": "harajuku",
+          "note": null
+        },
+        {
+          "id": "d06-04",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d06-05",
+          "start": "14:00",
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Omotesando",
+          "priority": "want",
+          "placeId": "omotesando",
+          "note": null
+        },
+        {
+          "id": "d06-06",
+          "start": "15:30",
+          "end": "18:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Shibuya",
+          "priority": "must",
+          "placeId": "shibuya",
+          "note": null
+        },
+        {
+          "id": "d06-07",
+          "start": "15:30",
+          "end": "16:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Shibuya Sky (wejście)",
+          "priority": "want",
+          "placeId": "shibuya-sky",
+          "note": "W ramach bloku Shibuya; tylko jeśli jest bilet. Celować w wejście 15:30–16:00."
+        }
+      ]
+    },
+    {
+      "id": "2026-11-14",
+      "dayNumber": 7,
+      "date": "2026-11-14",
+      "weekday": "sobota",
+      "title": "Nikkō",
+      "base": "Nikkō",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "07:30",
+      "pace": "long",
+      "paceLabel": "Długi",
+      "summary": "Wycieczka do Nikkō, górskiego miasteczka z najbogatszymi świątyniami Japonii. Głównym punktem jest Tōshō-gū, złocone mauzoleum szoguna Tokugawy Ieyasu z trzema mądrymi małpami i śpiącym kotem. Około 12:15 wybieramy dalszy plan: wariant A to spokojne centrum z Rinnō-ji i czerwonym mostem Shinkyo, wariant B to wyjazd w góry do wodospadu Kegon i jeziora Chūzenji. Wcześnie wstajemy, bo pociąg ma tylko miejsca rezerwowane.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Tōshō-gū",
+        "want": "Rinno-ji + Shinkyo",
+        "bonus": "Kegon + Chūzenji (wariant B zamiast części centrum)"
+      },
+      "notes": "Nie dokładać Kegon/Chūzenji dopiero po 14:30. Decyzję o wariancie dnia najlepiej podjąć około 12:15.",
+      "booking": {
+        "level": "required",
+        "text": "Nikkō: jeśli Tobu Limited Express / SPACIA X → wszystkie miejsca są rezerwowane; bilety na 14.11 są już dostępne. Tōshō-gū: advance ticket opcjonalny, niekonieczny."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~10:00 Nikkō → 10:15–12:15 Tōshō-gū → ~12:15 decyzja: A) lunch + Rinno-ji + Shinkyo → powrót; B) lunch + Kegon + Chūzenji → powrót"
+      },
+      "items": [
+        {
+          "id": "d07-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d07-02",
+          "start": "10:00",
+          "end": null,
+          "approx": true,
+          "type": "transport",
+          "title": "Przyjazd do Nikkō",
+          "priority": null,
+          "placeId": null,
+          "note": "Tobu Limited Express / SPACIA X — wszystkie miejsca rezerwowane."
+        },
+        {
+          "id": "d07-03",
+          "start": "10:15",
+          "end": "12:15",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tōshō-gū",
+          "priority": "must",
+          "placeId": "toshogu",
+          "note": null
+        },
+        {
+          "id": "d07-04",
+          "start": "12:15",
+          "end": null,
+          "approx": true,
+          "type": "decision",
+          "title": "Decyzja: wariant A czy B",
+          "priority": null,
+          "placeId": null,
+          "note": "Nie dokładać Kegon/Chūzenji dopiero po 14:30.",
+          "options": [
+            {
+              "id": "A",
+              "label": "Centrum Nikkō: lunch + Rinnō-ji + Shinkyo → powrót"
+            },
+            {
+              "id": "B",
+              "label": "Okunikkō: lunch + Kegon + Chūzenji → powrót"
+            }
+          ]
+        },
+        {
+          "id": "d07-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d07-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Rinnō-ji",
+          "priority": "want",
+          "placeId": "rinno-ji",
+          "note": null,
+          "variant": "A"
+        },
+        {
+          "id": "d07-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Most Shinkyo",
+          "priority": "want",
+          "placeId": "shinkyo",
+          "note": null,
+          "variant": "A"
+        },
+        {
+          "id": "d07-08",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Wodospad Kegon",
+          "priority": "bonus",
+          "placeId": "kegon",
+          "note": null,
+          "variant": "B"
+        },
+        {
+          "id": "d07-09",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Jezioro Chūzenji",
+          "priority": "bonus",
+          "placeId": "chuzenji",
+          "note": null,
+          "variant": "B"
+        },
+        {
+          "id": "d07-10",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Powrót do Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        }
+      ],
+      "dayTrip": {
+        "from": "Tokio",
+        "to": "Nikkō"
+      }
+    },
+    {
+      "id": "2026-11-15",
+      "dayNumber": 8,
+      "date": "2026-11-15",
+      "weekday": "niedziela",
+      "title": "Tokio / Ginza-Toyosu",
+      "base": "Tokio / Ginza-Toyosu",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "09:30",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Dzień regeneracyjny po Nikkō. Przed południem spacerujemy po eleganckiej Ginzie z domami towarowymi i halami z jedzeniem w piwnicach, potem odpoczynek w hotelu. Wieczorem największa atrakcja dnia: teamLab Planets, muzeum cyfrowej sztuki, w którym chodzi się boso po wodzie wśród świetlistych kwiatów. Jeśli zostanie energii, wieczorny widok na zatokę z Toyosu lub Odaiby.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "teamLab Planets",
+        "want": "Ginza",
+        "bonus": "Toyosu / Odaiba"
+      },
+      "notes": "Dzień regeneracyjny po Nikkō.",
+      "booking": {
+        "level": "required",
+        "text": "teamLab Planets: KUP TERAZ — wejście na konkretną godzinę; oficjalnie brak sprzedaży biletów w kasie na miejscu."
+      },
+      "source": {
+        "orderText": "09:30 wyjście → 10:00–12:30 Ginza → lunch → 13:30–15:30 odpoczynek → 16:00–18:00 teamLab → kolacja"
+      },
+      "items": [
+        {
+          "id": "d08-01",
+          "start": "09:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d08-02",
+          "start": "10:00",
+          "end": "12:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Ginza",
+          "priority": "want",
+          "placeId": "ginza",
+          "note": null
+        },
+        {
+          "id": "d08-03",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d08-04",
+          "start": "13:30",
+          "end": "15:30",
+          "approx": false,
+          "type": "rest",
+          "title": "Odpoczynek",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d08-05",
+          "start": "16:00",
+          "end": "18:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "teamLab Planets",
+          "priority": "must",
+          "placeId": "teamlab",
+          "note": "Bilet na konkretną godzinę, tylko online."
+        },
+        {
+          "id": "d08-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Kolacja",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d08-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Toyosu / Odaiba",
+          "priority": "bonus",
+          "placeId": "toyosu-odaiba",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-16",
+      "dayNumber": 9,
+      "date": "2026-11-16",
+      "weekday": "poniedziałek",
+      "title": "Kamakura",
+      "base": "Kamakura",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": null,
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "07:30",
+      "pace": "long",
+      "paceLabel": "Długi",
+      "summary": "Wycieczka do Kamakury, nadmorskiej stolicy samurajów z XII wieku. Zaczynamy od świątyni Hase-dera z wielką drewnianą Kannon i widokiem na morze, potem Wielki Budda z brązu siedzący pod gołym niebem od ponad 500 lat. Po lunchu uliczka Komachi z przekąskami i główny chram Tsurugaoka Hachiman-gū. Jeśli wszyscy mają jeszcze siły, kończymy na wyspie Enoshima z widokiem na zachód słońca.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Hase-dera + Wielki Budda",
+        "want": "Komachi + Tsurugaoka",
+        "bonus": "Enoshima"
+      },
+      "notes": "Enoshima tylko jeśli wszyscy mają jeszcze energię.",
+      "booking": {
+        "level": "none",
+        "text": "Kamakura: Hase-dera / Kōtoku-in / Tsurugaoka bez wcześniejszej rezerwacji; Enoshima także."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~09:15 Hase → 09:30–10:45 Hase-dera → 11:00–12:00 Wielki Budda → lunch → 13:15 Komachi → 14:15 Tsurugaoka → ~15:00 decyzja"
+      },
+      "items": [
+        {
+          "id": "d09-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d09-02",
+          "start": "09:15",
+          "end": null,
+          "approx": true,
+          "type": "transport",
+          "title": "Przyjazd do Hase",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d09-03",
+          "start": "09:30",
+          "end": "10:45",
+          "approx": false,
+          "type": "attraction",
+          "title": "Hase-dera",
+          "priority": "must",
+          "placeId": "hase-dera",
+          "note": null
+        },
+        {
+          "id": "d09-04",
+          "start": "11:00",
+          "end": "12:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Wielki Budda",
+          "priority": "must",
+          "placeId": "daibutsu",
+          "note": null
+        },
+        {
+          "id": "d09-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d09-06",
+          "start": "13:15",
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Komachi-dōri",
+          "priority": "want",
+          "placeId": "komachi",
+          "note": null
+        },
+        {
+          "id": "d09-07",
+          "start": "14:15",
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Tsurugaoka Hachiman-gū",
+          "priority": "want",
+          "placeId": "tsurugaoka",
+          "note": null
+        },
+        {
+          "id": "d09-08",
+          "start": "15:00",
+          "end": null,
+          "approx": true,
+          "type": "decision",
+          "title": "Decyzja: Enoshima czy powrót",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "options": [
+            {
+              "id": "A",
+              "label": "Powrót do Tokio"
+            },
+            {
+              "id": "B",
+              "label": "Enoshima — tylko jeśli wszyscy mają energię"
+            }
+          ]
+        },
+        {
+          "id": "d09-09",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Enoshima",
+          "priority": "bonus",
+          "placeId": "enoshima",
+          "note": null,
+          "variant": "B"
+        }
+      ],
+      "dayTrip": {
+        "from": "Tokio",
+        "to": "Kamakura i Enoshima"
+      }
+    },
+    {
+      "id": "2026-11-17",
+      "dayNumber": 10,
+      "date": "2026-11-17",
+      "weekday": "wtorek",
+      "title": "Tokio → Kioto",
+      "base": "Tokio → Kioto",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "08:00–08:30",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Przeprowadzka do Kioto. Shinkansenem w niecałe trzy godziny przejeżdżamy do dawnej stolicy, a po drodze, przy dobrej pogodzie, z prawej strony pociągu widać Fuji. Po zameldowaniu i lunchu bez dużych atrakcji: niespieszny spacer po centrum przy hotelu, a wieczorem klimatyczna uliczka Ponto-chō z lampionami i restauracjami nad rzeką.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Przejazd + hotel",
+        "want": "Shijō / Kawaramachi",
+        "bonus": "Ponto-chō wieczorem"
+      },
+      "notes": "Po przejeździe bez dużych atrakcji.",
+      "booking": {
+        "level": "recommended",
+        "text": "Shinkansen Tokio→Kioto: zalecane zarezerwować miejsca razem przez SmartEX. Można już rezerwować; jeśli bagaż 160+ cm → miejsce z oversized baggage od 17.10."
+      },
+      "source": {
+        "orderText": "08:00–08:30 wyjście → ~09:30 Shinkansen → ~12:00 Kioto → hotel/lunch → 16:00 Shijō/Kawaramachi → 18:00 Ponto-chō"
+      },
+      "items": [
+        {
+          "id": "d10-01",
+          "start": "08:00",
+          "end": "08:30",
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d10-02",
+          "start": "09:30",
+          "end": null,
+          "approx": true,
+          "type": "transport",
+          "title": "Shinkansen Tokio → Kioto",
+          "priority": "must",
+          "placeId": null,
+          "note": "Miejsca razem przez SmartEX."
+        },
+        {
+          "id": "d10-03",
+          "start": "12:00",
+          "end": null,
+          "approx": true,
+          "type": "hotel",
+          "title": "Przyjazd do Kioto, MIMARU SUITES Kyoto Shijo i lunch",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d10-04",
+          "start": "16:00",
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Shijō / Kawaramachi",
+          "priority": "want",
+          "placeId": "shijo-kawaramachi",
+          "note": null
+        },
+        {
+          "id": "d10-05",
+          "start": "18:00",
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Ponto-chō wieczorem",
+          "priority": "bonus",
+          "placeId": "pontocho",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-18",
+      "dayNumber": 11,
+      "date": "2026-11-18",
+      "weekday": "środa",
+      "title": "Kioto / Arashiyama",
+      "base": "Kioto / Arashiyama",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "07:30",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Arashiyama, zielona zachodnia część Kioto. Wychodzimy wcześnie, żeby wejść do bambusowego lasu, zanim zrobi się tłum. Potem świątynia zen Tenryū-ji z ogrodem, który wygląda tak samo od 700 lat, spacer nad rzeką i most Togetsukyō na tle gór. W drugiej połowie listopada Arashiyama to jedno z najlepszych miejsc w Kioto na jesienne kolory.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Bamboo Grove + Tenryū-ji",
+        "want": "Rzeka + Togetsukyō",
+        "bonus": "Kawa / dłuższy spacer po Arashiyamie"
+      },
+      "notes": "Środa — znacznie lepszy termin niż niedziela; 07:30 nadal warto potraktować jako realny cel wyjścia.",
+      "booking": {
+        "level": "none",
+        "text": "Arashiyama / Tenryū-ji: bez wcześniejszej rezerwacji; bilety do świątyni na miejscu."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~08:15–09:00 Bamboo Grove → 09:00–10:30 Tenryū-ji → 10:30–11:30 spacer nad rzeką → 11:30–12:00 Togetsukyō → 12:00–13:30 lunch → 13:30+ kawa / spacer / powrót"
+      },
+      "items": [
+        {
+          "id": "d11-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d11-02",
+          "start": "08:15",
+          "end": "09:00",
+          "approx": true,
+          "type": "attraction",
+          "title": "Bamboo Grove",
+          "priority": "must",
+          "placeId": "bamboo-grove",
+          "note": null
+        },
+        {
+          "id": "d11-03",
+          "start": "09:00",
+          "end": "10:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tenryū-ji",
+          "priority": "must",
+          "placeId": "tenryu-ji",
+          "note": null
+        },
+        {
+          "id": "d11-04",
+          "start": "10:30",
+          "end": "11:30",
+          "approx": false,
+          "type": "walk",
+          "title": "Spacer nad rzeką",
+          "priority": "want",
+          "placeId": "arashiyama-river",
+          "note": null
+        },
+        {
+          "id": "d11-05",
+          "start": "11:30",
+          "end": "12:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Most Togetsukyō",
+          "priority": "want",
+          "placeId": "togetsukyo",
+          "note": null
+        },
+        {
+          "id": "d11-06",
+          "start": "12:00",
+          "end": "13:30",
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d11-07",
+          "start": "13:30",
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Kawa / dłuższy spacer po Arashiyamie",
+          "priority": "bonus",
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19",
+      "dayNumber": 12,
+      "date": "2026-11-19",
+      "weekday": "czwartek",
+      "title": "Nara",
+      "base": "Nara",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "07:45",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Wycieczka do Nary, pierwszej stałej stolicy Japonii. W parku spotkamy ponad tysiąc jeleni, które kłaniają się za krakersy. Główny punkt to Tōdai-ji, gigantyczna drewniana hala z 15-metrowym Buddą z brązu. Po lunchu dalszy spacer po parku, a na koniec, jeśli starczy czasu, leśna aleja kamiennych lampionów do chramu Kasuga Taisha. Wracamy bez pośpiechu.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Nara Park + Tōdai-ji",
+        "want": "Dalszy spacer po parku",
+        "bonus": "Kasuga Taisha"
+      },
+      "notes": "Bez potrzeby wracania bardzo wcześnie.",
+      "booking": {
+        "level": "none",
+        "text": "Nara Park / Tōdai-ji / Kasuga Taisha: bez wcześniejszej rezerwacji."
+      },
+      "source": {
+        "orderText": "07:45 wyjście → ~09:00 Nara → 09:00–10:30 Nara Park → 10:45–12:15 Tōdai-ji → lunch → 13:30–15:00 park/Kasuga → 15:30–16:00 powrót"
+      },
+      "items": [
+        {
+          "id": "d12-01",
+          "start": "07:45",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d12-02",
+          "start": "09:00",
+          "end": null,
+          "approx": true,
+          "type": "transport",
+          "title": "Przyjazd do Nary",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d12-03",
+          "start": "09:00",
+          "end": "10:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Nara Park",
+          "priority": "must",
+          "placeId": "nara-park",
+          "note": null
+        },
+        {
+          "id": "d12-04",
+          "start": "10:45",
+          "end": "12:15",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tōdai-ji",
+          "priority": "must",
+          "placeId": "todai-ji",
+          "note": null
+        },
+        {
+          "id": "d12-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d12-06",
+          "start": "13:30",
+          "end": "15:00",
+          "approx": false,
+          "type": "walk",
+          "title": "Dalszy spacer po parku",
+          "priority": "want",
+          "placeId": "nara-park",
+          "note": null
+        },
+        {
+          "id": "d12-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Kasuga Taisha",
+          "priority": "bonus",
+          "placeId": "kasuga",
+          "note": "W ramach popołudniowego spaceru."
+        },
+        {
+          "id": "d12-08",
+          "start": "15:30",
+          "end": "16:00",
+          "approx": false,
+          "type": "transport",
+          "title": "Powrót do Kioto",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        }
+      ],
+      "dayTrip": {
+        "from": "Kioto",
+        "to": "Nara"
+      }
+    },
+    {
+      "id": "2026-11-20",
+      "dayNumber": 13,
+      "date": "2026-11-20",
+      "weekday": "piątek",
+      "title": "Kioto / Fushimi + Higashiyama",
+      "base": "Kioto / Fushimi + Higashiyama",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "07:30",
+      "pace": "long",
+      "paceLabel": "Długi",
+      "summary": "Najpełniejszy dzień w Kioto. Rano tunele tysięcy pomarańczowych bram torii w Fushimi Inari, zanim pojawią się tłumy. Potem Kiyomizu-dera z drewnianym tarasem nad doliną, zabytkowe uliczki Sannenzaka i Ninenzaka z herbaciarniami, chram Yasaka i dzielnica gejsz Gion. Wieczorem, jeśli zostanie siły, iluminacja ogrodów Kōdai-ji i dłuższa kolacja. Wygodne buty obowiązkowe.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Fushimi Inari + Kiyomizu-dera + Gion",
+        "want": "Sannenzaka/Ninenzaka + Yasaka",
+        "bonus": "Kōdai-ji illumination / Shirakawa / dłuższa kolacja"
+      },
+      "notes": "Najpełniejszy dzień w Kioto. Eikan-dō usunięte; Kōdai-ji jest logistycznie znacznie lepszym BONUS-em, bo leży na trasie Higashiyama/Gion.",
+      "booking": {
+        "level": "none",
+        "text": "Fushimi / Kiyomizu / Yasaka / Gion: bez rezerwacji. Kōdai-ji illumination: bilet na miejscu; nie blokowałbym godziny z góry."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~08:00–10:00 Fushimi Inari → ~10:00–10:45 przejazd → 11:00–12:30 Kiyomizu-dera → 12:30–14:00 Sannenzaka/Ninenzaka + lunch → 14:30 Yasaka → 15:00–17:30 Gion / Shirakawa → BONUS: ~18:00+ Kōdai-ji illumination / dłuższa kolacja"
+      },
+      "items": [
+        {
+          "id": "d13-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d13-02",
+          "start": "08:00",
+          "end": "10:00",
+          "approx": true,
+          "type": "attraction",
+          "title": "Fushimi Inari",
+          "priority": "must",
+          "placeId": "fushimi-inari",
+          "note": null
+        },
+        {
+          "id": "d13-03",
+          "start": "10:00",
+          "end": "10:45",
+          "approx": true,
+          "type": "transport",
+          "title": "Przejazd do Higashiyamy",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d13-04",
+          "start": "11:00",
+          "end": "12:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Kiyomizu-dera",
+          "priority": "must",
+          "placeId": "kiyomizu",
+          "note": null
+        },
+        {
+          "id": "d13-05",
+          "start": "12:30",
+          "end": "14:00",
+          "approx": false,
+          "type": "walk",
+          "title": "Sannenzaka / Ninenzaka + lunch",
+          "priority": "want",
+          "placeId": "sannenzaka",
+          "note": null
+        },
+        {
+          "id": "d13-06",
+          "start": "14:30",
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Yasaka-jinja",
+          "priority": "want",
+          "placeId": "yasaka",
+          "note": null
+        },
+        {
+          "id": "d13-07",
+          "start": "15:00",
+          "end": "17:30",
+          "approx": false,
+          "type": "walk",
+          "title": "Gion",
+          "priority": "must",
+          "placeId": "gion",
+          "note": null
+        },
+        {
+          "id": "d13-08",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Shirakawa",
+          "priority": "bonus",
+          "placeId": "shirakawa",
+          "note": "W ramach spaceru po Gion."
+        },
+        {
+          "id": "d13-09",
+          "start": "18:00",
+          "end": null,
+          "approx": true,
+          "type": "attraction",
+          "title": "Iluminacja Kōdai-ji",
+          "priority": "bonus",
+          "placeId": "kodai-ji",
+          "note": "Bilet na miejscu."
+        },
+        {
+          "id": "d13-10",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Dłuższa kolacja",
+          "priority": "bonus",
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-21",
+      "dayNumber": 14,
+      "date": "2026-11-21",
+      "weekday": "sobota",
+      "title": "Osaka",
+      "base": "Osaka",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "08:30",
+      "pace": "medium-long",
+      "paceLabel": "Średnio / długi",
+      "summary": "Wycieczka do Osaki, miasta jedzenia. Przed południem Kaiyukan, jedno z największych akwariów świata z rekinem wielorybim. Po lunchu neonowe Dōtonbori, gdzie próbujemy takoyaki, okonomiyaki i kushikatsu, a potem zadaszony pasaż Shinsaibashi na zakupy. To sobota, dlatego wejście do akwarium rezerwujemy na konkretną godzinę.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Kaiyukan",
+        "want": "Dōtonbori",
+        "bonus": "Shinsaibashi / dodatkowe jedzenie"
+      },
+      "notes": "Sobota — warto zarezerwować Kaiyukan na konkretną godzinę.",
+      "booking": {
+        "level": "required",
+        "text": "Kaiyukan: kup e-ticket na ~10:30 z wyprzedzeniem (sloty co 15 min). Sobota + długi weekend — nie zostawiać na dzień wizyty."
+      },
+      "source": {
+        "orderText": "08:30 wyjście → ~10:00 Osaka → 10:30–13:00 Kaiyukan → 13:00–14:15 lunch → 14:30–17:00 Dōtonbori → 17:30–19:00 powrót"
+      },
+      "items": [
+        {
+          "id": "d14-01",
+          "start": "08:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d14-02",
+          "start": "10:00",
+          "end": null,
+          "approx": true,
+          "type": "transport",
+          "title": "Przyjazd do Osaki",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d14-03",
+          "start": "10:30",
+          "end": "13:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Kaiyukan",
+          "priority": "must",
+          "placeId": "kaiyukan",
+          "note": "E-ticket na ~10:30."
+        },
+        {
+          "id": "d14-04",
+          "start": "13:00",
+          "end": "14:15",
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d14-05",
+          "start": "14:30",
+          "end": "17:00",
+          "approx": false,
+          "type": "walk",
+          "title": "Dōtonbori",
+          "priority": "want",
+          "placeId": "dotonbori",
+          "note": null
+        },
+        {
+          "id": "d14-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Shinsaibashi / dodatkowe jedzenie",
+          "priority": "bonus",
+          "placeId": "shinsaibashi",
+          "note": null
+        },
+        {
+          "id": "d14-07",
+          "start": "17:30",
+          "end": "19:00",
+          "approx": false,
+          "type": "transport",
+          "title": "Powrót do Kioto",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        }
+      ],
+      "dayTrip": {
+        "from": "Kioto",
+        "to": "Osaka"
+      }
+    },
+    {
+      "id": "2026-11-22",
+      "dayNumber": 15,
+      "date": "2026-11-22",
+      "weekday": "niedziela",
+      "title": "Kioto / centrum + Kinkaku-ji",
+      "base": "Kioto / centrum + Kinkaku-ji",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "08:30",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Klasyczne Kioto. Zaczynamy od Złotego Pawilonu Kinkaku-ji zaraz po otwarciu, bo to niedziela długiego weekendu i później będą ogromne tłumy. Potem zamek szogunów Nijō z „podłogami słowika”, a na lunch targ Nishiki, nazywany kuchnią Kioto. Popołudnie jest wolne: zakupy przy Kawaramachi, Ponto-chō i spokojna kolacja.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Kinkaku-ji",
+        "want": "Nijō-jō + Nishiki",
+        "bonus": "Ponto-chō / Kawaramachi / spokojna kolacja"
+      },
+      "notes": "Niedziela w długi weekend — Kinkaku-ji celowo jako pierwszy punkt dnia, żeby ograniczyć największe tłumy.",
+      "booking": {
+        "level": "recommended",
+        "text": "Kinkaku-ji / Nishiki: brak. Nijō-jō: standard + Ninomaru bez rezerwacji (web ticket opcjonalny); Honmaru-goten wymaga wcześniejszej rezerwacji."
+      },
+      "source": {
+        "orderText": "08:30 wyjście → 09:00–10:30 Kinkaku-ji → 11:00–12:30 Nijō-jō → 12:45–14:15 Nishiki Market + lunch → 14:30+ wolne / Kawaramachi / Ponto-chō"
+      },
+      "items": [
+        {
+          "id": "d15-01",
+          "start": "08:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d15-02",
+          "start": "09:00",
+          "end": "10:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Kinkaku-ji",
+          "priority": "must",
+          "placeId": "kinkaku-ji",
+          "note": null
+        },
+        {
+          "id": "d15-03",
+          "start": "11:00",
+          "end": "12:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Zamek Nijō",
+          "priority": "want",
+          "placeId": "nijo-jo",
+          "note": null
+        },
+        {
+          "id": "d15-04",
+          "start": "12:45",
+          "end": "14:15",
+          "approx": false,
+          "type": "meal",
+          "title": "Nishiki Market + lunch",
+          "priority": "want",
+          "placeId": "nishiki",
+          "note": null
+        },
+        {
+          "id": "d15-05",
+          "start": "14:30",
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Wolne / Kawaramachi / Ponto-chō / spokojna kolacja",
+          "priority": "bonus",
+          "placeId": "pontocho",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23",
+      "dayNumber": 16,
+      "date": "2026-11-23",
+      "weekday": "poniedziałek",
+      "title": "Kioto / bufor",
+      "base": "Kioto / bufor",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": null,
+        "hotelId": "mimaru-kyoto"
+      },
+      "earliestDeparture": "09:00 lub później",
+      "pace": "very-light",
+      "paceLabel": "Bardzo lekko",
+      "summary": "Dzień buforowy i japońskie święto Dzień Dziękczynienia za Pracę. Bez budzika i bez dużej atrakcji: późne śniadanie, zakupy, spacer po centrum. To dobry moment, żeby nadrobić coś, co wcześniej wypadło z planu, albo wrócić do ulubionego miejsca. Wieczorem pakujemy się na powrót do Tokio.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Bufor + odpoczynek",
+        "want": "Nadrobienie czegoś z Kioto",
+        "bonus": "Pałac Cesarski / zakupy / ulubione miejsce ponownie"
+      },
+      "notes": "23.11 to japońskie święto (Labor Thanksgiving Day). Celowo bez dużej atrakcji i bez wczesnego startu.",
+      "booking": {
+        "level": "none",
+        "text": "Bufor — nic nie rezerwować z góry; zachować pełną elastyczność."
+      },
+      "source": {
+        "orderText": "Bez sztywnego planu → późne śniadanie → odpoczynek / zakupy / spacer po centrum → ewentualne nadrobienie odpuszczonego miejsca → spokojne pakowanie przed wyjazdem do Tokio"
+      },
+      "items": [
+        {
+          "id": "d16-01",
+          "start": "09:00",
+          "end": null,
+          "approx": true,
+          "type": "departure",
+          "title": "Wyjście najwcześniej o 09:00",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d16-02",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Późne śniadanie",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d16-03",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Odpoczynek / zakupy / spacer po centrum",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d16-04",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Nadrobienie czegoś z Kioto",
+          "priority": "want",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d16-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Pałac Cesarski / zakupy / ulubione miejsce ponownie",
+          "priority": "bonus",
+          "placeId": "imperial-palace-kyoto",
+          "note": null
+        },
+        {
+          "id": "d16-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "rest",
+          "title": "Spokojne pakowanie przed wyjazdem do Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-24",
+      "dayNumber": 17,
+      "date": "2026-11-24",
+      "weekday": "wtorek",
+      "title": "Kioto → Tokio / Shinjuku",
+      "base": "Kioto → Tokio / Shinjuku",
+      "stay": {
+        "city": "Tokio",
+        "area": null,
+        "hotelName": null,
+        "address": null,
+        "hotelId": "tokyo-final"
+      },
+      "earliestDeparture": "08:00",
+      "pace": "light-medium",
+      "paceLabel": "Lekko / średnio",
+      "summary": "Powrót do Tokio Shinkansenem i ostatnia nowa dzielnica: Shinjuku. Po zameldowaniu i odpoczynku jedziemy na darmowy taras widokowy ratusza Tokio, a po zmroku spacerujemy wśród neonów Kabukichō, dymiących barów Omoide Yokochō i maleńkich barów Golden Gai.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Powrót do Tokio",
+        "want": "Shinjuku + Metropolitan Govt Building",
+        "bonus": "Nocny spacer po Shinjuku"
+      },
+      "notes": "Shinjuku celowo przeniesione z 13.11.",
+      "booking": {
+        "level": "recommended",
+        "text": "Shinkansen Kioto→Tokio: miejsca razem zalecane; SmartEX już dostępny. Jeśli bagaż 160+ cm → oversized baggage seat od 24.10."
+      },
+      "source": {
+        "orderText": "08:00 wyjście → ~09:00–09:30 Shinkansen → Tokio około południa → hotel/odpoczynek → 16:30 Shinjuku → punkt widokowy → kolacja"
+      },
+      "items": [
+        {
+          "id": "d17-01",
+          "start": "08:00",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d17-02",
+          "start": "09:00",
+          "end": "09:30",
+          "approx": true,
+          "type": "transport",
+          "title": "Shinkansen Kioto → Tokio",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d17-03",
+          "start": "12:00",
+          "end": null,
+          "approx": true,
+          "type": "hotel",
+          "title": "Hotel / odpoczynek w Tokio",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d17-04",
+          "start": "16:30",
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Shinjuku",
+          "priority": "want",
+          "placeId": "shinjuku",
+          "note": null
+        },
+        {
+          "id": "d17-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Punkt widokowy: Metropolitan Government Building",
+          "priority": "want",
+          "placeId": "tocho",
+          "note": null
+        },
+        {
+          "id": "d17-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Kolacja",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d17-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Nocny spacer po Shinjuku",
+          "priority": "bonus",
+          "placeId": "shinjuku",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-25",
+      "dayNumber": 18,
+      "date": "2026-11-25",
+      "weekday": "środa",
+      "title": "Tokio / Akihabara-Skytree",
+      "base": "Tokio / Akihabara-Skytree",
+      "stay": {
+        "city": "Tokio",
+        "area": null,
+        "hotelName": null,
+        "address": null,
+        "hotelId": "tokyo-final"
+      },
+      "earliestDeparture": "09:30",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Ostatni pełny dzień. Rano Akihabara, królestwo elektroniki, anime, mangi i retro gier. Około 14:30 decydujemy, co dalej: albo luźne zakupy i spacer, albo Tokyo Skytree z tarasami na 450 metrach i centrum Solamachi. Wieczorem możemy jeszcze raz zajrzeć do Asakusy i nad Sumidę, gdzie zaczynaliśmy tydzień temu.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Akihabara",
+        "want": "Luźne zakupy / spacer",
+        "bonus": "Tokyo Skytree + Solamachi / Asakusa / Sumida wieczorem"
+      },
+      "notes": "Skytree nie jest już obowiązkowe po Shibuya Sky. Zostawić tylko jeśli będzie ochota na drugi duży punkt widokowy.",
+      "booking": {
+        "level": "recommended",
+        "text": "Tokyo Skytree tylko jeśli zdecydujecie się na BONUS: advance ticket zalecany i już w sprzedaży; inaczej zostawić elastycznie."
+      },
+      "source": {
+        "orderText": "09:30 wyjście → 10:00–13:00 Akihabara → lunch → 14:30 decyzja: Skytree + Solamachi (BONUS) albo wolne / zakupy / spokojniejsze Tokio → kolacja"
+      },
+      "items": [
+        {
+          "id": "d18-01",
+          "start": "09:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d18-02",
+          "start": "10:00",
+          "end": "13:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Akihabara",
+          "priority": "must",
+          "placeId": "akihabara",
+          "note": null
+        },
+        {
+          "id": "d18-03",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d18-04",
+          "start": "14:30",
+          "end": null,
+          "approx": false,
+          "type": "decision",
+          "title": "Decyzja: Skytree czy spokojniejsze Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "options": [
+            {
+              "id": "A",
+              "label": "Wolne / zakupy / spokojniejsze Tokio"
+            },
+            {
+              "id": "B",
+              "label": "Tokyo Skytree + Solamachi (BONUS)"
+            }
+          ]
+        },
+        {
+          "id": "d18-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Luźne zakupy / spacer",
+          "priority": "want",
+          "placeId": null,
+          "note": null,
+          "variant": "A"
+        },
+        {
+          "id": "d18-06",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Tokyo Skytree + Solamachi",
+          "priority": "bonus",
+          "placeId": "skytree",
+          "note": null,
+          "variant": "B"
+        },
+        {
+          "id": "d18-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Kolacja",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d18-08",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Asakusa / Sumida wieczorem",
+          "priority": "bonus",
+          "placeId": "sumida",
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-26",
+      "dayNumber": 19,
+      "date": "2026-11-26",
+      "weekday": "czwartek",
+      "title": "Tokio → lotnisko",
+      "base": "Tokio → lotnisko",
+      "stay": null,
+      "earliestDeparture": "09:30",
+      "pace": "light",
+      "paceLabel": "Lekko",
+      "summary": "Dzień wylotu. Pakujemy się, wymeldowujemy i zostawiamy bagaże w hotelu, a resztę dnia przeznaczamy na ostatnie zakupy i ulubioną dzielnicę. Po wczesnej kolacji odbieramy bagaże i jedziemy na Naritę. Wylot LO80 o 23:05, więc na lotnisku trzeba być najpóźniej ok. 21:00.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Wylot 23:05",
+        "want": "Zakupy + spokojna końcówka",
+        "bonus": "Nadrobienie krótkiego punktu"
+      },
+      "notes": "Hotel tylko do 26.11 jest prawidłowo. Pakowanie przed checkoutem; po checkoutcie bagaże zostawić w hotelu. Dokładna godzina wyjazdu na lotnisko zależy od HND/NRT.",
+      "booking": {
+        "level": "recommended",
+        "text": "Lotnisko: jeśli NRT i jedziecie N'EX/Skylinerem, kupić miejsca po ustaleniu trasy. Jeśli HND → zwykle bez rezerwacji."
+      },
+      "source": {
+        "orderText": "08:30–09:30 pakowanie → 09:30–10:00 checkout + zostawienie bagaży → 10:00–14:30 zakupy / ulubiona dzielnica → lunch → 16:30–17:30 wczesna kolacja → odbiór bagaży → ok. 18:30–19:00 wyjazd na lotnisko → 23:05 wylot"
+      },
+      "items": [
+        {
+          "id": "d19-01",
+          "start": "08:30",
+          "end": "09:30",
+          "approx": false,
+          "type": "rest",
+          "title": "Pakowanie",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-02",
+          "start": "09:30",
+          "end": "10:00",
+          "approx": false,
+          "type": "hotel",
+          "title": "Checkout + zostawienie bagaży",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-03",
+          "start": "10:00",
+          "end": "14:30",
+          "approx": false,
+          "type": "free",
+          "title": "Zakupy / ulubiona dzielnica",
+          "priority": "want",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-04",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Nadrobienie krótkiego punktu",
+          "priority": "bonus",
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-05",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-06",
+          "start": "16:30",
+          "end": "17:30",
+          "approx": false,
+          "type": "meal",
+          "title": "Wczesna kolacja",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "hotel",
+          "title": "Odbiór bagaży z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d19-08",
+          "start": "18:30",
+          "end": "19:00",
+          "approx": true,
+          "type": "transport",
+          "title": "Wyjazd na lotnisko",
+          "priority": null,
+          "placeId": null,
+          "note": "Narita: Skyliner z Ueno albo N'EX; kupić miejsca po ustaleniu trasy."
+        },
+        {
+          "id": "d19-09",
+          "start": "23:05",
+          "end": null,
+          "approx": false,
+          "type": "flight",
+          "title": "Wylot z Narity (LO80)",
+          "priority": "must",
+          "placeId": null,
+          "note": null
+        }
+      ]
+    },
+    {
+      "id": "2026-11-27",
+      "dayNumber": 20,
+      "date": "2026-11-27",
+      "weekday": "piątek",
+      "title": "Podróż → dom",
+      "base": "Podróż → dom",
+      "stay": null,
+      "earliestDeparture": "—",
+      "pace": "travel",
+      "paceLabel": "Podróż",
+      "summary": "Przylot do domu. Lot powrotny trwa długo, więc ten dzień to odpoczynek i powolny powrót do polskiej strefy czasowej.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Powrót do domu",
+        "want": "—",
+        "bonus": "—"
+      },
+      "notes": "Wylot z Tokio jest poprzedniego dnia, 26.11 o 23:05.",
+      "booking": {
+        "level": "none",
+        "text": "Brak."
+      },
+      "source": {
+        "orderText": "Podróż / przylot do domu — godzina zależna od połączenia"
+      },
+      "items": [
+        {
+          "id": "d20-01",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "flight",
+          "title": "Podróż / przylot do domu",
+          "priority": "must",
+          "placeId": null,
+          "note": "Godzina zależna od połączenia."
+        }
+      ]
+    }
+  ],
+  "places": {
+    "ueno-park": {
+      "id": "ueno-park",
+      "name": "Ueno Park",
+      "nameJa": "上野恩賜公園",
+      "city": "Tokio",
+      "area": "Ueno",
+      "category": "park",
+      "short": "Wielki park w sercu Ueno: muzea, staw Shinobazu i spokojne aleje.",
+      "description": "Jeden z pierwszych publicznych parków w Japonii, otwarty w 1873 roku na terenach dawnej świątyni. Dziś to zielone centrum Ueno z najważniejszymi muzeami Tokio (m.in. Muzeum Narodowe), stawem Shinobazu pełnym lotosów i małą świątynią Benten na wyspie. W parku stoi też chram Ueno Tōshō-gū ze złotą bramą. W listopadzie miłorzęby zaczynają żółknąć, a aleje są dobrym, spokojnym wejściem w pierwszy pełny dzień w Japonii.",
+      "photo": {
+        "src": "img/ueno-park.jpg",
+        "alt": "Ueno Park",
+        "credit": "Bernard Gagnon / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_park.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Ueno Park, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7148,
+        "lng": 139.7737
+      }
+    },
+    "ueno-zoo": {
+      "id": "ueno-zoo",
+      "name": "Ueno Zoo",
+      "nameJa": "上野動物園",
+      "city": "Tokio",
+      "area": "Ueno",
+      "category": "zoo",
+      "short": "Najstarsze zoo w Japonii, kilka kroków od hotelu.",
+      "description": "Otwarte w 1882 roku, najstarsze zoo w kraju, położone w samym parku Ueno. Dzieli się na część wschodnią i zachodnią, połączone kolejką jednoszynową i kładką. Mieszka tu kilkaset gatunków, od goryli i tygrysów sumatrzańskich po zwierzęta z Japonii. Bilety są tanie i kupuje się je na miejscu; w poniedziałki zoo jest zwykle zamknięte, więc wtorek pasuje idealnie.",
+      "photo": {
+        "src": "img/ueno-zoo.jpg",
+        "alt": "Ueno Zoo",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_Zoo_2012.JPG"
+      },
+      "links": {
+        "official": "https://www.tokyo-zoo.net/en/ueno/visitor-info/tickets/index.html",
+        "maps": null
+      },
+      "mapsQuery": "Ueno Zoo, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7164,
+        "lng": 139.7713
+      }
+    },
+    "yanaka-nezu": {
+      "id": "yanaka-nezu",
+      "name": "Yanaka i Nezu",
+      "nameJa": "谷中・根津",
+      "city": "Tokio",
+      "area": "Yanaka",
+      "category": "district",
+      "short": "Stare Tokio: drewniane domy, ciche uliczki, koty i chram z tunelem bram torii.",
+      "description": "Yanaka i Nezu to fragment „shitamachi”, dawnego miasta kupców i rzemieślników, który przetrwał trzęsienie ziemi z 1923 roku i bombardowania wojenne. Są tu dziesiątki małych świątyń, cmentarz Yanaka z aleją wiśni, uliczka handlowa Yanaka Ginza z przekąskami i słynne lokalne koty. W Nezu stoi chram Nezu-jinja z korytarzem czerwonych bram torii. Idealny spacer na koniec dnia, gdy chce się zobaczyć Tokio bez wieżowców.",
+      "photo": {
+        "src": "img/yanaka-nezu.jpg",
+        "alt": "Yanaka i Nezu",
+        "credit": "Joe Mabel / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_-_Yanaka_143.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Yanaka i Nezu, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7262,
+        "lng": 139.7666
+      }
+    },
+    "tsukiji": {
+      "id": "tsukiji",
+      "name": "Tsukiji Outer Market",
+      "nameJa": "築地場外市場",
+      "city": "Tokio",
+      "area": "Tsukiji",
+      "category": "market",
+      "short": "Targ rybny w wersji „do jedzenia”: sushi, tamagoyaki i owoce morza od rana.",
+      "description": "Po przeniesieniu hurtowego targu rybnego do Toyosu w 2018 roku została tu zewnętrzna część, Outer Market: kilkaset małych sklepów i barów w wąskich uliczkach. Przychodzi się rano, żeby zjeść świeże sushi, grillowane przegrzebki, słodki omlet tamagoyaki czy truskawki daifuku prosto z ręki. Najlepiej być tu przed 10:00, zanim zrobi się tłoczno. Część sklepów zamyka się w wybrane środy, więc przed 11.11 warto sprawdzić kalendarz targu.",
+      "photo": {
+        "src": "img/tsukiji.jpg",
+        "alt": "Tsukiji Outer Market",
+        "credit": "Aw1805 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukiji_Outer_Market_2.jpg"
+      },
+      "links": {
+        "official": "https://www.tsukiji.or.jp/english/",
+        "maps": null
+      },
+      "mapsQuery": "Tsukiji Outer Market, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6655,
+        "lng": 139.7707
+      }
+    },
+    "hama-rikyu": {
+      "id": "hama-rikyu",
+      "name": "Hama Rikyu",
+      "nameJa": "浜離宮恩賜庭園",
+      "city": "Tokio",
+      "area": "Shiodome",
+      "category": "garden",
+      "short": "Ogród szogunów nad zatoką, z herbaciarnią na wodzie i wieżowcami w tle.",
+      "description": "Dawny ogród rodu Tokugawa z epoki Edo, gdzie szogunowie polowali na kaczki i przyjmowali gości. Jego staw jest wyjątkowy, bo zasila go woda morska z Zatoki Tokijskiej i poziom zmienia się z pływami. Na wysepce stoi herbaciarnia Nakajima, w której można wypić matchę ze słodyczą z widokiem na wodę. Kontrast tradycyjnego ogrodu ze szklanymi wieżowcami Shiodome robi świetne zdjęcia. Z przystani przy ogrodzie pływają tramwaje wodne w górę Sumidy do Asakusy, co może być ciekawym dojazdem.",
+      "photo": {
+        "src": "img/hama-rikyu.jpg",
+        "alt": "Hama Rikyu",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamarikyu_Garden_as_seen_from_Shiodome.jpg"
+      },
+      "links": {
+        "official": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/",
+        "maps": null
+      },
+      "mapsQuery": "Hama Rikyu, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6597,
+        "lng": 139.7634
+      }
+    },
+    "senso-ji": {
+      "id": "senso-ji",
+      "name": "Sensō-ji",
+      "nameJa": "浅草寺",
+      "city": "Tokio",
+      "area": "Asakusa",
+      "category": "temple",
+      "short": "Najstarsza świątynia Tokio z wielkim czerwonym lampionem w bramie.",
+      "description": "Według legendy świątynia powstała w 628 roku, gdy rybacy wyłowili z Sumidy figurkę bogini Kannon. Wchodzi się przez bramę Kaminarimon z ogromnym czerwonym lampionem, potem idzie uliczką Nakamise pełną straganów z pamiątkami i przekąskami (spróbujcie ningyō-yaki i melonpan). Na końcu czekają brama Hōzōmon, główna hala i pięciopiętrowa pagoda. Można tu wyciągnąć wróżbę omikuji. Wieczorem świątynia jest pięknie podświetlona i dużo spokojniejsza.",
+      "photo": {
+        "src": "img/senso-ji.jpg",
+        "alt": "Sensō-ji",
+        "credit": "Akonnchiroll / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg"
+      },
+      "links": {
+        "official": "https://www.senso-ji.jp/",
+        "maps": null
+      },
+      "mapsQuery": "Sensō-ji, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7148,
+        "lng": 139.7967
+      }
+    },
+    "sumida": {
+      "id": "sumida",
+      "name": "Rzeka Sumida",
+      "nameJa": "隅田川",
+      "city": "Tokio",
+      "area": "Asakusa",
+      "category": "viewpoint",
+      "short": "Rzeka Asakusy z widokiem na Skytree, najładniejsza po zmroku.",
+      "description": "Sumida przepływa przez wschodnie Tokio, tuż obok Asakusy. Z mostu Azuma-bashi i z bulwarów widać podświetloną wieżę Tokyo Skytree oraz charakterystyczny budynek Asahi ze złotym „płomieniem” na dachu. Po zmroku, kiedy wieża i mosty świecą, spacer wzdłuż rzeki to spokojne zakończenie dnia po zatłoczonej świątyni. Bulwary Sumida Park ciągną się po obu stronach rzeki.",
+      "photo": {
+        "src": "img/sumida.jpg",
+        "alt": "Rzeka Sumida",
+        "credit": "Kirkpatrick / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumidagawa_river.JPG"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Rzeka Sumida, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7106,
+        "lng": 139.7982
+      }
+    },
+    "chureito": {
+      "id": "chureito",
+      "name": "Pagoda Chureito",
+      "nameJa": "忠霊塔",
+      "city": "Fujiyoshida",
+      "area": "Arakurayama Sengen Park",
+      "category": "temple",
+      "short": "Pięciopiętrowa pagoda z najsłynniejszym widokiem na Fuji.",
+      "description": "Czerwona pagoda Chureito należy do chramu Arakura Fuji Sengen i stoi na zboczu nad miastem Fujiyoshida. Zbudowano ją w 1963 roku jako pomnik poległych. Prowadzi do niej prawie 400 schodów, a z tarasu widokowego za pagodą rozciąga się kadr znany z plakatów: pagoda na pierwszym planie, Fuji w tle. W listopadzie zbocze przebarwia się na czerwono i złoto. Najlepsza widoczność jest zwykle rano, zanim nad górą zbiorą się chmury.",
+      "photo": {
+        "src": "img/chureito.jpg",
+        "alt": "Pagoda Chureito",
+        "credit": "Stjepko Krehula / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chureito_Pagoda_and_Mount_Fuji_2023-03-07.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Pagoda Chureito, Fujiyoshida, Japan",
+      "coords": {
+        "lat": 35.5012,
+        "lng": 138.8016
+      }
+    },
+    "kawaguchiko": {
+      "id": "kawaguchiko",
+      "name": "Jezioro Kawaguchiko",
+      "nameJa": "河口湖",
+      "city": "Fujikawaguchiko",
+      "area": "Fuji Five Lakes",
+      "category": "nature",
+      "short": "Jezioro u stóp Fuji: widoki, odbicia w wodzie i jesienne klony.",
+      "description": "Jedno z pięciu jezior u podnóża Fuji i najłatwiej dostępne z Tokio. Z północnego brzegu widać górę ponad taflą wody, a w bezwietrzne dni odbija się ona w jeziorze. Wokół jeziora kursują autobusy turystyczne, jest kolejka linowa na punkt widokowy Tenjō-yama i aleja klonów Momiji Kairō, która jesienią płonie czerwienią. To miejsce na powolny spacer brzegiem i patrzenie na Fuji z różnych stron.",
+      "photo": {
+        "src": "img/kawaguchiko.jpg",
+        "alt": "Jezioro Kawaguchiko",
+        "credit": "LMP 2001 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_view_from_Lake_Kawaguchi_2024-12-01.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Jezioro Kawaguchiko, Fujikawaguchiko, Japan",
+      "coords": {
+        "lat": 35.5167,
+        "lng": 138.7516
+      }
+    },
+    "oishi-park": {
+      "id": "oishi-park",
+      "name": "Oishi Park",
+      "nameJa": "大石公園",
+      "city": "Fujikawaguchiko",
+      "area": "Kawaguchiko",
+      "category": "park",
+      "short": "Park kwiatowy na brzegu jeziora z widokiem na Fuji przez wodę.",
+      "description": "Niewielki park na północnym brzegu Kawaguchiko, znany z rabat kwiatowych i jednego z najlepszych widoków na Fuji ponad jeziorem. Przy parku jest centrum rękodzieła z kawiarnią i sklepem z lokalnymi produktami, gdzie można zjeść lody lub kupić pamiątki. Dobry punkt na krótki przystanek w ramach czasu nad jeziorem.",
+      "photo": {
+        "src": "img/oishi-park.jpg",
+        "alt": "Oishi Park",
+        "credit": "lumoplank / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_III_-_Kawaguchiko6783.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Oishi Park, Fujikawaguchiko, Japan",
+      "coords": {
+        "lat": 35.5262,
+        "lng": 138.7438
+      }
+    },
+    "meiji-jingu": {
+      "id": "meiji-jingu",
+      "name": "Meiji Jingu",
+      "nameJa": "明治神宮",
+      "city": "Tokio",
+      "area": "Harajuku",
+      "category": "shrine",
+      "short": "Najważniejszy chram shintō Tokio, ukryty w ogromnym lesie.",
+      "description": "Chram poświęcony cesarzowi Meiji i cesarzowej Shōken, otwarty w 1920 roku. Otacza go las z ok. 100 tysięcy drzew, które przysłali ludzie z całej Japonii, więc tuż obok ruchliwego Harajuku jest cicho i chłodno. Prowadzi do niego aleja z jedną z największych drewnianych bram torii w kraju i ścianą ozdobnych beczek sake. W połowie listopada trwa sezon Shichi-Go-San, gdy rodziny przyprowadzają tu dzieci w kimonach, co daje piękne sceny.",
+      "photo": {
+        "src": "img/meiji-jingu.jpg",
+        "alt": "Meiji Jingu",
+        "credit": "Akonnchiroll / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg"
+      },
+      "links": {
+        "official": "https://www.meijijingu.or.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Meiji Jingu, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6764,
+        "lng": 139.6993
+      }
+    },
+    "harajuku": {
+      "id": "harajuku",
+      "name": "Harajuku",
+      "nameJa": "原宿",
+      "city": "Tokio",
+      "area": "Harajuku",
+      "category": "district",
+      "short": "Ulica młodzieżowej mody, krepów i kolorowych sklepów.",
+      "description": "Harajuku to symbol tokijskiej mody ulicznej. Główna atrakcja to wąska ulica Takeshita-dōri pełna butików, sklepów z gadżetami, słodkich krepów z bitą śmietaną i tęczowej waty cukrowej. Obok, w bocznych uliczkach Ura-Harajuku, są spokojniejsze sklepy z ubraniami i kawiarnie. Rano przed południem jest tu luźniej.",
+      "photo": {
+        "src": "img/harajuku.jpg",
+        "alt": "Harajuku",
+        "credit": "Syced / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takeshita_Street.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Harajuku, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6716,
+        "lng": 139.7031
+      }
+    },
+    "omotesando": {
+      "id": "omotesando",
+      "name": "Omotesando",
+      "nameJa": "表参道",
+      "city": "Tokio",
+      "area": "Omotesando",
+      "category": "district",
+      "short": "Elegancka aleja z drzewami i budynkami znanych architektów.",
+      "description": "Szeroka aleja obsadzona drzewami zelkowa, łącząca Harajuku z Aoyamą, nazywana tokijskimi Polami Elizejskimi. Słynie z architektury: Omotesando Hills projektu Tadao Andō, szklany budynek Prady autorstwa Herzog & de Meuron czy budynek Tod's Toyo Ito. To dobre miejsce na spokojny spacer, zakupy i kawę w jednej z wielu kawiarni w bocznych uliczkach.",
+      "photo": {
+        "src": "img/omotesando.jpg",
+        "alt": "Omotesando",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omotesando_Tokyo_spring_2012.JPG"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Omotesando, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6652,
+        "lng": 139.7123
+      }
+    },
+    "shibuya": {
+      "id": "shibuya",
+      "name": "Shibuya",
+      "nameJa": "渋谷",
+      "city": "Tokio",
+      "area": "Shibuya",
+      "category": "district",
+      "short": "Najsłynniejsze skrzyżowanie świata i pomnik wiernego psa Hachikō.",
+      "description": "Shibuya to energia współczesnego Tokio. Na skrzyżowaniu Scramble przy każdej zmianie świateł tysiące ludzi przechodzą jednocześnie we wszystkich kierunkach. Obok stacji stoi pomnik Hachikō, psa, który przez lata czekał na zmarłego właściciela. Wokół są ogromne domy towarowe, sklepy z muzyką i modą, a uliczki Center Gai pełne są barów i restauracji. Po zmroku dzielnica świeci neonami.",
+      "photo": {
+        "src": "img/shibuya.jpg",
+        "alt": "Shibuya",
+        "credit": "David Kernan / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Shibuya, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6595,
+        "lng": 139.7005
+      }
+    },
+    "shibuya-sky": {
+      "id": "shibuya-sky",
+      "name": "Shibuya Sky",
+      "nameJa": "SHIBUYA SKY",
+      "city": "Tokio",
+      "area": "Shibuya",
+      "category": "viewpoint",
+      "short": "Otwarty taras na dachu wieżowca, ok. 230 m nad skrzyżowaniem Shibuya.",
+      "description": "Punkt widokowy na szczycie wieżowca Shibuya Scramble Square, otwarty w 2019 roku. Najwyższe piętro to otwarty dach bez szyb, z widokiem na całe Tokio, a przy dobrej pogodzie także na Fuji. Prosto w dół widać skrzyżowanie Scramble. W listopadzie słońce zachodzi ok. 16:30, więc wejście 15:30–16:00 daje trzy widoki naraz: dzień, zachód i miasto po zmroku. Bilety na godziny zachodu znikają szybko, trzeba je kupić z wyprzedzeniem.",
+      "photo": {
+        "src": "img/shibuya-sky.jpg",
+        "alt": "Shibuya Sky",
+        "credit": "Stephen Kelly / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_Sky_Observation_Deck_(53415730632).jpg"
+      },
+      "links": {
+        "official": "https://www.shibuya-scramble-square.com/sky/ticket/",
+        "maps": null
+      },
+      "mapsQuery": "Shibuya Sky, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6585,
+        "lng": 139.7022
+      }
+    },
+    "toshogu": {
+      "id": "toshogu",
+      "name": "Nikkō Tōshō-gū",
+      "nameJa": "日光東照宮",
+      "city": "Nikkō",
+      "area": null,
+      "category": "shrine",
+      "short": "Bogato zdobione mauzoleum szoguna Tokugawy Ieyasu, wpisane na listę UNESCO.",
+      "description": "Chram, w którym pochowano Tokugawę Ieyasu, założyciela szogunatu rządzącego Japonią przez 250 lat. Jego wnuk przebudował go w 1636 roku w niezwykle bogatym stylu: złoto, laka i tysiące rzeźb. Szukajcie trzech mądrych małp („nie widzę, nie słyszę, nie mówię”), śpiącego kota Nemuri-neko i bramy Yōmeimon, przy której podobno można stać do zmierzchu i nie znudzić się oglądaniem. Razem z innymi świątyniami Nikkō jest na liście UNESCO od 1999 roku.",
+      "photo": {
+        "src": "img/toshogu.jpg",
+        "alt": "Nikkō Tōshō-gū",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:200801_Nikko_Tosho-gu_Nikko_Japan03s3.jpg"
+      },
+      "links": {
+        "official": "https://toshogu.jp/",
+        "maps": null
+      },
+      "mapsQuery": "Nikkō Tōshō-gū, Nikkō, Japan",
+      "coords": {
+        "lat": 36.7581,
+        "lng": 139.5988
+      }
+    },
+    "rinno-ji": {
+      "id": "rinno-ji",
+      "name": "Rinnō-ji",
+      "nameJa": "輪王寺",
+      "city": "Nikkō",
+      "area": null,
+      "category": "temple",
+      "short": "Najstarsza świątynia Nikkō z trzema wielkimi złotymi posągami.",
+      "description": "Świątynia buddyjska założona według tradycji w VIII wieku przez mnicha Shōdō, który jako pierwszy przybył w te góry. W głównej hali Sanbutsudō stoją trzy ogromne pozłacane posągi buddyjskich bóstw, każdy wysoki na ponad 8 metrów. Do Rinnō-ji należy też Taiyūin, kameralne i piękne mauzoleum wnuka Ieyasu, często spokojniejsze niż Tōshō-gū.",
+      "photo": {
+        "src": "img/rinno-ji.jpg",
+        "alt": "Rinnō-ji",
+        "credit": "Wikimedia Commons",
+        "license": "domena publiczna",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NikkoRinnoji5390.jpg"
+      },
+      "links": {
+        "official": "https://www.rinnoji.or.jp/",
+        "maps": null
+      },
+      "mapsQuery": "Rinnō-ji, Nikkō, Japan",
+      "coords": {
+        "lat": 36.7543,
+        "lng": 139.6007
+      }
+    },
+    "shinkyo": {
+      "id": "shinkyo",
+      "name": "Most Shinkyo",
+      "nameJa": "神橋",
+      "city": "Nikkō",
+      "area": null,
+      "category": "landmark",
+      "short": "Czerwony święty most nad górską rzeką, brama do Nikkō.",
+      "description": "Lakierowany na czerwono most nad rwącą rzeką Daiya, uważany za jeden z najpiękniejszych mostów w Japonii. Według legendy mnich Shōdō przekroczył tu rzekę po moście z dwóch węży, które przywołał bóg gór. Most należy do chramu Futarasan i stoi przy wejściu do strefy świątyń. Za niewielką opłatą można wejść na sam most, ale ładny widok jest też z drogi obok.",
+      "photo": {
+        "src": "img/shinkyo.jpg",
+        "alt": "Most Shinkyo",
+        "credit": "Joli Rumi / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinkyo_Bridge_over_the_Daiya_River_at_Nikko,_Japan.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Most Shinkyo, Nikkō, Japan",
+      "coords": {
+        "lat": 36.7536,
+        "lng": 139.605
+      }
+    },
+    "kegon": {
+      "id": "kegon",
+      "name": "Wodospad Kegon",
+      "nameJa": "華厳滝",
+      "city": "Nikkō",
+      "area": "Okunikkō",
+      "category": "nature",
+      "short": "Prawie 100-metrowy wodospad, jeden z trzech najpiękniejszych w Japonii.",
+      "description": "Woda z jeziora Chūzenji spada tu z wysokości ok. 97 metrów do skalistego wąwozu. Windą zjeżdża się na platformę widokową u podnóża, skąd wodospad widać w całej okazałości. Dojazd z centrum Nikkō to ok. 40 minut autobusem krętą drogą Irohazaka z 48 zakrętami. W połowie listopada na tej wysokości jest już zimno, a liście w większości opadły, więc trzeba wziąć ciepłe ubrania.",
+      "photo": {
+        "src": "img/kegon.jpg",
+        "alt": "Wodospad Kegon",
+        "credit": "Uraomote yamaneko / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_chuzenji_and_kegon_waterfall.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Wodospad Kegon, Nikkō, Japan",
+      "coords": {
+        "lat": 36.7383,
+        "lng": 139.5025
+      }
+    },
+    "chuzenji": {
+      "id": "chuzenji",
+      "name": "Jezioro Chūzenji",
+      "nameJa": "中禅寺湖",
+      "city": "Nikkō",
+      "area": "Okunikkō",
+      "category": "nature",
+      "short": "Górskie jezioro na wysokości ok. 1270 m u stóp wulkanu Nantai.",
+      "description": "Jezioro powstało, gdy lawa z wulkanu Nantai zablokowała dolinę. Leży wysoko w górach, więc jest tu wyraźnie chłodniej niż w mieście. Na brzegach stały kiedyś letnie rezydencje zagranicznych ambasad, a dziś jest tu spokojny bulwar i przystań statków wycieczkowych. Jezioro i wodospad Kegon są blisko siebie, więc zwiedza się je razem jako wariant B dnia w Nikkō.",
+      "photo": {
+        "src": "img/chuzenji.jpg",
+        "alt": "Jezioro Chūzenji",
+        "credit": "Uraomote yamaneko / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_nantai_and_lake_chuzenji.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Jezioro Chūzenji, Nikkō, Japan",
+      "coords": {
+        "lat": 36.7333,
+        "lng": 139.4683
+      }
+    },
+    "ginza": {
+      "id": "ginza",
+      "name": "Ginza",
+      "nameJa": "銀座",
+      "city": "Tokio",
+      "area": "Ginza",
+      "category": "district",
+      "short": "Elegancka dzielnica domów towarowych, butików i zegara Wakō.",
+      "description": "Ginza to najbardziej luksusowa dzielnica handlowa Tokio. Na skrzyżowaniu Ginza 4-chōme stoi budynek Wakō z zegarem, symbol dzielnicy od lat 30. XX wieku. Wokół są wielkie domy towarowe (Mitsukoshi, Matsuya, Ginza Six z ogrodem na dachu), flagowe sklepy marek i ogromny Uniqlo. W weekendowe popołudnia główna ulica Chūō-dōri bywa zamykana dla samochodów i można iść środkiem jezdni; 15.11 to niedziela. W piwnicach domów towarowych (depachika) są piękne hale z jedzeniem.",
+      "photo": {
+        "src": "img/ginza.jpg",
+        "alt": "Ginza",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginza-WAKO_at_night.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Ginza, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6717,
+        "lng": 139.765
+      }
+    },
+    "teamlab": {
+      "id": "teamlab",
+      "name": "teamLab Planets",
+      "nameJa": "チームラボプラネッツ",
+      "city": "Tokio",
+      "area": "Toyosu",
+      "category": "museum",
+      "short": "Muzeum cyfrowej sztuki, które się czuje całym ciałem; chodzi się boso, częściowo w wodzie.",
+      "description": "Instalacja kolektywu teamLab w Toyosu, w której sztuka reaguje na ludzi. Zwiedza się boso, w niektórych salach brodzi się w wodzie do kolan, po której pływają świetliste kwiaty i ryby. Jest sala z tysiącami świecących punktów w lustrach (Infinite Crystal Universe) i ogród z unoszącymi się storczykami. Warto ubrać spodnie, które łatwo podwinąć powyżej kolan. Bilety są tylko online, na konkretną godzinę wejścia.",
+      "photo": {
+        "src": "img/teamlab.jpg",
+        "alt": "teamLab Planets",
+        "credit": "Sasa0403 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photos_at_teamlab_planets_tokyo.jpg"
+      },
+      "links": {
+        "official": "https://teamlabplanets.dmm.com/en",
+        "maps": null
+      },
+      "mapsQuery": "teamLab Planets, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6491,
+        "lng": 139.7898
+      }
+    },
+    "toyosu-odaiba": {
+      "id": "toyosu-odaiba",
+      "name": "Toyosu / Odaiba",
+      "nameJa": "豊洲・お台場",
+      "city": "Tokio",
+      "area": "Toyosu",
+      "category": "district",
+      "short": "Nowoczesne nabrzeże: targ Toyosu, sztuczna wyspa Odaiba i Rainbow Bridge.",
+      "description": "Toyosu to nowa dzielnica nad zatoką z ogromnym hurtowym targiem rybnym, który przejął rolę Tsukiji. Kolejką Yurikamome bez maszynisty można przejechać na Odaibę, sztuczną wyspę z plażą, centrami handlowymi i naturalnej wielkości posągiem robota Gundam przy DiverCity. Wieczorem widok na podświetlony most Rainbow Bridge i panoramę Tokio przez wodę jest jednym z ładniejszych w mieście.",
+      "photo": {
+        "src": "img/toyosu-odaiba.jpg",
+        "alt": "Toyosu / Odaiba",
+        "credit": "Nesnad / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Toyosu / Odaiba, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6267,
+        "lng": 139.7757
+      }
+    },
+    "hase-dera": {
+      "id": "hase-dera",
+      "name": "Hase-dera",
+      "nameJa": "長谷寺",
+      "city": "Kamakura",
+      "area": "Hase",
+      "category": "temple",
+      "short": "Świątynia na zboczu z wielką drewnianą Kannon i widokiem na morze.",
+      "description": "Świątynia słynąca z jednej z największych drewnianych rzeźb w Japonii: ponad 9-metrowej, złoconej figury jedenastogłowej bogini miłosierdzia Kannon. Teren wznosi się tarasami nad zatoką Sagami, z których widać morze i plażę Yuigahama. Są tu setki małych figurek Jizō, ogrody i jaskinia Benten z rzeźbami w skale. Rano, zaraz po otwarciu, jest tu najspokojniej.",
+      "photo": {
+        "src": "img/hase-dera.jpg",
+        "alt": "Hase-dera",
+        "credit": "三人日 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:HasederaKannondo20120716.jpg"
+      },
+      "links": {
+        "official": "https://www.hasedera.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Hase-dera, Kamakura, Japan",
+      "coords": {
+        "lat": 35.3125,
+        "lng": 139.533
+      }
+    },
+    "daibutsu": {
+      "id": "daibutsu",
+      "name": "Wielki Budda (Kōtoku-in)",
+      "nameJa": "高徳院 鎌倉大仏",
+      "city": "Kamakura",
+      "area": "Hase",
+      "category": "temple",
+      "short": "Ponad 11-metrowy brązowy Budda pod gołym niebem.",
+      "description": "Wielki Budda z Kamakury to posąg Buddy Amidy odlany z brązu w XIII wieku, wysoki na ponad 11 metrów. Pierwotnie stał w drewnianej hali, ale tę zniszczyły burze i tsunami w 1498 roku i od tamtej pory siedzi na zewnątrz. Za niewielką opłatą można wejść do środka posągu i zobaczyć, jak go odlewano. To jedna z najbardziej rozpoznawalnych ikon Japonii, a stoi tylko kilka minut spacerem od Hase-dery.",
+      "photo": {
+        "src": "img/daibutsu.jpg",
+        "alt": "Wielki Budda (Kōtoku-in)",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:230128_Kamakura_Daibutsu_Japan04s3.jpg"
+      },
+      "links": {
+        "official": "https://www.kotoku-in.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Wielki Budda (Kōtoku-in), Kamakura, Japan",
+      "coords": {
+        "lat": 35.3167,
+        "lng": 139.5358
+      }
+    },
+    "komachi": {
+      "id": "komachi",
+      "name": "Komachi-dōri",
+      "nameJa": "小町通り",
+      "city": "Kamakura",
+      "area": null,
+      "category": "street",
+      "short": "Gwarna uliczka z przekąskami między stacją a głównym chramem.",
+      "description": "Ulica handlowa biegnąca od stacji Kamakura w stronę Tsurugaoka Hachiman-gū. Pełno tu małych sklepów i budek z jedzeniem: lody z matchą, krokiety, ciastka w kształcie gołębi Hato Sabure, smażone owoce morza. Dobre miejsce na lunch na stojąco lub w jednej z małych restauracji, ale w weekendy bywa bardzo tłoczno.",
+      "photo": {
+        "src": "img/komachi.jpg",
+        "alt": "Komachi-dōri",
+        "credit": "ARandomName123 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kamakura_Komachi_street_2024.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Komachi-dōri, Kamakura, Japan",
+      "coords": {
+        "lat": 35.3215,
+        "lng": 139.5525
+      }
+    },
+    "tsurugaoka": {
+      "id": "tsurugaoka",
+      "name": "Tsurugaoka Hachiman-gū",
+      "nameJa": "鶴岡八幡宮",
+      "city": "Kamakura",
+      "area": null,
+      "category": "shrine",
+      "short": "Główny chram Kamakury, serce dawnej stolicy samurajów.",
+      "description": "Chram założony w XI wieku i przeniesiony w obecne miejsce w 1180 roku przez Minamoto no Yoritomo, twórcę pierwszego szogunatu. Kamakura była wtedy faktyczną stolicą kraju, a cały plan miasta wyznaczono wokół tego chramu. Do głównej hali na wzgórzu prowadzą szerokie schody, a przy wejściu są stawy z lotosami. Atmosfera jest uroczysta, często można zobaczyć tradycyjne śluby.",
+      "photo": {
+        "src": "img/tsurugaoka.jpg",
+        "alt": "Tsurugaoka Hachiman-gū",
+        "credit": "Fg2 / Wikimedia Commons",
+        "license": "domena publiczna",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:TsurugaokaHachiman-M8867.jpg"
+      },
+      "links": {
+        "official": "https://www.hachimangu.or.jp/",
+        "maps": null
+      },
+      "mapsQuery": "Tsurugaoka Hachiman-gū, Kamakura, Japan",
+      "coords": {
+        "lat": 35.3259,
+        "lng": 139.5564
+      }
+    },
+    "enoshima": {
+      "id": "enoshima",
+      "name": "Enoshima",
+      "nameJa": "江の島",
+      "city": "Fujisawa",
+      "area": null,
+      "category": "nature",
+      "short": "Mała wyspa połączona mostem z lądem: chramy, jaskinie i widok na Fuji.",
+      "description": "Zielona wysepka przy brzegu, na którą przechodzi się długim mostem. Wąska uliczka pod górę prowadzi do chramów Enoshima-jinja, latarni-wieży widokowej Sea Candle i jaskiń Iwaya wyżłobionych przez morze. Przy dobrej widoczności zza wody widać Fuji, a zachody słońca są tu wyjątkowe. Lokalny przysmak to shirasu, drobne rybki podawane na ryżu. Sporo tu schodów, więc to opcja tylko przy zapasie energii.",
+      "photo": {
+        "src": "img/enoshima.jpg",
+        "alt": "Enoshima",
+        "credit": "Dandy1022 / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enoshima_Island.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Enoshima, Fujisawa, Japan",
+      "coords": {
+        "lat": 35.2995,
+        "lng": 139.4802
+      }
+    },
+    "shijo-kawaramachi": {
+      "id": "shijo-kawaramachi",
+      "name": "Shijō / Kawaramachi",
+      "nameJa": "四条河原町",
+      "city": "Kioto",
+      "area": "Centrum",
+      "category": "district",
+      "short": "Główne skrzyżowanie Kioto, tuż przy hotelu: domy towarowe i zadaszone pasaże.",
+      "description": "Shijō-Kawaramachi to handlowe centrum Kioto, kilka minut od hotelu. Są tu domy towarowe Takashimaya i Daimaru, a od skrzyżowania odchodzą zadaszone pasaże Teramachi i Shinkyōgoku z dziesiątkami sklepów, restauracji i małych świątyń wciśniętych między sklepy. Na wschód ulica Shijō prowadzi przez rzekę Kamo prosto do Gion. Dobre miejsce na pierwszy, niespieszny spacer po przyjeździe.",
+      "photo": {
+        "src": "img/shijo-kawaramachi.jpg",
+        "alt": "Shijō / Kawaramachi",
+        "credit": "inunami / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shijo_Kawaramachi_2020-04-05.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Shijō / Kawaramachi, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0037,
+        "lng": 135.769
+      }
+    },
+    "pontocho": {
+      "id": "pontocho",
+      "name": "Ponto-chō",
+      "nameJa": "先斗町",
+      "city": "Kioto",
+      "area": "Centrum",
+      "category": "street",
+      "short": "Wąska uliczka z lampionami i restauracjami nad rzeką Kamo.",
+      "description": "Ponto-chō to jedna z najbardziej klimatycznych uliczek Kioto: tak wąska, że ledwo mijają się dwie osoby, z drewnianymi fasadami i lampionami. Jedna strona restauracji wychodzi na rzekę Kamo. To też jedna z dzielnic gejsz, więc wieczorem można spotkać maiko idące na spotkanie (nie zaczepiajmy ich i nie róbmy zdjęć z bliska). Ceny są różne, od małych barów yakitori po drogie restauracje kaiseki.",
+      "photo": {
+        "src": "img/pontocho.jpg",
+        "alt": "Ponto-chō",
+        "credit": "Wolfiewolf / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pontocho_by_Wolfiewolf_in_Nabeyacho,_Kyoto.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Ponto-chō, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0048,
+        "lng": 135.7709
+      }
+    },
+    "bamboo-grove": {
+      "id": "bamboo-grove",
+      "name": "Arashiyama Bamboo Grove",
+      "nameJa": "嵐山竹林の小径",
+      "city": "Kioto",
+      "area": "Arashiyama",
+      "category": "nature",
+      "short": "Ścieżka przez gęsty las bambusów, magiczna wcześnie rano.",
+      "description": "Kilkusetmetrowa ścieżka między wysokimi na kilkanaście metrów pędami bambusa, które szumią i skrzypią na wietrze. To jeden z najbardziej fotografowanych widoków Japonii, przez co w ciągu dnia bywa tu bardzo tłoczno. Dlatego przychodzimy przed 8:30, gdy światło przebija się przez bambusy, a ludzi jest niewielu. Ścieżka zaczyna się tuż przy północnej bramie Tenryū-ji.",
+      "photo": {
+        "src": "img/bamboo-grove.jpg",
+        "alt": "Arashiyama Bamboo Grove",
+        "credit": "Basile Morin / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamboo_Grove,_Arashiyama,_Kyoto,_Japan.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Arashiyama Bamboo Grove, Kyoto, Japan",
+      "coords": {
+        "lat": 35.017,
+        "lng": 135.6713
+      }
+    },
+    "tenryu-ji": {
+      "id": "tenryu-ji",
+      "name": "Tenryū-ji",
+      "nameJa": "天龍寺",
+      "city": "Kioto",
+      "area": "Arashiyama",
+      "category": "temple",
+      "short": "Świątynia zen z XIV wieku z jednym z najpiękniejszych ogrodów Kioto.",
+      "description": "Najważniejsza świątynia zen w Arashiyamie, założona w 1339 roku przez szoguna Ashikagę Takaujiego i wpisana na listę UNESCO. Jej ogród ze stawem Sōgen-chi zaprojektował mistrz zen Musō Soseki i wygląda niemal tak samo jak 700 lat temu: kamienie, staw i wzgórza Arashiyamy włączone w kompozycję jako tło. W listopadzie klony wokół stawu przebarwiają się, co jest jednym z najlepszych momentów roku.",
+      "photo": {
+        "src": "img/tenryu-ji.jpg",
+        "alt": "Tenryū-ji",
+        "credit": "osakaosaka / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenryuji_Kyoto.jpg"
+      },
+      "links": {
+        "official": "https://www.tenryuji.com/en/visit/index.html",
+        "maps": null
+      },
+      "mapsQuery": "Tenryū-ji, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0157,
+        "lng": 135.6738
+      }
+    },
+    "arashiyama-river": {
+      "id": "arashiyama-river",
+      "name": "Rzeka w Arashiyamie (Katsura)",
+      "nameJa": "桂川",
+      "city": "Kioto",
+      "area": "Arashiyama",
+      "category": "nature",
+      "short": "Rzeka u stóp zalesionych gór, łodzie i jesienne kolory.",
+      "description": "Przez Arashiyamę płynie rzeka nazywana tu Ōi lub Katsura. Na tle gór, które pod koniec listopada mienią się czerwienią i złotem, spacer bulwarem jest jednym z najprzyjemniejszych w Kioto. Można wypożyczyć łódkę wiosłową albo zobaczyć tradycyjne łodzie płynące z górnego biegu rzeki. Wzdłuż brzegu są ławki, herbaciarnie i budki z przekąskami.",
+      "photo": {
+        "src": "img/arashiyama-river.jpg",
+        "alt": "Rzeka w Arashiyamie (Katsura)",
+        "credit": "KimonBerlin / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arashiyama_hills_and_Hozu_river_from_Togetsu_bridge_(3261758437).jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Rzeka w Arashiyamie (Katsura), Kyoto, Japan",
+      "coords": {
+        "lat": 35.012,
+        "lng": 135.678
+      }
+    },
+    "togetsukyo": {
+      "id": "togetsukyo",
+      "name": "Most Togetsukyō",
+      "nameJa": "渡月橋",
+      "city": "Kioto",
+      "area": "Arashiyama",
+      "category": "landmark",
+      "short": "„Most przekraczający księżyc”, symbol Arashiyamy.",
+      "description": "Długi drewniany most przez rzekę, z zalesioną górą Arashiyama w tle. Nazwa „most, przez który przechodzi księżyc” pochodzi podobno od cesarza, który patrzył stąd, jak księżyc przesuwa się nad mostem. Ten widok to klasyczny obrazek Kioto, szczególnie ładny w sezonie jesiennych liści, który w Arashiyamie przypada zwykle na drugą połowę listopada.",
+      "photo": {
+        "src": "img/togetsukyo.jpg",
+        "alt": "Most Togetsukyō",
+        "credit": "ChubbyWimbus (Wikivoyage) / Wikimedia Commons",
+        "license": "domena publiczna",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Most Togetsukyō, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0129,
+        "lng": 135.6776
+      }
+    },
+    "nara-park": {
+      "id": "nara-park",
+      "name": "Nara Park",
+      "nameJa": "奈良公園",
+      "city": "Nara",
+      "area": null,
+      "category": "park",
+      "short": "Park z ponad tysiącem wolno chodzących, kłaniających się jeleni.",
+      "description": "Rozległy park w centrum Nary, pierwszej stałej stolicy Japonii. Mieszka tu ponad tysiąc jeleni sika, uznawanych za posłańców bogów i chronionych jako skarb narodowy. Można kupić dla nich specjalne krakersy shika senbei; wiele jeleni nauczyło się kłaniać, żeby je dostać. Uwaga: potrafią być natarczywe, lepiej nie trzymać jedzenia ani map na widoku. Wokół parku leżą najważniejsze świątynie miasta.",
+      "photo": {
+        "src": "img/nara-park.jpg",
+        "alt": "Nara Park",
+        "credit": "Feri88 / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nara_Park_-_panoramio_(2).jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Nara Park, Nara, Japan",
+      "coords": {
+        "lat": 34.6851,
+        "lng": 135.843
+      }
+    },
+    "todai-ji": {
+      "id": "todai-ji",
+      "name": "Tōdai-ji",
+      "nameJa": "東大寺",
+      "city": "Nara",
+      "area": null,
+      "category": "temple",
+      "short": "Gigantyczna drewniana hala z 15-metrowym Buddą z brązu.",
+      "description": "Świątynia ukończona w 752 roku, gdy Nara była stolicą. Jej Wielka Hala Buddy (Daibutsu-den) była przez wieki największym drewnianym budynkiem świata, choć obecna, z 1709 roku, jest o jedną trzecią mniejsza od oryginału. W środku siedzi brązowy Budda Wairoczana wysoki na ok. 15 metrów. Przed halą stoi brama Nandaimon z dwiema ogromnymi rzeźbami strażników. Za Buddą jest filar z otworem: według wierzeń kto się przez niego przeciśnie, zyska oświecenie w następnym życiu.",
+      "photo": {
+        "src": "img/todai-ji.jpg",
+        "alt": "Tōdai-ji",
+        "credit": "Wiiii / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Kon-d%C5%8D.jpg"
+      },
+      "links": {
+        "official": "https://www.todaiji.or.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Tōdai-ji, Nara, Japan",
+      "coords": {
+        "lat": 34.689,
+        "lng": 135.8398
+      }
+    },
+    "kasuga": {
+      "id": "kasuga",
+      "name": "Kasuga Taisha",
+      "nameJa": "春日大社",
+      "city": "Nara",
+      "area": null,
+      "category": "shrine",
+      "short": "Czerwony chram w lesie, oświetlony tysiącami lampionów.",
+      "description": "Chram założony w 768 roku przez potężny ród Fujiwara. Prowadzi do niego leśna aleja z setkami kamiennych lampionów, a w samym chramie wiszą setki brązowych lampionów podarowanych przez wiernych przez stulecia, w sumie ok. 3000. Jaskrawa czerwień budynków mocno kontrastuje z zielenią lasu. To naturalne zakończenie popołudniowego spaceru po parku, z jeleniami towarzyszącymi po drodze.",
+      "photo": {
+        "src": "img/kasuga.jpg",
+        "alt": "Kasuga Taisha",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kasuga-taisha11bs3200.jpg"
+      },
+      "links": {
+        "official": "https://www.kasugataisha.or.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Kasuga Taisha, Nara, Japan",
+      "coords": {
+        "lat": 34.6812,
+        "lng": 135.8484
+      }
+    },
+    "fushimi-inari": {
+      "id": "fushimi-inari",
+      "name": "Fushimi Inari Taisha",
+      "nameJa": "伏見稲荷大社",
+      "city": "Kioto",
+      "area": "Fushimi",
+      "category": "shrine",
+      "short": "Tysiące pomarańczowych bram torii tworzących tunele na górze.",
+      "description": "Główny chram bóstwa Inari, opiekuna ryżu, dobrobytu i interesów, najważniejszy spośród ok. 30 tysięcy chramów Inari w całej Japonii. Jego symbolem są tysiące pomarańczowych bram torii, ufundowanych przez firmy i ludzi w podzięce lub z prośbą o pomyślność, ustawionych w ciasne tunele wspinające się na górę Inari. Wszędzie stoją kamienne lisy, posłańcy bóstwa. Pełna pętla na szczyt to 2–3 godziny, ale najpiękniejsze odcinki są w pierwszej godzinie. Przychodzimy o 8:00, przed tłumami.",
+      "photo": {
+        "src": "img/fushimi-inari.jpg",
+        "alt": "Fushimi Inari Taisha",
+        "credit": "Basile Morin / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
+      },
+      "links": {
+        "official": "https://inari.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Fushimi Inari Taisha, Kyoto, Japan",
+      "coords": {
+        "lat": 34.9671,
+        "lng": 135.7727
+      }
+    },
+    "kiyomizu": {
+      "id": "kiyomizu",
+      "name": "Kiyomizu-dera",
+      "nameJa": "清水寺",
+      "city": "Kioto",
+      "area": "Higashiyama",
+      "category": "temple",
+      "short": "Świątynia z drewnianym tarasem nad doliną, zbudowanym bez gwoździ.",
+      "description": "Założona w 778 roku świątynia na zboczu wzgórz Higashiyama, wpisana na listę UNESCO. Słynie z ogromnego drewnianego tarasu głównej hali, wysuniętego 13 metrów nad doliną i opartego na setkach belek łączonych bez jednego gwoździa. Z tarasu widać całe Kioto, a w listopadzie dolina poniżej płonie kolorami klonów. Pod halą jest wodospad Otowa z trzema strumieniami: każdy przynosi inne szczęście, ale wypada wybrać tylko jeden.",
+      "photo": {
+        "src": "img/kiyomizu.jpg",
+        "alt": "Kiyomizu-dera",
+        "credit": "Jordy Meow / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg"
+      },
+      "links": {
+        "official": "https://www.kiyomizudera.or.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Kiyomizu-dera, Kyoto, Japan",
+      "coords": {
+        "lat": 34.9949,
+        "lng": 135.785
+      }
+    },
+    "sannenzaka": {
+      "id": "sannenzaka",
+      "name": "Sannenzaka i Ninenzaka",
+      "nameJa": "産寧坂・二年坂",
+      "city": "Kioto",
+      "area": "Higashiyama",
+      "category": "street",
+      "short": "Zabytkowe, kamienne uliczki ze sklepikami i herbaciarniami.",
+      "description": "Dwie kamienne, schodkowe uliczki prowadzące w dół od Kiyomizu-dery, z drewnianymi domami z epoki Edo. Mieszczą się w nich herbaciarnie, sklepy z ceramiką, słodyczami i pamiątkami, a nawet Starbucks w tradycyjnym domu z matami tatami. Według legendy kto potknie się na Sannenzace, będzie miał pecha przez trzy lata. To naturalna trasa z Kiyomizu w stronę Yasaki i Gion i dobre miejsce na lunch.",
+      "photo": {
+        "src": "img/sannenzaka.jpg",
+        "alt": "Sannenzaka i Ninenzaka",
+        "credit": "Andrea Schaffer / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sannenzaka_street,_Kyoto_(3811257874).jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Sannenzaka i Ninenzaka, Kyoto, Japan",
+      "coords": {
+        "lat": 34.9965,
+        "lng": 135.781
+      }
+    },
+    "yasaka": {
+      "id": "yasaka",
+      "name": "Yasaka-jinja",
+      "nameJa": "八坂神社",
+      "city": "Kioto",
+      "area": "Gion",
+      "category": "shrine",
+      "short": "Chram dzielnicy Gion z pomarańczową bramą i salą lampionów.",
+      "description": "Ponad 1300-letni chram, opiekun Gion, organizator słynnego festiwalu Gion Matsuri. Jego pomarańczowa brama zamyka ulicę Shijō i jest jednym z najbardziej rozpoznawalnych widoków Kioto. W środku jest scena tańca z setkami lampionów, które wieczorem świecą. Za chramem zaczyna się park Maruyama, a do Kōdai-ji i Gion są stąd tylko kroki.",
+      "photo": {
+        "src": "img/yasaka.jpg",
+        "alt": "Yasaka-jinja",
+        "credit": "Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yasaka_jinja.jpg"
+      },
+      "links": {
+        "official": "https://www.yasaka-jinja.or.jp/en/",
+        "maps": null
+      },
+      "mapsQuery": "Yasaka-jinja, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0036,
+        "lng": 135.7785
+      }
+    },
+    "gion": {
+      "id": "gion",
+      "name": "Gion",
+      "nameJa": "祇園",
+      "city": "Kioto",
+      "area": "Gion",
+      "category": "district",
+      "short": "Najsłynniejsza dzielnica gejsz: drewniane herbaciarnie i wieczorne lampiony.",
+      "description": "Gion to historyczna dzielnica rozrywki, w której do dziś pracują gejsze (w Kioto zwane geiko) i ich uczennice maiko. Główna ulica Hanami-kōji ma drewniane herbaciarnie ochaya z kratami w oknach. Wieczorem, gdy zapalają się lampiony, można zobaczyć maiko spieszącą na spotkanie. Ważne: część prywatnych uliczek ma zakaz fotografowania i grozi za to kara, a gejsz nie wolno zaczepiać ani zatrzymywać do zdjęć.",
+      "photo": {
+        "src": "img/gion.jpg",
+        "alt": "Gion",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Gion, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0037,
+        "lng": 135.7752
+      }
+    },
+    "shirakawa": {
+      "id": "shirakawa",
+      "name": "Shirakawa",
+      "nameJa": "白川",
+      "city": "Kioto",
+      "area": "Gion",
+      "category": "street",
+      "short": "Kanał z wierzbami i kamiennym mostkiem, najładniejszy zakątek Gion.",
+      "description": "Wąski kanał w północnej części Gion, obrośnięty wierzbami, z drewnianymi restauracjami po jednej stronie i kamienną ulicą po drugiej. Mostek Tatsumi-bashi i mały chram obok to jedno z najbardziej fotogenicznych miejsc w Kioto, szczególnie o zmierzchu, gdy zapalają się światła w oknach. Spokojniejszy niż Hanami-kōji, idealny na krótki spacer.",
+      "photo": {
+        "src": "img/shirakawa.jpg",
+        "alt": "Shirakawa",
+        "credit": "MichaelMaggs / Wikimedia Commons",
+        "license": "CC BY-SA 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shirakara_Canal,_Gion,_Kyoto.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Shirakawa, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0058,
+        "lng": 135.7745
+      }
+    },
+    "kodai-ji": {
+      "id": "kodai-ji",
+      "name": "Kōdai-ji (iluminacja)",
+      "nameJa": "高台寺",
+      "city": "Kioto",
+      "area": "Higashiyama",
+      "category": "temple",
+      "short": "Świątynia zen z jesienną iluminacją ogrodów i bambusowego lasu.",
+      "description": "Świątynię założyła w 1606 roku Nene, wdowa po Toyotomim Hideyoshim, jednoczycielu Japonii, ku jego pamięci. Jesienią po zmroku ogrody są podświetlone: klony odbijają się w stawie jak w lustrze, a na żwirowym ogrodzie zen wyświetlane są projekcje świetlne. Jest też mały bambusowy las, przez który przechodzi się w półmroku. Bilety na iluminację kupuje się na miejscu.",
+      "photo": {
+        "src": "img/kodai-ji.jpg",
+        "alt": "Kōdai-ji (iluminacja)",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:170923_Kodaiji_Kyoto_Japan09n.jpg"
+      },
+      "links": {
+        "official": "https://www.kodaiji.com/saiji.html",
+        "maps": null
+      },
+      "mapsQuery": "Kōdai-ji (iluminacja), Kyoto, Japan",
+      "coords": {
+        "lat": 35.0008,
+        "lng": 135.781
+      }
+    },
+    "kaiyukan": {
+      "id": "kaiyukan",
+      "name": "Kaiyukan",
+      "nameJa": "海遊館",
+      "city": "Osaka",
+      "area": "Tempozan",
+      "category": "aquarium",
+      "short": "Jedno z największych akwariów świata, z rekinem wielorybim.",
+      "description": "Akwarium w porcie Osaki zbudowane wokół idei Pacyficznego Pierścienia Ognia. Zwiedza się je spiralą z góry na dół, wokół ogromnego centralnego zbiornika o głębokości 9 metrów, w którym pływa rekin wielorybi, największa ryba świata, wraz z płaszczkami. Po drodze są wydry, pingwiny, foki i delfiny z różnych regionów Pacyfiku. W sobotę jest tłoczno, dlatego bilet na konkretną godzinę (ok. 10:30) jest ważny.",
+      "photo": {
+        "src": "img/kaiyukan.jpg",
+        "alt": "Kaiyukan",
+        "credit": "Sakai Yayoi / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaiy%C5%ABkan.jpg"
+      },
+      "links": {
+        "official": "https://www.kaiyukan.com/about/news/20582.html",
+        "maps": null
+      },
+      "mapsQuery": "Kaiyukan, Osaka, Japan",
+      "coords": {
+        "lat": 34.6545,
+        "lng": 135.429
+      }
+    },
+    "dotonbori": {
+      "id": "dotonbori",
+      "name": "Dōtonbori",
+      "nameJa": "道頓堀",
+      "city": "Osaka",
+      "area": "Namba",
+      "category": "district",
+      "short": "Neonowy kanał Osaki i stolica ulicznego jedzenia.",
+      "description": "Dōtonbori to serce rozrywkowej Osaki: kanał oblepiony neonami, z ogromnym biegaczem Glico, mechanicznym krabem nad restauracją Kani Dōraku i setkami szyldów. Osaka słynie z hasła kuidaore, czyli „jeść do upadłego”, i tu się to robi: takoyaki (kulki z ośmiornicą), okonomiyaki, kushikatsu (smażone szaszłyki) i ramen. Najbardziej efektowne jest po zmroku, ale jedzenie jest świetne o każdej porze.",
+      "photo": {
+        "src": "img/dotonbori.jpg",
+        "alt": "Dōtonbori",
+        "credit": "Type specimen / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Dōtonbori, Osaka, Japan",
+      "coords": {
+        "lat": 34.6687,
+        "lng": 135.5013
+      }
+    },
+    "shinsaibashi": {
+      "id": "shinsaibashi",
+      "name": "Shinsaibashi",
+      "nameJa": "心斎橋",
+      "city": "Osaka",
+      "area": "Namba",
+      "category": "street",
+      "short": "Długi, zadaszony pasaż handlowy tuż obok Dōtonbori.",
+      "description": "Shinsaibashi-suji to ok. 600-metrowa zadaszona ulica handlowa, która zaczyna się przy moście nad kanałem Dōtonbori. Są tu sieciówki z modą, drogerie, sklepy z kosmetykami i pamiątkami oraz domy towarowe Daimaru. Dobre miejsce na zakupy, gdy pogoda nie dopisuje, i na dodatkowe jedzenie po drodze.",
+      "photo": {
+        "src": "img/shinsaibashi.jpg",
+        "alt": "Shinsaibashi",
+        "credit": "Oilstreet / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinsaibashi_Osaka_Japan01-r.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Shinsaibashi, Osaka, Japan",
+      "coords": {
+        "lat": 34.6745,
+        "lng": 135.5012
+      }
+    },
+    "kinkaku-ji": {
+      "id": "kinkaku-ji",
+      "name": "Kinkaku-ji",
+      "nameJa": "金閣寺",
+      "city": "Kioto",
+      "area": "Kita",
+      "category": "temple",
+      "short": "Złoty Pawilon odbijający się w stawie, ikona Kioto.",
+      "description": "Pawilon pokryty płatkami złota, stojący nad stawem z wysepkami i sosnami. Zbudowano go pod koniec XIV wieku jako willę szoguna Ashikagi Yoshimitsu, a po jego śmierci zamieniono w świątynię zen. Oryginał spłonął w 1950 roku, podpalony przez młodego mnicha, a obecny budynek to wierna rekonstrukcja z 1955 roku. Do środka się nie wchodzi; pawilon ogląda się z brzegu stawu, a ścieżka prowadzi dalej przez ogród. Wchodzimy zaraz po otwarciu, bo potem robi się bardzo tłoczno.",
+      "photo": {
+        "src": "img/kinkaku-ji.jpg",
+        "alt": "Kinkaku-ji",
+        "credit": "Nacaru / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg"
+      },
+      "links": {
+        "official": "https://www.shokoku-ji.jp/en/kinkakuji/",
+        "maps": null
+      },
+      "mapsQuery": "Kinkaku-ji, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0394,
+        "lng": 135.7292
+      }
+    },
+    "nijo-jo": {
+      "id": "nijo-jo",
+      "name": "Zamek Nijō",
+      "nameJa": "二条城",
+      "city": "Kioto",
+      "area": "Centrum",
+      "category": "castle",
+      "short": "Zamek szogunów z „podłogami słowika”, które śpiewają pod stopami.",
+      "description": "Rezydencja szogunów Tokugawa w Kioto, zbudowana od 1603 roku, wpisana na listę UNESCO. Najciekawszy jest pałac Ninomaru: przechodzi się przez sale z malowanymi złotem parawanami, a drewniane podłogi skrzypią przy każdym kroku jak ćwierkanie ptaków. Był to podobno system alarmowy przeciw skrytobójcom. To tu w 1867 roku ostatni szogun oddał władzę cesarzowi. Wokół pałacu są ogrody i mury z fosą.",
+      "photo": {
+        "src": "img/nijo-jo.jpg",
+        "alt": "Zamek Nijō",
+        "credit": "Wikimedia Commons",
+        "license": "domena publiczna",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:NinomaruPalace.jpg"
+      },
+      "links": {
+        "official": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en",
+        "maps": null
+      },
+      "mapsQuery": "Zamek Nijō, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0142,
+        "lng": 135.7481
+      }
+    },
+    "nishiki": {
+      "id": "nishiki",
+      "name": "Nishiki Market",
+      "nameJa": "錦市場",
+      "city": "Kioto",
+      "area": "Centrum",
+      "category": "market",
+      "short": "„Kuchnia Kioto”: wąski pasaż z ponad setką stoisk z jedzeniem.",
+      "description": "Zadaszona uliczka długa na ok. 400 metrów, na której od stuleci handluje się jedzeniem. Ponad sto stoisk sprzedaje kiszonki tsukemono, słodycze z matchą, nadziane ośmiorniczki tako-tamago, smażone ciastka z tofu, sake i noże kuchenne. Wiele stoisk pozwala spróbować przed zakupem. Na prośbę kupców nie je się w trakcie chodzenia, tylko przy stoisku, gdzie się kupiło.",
+      "photo": {
+        "src": "img/nishiki.jpg",
+        "alt": "Nishiki Market",
+        "credit": "matsuyuki / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg"
+      },
+      "links": {
+        "official": "https://www.kyoto-nishiki.or.jp/",
+        "maps": null
+      },
+      "mapsQuery": "Nishiki Market, Kyoto, Japan",
+      "coords": {
+        "lat": 35.005,
+        "lng": 135.7649
+      }
+    },
+    "imperial-palace-kyoto": {
+      "id": "imperial-palace-kyoto",
+      "name": "Pałac Cesarski w Kioto",
+      "nameJa": "京都御所",
+      "city": "Kioto",
+      "area": "Centrum",
+      "category": "landmark",
+      "short": "Dawna rezydencja cesarzy w wielkim parku w centrum Kioto.",
+      "description": "Do 1869 roku, gdy stolicę przeniesiono do Tokio, tu mieszkali cesarze Japonii. Obecne budynki pochodzą z 1855 roku. Zwiedzanie terenu pałacu jest bezpłatne: ogląda się z zewnątrz salę ceremonialną Shishinden, bramy i ogrody. Pałac otacza rozległy park Kyoto Gyoen z alejami i starymi drzewami, idealny na spokojny dzień. Pałac jest zwykle zamknięty w poniedziałki, ale przy świętach zasady bywają inne, więc 23.11 trzeba sprawdzić godziny przed wyjściem.",
+      "photo": {
+        "src": "img/imperial-palace-kyoto.jpg",
+        "alt": "Pałac Cesarski w Kioto",
+        "credit": "Saigen Jiro / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Shishinden_zenkei-5.jpg"
+      },
+      "links": {
+        "official": "https://sankan.kunaicho.go.jp/english/guide/kyoto.html",
+        "maps": null
+      },
+      "mapsQuery": "Pałac Cesarski w Kioto, Kyoto, Japan",
+      "coords": {
+        "lat": 35.0254,
+        "lng": 135.7621
+      }
+    },
+    "shinjuku": {
+      "id": "shinjuku",
+      "name": "Shinjuku",
+      "nameJa": "新宿",
+      "city": "Tokio",
+      "area": "Shinjuku",
+      "category": "district",
+      "short": "Neonowe Tokio: wieżowce, uliczki z barami i najbardziej ruchliwa stacja świata.",
+      "description": "Shinjuku ma dwie twarze. Po zachodniej stronie stacji stoją wieżowce dzielnicy biznesowej, po wschodniej są neony, domy towarowe i rozrywkowe Kabukichō z wielką głową Godzilli na dachu hotelu. Najbardziej klimatyczne są małe uliczki: Omoide Yokochō z dymiącymi barami yakitori i Golden Gai z ponad 200 maleńkimi barami na kilka osób. Przez stację Shinjuku przechodzą codziennie miliony ludzi, co czyni ją najbardziej ruchliwą na świecie.",
+      "photo": {
+        "src": "img/shinjuku.jpg",
+        "alt": "Shinjuku",
+        "credit": "Morio / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Shinjuku, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6938,
+        "lng": 139.7034
+      }
+    },
+    "tocho": {
+      "id": "tocho",
+      "name": "Tokyo Metropolitan Government Building",
+      "nameJa": "東京都庁",
+      "city": "Tokio",
+      "area": "Shinjuku",
+      "category": "viewpoint",
+      "short": "Darmowy taras widokowy na 45. piętrze ratusza Tokio.",
+      "description": "Siedziba władz Tokio zaprojektowana przez Kenzō Tange ma dwie wieże, a w każdej taras widokowy na wysokości ok. 200 metrów, z darmowym wstępem. Widać stąd całe miasto, a przy dobrej pogodzie nawet Fuji. Po zmroku na fasadzie budynku wyświetlany jest pokaz świetlny (projection mapping). Dobra, darmowa alternatywa dla płatnych wież.",
+      "photo": {
+        "src": "img/tocho.jpg",
+        "alt": "Tokyo Metropolitan Government Building",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Government_Building_2024.jpg"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Tokyo Metropolitan Government Building, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6896,
+        "lng": 139.6917
+      }
+    },
+    "akihabara": {
+      "id": "akihabara",
+      "name": "Akihabara",
+      "nameJa": "秋葉原",
+      "city": "Tokio",
+      "area": "Akihabara",
+      "category": "district",
+      "short": "Stolica elektroniki, anime, mangi i retro gier.",
+      "description": "Akihabara zaczynała jako targ części radiowych, a dziś jest centrum kultury otaku. Wielopiętrowe sklepy sprzedają mangę, figurki, karty kolekcjonerskie i elektronikę, a ogromny Yodobashi Camera ma wszystko, od aparatów po zabawki. Warto zajrzeć do sklepów z retro grami (np. Super Potato), salonów gier z automatami z pluszakami i do kawiarni z pokojówkami. W niedziele główna ulica bywa zamknięta dla samochodów.",
+      "photo": {
+        "src": "img/akihabara.jpg",
+        "alt": "Akihabara",
+        "credit": "Phineyes / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png"
+      },
+      "links": {
+        "official": null,
+        "maps": null
+      },
+      "mapsQuery": "Akihabara, Tokyo, Japan",
+      "coords": {
+        "lat": 35.6984,
+        "lng": 139.7731
+      }
+    },
+    "skytree": {
+      "id": "skytree",
+      "name": "Tokyo Skytree + Solamachi",
+      "nameJa": "東京スカイツリー",
+      "city": "Tokio",
+      "area": "Oshiage",
+      "category": "viewpoint",
+      "short": "Najwyższa wieża Japonii (634 m) z centrum handlowym Solamachi.",
+      "description": "Wieża telewizyjna otwarta w 2012 roku, z dwoma tarasami widokowymi na 350 i 450 metrach, czyli znacznie wyżej niż Shibuya Sky (ale za szybą). Przy dobrej pogodzie widać Fuji. Pod wieżą jest centrum Tokyo Solamachi z ponad 300 sklepami, restauracjami, akwarium i sklepem Pokémon. Po Shibuya Sky to opcja tylko przy ochocie na drugi duży widok.",
+      "photo": {
+        "src": "img/skytree.jpg",
+        "alt": "Tokyo Skytree + Solamachi",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg"
+      },
+      "links": {
+        "official": "https://official-ticket.tokyo-skytree.jp/en/faq",
+        "maps": null
+      },
+      "mapsQuery": "Tokyo Skytree + Solamachi, Tokyo, Japan",
+      "coords": {
+        "lat": 35.7101,
+        "lng": 139.8107
+      }
+    }
+  },
+  "bookings": [
+    {
+      "name": "Ueno Zoo",
+      "checked": "Bilety i wejście",
+      "conclusion": "Online opcjonalny; można kupić na miejscu.",
+      "when": "Brak pośpiechu",
+      "url": "https://www.tokyo-zoo.net/en/ueno/visitor-info/tickets/index.html",
+      "placeIds": [
+        "ueno-zoo"
+      ],
+      "dayIds": [
+        "2026-11-10"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Fuji Excursion / JR East",
+      "checked": "Rezerwacja pociągu do Kawaguchiko",
+      "conclusion": "Rezerwacja miejsca zalecana przy tej wycieczce; JR East umożliwia rezerwacje do 1 mies. naprzód.",
+      "when": "Dla 12.11: od ok. 12.10",
+      "url": "https://www.jreast.co.jp/en/multi/traininformation/azusa_kaiji/index.html",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-12"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "SHIBUYA SKY",
+      "checked": "Okno sprzedaży biletów",
+      "conclusion": "Bilety sprzedawane do 2 tygodni naprzód; późne popołudnie jest najbardziej pożądane.",
+      "when": "Dla 13.11: od 30.10",
+      "url": "https://www.shibuya-scramble-square.com/sky/ticket/",
+      "placeIds": [
+        "shibuya-sky"
+      ],
+      "dayIds": [
+        "2026-11-13"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Tobu Limited Express / SPACIA X",
+      "checked": "Transport do Nikkō",
+      "conclusion": "Limited Express ma rezerwowane miejsca; sprzedaż od 9:00 pierwszego dnia poprzedniego miesiąca.",
+      "when": "Dla 14.11: już dostępne od 01.10",
+      "url": "https://www.tobu.co.jp/en/express_info/purchase/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-14"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Nikkō Tōshō-gū",
+      "checked": "Bilet wstępu",
+      "conclusion": "Można kupić z wyprzedzeniem, ale nie jest to konieczne dla indywidualnego zwiedzania.",
+      "when": "Opcjonalnie",
+      "url": "https://toshogu.jp/",
+      "placeIds": [
+        "toshogu"
+      ],
+      "dayIds": [
+        "2026-11-14"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "teamLab Planets",
+      "checked": "Bilet czasowy",
+      "conclusion": "Kupno online; brak sprzedaży w kasie / automatach na miejscu.",
+      "when": "Dla 15.11: kup teraz",
+      "url": "https://teamlabplanets.dmm.com/en",
+      "placeIds": [
+        "teamlab"
+      ],
+      "dayIds": [
+        "2026-11-15"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "SmartEX Shinkansen",
+      "checked": "Tokio↔Kioto",
+      "conclusion": "Miejsca można rezerwować do 1 roku naprzód; dla rodziny warto mieć miejsca razem.",
+      "when": "Można rezerwować już teraz",
+      "url": "https://smart-ex.jp/en/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-17",
+        "2026-11-24"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "SmartEX oversized baggage",
+      "checked": "Bagaż 160–250 cm",
+      "conclusion": "Wymagane specjalne miejsce z przestrzenią na duży bagaż; te miejsca otwierają się 1 mies. przed.",
+      "when": "17.10 i 24.10 dla obu przejazdów",
+      "url": "https://smart-ex.jp/en/entraining/oversized-baggage/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-17",
+        "2026-11-24"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Tenryū-ji",
+      "checked": "Bilety",
+      "conclusion": "Bilety sprzedawane przy wejściach; brak potrzeby wcześniejszej rezerwacji.",
+      "when": "Na miejscu",
+      "url": "https://www.tenryuji.com/en/visit/index.html",
+      "placeIds": [
+        "tenryu-ji"
+      ],
+      "dayIds": [
+        "2026-11-18"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Kōdai-ji illumination",
+      "checked": "Jesienna iluminacja 2026",
+      "conclusion": "20.11 wydarzenie działa; brak potrzeby włączania go jako rezerwacji czasowej.",
+      "when": "Na miejscu / jeśli zostanie energia",
+      "url": "https://www.kodaiji.com/saiji.html",
+      "placeIds": [
+        "kodai-ji"
+      ],
+      "dayIds": [
+        "2026-11-20"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Kaiyukan",
+      "checked": "E-ticket z godziną wejścia",
+      "conclusion": "Oficjalnie rekomendowany zakup z wyprzedzeniem, szczególnie weekendy i święta; sloty co 15 min.",
+      "when": "Na 21.11 kupić możliwie wcześnie",
+      "url": "https://www.kaiyukan.com/about/news/20582.html",
+      "placeIds": [
+        "kaiyukan"
+      ],
+      "dayIds": [
+        "2026-11-21"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Nijō-jō",
+      "checked": "Bilety i Honmaru-goten",
+      "conclusion": "Zwykłe wejście i Ninomaru bez rezerwacji; Honmaru-goten wymaga wcześniejszej rezerwacji.",
+      "when": "Tylko jeśli chcecie Honmaru",
+      "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en",
+      "placeIds": [
+        "nijo-jo"
+      ],
+      "dayIds": [
+        "2026-11-22"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Tokyo Skytree",
+      "checked": "Bilety z godziną wejścia",
+      "conclusion": "Advance tickets zalecane; bilety na dany miesiąc trafiają do sprzedaży 2 miesiące wcześniej.",
+      "when": "Dla 25.11 już w sprzedaży",
+      "url": "https://official-ticket.tokyo-skytree.jp/en/faq",
+      "placeIds": [
+        "skytree"
+      ],
+      "dayIds": [
+        "2026-11-25"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Hotel w Tokio 24–26.11",
+      "checked": "Nocleg na ostatnie dwie noce",
+      "conclusion": "Jeszcze nie kupiony.",
+      "when": "Jak najszybciej",
+      "url": null,
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-24",
+        "2026-11-25"
+      ],
+      "status": "todo"
+    }
+  ]
+}
