@@ -7,7 +7,6 @@
     "timezone": "Asia/Tokyo",
     "homeTimezone": "Europe/Warsaw",
     "language": "pl",
-    "hardRule": "Zasada twarda: nie wychodzimy z hotelu wcześniej niż o 07:30. MUST → WANT → BONUS; gdy dzień się rozjeżdża, najpierw skreślamy BONUS.",
     "source": "Japonia_plan_8-27_listopada_2026_wersja finalna 04.10.2026.xlsx",
     "airport": {
       "code": "NRT",
@@ -296,6 +295,20 @@
       "source": {
         "orderText": "19:30 przylot → transfer → Ueno → hotel → jedzenie → sen"
       },
+      "todos": [
+        {
+          "id": "todo-sim",
+          "text": "Aktywować kartę SIM / eSIM",
+          "where": "Lotnisko Narita, po przylocie",
+          "note": "Zanim ruszymy do Ueno: od tej chwili potrzebne są mapy, rozkłady i tłumacz."
+        },
+        {
+          "id": "todo-cash",
+          "text": "Wymienić dolary na jeny",
+          "where": "Lotnisko Narita, hala przylotów",
+          "note": "Gotówka przyda się od pierwszego wieczoru: w izakayach, małych knajpkach i przy doładowaniu karty Suica/PASMO."
+        }
+      ],
       "items": [
         {
           "id": "d02-01",
@@ -397,6 +410,14 @@
       "source": {
         "orderText": "09:30 wyjście → 10:00–11:30 Ueno Park → 12:00 lunch → 13:00–15:30 Ueno Zoo → 16:00+ spacer/powrót"
       },
+      "todos": [
+        {
+          "id": "todo-bags-kyoto",
+          "text": "Zarezerwować w recepcji przewóz bagażu do hotelu w Kioto",
+          "where": "Recepcja Mitsui Garden Hotel Ueno",
+          "note": "Walizki jadą osobno do MIMARU SUITES Kyoto Shijo, a my 17.11 jedziemy Shinkansenem z lekkim bagażem. Zapytać, kiedy najpóźniej je nadać, żeby czekały w Kioto 17.11."
+        }
+      ],
       "items": [
         {
           "id": "d03-01",
@@ -1352,6 +1373,14 @@
       "source": {
         "orderText": "07:30 wyjście → ~08:15–09:00 Bamboo Grove → 09:00–10:30 Tenryū-ji → 10:30–11:30 spacer nad rzeką → 11:30–12:00 Togetsukyō → 12:00–13:30 lunch → 13:30+ kawa / spacer / powrót"
       },
+      "todos": [
+        {
+          "id": "todo-bags-tokyo",
+          "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do hotelu w Tokio",
+          "where": "Recepcja MIMARU SUITES Kyoto Shijo",
+          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Ten hotel nie jest jeszcze zarezerwowany, a do wysyłki potrzebny będzie jego adres."
+        }
+      ],
       "items": [
         {
           "id": "d11-01",
@@ -4060,5 +4089,434 @@
       ],
       "status": "todo"
     }
-  ]
+  ],
+  "food": {
+    "title": "Jedzenie",
+    "titleJa": "食べ物",
+    "intro": "Ściągawka na stół: co warto zjeść, jak działa izakaya, co zamówić do picia i jakie słodycze przywieźć. Japonia to dużo więcej niż sushi, więc próbujmy wszystkiego po trochu.",
+    "source": "Na podstawie rozdziałów o jedzeniu z przewodnika książkowego (nasze streszczenie). Zdjęcia: Wikimedia Commons, autor i licencja na każdym zdjęciu.",
+    "sections": [
+      {
+        "id": "co-zjesc",
+        "title": "Co zjeść",
+        "paragraphs": [
+          "Lista potraw do odhaczenia w trakcie podróży. Większość zjemy w zwykłych, niedrogich knajpkach; na okonomiyaki i takoyaki najlepszy będzie dzień w Osace (21.11)."
+        ],
+        "cards": [
+          {
+            "id": "ramen",
+            "name": "Ramen",
+            "nameJa": "ラーメン",
+            "text": "Gorący, gęsty bulion (często wieprzowy) z pszennym makaronem, plastrami mięsa i marynowanym jajkiem. Bywa sojowy (shōyu), miso albo kremowy tonkotsu. Zamawia się często w automacie przy wejściu.",
+            "photo": {
+              "src": "img/food/ramen.jpg",
+              "alt": "Ramen",
+              "credit": "Quercus acuta / Wikimedia Commons",
+              "license": "CC BY-SA 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shoyu_Ramen%EF%BC%88Tokyo_Ramen%EF%BC%89_-_01.jpg"
+            }
+          },
+          {
+            "id": "sushi",
+            "name": "Sushi i sashimi",
+            "nameJa": "刺身・寿司",
+            "text": "Sushi to ryba lub owoce morza na zakwaszonym ryżu, a sashimi to same plastry surowej, bardzo świeżej ryby, bez ryżu. Dobrym miejscem jest targ Tsukiji (11.11).",
+            "photo": {
+              "src": "img/food/sushi.jpg",
+              "alt": "Sushi i sashimi",
+              "credit": "chidorian from Japan / Wikimedia Commons",
+              "license": "CC BY-SA 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sushi_platter.jpg"
+            }
+          },
+          {
+            "id": "yakiniku",
+            "name": "Yakiniku",
+            "nameJa": "焼肉",
+            "text": "Japoński grill: na stół trafia rozżarzony ruszt, a cienkie plasterki wołowiny i warzyw pieczemy sami, kawałek po kawałku.",
+            "photo": {
+              "src": "img/food/yakiniku.jpg",
+              "alt": "Yakiniku",
+              "credit": "Jonathan Lin / Wikimedia Commons",
+              "license": "CC BY-SA 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yakiniku_002.jpg"
+            }
+          },
+          {
+            "id": "gyoza",
+            "name": "Gyoza",
+            "nameJa": "餃子",
+            "text": "Pierożki z mięsem i warzywami, smażone od spodu na chrupko i doparowane od góry. Świetne do piwa, jemy z sosem sojowym z octem.",
+            "photo": {
+              "src": "img/food/gyoza.jpg",
+              "alt": "Gyoza",
+              "credit": "Enming Yan / 闫恩铭 / Wikimedia Commons",
+              "license": "CC BY-SA 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Gyoza_no_Antei_-_3.jpg"
+            }
+          },
+          {
+            "id": "soba",
+            "name": "Udon i soba",
+            "nameJa": "うどん・そば",
+            "text": "Dwa klasyczne makarony: udon jest gruby i pszenny, soba cienka i gryczana. Podawane w gorącym bulionie albo na zimno z sosem do maczania (zaru soba).",
+            "photo": {
+              "src": "img/food/soba.jpg",
+              "alt": "Udon i soba",
+              "credit": "spinachdip from Minamikiso, Nagano / Wikimedia Commons",
+              "license": "CC BY-SA 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Zaru_soba_by_spinachdip.jpg"
+            }
+          },
+          {
+            "id": "shabu",
+            "name": "Shabu-shabu",
+            "nameJa": "しゃぶしゃぶ",
+            "text": "Kociołek z bulionem na środku stołu: cieniutkie plastry mięsa przelewamy przez wrzątek dosłownie na chwilę, do tego warzywa, tofu i sosy.",
+            "photo": {
+              "src": "img/food/shabu.jpg",
+              "alt": "Shabu-shabu",
+              "credit": "jimg944 / Wikimedia Commons",
+              "license": "CC BY 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shabu-shabu-01.jpg"
+            }
+          },
+          {
+            "id": "okonomiyaki",
+            "name": "Okonomiyaki",
+            "nameJa": "お好み焼き",
+            "text": "Placek z ciasta i szatkowanej kapusty z dodatkami do wyboru (wieprzowina, owoce morza, ser), polany słodkim sosem i majonezem. Specjalność Osaki i Hiroszimy.",
+            "photo": {
+              "src": "img/food/okonomiyaki.jpg",
+              "alt": "Okonomiyaki",
+              "credit": "ume-y / Wikimedia Commons",
+              "license": "CC BY 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okonomiyaki_001.jpg"
+            }
+          },
+          {
+            "id": "takoyaki",
+            "name": "Takoyaki",
+            "nameJa": "たこ焼き",
+            "text": "Kulki z ciasta z kawałkiem ośmiornicy w środku, z sosem, majonezem i płatkami tuńczyka. Uliczna przekąska z Osaki; w środku są naprawdę gorące.",
+            "photo": {
+              "src": "img/food/takoyaki.jpg",
+              "alt": "Takoyaki",
+              "credit": "加茂川の民 / Wikimedia Commons",
+              "license": "CC0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%82%BD%E3%83%BC%E3%82%B9%E3%81%A8%E3%83%9D%E3%83%B3%E9%85%A2%E3%81%AE%E3%81%9F%E3%81%93%E7%84%BC%E3%81%8D.jpg"
+            }
+          },
+          {
+            "id": "yakisoba",
+            "name": "Yakisoba",
+            "nameJa": "焼きそば",
+            "text": "Makaron smażony na blasze z warzywami, mięsem i słodko-pikantnym sosem. Szybkie, tanie i do znalezienia na każdym festiwalu.",
+            "photo": {
+              "src": "img/food/yakisoba.jpg",
+              "alt": "Yakisoba",
+              "credit": "M yanagisawa / Wikimedia Commons",
+              "license": "CC0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fukaya_Negi_Curry_Yakisoba_by_Kaede.jpg"
+            }
+          },
+          {
+            "id": "fugu",
+            "name": "Fugu",
+            "nameJa": "ふぐ",
+            "text": "Legendarna „trująca” ryba rozdymka. Podawana w cieniutkich plastrach jako sashimi, w kociołku, smażona albo z grilla. Więcej niżej, w części o bezpieczeństwie.",
+            "photo": {
+              "src": "img/food/fugu.jpg",
+              "alt": "Fugu",
+              "credit": "Suguri F / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "izakaya",
+        "title": "Izakaya",
+        "titleJa": "居酒屋",
+        "paragraphs": [
+          "Izakaya to japoński pub z jedzeniem, nazwa znaczy mniej więcej „miejsce, gdzie się pije”. Wieczorami siedzą tu pracownicy biur prosto po pracy, więc to najlepsze miejsce, żeby poczuć klimat japońskiego wieczoru i spróbować wielu potraw naraz.",
+          "Zamawia się po kilka małych talerzy na stół i wszyscy się dzielą. Pojedyncze danie kosztuje zwykle 500–1000 ¥, a piwo albo drink około 500 ¥, więc rachunek rośnie szybko: realnie 3000–4000 ¥ na osobę za kolację.",
+          "Menu bywa tylko po japońsku, czasem wisi na ścianie albo jest kartką z nazwami. Coraz częściej są obrazki, tablet albo kod QR. Zamawiamy formułką: <nazwa dania> kudasai, czyli „poproszę …”."
+        ],
+        "tips": [
+          "Otōshi (お通し) to opłata za miejsce, zwykle od kilkuset do 1000 ¥ od osoby, doliczana automatycznie. W zamian dostajemy małą przystawkę. To nie pomyłka w rachunku.",
+          "Płaci się przy kasie przy wyjściu: kelner zostawia na stoliku kartkę z zamówieniem i z nią idziemy do kasy.",
+          "Miejmy gotówkę, bo mniejsze lokale nie zawsze biorą karty.",
+          "W części małych barów wciąż wolno palić; jeśli to przeszkadza, sprawdźmy przy wejściu."
+        ],
+        "cards": [
+          {
+            "id": "karaage",
+            "name": "Kara-age",
+            "nameJa": "唐揚げ",
+            "text": "Kawałki kurczaka marynowane w sosie sojowym i imbirze, smażone w chrupiącej panierce. Pewniak w każdej izakayi.",
+            "photo": {
+              "src": "img/food/karaage.jpg",
+              "alt": "Kara-age",
+              "credit": "Ocdp / Wikimedia Commons",
+              "license": "CC0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chicken_karaage_003.jpg"
+            }
+          },
+          {
+            "id": "yakitori",
+            "name": "Yakitori",
+            "nameJa": "焼き鳥",
+            "text": "Szaszłyki z kurczaka z grilla, z solą albo słodkim sosem tare. Zestaw kilku rodzajów to moriawase.",
+            "photo": {
+              "src": "img/food/yakitori.jpg",
+              "alt": "Yakitori",
+              "credit": "N509FZ / Wikimedia Commons",
+              "license": "CC BY-SA 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yakitori_set_and_others_at_Torihei-chan%2C_Kamata_East_Exit_%2820230806200725%29.jpg"
+            }
+          }
+        ],
+        "lists": [
+          {
+            "title": "Do zamówienia: <nazwa> kudasai",
+            "items": [
+              {
+                "romaji": "Kara-age",
+                "ja": "唐揚げ",
+                "pl": "Smażony kurczak w panierce"
+              },
+              {
+                "romaji": "Furaido poteto",
+                "ja": "フライドポテト",
+                "pl": "Frytki"
+              },
+              {
+                "romaji": "Poteto sarada",
+                "ja": "ポテトサラダ",
+                "pl": "Sałatka ziemniaczana"
+              },
+              {
+                "romaji": "Edamame",
+                "ja": "枝豆",
+                "pl": "Solone strąki młodej soi do piwa; jemy ziarna, łupinę zostawiamy"
+              },
+              {
+                "romaji": "Yakitori moriawase",
+                "ja": "焼き鳥盛り合わせ",
+                "pl": "Zestaw szaszłyków z kurczaka"
+              },
+              {
+                "romaji": "Gyōza",
+                "ja": "餃子",
+                "pl": "Pierożki z mięsem i warzywami"
+              },
+              {
+                "romaji": "Dashimaki tamago",
+                "ja": "だし巻き卵",
+                "pl": "Zwijany japoński omlet z bulionem dashi"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "napoje",
+        "title": "Co pić w barze",
+        "paragraphs": [
+          "Piwo to podstawa. Nama bīru to piwo z beczki w małym, zmrożonym kuflu; bin bīru to butelka z małymi szklankami. Przy butelce obowiązuje zwyczaj, że nie nalewamy sobie, tylko dolewamy innym, gdy ich szklanka pustoszeje. Najczęściej spotkamy Asahi, Kirin, Sapporo, Yebisu i Suntory Premium Malts.",
+          "Highball (haibōru) to whisky z wodą gazowaną i lodem w dużym kuflu, lekki i tani (zwykle 350–500 ¥), w wielu smakach. Podobnie działają drinki na bazie wódki shōchū: w nazwie mają -hai albo -sawā, np. z zieloną herbatą (ryokucha-hai) albo z oolongiem (ūron-hai).",
+          "Warto spróbować umeshu, słodkiego likieru z owoców ume (japońska morela). Kelner zapyta, jak go podać."
+        ],
+        "cards": [
+          {
+            "id": "umeshu",
+            "name": "Umeshu",
+            "nameJa": "梅酒",
+            "text": "Likier z owoców ume, słodko-kwaśny. Najprościej zamówić go z lodem (rokku) albo z wodą gazowaną.",
+            "photo": {
+              "src": "img/food/umeshu.jpg",
+              "alt": "Umeshu z lodem",
+              "credit": "Chris 73 / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Umeshu_on_the_rocks.jpg"
+            }
+          }
+        ],
+        "lists": [
+          {
+            "title": "Jak podać",
+            "items": [
+              {
+                "romaji": "Rokku",
+                "ja": "ロック",
+                "pl": "Z lodem"
+              },
+              {
+                "romaji": "Soda wari / saidā wari",
+                "ja": "ソーダ割り・サイダー割り",
+                "pl": "Z wodą gazowaną"
+              },
+              {
+                "romaji": "Mizu wari",
+                "ja": "水割り",
+                "pl": "Z wodą"
+              },
+              {
+                "romaji": "Oyu wari",
+                "ja": "お湯割り",
+                "pl": "Z ciepłą wodą"
+              }
+            ]
+          },
+          {
+            "title": "Bez alkoholu",
+            "items": [
+              {
+                "romaji": "Ūroncha",
+                "ja": "ウーロン茶",
+                "pl": "Herbata oolong"
+              },
+              {
+                "romaji": "Ryokucha",
+                "ja": "緑茶",
+                "pl": "Zielona herbata"
+              },
+              {
+                "romaji": "Jasumincha",
+                "ja": "ジャスミン茶",
+                "pl": "Herbata jaśminowa"
+              },
+              {
+                "romaji": "Orenji jūsu",
+                "ja": "オレンジジュース",
+                "pl": "Sok pomarańczowy"
+              },
+              {
+                "romaji": "Jinjā ēru",
+                "ja": "ジンジャーエール",
+                "pl": "Ginger ale"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "bezpieczenstwo",
+        "title": "Surowa ryba i fugu",
+        "paragraphs": [
+          "Surowa ryba jest w Japonii codziennością, a przepisy o higienie w restauracjach są bardzo surowe, więc świeżość jest standardem. Zdrowy rozsądek jak wszędzie: jemy tam, gdzie jest ruch, i nie przesadzamy w upał. Po dobrym sushi nie powinno być żadnych problemów.",
+          "Fugu jest trująca tylko wtedy, gdy ktoś źle ją przygotuje. Restauracje z fugu muszą mieć licencję, a kucharz przechodzi specjalne szkolenie i usuwa trujące części, zanim ryba trafi na talerz. Statystycznie groźniejsze jest zakrztuszenie się ciastkiem mochi.",
+          "Czy smakuje? To kwestia gustu: płaci się bardziej za przeżycie niż za najlepszą rybę w kraju. Łatwo ją zjeść w sieci Genpin Fugu (玄品), która ma lokale w wielu miastach i menu z obrazkami. Zestawy kolacyjne kosztują od kilku tysięcy jenów i zwykle obejmują fugu na kilka sposobów: surowe sashimi, w kociołku, smażone i z grilla."
+        ],
+        "cards": [
+          {
+            "id": "fugu",
+            "name": "Fugu sashimi",
+            "nameJa": "てっさ",
+            "text": "Plasterki tak cienkie, że widać przez nie wzór talerza. Jemy z sosem ponzu i dymką.",
+            "photo": {
+              "src": "img/food/fugu.jpg",
+              "alt": "Cienko krojone sashimi z fugu",
+              "credit": "Suguri F / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
+            }
+          }
+        ]
+      },
+      {
+        "id": "slodycze",
+        "title": "Japońskie słodycze",
+        "titleJa": "和菓子",
+        "paragraphs": [
+          "Wagashi to tradycyjne japońskie słodkości, robione zwykle przez rzemieślników i kupowane w sklepach, a nie pieczone w domu. Zmieniają się z porami roku, więc w listopadzie szukajmy jesiennych wersji, np. w kształcie liści klonu. Podstawą wielu z nich jest anko, słodka pasta z czerwonej fasoli azuki."
+        ],
+        "cards": [
+          {
+            "id": "manju",
+            "name": "Manjū",
+            "nameJa": "饅頭",
+            "text": "Ciastko z pszennego ciasta z nadzieniem z anko; bywa też z matchą albo zieloną pastą zunda z soi. Na zdjęciu momiji manjū w kształcie liścia klonu.",
+            "photo": {
+              "src": "img/food/manju.jpg",
+              "alt": "Manjū",
+              "credit": "毒島みるく / Wikimedia Commons",
+              "license": "CC0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Momiji_manju_of_Fujiiya.jpg"
+            }
+          },
+          {
+            "id": "dango",
+            "name": "Dango",
+            "nameJa": "団子",
+            "text": "Kulki z mąki ryżowej na patyku, do jedzenia na spacerze. Mitarashi dango jest polane słodko-słonym sosem sojowym, a zielone smakuje bylicą (yomogi).",
+            "photo": {
+              "src": "img/food/dango.jpg",
+              "alt": "Dango",
+              "credit": "denver935 / Wikimedia Commons",
+              "license": "CC BY 2.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mitarashi_dango_by_denver935.jpg"
+            }
+          },
+          {
+            "id": "daifuku",
+            "name": "Daifuku",
+            "nameJa": "大福",
+            "text": "Miękkie, ciągnące się mochi z nadzieniem z anko. Wersja ichigo daifuku ma w środku całą truskawkę; pojawia się od zimy do wiosny.",
+            "photo": {
+              "src": "img/food/daifuku.jpg",
+              "alt": "Daifuku",
+              "credit": "Ocdp / Wikimedia Commons",
+              "license": "CC0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Daifuku_001.jpg"
+            }
+          },
+          {
+            "id": "nerikiri",
+            "name": "Nerikiri",
+            "nameJa": "練り切り",
+            "text": "Najbardziej artystyczne wagashi: z białej pasty fasolowej, ręcznie formowane w kwiaty i liście pór roku. Podawane do herbaty; w Kioto są warsztaty ich robienia.",
+            "photo": {
+              "src": "img/food/nerikiri.jpg",
+              "alt": "Nerikiri",
+              "credit": "Nightshadow28 / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nerikiri_%28fuyo%29.JPG"
+            }
+          },
+          {
+            "id": "dorayaki",
+            "name": "Dorayaki",
+            "nameJa": "どら焼き",
+            "text": "Dwa puszyste placuszki sklejone pastą z azuki. Bardzo sycące, do kupienia nawet w supermarkecie i konbini.",
+            "photo": {
+              "src": "img/food/dorayaki.jpg",
+              "alt": "Dorayaki",
+              "credit": "Ocdp / Wikimedia Commons",
+              "license": "CC BY-SA 3.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dorayaki_001_%283%29.jpg"
+            }
+          },
+          {
+            "id": "yokan",
+            "name": "Yōkan",
+            "nameJa": "羊羹",
+            "text": "Gęsta galaretka z pasty azuki w kostce, bardzo słodka i kaloryczna. Sprzedawana w ładnych, małych opakowaniach, dobra na prezent i na wycieczki w góry.",
+            "photo": {
+              "src": "img/food/yokan.jpg",
+              "alt": "Yōkan",
+              "credit": "PekePON / Wikimedia Commons",
+              "license": "CC BY-SA 4.0",
+              "sourceUrl": "https://commons.wikimedia.org/wiki/File:Usuzumi-yokan.jpg"
+            }
+          }
+        ],
+        "tips": [
+          "Wiosenne sakura mochi (zawinięte w solony liść wiśni) i majowe kashiwa mochi (liść dębu, którego się nie je) raczej nie trafią się w listopadzie."
+        ]
+      }
+    ]
+  }
 }
