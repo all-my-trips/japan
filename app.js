@@ -26,10 +26,12 @@
     right: '<path d="M9 5l7 7-7 7"/>',
     clock: '<circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/>',
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
+    check: '<path d="M5 12.5l4.5 4.5L19 7"/>',
+    bowl: '<path d="M3 11h18a9 9 0 0 1-18 0zM8 21h8M9 7c0-1.5 1-2 1-3.5M13 7c0-1.5 1-2 1-3.5"/>',
     ticket: '<path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/>'
   };
 
-  const S = { trip: null, byId: {}, filters: { want: true, bonus: true }, variant: {}, sim: null };
+  const S = { trip: null, byId: {}, filters: { want: true, bonus: true }, variant: {}, sim: null, done: {} };
   const $ = (sel, el) => (el || document).querySelector(sel);
   const view = $("#view"), side = $("#side"), sheet = $("#sheet");
 
@@ -124,6 +126,7 @@
         <a href="#plan" ${tab === "plan" ? 'aria-current="page"' : ""}>Plan</a>
         <a href="#today" ${tab === "today" ? 'aria-current="page"' : ""}>Dziś</a>
         <a href="#bookings" ${tab === "bookings" ? 'aria-current="page"' : ""}>Rezerwacje</a>
+        ${t.food ? `<a href="#food" ${tab === "food" ? 'aria-current="page"' : ""}>Jedzenie</a>` : ""}
       </nav>
       ${groups.map((g) => `
         <div class="side-group">
@@ -189,7 +192,6 @@
       </header>
       <div class="strip" role="list">${strip}</div>
       <div class="strip-legend">${segs.map(([s, l]) => `<span class="seg-${s}"><i></i>${l}</span>`).join("")}<span class="seg-trip"><i></i>Wycieczka jednodniowa</span></div>
-      <div class="rule">${icon("clock")}<p>${esc(t.meta.hardRule)}</p></div>
       <div class="facts">${fl}${ht}</div>
 
       <div class="section-h"><h2>Dzień po dniu</h2></div>
@@ -237,6 +239,7 @@
         ${pics}
         ${d.summary ? `<span class="sum">${esc(d.summary)}</span>` : ""}
         <span class="must"><b>MUST</b><span>${esc(d.priorities.must)}</span></span>
+        ${(d.todos || []).length ? `<span class="ptodo"><b>${icon("check")} Ważne TODO</b><span>${d.todos.map((x) => esc(x.text)).join(" · ")}</span></span>` : ""}
         <span class="meta"><span class="chip" title="Tempo">${paceBars(d.pace)}${esc(d.paceLabel)}</span>${bookingChip(d.booking)}</span>
       </a></li>`;
   }
@@ -278,6 +281,7 @@
         ${tripFlag(day)}
         <h1>${esc(day.title)}</h1>
         ${summary}
+        ${todoList(day)}
         <div class="dfacts">
           <div><span class="eyebrow">Wyjście</span><span class="v num">${esc(day.earliestDeparture)}</span></div>
           <div><span class="eyebrow">Tempo</span><span class="v">${paceBars(day.pace)} ${esc(day.paceLabel)}</span></div>
@@ -306,6 +310,17 @@
 
     const cur = view.querySelector('.dayjump a[aria-current="page"]');
     if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
+  }
+
+  // Ważne TODO dnia: lista do odhaczenia, stan tylko w tej przeglądarce
+  function todoList(day) {
+    const list = day.todos || [];
+    if (!list.length) return "";
+    return `<section class="todo" aria-labelledby="todo-${esc(day.id)}">
+      <h2 class="eyebrow" id="todo-${esc(day.id)}">${icon("check")} Ważne TODO</h2>
+      <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}" ${S.done[x.id] ? "checked" : ""}>
+        <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</span></label></li>`).join("")}</ul>
+    </section>`;
   }
 
   function timeline(day, nowMin) {
@@ -439,6 +454,35 @@
       <p class="footer">Dzisiaj w Japonii: ${fmtDate(now.date)}.</p>`;
   }
 
+  // ---------- food ----------
+  function foodCard(c) {
+    const ph = c.photo;
+    return `<article class="fcard">
+      <div class="fmedia">${media(ph, c.id, c.nameJa, "meal")}${ph && ph.credit ? `<span class="credit"><a href="${esc(ph.sourceUrl)}" target="_blank" rel="noopener">${esc(ph.credit)}</a> · ${esc(ph.license)}</span>` : ""}</div>
+      <div class="fbody"><h3>${esc(c.name)}${c.nameJa ? ` <span class="jn">${esc(c.nameJa)}</span>` : ""}</h3>
+        ${c.tag ? `<span class="ftag">${esc(c.tag)}</span>` : ""}
+        <p>${esc(c.text)}</p></div>
+    </article>`;
+  }
+  function renderFood() {
+    const f = S.trip.food;
+    view.innerHTML = `
+      <header class="pagehead"><span class="eyebrow">Przewodnik · ${f.sections.length} części</span><h1>${esc(f.title)}<span class="ja">${esc(f.titleJa || "")}</span></h1>
+        ${f.intro ? `<p class="summary">${esc(f.intro)}</p>` : ""}</header>
+      <nav class="fjump" aria-label="Części">${f.sections.map((s) => `<a class="chip" href="#food-${esc(s.id)}">${esc(s.title)}</a>`).join("")}</nav>
+      ${f.sections.map((s) => `
+        <section class="fsec" id="food-${esc(s.id)}">
+          <div class="section-h"><h2>${esc(s.title)}${s.titleJa ? ` <span class="jn">${esc(s.titleJa)}</span>` : ""}</h2></div>
+          ${(s.paragraphs || []).map((p) => `<p class="fp">${esc(p)}</p>`).join("")}
+          ${(s.tips || []).length ? `<ul class="ftips">${s.tips.map((x) => `<li>${esc(x)}</li>`).join("")}</ul>` : ""}
+          ${(s.cards || []).length ? `<div class="fgrid">${s.cards.map(foodCard).join("")}</div>` : ""}
+          ${(s.lists || []).map((l) => `
+            <div class="flist"><h3 class="eyebrow">${esc(l.title)}</h3>
+              <dl>${l.items.map((x) => `<div><dt><b>${esc(x.romaji)}</b> <span class="jn">${esc(x.ja)}</span></dt><dd>${esc(x.pl)}</dd></div>`).join("")}</dl></div>`).join("")}
+        </section>`).join("")}
+      ${f.source ? `<p class="footer">${esc(f.source)}</p>` : ""}`;
+  }
+
   // ---------- router ----------
   function route() {
     if (sheet.open) sheet.close();
@@ -456,6 +500,12 @@
       renderDay(d || fallback, { fromToday: !d });
     } else if (h === "bookings") {
       tab = "bookings"; renderBookings();
+    } else if (h.startsWith("food") && S.trip.food) {
+      tab = "food"; renderFood();
+      const sec = h.startsWith("food-") && document.getElementById(h);
+      renderSide(active, tab); setTab(tab);
+      if (sec) sec.scrollIntoView(); else window.scrollTo(0, 0);
+      return;
     } else {
       renderOverview();
     }
@@ -484,6 +534,12 @@
       if (location.hash !== "#today") location.hash = "today"; else route();
     }
   });
+  document.addEventListener("change", (e) => {
+    const id = e.target.dataset && e.target.dataset.todo;
+    if (!id) return;
+    if (e.target.checked) S.done[id] = true; else delete S.done[id];
+    store.set("todo", S.done);
+  });
   sheet.addEventListener("click", (e) => { if (e.target === sheet) sheet.close(); });
   window.addEventListener("hashchange", route);
   setInterval(() => { if (!S.sim && /^#(today|d-)/.test(location.hash) && !sheet.open) { const y = window.scrollY; route(); window.scrollTo(0, y); } }, 5 * 60 * 1000);
@@ -499,6 +555,7 @@
     S.trip = trip;
     trip.days.forEach((d) => { S.byId[d.id] = d; });
     S.filters = Object.assign(S.filters, store.get("filters", {}));
+    S.done = store.get("todo", {}) || {};
     route();
   }
   function showLoadError() {
