@@ -197,6 +197,7 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .bk-required { --c: var(--req); }
 .bk-recommended { --c: var(--rec); }
 .bk-none { --c: var(--none); }
+.bk-booked { --c: var(--none); }
 .pace { display: inline-flex; gap: 2px; }
 .pace i { width: 4px; height: 10px; border-radius: 1px; background: var(--line); }
 .pace i.on { background: var(--muted); }

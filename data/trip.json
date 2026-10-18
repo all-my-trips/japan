@@ -109,6 +109,13 @@
         "meaning": "Bez wcześniejszej rezerwacji",
         "usage": "Bilet na miejscu albo atrakcja bez biletu",
         "color": "green"
+      },
+      {
+        "id": "booked",
+        "label": "✅",
+        "meaning": "Zarezerwowane",
+        "usage": "Bilety / miejsca już kupione",
+        "color": "green"
       }
     ],
     "pace": [
@@ -1226,10 +1233,10 @@
         "address": null,
         "hotelId": "mimaru-kyoto"
       },
-      "earliestDeparture": "08:00–08:30",
+      "earliestDeparture": "12:15",
       "pace": "light",
       "paceLabel": "Lekko",
-      "summary": "Przeprowadzka do Kioto. Shinkansenem w niecałe trzy godziny przejeżdżamy do dawnej stolicy, a po drodze, przy dobrej pogodzie, z prawej strony pociągu widać Fuji. Po zameldowaniu i lunchu bez dużych atrakcji: niespieszny spacer po centrum przy hotelu, a wieczorem klimatyczna uliczka Ponto-chō z lampionami i restauracjami nad rzeką.",
+      "summary": "Przeprowadzka do Kioto. Spokojny poranek w Ueno, wymeldowanie i po południu Nozomi 407 z Tokio (13:21) do Kioto (15:32). Po drodze, przy dobrej pogodzie, z prawej strony pociągu widać Fuji. Lunch najprościej zjeść w pociągu: ekiben z dworca Tokio. Po zameldowaniu niespieszny spacer po centrum przy hotelu, a wieczorem klimatyczna uliczka Ponto-chō z lampionami i restauracjami nad rzeką.",
       "coverPhoto": null,
       "priorities": {
         "must": "Przejazd + hotel",
@@ -1238,51 +1245,62 @@
       },
       "notes": "Po przejeździe bez dużych atrakcji.",
       "booking": {
-        "level": "recommended",
-        "text": "Shinkansen Tokio→Kioto: zalecane zarezerwować miejsca razem przez SmartEX. Można już rezerwować; jeśli bagaż 160+ cm → miejsce z oversized baggage od 17.10."
+        "level": "booked",
+        "text": "Shinkansen kupiony: Nozomi 407, Tokio 13:21 → Kioto 15:32, wagon 12 (zwykły), miejsca 1-D, 1-E, 2-D, 2-E. 3 dorosłych + 1 dziecko."
       },
       "source": {
-        "orderText": "08:00–08:30 wyjście → ~09:30 Shinkansen → ~12:00 Kioto → hotel/lunch → 16:00 Shijō/Kawaramachi → 18:00 Ponto-chō"
+        "orderText": "08:00–08:30 wyjście → ~09:30 Shinkansen → ~12:00 Kioto → hotel/lunch → 16:00 Shijō/Kawaramachi → 18:00 Ponto-chō | 18.10: zmienione wg kupionego biletu (Nozomi 407, 13:21 → 15:32)"
       },
       "items": [
         {
           "id": "d10-01",
-          "start": "08:00",
-          "end": "08:30",
-          "approx": false,
-          "type": "departure",
-          "title": "Wyjście z hotelu",
+          "start": "11:00",
+          "end": null,
+          "approx": true,
+          "type": "rest",
+          "title": "Spokojny poranek i wymeldowanie z Mitsui Garden Hotel Ueno",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Do wyjazdu nic nie planujemy na siłę; bagaże można zostawić w hotelu."
         },
         {
           "id": "d10-02",
-          "start": "09:30",
+          "start": "12:15",
           "end": null,
           "approx": true,
-          "type": "transport",
-          "title": "Shinkansen Tokio → Kioto",
-          "priority": "must",
+          "type": "departure",
+          "title": "Wyjście z hotelu na dworzec Tokio",
+          "priority": null,
           "placeId": null,
-          "note": "Miejsca razem przez SmartEX."
+          "note": "Ueno → Tokio linią Yamanote lub Keihin-Tōhoku, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu."
         },
         {
           "id": "d10-03",
-          "start": "12:00",
-          "end": null,
-          "approx": true,
-          "type": "hotel",
-          "title": "Przyjazd do Kioto, MIMARU SUITES Kyoto Shijo i lunch",
+          "start": "13:21",
+          "end": "15:32",
+          "approx": false,
+          "type": "transport",
+          "title": "Shinkansen Nozomi 407 Tokio → Kioto",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Kupione. Wagon 12 (zwykły, N700, 16 wagonów), miejsca 1-D, 1-E, 2-D, 2-E. Fuji po prawej stronie (strona miejsc D/E)."
         },
         {
           "id": "d10-04",
           "start": "16:00",
           "end": null,
-          "approx": false,
+          "approx": true,
+          "type": "hotel",
+          "title": "Zameldowanie w MIMARU SUITES Kyoto Shijo",
+          "priority": "must",
+          "placeId": null,
+          "note": "Z dworca Kioto do Shijō metrem Karasuma, ok. 15 min."
+        },
+        {
+          "id": "d10-05",
+          "start": "16:45",
+          "end": null,
+          "approx": true,
           "type": "walk",
           "title": "Shijō / Kawaramachi",
           "priority": "want",
@@ -1290,7 +1308,7 @@
           "note": null
         },
         {
-          "id": "d10-05",
+          "id": "d10-06",
           "start": "18:00",
           "end": null,
           "approx": false,
@@ -3923,14 +3941,25 @@
       "status": "todo"
     },
     {
+      "name": "Shinkansen Tokio → Kioto (17.11)",
+      "checked": "Nozomi 407, 13:21 → 15:32",
+      "conclusion": "Kupione: wagon 12 (zwykły), miejsca 1-D, 1-E, 2-D, 2-E; 3 dorosłych + 1 dziecko.",
+      "when": "Wt. 17.11.2026, 13:21 z Tokio",
+      "url": "https://smart-ex.jp/en/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-17"
+      ],
+      "status": "booked"
+    },
+    {
       "name": "SmartEX Shinkansen",
-      "checked": "Tokio↔Kioto",
+      "checked": "Kioto→Tokio",
       "conclusion": "Miejsca można rezerwować do 1 roku naprzód; dla rodziny warto mieć miejsca razem.",
       "when": "Można rezerwować już teraz",
       "url": "https://smart-ex.jp/en/",
       "placeIds": [],
       "dayIds": [
-        "2026-11-17",
         "2026-11-24"
       ],
       "status": "todo"
