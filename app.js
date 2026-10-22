@@ -437,24 +437,29 @@
     const urgent = t.days.filter((d) => d.booking.level === "required");
     const rec = t.days.filter((d) => d.booking.level === "recommended");
     const firstDay = (b) => (b.dayIds || []).slice().sort()[0] || "9999";
-    const list = t.bookings.slice().sort((a, b) => firstDay(a).localeCompare(firstDay(b)));
-    const todo = list.filter((b) => b.status === "todo").length;
-    const dayLink = (d, lvl) => { const p = dateParts(d.date); return `<a href="#d-${d.id}" class="bk-${lvl}"><span class="dd">${p.d}.${pad(p.mo)}<small>${KANJI_WD[p.wd]}</small></span><span><b>${esc(d.title)}</b><br><span class="muted">${esc(d.booking.text)}</span></span></a>`; };
-    view.innerHTML = `
-      <header class="pagehead"><span class="eyebrow">${todo} z ${list.length} do zrobienia</span><h1>Rezerwacje</h1></header>
-      <div class="section-h"><h2 style="font-size:var(--step-2)"><span class="chip bk-required" style="vertical-align:middle"><span class="bdot"></span>${esc(legend("booking", "required").meaning)}</span></h2></div>
-      <div class="urgent">${urgent.map((d) => dayLink(d, "required")).join("")}</div>
-      <div class="section-h"><h2 style="font-size:var(--step-2)"><span class="chip bk-recommended" style="vertical-align:middle"><span class="bdot"></span>${esc(legend("booking", "recommended").meaning)}</span></h2></div>
-      <div class="urgent">${rec.map((d) => dayLink(d, "recommended")).join("")}</div>
-      <div class="section-h"><h2>Źródła i bilety</h2></div>
-      <div class="bk-list">${list.map((b) => `
+    const all = t.bookings.slice().sort((a, b) => firstDay(a).localeCompare(firstDay(b)));
+    const list = all.filter((b) => b.kind !== "experience");
+    const exps = all.filter((b) => b.kind === "experience");
+    const todo = all.filter((b) => b.status === "todo").length;
+    const bkCard = (b) => `
         <article class="bk">
           <div class="h"><b>${esc(b.name)}</b><span class="status status-${b.status}">${statusLabel(b.status)}</span></div>
           <div class="when">${icon("clock")}<span><b>${esc(b.when)}</b></span></div>
           <div>${esc(b.conclusion)} <span class="muted">(${esc(b.checked)})</span></div>
           <div class="foot">${(b.dayIds || []).map((id) => S.byId[id] ? `<a class="chip" href="#d-${id}">Dzień ${S.byId[id].dayNumber} · ${shortDate(id)}</a>` : "").join("")}
             <a class="btn" href="${esc(b.url)}" target="_blank" rel="noopener" style="margin-left:auto">${icon("link")} Strona</a></div>
-        </article>`).join("")}</div>
+        </article>`;
+    const dayLink = (d, lvl) => { const p = dateParts(d.date); return `<a href="#d-${d.id}" class="bk-${lvl}"><span class="dd">${p.d}.${pad(p.mo)}<small>${KANJI_WD[p.wd]}</small></span><span><b>${esc(d.title)}</b><br><span class="muted">${esc(d.booking.text)}</span></span></a>`; };
+    view.innerHTML = `
+      <header class="pagehead"><span class="eyebrow">${todo} z ${all.length} do zrobienia</span><h1>Rezerwacje</h1></header>
+      <div class="section-h"><h2 style="font-size:var(--step-2)"><span class="chip bk-required" style="vertical-align:middle"><span class="bdot"></span>${esc(legend("booking", "required").meaning)}</span></h2></div>
+      <div class="urgent">${urgent.map((d) => dayLink(d, "required")).join("")}</div>
+      <div class="section-h"><h2 style="font-size:var(--step-2)"><span class="chip bk-recommended" style="vertical-align:middle"><span class="bdot"></span>${esc(legend("booking", "recommended").meaning)}</span></h2></div>
+      <div class="urgent">${rec.map((d) => dayLink(d, "recommended")).join("")}</div>
+      <div class="section-h"><h2>Źródła i bilety</h2></div>
+      <div class="bk-list">${list.map(bkCard).join("")}</div>
+      ${exps.length ? `<div class="section-h"><h2>Doświadczenia</h2></div>
+      <div class="bk-list">${exps.map(bkCard).join("")}</div>` : ""}
       <p class="footer">Dzisiaj w Japonii: ${fmtDate(now.date)}.</p>`;
   }
 
