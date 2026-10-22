@@ -295,6 +295,7 @@
         </div>
         ${day.booking.level !== "none" ? `<div class="callout bk-${day.booking.level}"><span class="ic"></span><span class="eyebrow">Rezerwacje · ${esc(legend("booking", day.booking.level).meaning)}</span><span>${esc(day.booking.text)}</span></div>` : ""}
         ${day.notes ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Uwagi</span><span>${esc(day.notes)}</span></div>` : ""}
+        ${day.videos && day.videos.length ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Filmy</span><span class="vids">${day.videos.map((v) => `<a href="${esc(v.url)}" target="_blank" rel="noopener">${icon("link")} ${esc(v.title)}</a>`).join("")}</span></div>` : ""}
       </header>
 
       <div class="tl-h"><h2>Plan dnia</h2>

@@ -243,6 +243,12 @@
         "bonus": "—"
       },
       "notes": "Dzień podróży.",
+      "videos": [
+        {
+          "title": "Terminal - jak wygląda? Gdzie kupić bilet",
+          "url": "https://youtu.be/s2ee3ZTB6BA"
+        }
+      ],
       "booking": {
         "level": "none",
         "text": "Brak — lot jest już elementem planu; przed podróżą tylko odprawa online wg zasad linii."

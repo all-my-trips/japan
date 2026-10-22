@@ -5,7 +5,7 @@ Interaktywny przewodnik po podróży do Japonii (8–27 listopada 2026), działa
 - `index.html`, `app.css`, `app.js`: wygląd i logika strony
 - `data/trip.json`: cała treść (plan dni, miejsca, opisy, rezerwacje); strona czyta tylko ten plik
 - `img/`: zdjęcia miejsc z Wikimedia Commons; autor i licencja każdego zdjęcia są w `trip.json` i wyświetlają się pod zdjęciem
-- Adresy: `#plan`, `#today`, `#d-2026-11-13` (dzień), `#bookings`, `#food` (Jedzenie); `days[].todos` to sekcja „Ważne TODO” dnia, `food` to treść zakładki Jedzenie, zdjęcia potraw w `img/food/`
+- Adresy: `#plan`, `#today`, `#d-2026-11-13` (dzień), `#bookings`, `#food` (Jedzenie); `days[].todos` to sekcja „Ważne TODO” dnia, `food` to treść zakładki Jedzenie, `days[].videos` (`[{title, url}]`) to linki do filmów dnia, zdjęcia potraw w `img/food/`
 
 Publikacja: GitHub Pages z gałęzi `main`, folder `/`.
 Lokalnie: `python3 -m http.server` w tym folderze, potem http://localhost:8000/.
