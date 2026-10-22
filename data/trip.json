@@ -17,17 +17,35 @@
         "direction": "outbound",
         "number": "LO79",
         "dayId": "2026-11-08",
+        "from": "WAW",
+        "fromName": "Warszawa",
         "to": "NRT",
+        "toName": "Narita",
+        "terminal": "T1",
+        "departureDate": "2026-11-08",
         "departure": "22:50",
-        "arrival": "~19:30 (+1)"
+        "arrivalDate": "2026-11-09",
+        "arrival": "19:40",
+        "duration": "12:50",
+        "cabin": "ECOSEMIFLX",
+        "baggage": "1 bagaż rejestrowany"
       },
       {
         "direction": "return",
         "number": "LO80",
         "dayId": "2026-11-26",
         "from": "NRT",
+        "fromName": "Narita",
+        "to": "WAW",
+        "toName": "Warszawa",
+        "terminal": "T1",
+        "departureDate": "2026-11-26",
         "departure": "23:05",
-        "arrival": null
+        "arrivalDate": "2026-11-27",
+        "arrival": "05:45",
+        "duration": "14:40",
+        "cabin": "ECOSEMIFLX",
+        "baggage": "1 bagaż rejestrowany"
       }
     ],
     "hotels": [
@@ -264,7 +282,7 @@
           "title": "Wylot do Tokio (LO79)",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Warszawa (WAW) → Narita T1, lot 12 h 50 min, przylot 9.11 o 19:40 czasu japońskiego."
         }
       ]
     },
@@ -282,7 +300,7 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "~19:30 przylot",
+      "earliestDeparture": "19:40 przylot",
       "pace": "light",
       "paceLabel": "Lekko",
       "summary": "Lądujemy na Naricie wieczorem, więc dziś nie planujemy żadnych atrakcji. Skyliner zawozi nas prosto do Ueno, gdzie meldujemy się w hotelu na pierwsze osiem nocy. Szybka kolacja w okolicy, może krótki spacer po pierwszych neonach, i sen. Celem jest dobrze wypocząć przed jutrem.",
@@ -298,7 +316,7 @@
         "text": "Transfer lotniskowy: jeśli NRT → warto kupić Skyliner/N'EX z miejscem; jeśli HND → zwykle bez wcześniejszej rezerwacji."
       },
       "source": {
-        "orderText": "19:30 przylot → transfer → Ueno → hotel → jedzenie → sen"
+        "orderText": "19:40 przylot → transfer → Ueno → hotel → jedzenie → sen"
       },
       "todos": [
         {
@@ -317,9 +335,9 @@
       "items": [
         {
           "id": "d02-01",
-          "start": "19:30",
+          "start": "19:40",
           "end": null,
-          "approx": true,
+          "approx": false,
           "type": "flight",
           "title": "Przylot na Naritę (LO79)",
           "priority": "must",
@@ -2416,7 +2434,7 @@
           "title": "Wylot z Narity (LO80)",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Narita T1 → Warszawa (WAW), lot 14 h 40 min, przylot 27.11 o 05:45 czasu polskiego."
         }
       ]
     },
@@ -2431,7 +2449,7 @@
       "earliestDeparture": "—",
       "pace": "travel",
       "paceLabel": "Podróż",
-      "summary": "Przylot do domu. Lot powrotny trwa długo, więc ten dzień to odpoczynek i powolny powrót do polskiej strefy czasowej.",
+      "summary": "Przylot do Warszawy o 05:45 po 14 h 40 min lotu. Ten dzień to odpoczynek i powolny powrót do polskiej strefy czasowej.",
       "coverPhoto": null,
       "priorities": {
         "must": "Powrót do domu",
@@ -2444,19 +2462,19 @@
         "text": "Brak."
       },
       "source": {
-        "orderText": "Podróż / przylot do domu — godzina zależna od połączenia"
+        "orderText": "05:45 przylot do Warszawy (LO80)"
       },
       "items": [
         {
           "id": "d20-01",
-          "start": null,
+          "start": "05:45",
           "end": null,
           "approx": false,
           "type": "flight",
-          "title": "Podróż / przylot do domu",
+          "title": "Przylot do Warszawy (LO80)",
           "priority": "must",
           "placeId": null,
-          "note": "Godzina zależna od połączenia."
+          "note": "Lądowanie na Lotnisku Chopina (WAW)."
         }
       ]
     }

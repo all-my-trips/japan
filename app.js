@@ -166,12 +166,13 @@
       return `<a href="#d-${d.id}" class="seg-${segment(d)} ${d.dayTrip ? "is-trip" : ""} ${cls}" style="background:var(--c)" title="${d.dayNumber}. ${shortDate(d.date)} ${esc(d.title)}" aria-label="Dzień ${d.dayNumber}: ${esc(d.title)}"></a>`;
     }).join("");
 
-    const fl = t.meta.flights.map((f) => {
-      const d = S.byId[f.dayId];
-      return `<div class="fact"><span class="k eyebrow">${icon("flight")} ${f.direction === "outbound" ? "Lot tam" : "Lot powrotny"}</span>
-        <span class="v">${esc(f.number)} · ${f.direction === "outbound" ? "→ " + esc(t.meta.airport.name) : esc(t.meta.airport.name) + " →"}</span>
-        <span class="d">${d ? fmtDate(d.date) : ""}, wylot ${esc(f.departure)}${f.arrival ? ", przylot " + esc(f.arrival) : ""}</span></div>`;
-    }).join("");
+    const dur = (x) => { const [h, m] = x.split(":").map(Number); return `${h} h${m ? " " + m + " min" : ""}`; };
+    const flight = (f) => `<div class="fact"><span class="k eyebrow">${icon("flight")} ${f.direction === "outbound" ? "Lot tam" : "Lot powrotny"}</span>
+        <span class="v">${esc(f.number)} · ${esc(f.fromName)} → ${esc(f.toName)}</span>
+        <span class="d">Wylot ${shortDate(f.departureDate)}, ${esc(f.departure)}${f.direction === "return" ? " (" + esc(f.terminal) + ")" : ""}</span>
+        <span class="d">Przylot ${shortDate(f.arrivalDate)}, ${esc(f.arrival)}${f.direction === "outbound" ? " (" + esc(f.terminal) + ")" : ""}</span>
+        <span class="d">Lot ${dur(f.duration)} · ${esc(f.baggage)}</span></div>`;
+    const flightBy = (dir) => t.meta.flights.filter((f) => f.direction === dir).map(flight).join("");
     const ht = t.meta.hotels.map((h) => `
       <div class="fact ${h.status === "todo" ? "todo" : ""}"><span class="k eyebrow">${icon("hotel")} ${esc(h.city)}${h.area ? " · " + esc(h.area) : ""}</span>
         <span class="v">${h.name ? esc(h.name) : '<span class="pill-todo">Hotel do zarezerwowania</span>'}</span>
@@ -194,7 +195,7 @@
       </header>
       <div class="strip" role="list">${strip}</div>
       <div class="strip-legend">${segs.map(([s, l]) => `<span class="seg-${s}"><i></i>${l}</span>`).join("")}<span class="seg-trip"><i></i>Wycieczka jednodniowa</span></div>
-      <div class="facts">${fl}${ht}</div>
+      <div class="facts">${flightBy("outbound")}${ht}${flightBy("return")}</div>
 
       <div class="section-h"><h2>Dzień po dniu</h2></div>
       <ol class="ptl">${groups.map((g) => `
