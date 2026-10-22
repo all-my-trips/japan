@@ -243,12 +243,6 @@
         "bonus": "—"
       },
       "notes": "Dzień podróży.",
-      "videos": [
-        {
-          "title": "Terminal - jak wygląda? Gdzie kupić bilet",
-          "url": "https://youtu.be/s2ee3ZTB6BA"
-        }
-      ],
       "booking": {
         "level": "none",
         "text": "Brak — lot jest już elementem planu; przed podróżą tylko odprawa online wg zasad linii."
@@ -317,6 +311,12 @@
         "bonus": "Krótki spacer przy hotelu"
       },
       "notes": "Bez planowania atrakcji po przylocie.",
+      "videos": [
+        {
+          "title": "Terminal - jak wygląda? Gdzie kupić bilet",
+          "url": "https://youtu.be/s2ee3ZTB6BA"
+        }
+      ],
       "booking": {
         "level": "recommended",
         "text": "Transfer lotniskowy: jeśli NRT → warto kupić Skyliner/N'EX z miejscem; jeśli HND → zwykle bez wcześniejszej rezerwacji."
