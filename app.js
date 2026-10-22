@@ -45,6 +45,7 @@
   const fmtDate = (iso) => { const p = dateParts(iso); return `${p.d} ${MONTHS[p.mo - 1]}`; };
   const shortDate = (iso) => { const p = dateParts(iso); return `${p.d}.${pad(p.mo)}`; };
   const daysBetween = (a, b) => Math.round((Date.parse(b) - Date.parse(a)) / 864e5);
+  const nights = (n) => n + (n >= 2 && n <= 4 ? " noce" : n === 1 ? " noc" : " nocy");
   const hash = (s) => { let h = 0; for (const c of String(s)) h = (h * 31 + c.charCodeAt(0)) >>> 0; return h; };
   const store = {
     get(k, d) { try { const v = localStorage.getItem("jp26." + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
@@ -174,7 +175,8 @@
     const ht = t.meta.hotels.map((h) => `
       <div class="fact ${h.status === "todo" ? "todo" : ""}"><span class="k eyebrow">${icon("hotel")} ${esc(h.city)}${h.area ? " · " + esc(h.area) : ""}</span>
         <span class="v">${h.name ? esc(h.name) : '<span class="pill-todo">Hotel do zarezerwowania</span>'}</span>
-        <span class="d">${shortDate(h.checkIn)} – ${shortDate(h.checkOut)} · ${daysBetween(h.checkIn, h.checkOut)} noce</span></div>`).join("");
+        <span class="d">${shortDate(h.checkIn)} – ${shortDate(h.checkOut)} · ${nights(daysBetween(h.checkIn, h.checkOut))}${h.rooms ? " · " + h.rooms + " pokoje" : ""}${h.freeCancellation ? " · darmowe anulowanie" : ""}</span>
+        ${h.address ? `<span class="d">${esc(h.address)}</span>` : ""}</div>`).join("");
 
     const groups = [];
     for (const d of t.days) {
@@ -285,7 +287,7 @@
         <div class="dfacts">
           <div><span class="eyebrow">Wyjście</span><span class="v num">${esc(day.earliestDeparture)}</span></div>
           <div><span class="eyebrow">Tempo</span><span class="v">${paceBars(day.pace)} ${esc(day.paceLabel)}</span></div>
-          <div><span class="eyebrow">Nocleg</span><span class="v">${day.stay ? esc(day.stay.hotelName || "do zarezerwowania") : "w samolocie / w domu"}</span></div>
+          <div><span class="eyebrow">Nocleg</span><span class="v">${day.stay ? esc(day.stay.hotelName || "do zarezerwowania") : "w samolocie / w domu"}</span>${day.stay && day.stay.address ? `<span class="addr">${esc(day.stay.address)}</span>` : ""}</div>
         </div>
         <div class="pri3">
           ${["must", "want", "bonus"].map((k) => `<div>${prioBadge(k)}<span>${esc(day.priorities[k])}</span></div>`).join("")}
