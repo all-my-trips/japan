@@ -57,7 +57,7 @@
         "checkIn": "2026-11-09",
         "checkOut": "2026-11-17",
         "status": "confirmed",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "rooms": 2,
         "freeCancellation": true
       },
@@ -80,7 +80,7 @@
         "checkIn": "2026-11-24",
         "checkOut": "2026-11-26",
         "status": "confirmed",
-        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野2-21-10)",
+        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "rooms": 2,
         "freeCancellation": true
       }
@@ -303,7 +303,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "19:40 przylot",
@@ -418,7 +418,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "09:30",
@@ -516,7 +516,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "08:00",
@@ -617,7 +617,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "07:30",
@@ -744,7 +744,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "08:30",
@@ -856,7 +856,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "07:30",
@@ -1019,7 +1019,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "09:30",
@@ -1131,7 +1131,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野3-19-7)",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
       "earliestDeparture": "07:30",
@@ -1407,7 +1407,7 @@
           "id": "todo-bags-tokyo",
           "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do NOHGA HOTEL UENO TOKYO",
           "where": "Recepcja MIMARU SUITES Kyoto Shijo",
-          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015 (東京都台東区東上野2-21-10), tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
+          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015, tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
         }
       ],
       "items": [
@@ -2080,7 +2080,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "NOHGA HOTEL UENO TOKYO",
-        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野2-21-10)",
+        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "tokyo-final"
       },
       "earliestDeparture": "08:00",
@@ -2192,7 +2192,7 @@
         "city": "Tokio",
         "area": "Ueno",
         "hotelName": "NOHGA HOTEL UENO TOKYO",
-        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015 (〒110-0015 東京都台東区東上野2-21-10)",
+        "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "tokyo-final"
       },
       "earliestDeparture": "09:30",
