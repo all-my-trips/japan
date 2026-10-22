@@ -4117,6 +4117,19 @@
         "2026-11-25"
       ],
       "status": "booked"
+    },
+    {
+      "kind": "experience",
+      "name": "MiPig Cafe Harajuku (Tokio)",
+      "checked": "Kawiarnia z mikroświnkami",
+      "conclusion": "Popularne miejsce, wymagana rezerwacja online.",
+      "when": "Data do ustalenia",
+      "url": "https://mipig.cafe/en/",
+      "placeIds": [
+        "harajuku"
+      ],
+      "dayIds": [],
+      "status": "todo"
     }
   ],
   "food": {
