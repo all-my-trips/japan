@@ -3987,7 +3987,7 @@
     {
       "name": "teamLab Planets",
       "checked": "Bilet czasowy",
-      "conclusion": "Kupno online; brak sprzedaży w kasie / automatach na miejscu.",
+      "conclusion": "Kupno online; brak sprzedaży w kasie / automatach na miejscu. Bilety szybko schodzą, nie zwlekać.",
       "when": "Dla 15.11: kup teraz",
       "url": "https://teamlabplanets.dmm.com/en",
       "placeIds": [
