@@ -2083,10 +2083,10 @@
         "address": "2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "tokyo-final"
       },
-      "earliestDeparture": "08:00",
+      "earliestDeparture": "11:30",
       "pace": "light-medium",
       "paceLabel": "Lekko / średnio",
-      "summary": "Powrót do Tokio Shinkansenem i ostatnia nowa dzielnica: Shinjuku. Po zameldowaniu i odpoczynku jedziemy na darmowy taras widokowy ratusza Tokio, a po zmroku spacerujemy wśród neonów Kabukichō, dymiących barów Omoide Yokochō i maleńkich barów Golden Gai.",
+      "summary": "Powrót do Tokio i ostatnia nowa dzielnica: Shinjuku. Spokojny poranek w Kioto, wymeldowanie i Nozomi 384 z Kioto (12:36) do Tokio (14:51); lunch najprościej zjeść w pociągu, ekiben z dworca Kioto. Po zameldowaniu w Ueno i krótkim odpoczynku jedziemy na darmowy taras widokowy ratusza Tokio, a po zmroku spacerujemy wśród neonów Kabukichō, dymiących barów Omoide Yokochō i maleńkich barów Golden Gai.",
       "coverPhoto": null,
       "priorities": {
         "must": "Powrót do Tokio",
@@ -2095,38 +2095,49 @@
       },
       "notes": "Shinjuku celowo przeniesione z 13.11.",
       "booking": {
-        "level": "recommended",
-        "text": "Shinkansen Kioto→Tokio: miejsca razem zalecane; SmartEX już dostępny. Jeśli bagaż 160+ cm → oversized baggage seat od 24.10."
+        "level": "booked",
+        "text": "Shinkansen kupiony (smart EX): Nozomi 384, Kioto 12:36 → Tokio 14:51."
       },
       "source": {
-        "orderText": "08:00 wyjście → ~09:00–09:30 Shinkansen → Tokio około południa → hotel/odpoczynek → 16:30 Shinjuku → punkt widokowy → kolacja"
+        "orderText": "08:00 wyjście → ~09:00–09:30 Shinkansen → Tokio około południa → hotel/odpoczynek → 16:30 Shinjuku → punkt widokowy → kolacja | 25.10: zmienione wg kupionego biletu (Nozomi 384, 12:36 → 14:51)"
       },
       "items": [
         {
           "id": "d17-01",
-          "start": "08:00",
+          "start": "11:00",
           "end": null,
-          "approx": false,
-          "type": "departure",
-          "title": "Wyjście z hotelu",
+          "approx": true,
+          "type": "rest",
+          "title": "Spokojny poranek i wymeldowanie z MIMARU SUITES Kyoto Shijo",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Do wyjazdu nic nie planujemy na siłę."
         },
         {
           "id": "d17-02",
-          "start": "09:00",
-          "end": "09:30",
+          "start": "11:30",
+          "end": null,
           "approx": true,
-          "type": "transport",
-          "title": "Shinkansen Kioto → Tokio",
-          "priority": "must",
+          "type": "departure",
+          "title": "Wyjście z hotelu na dworzec Kioto",
+          "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Shijō → Kioto metrem Karasuma, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu."
         },
         {
           "id": "d17-03",
-          "start": "12:00",
+          "start": "12:36",
+          "end": "14:51",
+          "approx": false,
+          "type": "transport",
+          "title": "Shinkansen Nozomi 384 Kioto → Tokio",
+          "priority": "must",
+          "placeId": null,
+          "note": "Kupione przez smart EX. Fuji tym razem po lewej stronie pociągu (strona miejsc D/E)."
+        },
+        {
+          "id": "d17-04",
+          "start": "15:15",
           "end": null,
           "approx": true,
           "type": "hotel",
@@ -2136,18 +2147,18 @@
           "note": "Z dworca Tokio do Ueno linią Yamanote, ok. 10 min; hotel ok. 3 min pieszo od wyjścia 3 stacji Ueno (Ginza/Hibiya)."
         },
         {
-          "id": "d17-04",
-          "start": "16:30",
+          "id": "d17-05",
+          "start": "17:00",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "walk",
           "title": "Shinjuku",
           "priority": "want",
           "placeId": "shinjuku",
-          "note": null
+          "note": "Z Ueno do Shinjuku linią Yamanote, ok. 25–30 min."
         },
         {
-          "id": "d17-05",
+          "id": "d17-06",
           "start": null,
           "end": null,
           "approx": false,
@@ -2158,7 +2169,7 @@
           "note": null
         },
         {
-          "id": "d17-06",
+          "id": "d17-07",
           "start": null,
           "end": null,
           "approx": false,
@@ -2169,7 +2180,7 @@
           "note": null
         },
         {
-          "id": "d17-07",
+          "id": "d17-08",
           "start": null,
           "end": null,
           "approx": false,
@@ -4011,16 +4022,16 @@
       "status": "booked"
     },
     {
-      "name": "SmartEX Shinkansen",
-      "checked": "Kioto→Tokio",
-      "conclusion": "Miejsca można rezerwować do 1 roku naprzód; dla rodziny warto mieć miejsca razem.",
-      "when": "Można rezerwować już teraz",
+      "name": "Shinkansen Kioto → Tokio (24.11)",
+      "checked": "Nozomi 384, 12:36 → 14:51",
+      "conclusion": "Kupione przez smart EX.",
+      "when": "Wt. 24.11.2026, 12:36 z Kioto",
       "url": "https://smart-ex.jp/en/",
       "placeIds": [],
       "dayIds": [
         "2026-11-24"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "SmartEX oversized baggage",
