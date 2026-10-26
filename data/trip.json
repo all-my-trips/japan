@@ -359,7 +359,13 @@
           "title": "Transfer z Narity do Ueno",
           "priority": "must",
           "placeId": null,
-          "note": "Skyliner z Narity jedzie prosto do Keisei Ueno; warto kupić bilety z miejscówką."
+          "note": "Skyliner z Narity jedzie prosto do Keisei Ueno; warto kupić bilety z miejscówką.",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Nie kupować z góry biletu na konkretny Skyliner. Bilet z miejscówką kupić w kasie lub automacie Keisei na Naricie dopiero po kontroli paszportowej i odebraniu bagażu, na najbliższy pociąg z wolnymi miejscami."
+            }
+          ]
         },
         {
           "id": "d02-03",
@@ -404,6 +410,24 @@
           "priority": "must",
           "placeId": null,
           "note": null
+        }
+      ],
+      "tips": [
+        {
+          "kind": "general",
+          "text": "Suica / PASMO (karta albo Suica w portfelu telefonu) to najwygodniejsza płatność za metro, JR, autobusy, konbini i automaty. Część świątyń, straganów, małych knajpek i szafek na bagaż przyjmuje tylko gotówkę, więc stale mieć przy sobie zapas jenów."
+        },
+        {
+          "kind": "general",
+          "text": "Gotówkę najprościej wypłacić w bankomatach 7-Eleven (Seven Bank) i Japan Post, które obsługują zagraniczne karty."
+        },
+        {
+          "kind": "general",
+          "text": "Koszy na ulicach prawie nie ma: mały worek na śmieci w plecaku (opakowania, pieluchy, chusteczki), wyrzucamy w hotelu lub przy konbini."
+        },
+        {
+          "kind": "general",
+          "text": "Przed wyjazdem zapisać w Google Maps listę miejsc z planu i adresy trzech hoteli; adres hotelu mieć też po japońsku jako zrzut ekranu."
         }
       ]
     },
@@ -471,6 +495,17 @@
           "note": null
         },
         {
+          "id": "d03-02a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Ueno Tōshō-gū",
+          "priority": "bonus",
+          "placeId": "ueno-toshogu",
+          "note": "W ramach spaceru po Ueno Park, ok. 15–25 min."
+        },
+        {
           "id": "d03-03",
           "start": "12:00",
           "end": null,
@@ -501,7 +536,31 @@
           "title": "Spacer po Yanace / Nezu albo powrót",
           "priority": "bonus",
           "placeId": "yanaka-nezu",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Na Yanaka Ginza zajrzeć do tradycyjnych sklepików dagashiya z tanimi japońskimi słodyczami i do budek z lokalnym street foodem; jemy przy budce, nie w marszu."
+            },
+            {
+              "kind": "tip",
+              "text": "W Nezu-jinja przejść alejką czerwonych bram torii na zboczu obok głównego budynku: kilka minut, zwykle bez tłumów."
+            },
+            {
+              "kind": "tip",
+              "text": "Tylko jeśli po zoo wszyscy mają siłę; dnia nie wydłużamy na siłę."
+            }
+          ]
+        }
+      ],
+      "tips": [
+        {
+          "kind": "general",
+          "text": "Przy dłuższych spacerach planować postoje na przewijanie, karmienie i posiłek: przewijaki i pokoje do karmienia (授乳室, junyūshitsu) są w domach towarowych, dużych stacjach i centrach handlowych, w świątyniach i małych lokalach zwykle ich nie ma."
+        },
+        {
+          "kind": "general",
+          "text": "Przewóz walizek hotel–hotel trwa zwykle dzień, czasem dłużej: nadać z zapasem i spakować bagaż podręczny na 1–2 noce (rzeczy dziecka, leki, ładowarki, ubrania na zmianę)."
         }
       ]
     },
@@ -561,6 +620,17 @@
           "note": null
         },
         {
+          "id": "d04-02a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Tsukiji Hongwanji",
+          "priority": "bonus",
+          "placeId": "tsukiji-hongwanji",
+          "note": "Kilka minut pieszo od targu, ok. 15 min."
+        },
+        {
           "id": "d04-03",
           "start": "11:00",
           "end": "12:30",
@@ -569,7 +639,13 @@
           "title": "Hama Rikyu",
           "priority": "want",
           "placeId": "hama-rikyu",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Herbaciarnia Nakajima-no-Ochaya na wysepce w stawie: matcha ze słodyczą wagashi i 20–30 min odpoczynku z widokiem na wodę. Płatne osobno od wstępu do ogrodu, orientacyjnie ok. 1000 ¥; godziny (wg przewodników ok. 9:00–16:30) sprawdzić na miejscu."
+            }
+          ]
         },
         {
           "id": "d04-04",
@@ -652,31 +728,51 @@
         },
         {
           "id": "d05-02",
-          "start": null,
-          "end": null,
+          "start": "08:30",
+          "end": "10:13",
           "approx": false,
           "type": "transport",
           "title": "Przejazd w rejon Fuji",
           "priority": null,
           "placeId": null,
-          "note": "Jeśli Fuji Excursion → zarezerwować miejsca."
+          "note": "Jeśli Fuji Excursion → zarezerwować miejsca.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Fuji Excursion o 7:30 z Shinjuku jest nieosiągalny przy wyjściu z hotelu o 7:30. Celujemy w Fuji Excursion 7: Shinjuku 8:30 → Shimoyoshida 10:13 → Kawaguchiko 10:26 (rozkład dni roboczych wg JR, stan X 2026). Z Ueno do Shinjuku linią Yamanote ok. 30 min, więc 7:30 daje zapas."
+            },
+            {
+              "kind": "booking",
+              "text": "Miejsca do kupienia (status: do zrobienia); kupić od razu też powrót."
+            }
+          ]
         },
         {
           "id": "d05-03",
-          "start": "10:00",
-          "end": "11:15",
+          "start": "10:30",
+          "end": "11:30",
           "approx": true,
           "type": "attraction",
           "title": "Pagoda Chureito",
           "priority": "want",
           "placeId": "chureito",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Ze stacji Shimoyoshida ok. 10 min pieszo, potem prawie 400 schodów do pagody: z dzieckiem liczyć 20–30 min wejścia. Wózek się tu nie sprawdzi, praktyczniejsze nosidło."
+            },
+            {
+              "kind": "tip",
+              "text": "Po zejściu lokalny pociąg Fujikyu Shimoyoshida → Kawaguchiko, ok. 15 min; godzinę odjazdu sprawdzić na stacji."
+            }
+          ]
         },
         {
           "id": "d05-04",
-          "start": "12:00",
+          "start": "12:15",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "meal",
           "title": "Kawaguchiko — lunch",
           "priority": null,
@@ -685,8 +781,8 @@
         },
         {
           "id": "d05-05",
-          "start": "13:00",
-          "end": "15:30",
+          "start": "13:15",
+          "end": "16:15",
           "approx": false,
           "type": "attraction",
           "title": "Jezioro Kawaguchiko i widok na Fuji",
@@ -706,15 +802,38 @@
           "note": "Przy jeziorze, w ramach czasu nad Kawaguchiko."
         },
         {
+          "id": "d05-06a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Momiji Kairō (Maple Corridor)",
+          "priority": "bonus",
+          "placeId": "momiji-kairo",
+          "note": "Zamiennie z Oishi Park, gdy czasu jest mało: wybieramy jedno z dwóch.",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Fuji Kawaguchiko Autumn Leaves Festival wg zapowiedzi trwa 7–29.11.2026, wstęp wolny; podświetlenie od zmierzchu, czyli po naszym odjeździe. Szczegóły sprawdzić tuż przed wyjazdem."
+            }
+          ]
+        },
+        {
           "id": "d05-07",
-          "start": "16:00",
-          "end": "16:30",
+          "start": "16:48",
+          "end": "18:48",
           "approx": false,
           "type": "transport",
           "title": "Powrót do Tokio",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Fuji Excursion 44: Kawaguchiko 16:48 → Shinjuku 18:48 (dni robocze wg JR, stan X 2026). Wcześniejszy 14:58 → 16:59, późniejszy 17:41 → 19:48. O 16:00–16:30 nie ma bezpośredniego pociągu, więc godzina powrotu została dopasowana do rozkładu."
+            }
+          ]
         },
         {
           "id": "d05-08",
@@ -797,7 +916,13 @@
           "title": "Harajuku",
           "priority": "want",
           "placeId": "harajuku",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Japońskie crepes z Takeshita-dōri (np. Marion Crêpes, Santa Monica Crêpes) je się na stojąco przy budce."
+            }
+          ]
         },
         {
           "id": "d06-04",
@@ -819,7 +944,13 @@
           "title": "Omotesando",
           "priority": "want",
           "placeId": "omotesando",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Najciekawsza architektura jest na odcinku od Omotesando Hills do skrzyżowania z Aoyama-dōri i w bocznej Miyuki-dōri (Prada); wystarczy 30–45 min spaceru."
+            }
+          ]
         },
         {
           "id": "d06-06",
@@ -841,7 +972,13 @@
           "title": "Shibuya Sky (wejście)",
           "priority": "want",
           "placeId": "shibuya-sky",
-          "note": "W ramach bloku Shibuya; tylko jeśli jest bilet. Celować w wejście 15:30–16:00."
+          "note": "W ramach bloku Shibuya; tylko jeśli jest bilet. Celować w wejście 15:30–16:00.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Bilet nadal do kupienia (status: do zrobienia). Zachód słońca 13.11 ok. 16:35, więc wejście 15:30–16:00 obejmuje dzień, zachód i zmrok. Sprzedaż wg naszych danych 2 tyg. naprzód, od 30.10; według serwisów podróżniczych o północy czasu japońskiego, czyli 29.10 o 16:00 w Polsce."
+            }
+          ]
         }
       ]
     },
@@ -859,17 +996,17 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "07:30",
+      "earliestDeparture": "08:15",
       "pace": "long",
       "paceLabel": "Długi",
-      "summary": "Wycieczka do Nikkō, górskiego miasteczka z najbogatszymi świątyniami Japonii. Głównym punktem jest Tōshō-gū, złocone mauzoleum szoguna Tokugawy Ieyasu z trzema mądrymi małpami i śpiącym kotem. Około 12:15 wybieramy dalszy plan: wariant A to spokojne centrum z Rinnō-ji i czerwonym mostem Shinkyo, wariant B to wyjazd w góry do wodospadu Kegon i jeziora Chūzenji. Wcześnie wstajemy, bo pociąg ma tylko miejsca rezerwowane.",
+      "summary": "Wycieczka do Nikkō, górskiego miasteczka z najbogatszymi świątyniami Japonii. Głównym punktem jest Tōshō-gū, złocone mauzoleum szoguna Tokugawy Ieyasu z trzema mądrymi małpami i śpiącym kotem. Około 13:15 wybieramy dalszy plan: wariant A to spokojne centrum z Rinnō-ji i czerwonym mostem Shinkyo, wariant B to wyjazd w góry do wodospadu Kegon i jeziora Chūzenji. Wcześnie wstajemy, bo pociąg ma tylko miejsca rezerwowane.",
       "coverPhoto": null,
       "priorities": {
         "must": "Tōshō-gū",
         "want": "Rinno-ji + Shinkyo",
         "bonus": "Kegon + Chūzenji (wariant B zamiast części centrum)"
       },
-      "notes": "Nie dokładać Kegon/Chūzenji dopiero po 14:30. Decyzję o wariancie dnia najlepiej podjąć około 12:15.",
+      "notes": "Nie dokładać Kegon/Chūzenji dopiero po 14:30. Decyzję o wariancie dnia najlepiej podjąć około 13:15.",
       "booking": {
         "level": "required",
         "text": "Nikkō: jeśli Tobu Limited Express / SPACIA X → wszystkie miejsca są rezerwowane; bilety na 14.11 są już dostępne. Tōshō-gū: advance ticket opcjonalny, niekonieczny."
@@ -880,40 +1017,62 @@
       "items": [
         {
           "id": "d07-01",
-          "start": "07:30",
+          "start": "08:15",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "departure",
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Przy SPACIA X 3 (Asakusa 9:00) wystarczy wyjść ok. 8:15: z hotelu do Asakusy metrem Ginza kilka minut plus przejście na stację Tobu. SPACIA X 1 o 7:50 przy wyjściu o 7:30 jest zbyt ciasny z dzieckiem. Jeśli 14.11 kursuje dodatkowy SPACIA X 61 (Asakusa 8:09 → Tobu-Nikkō 10:16), wyjście o 7:30 i cały dzień ok. 35 min wcześniej."
+            }
+          ]
         },
         {
           "id": "d07-02",
-          "start": "10:00",
+          "start": "10:50",
           "end": null,
-          "approx": true,
+          "approx": false,
           "type": "transport",
           "title": "Przyjazd do Nikkō",
           "priority": null,
           "placeId": null,
-          "note": "Tobu Limited Express / SPACIA X — wszystkie miejsca rezerwowane."
+          "note": "Tobu Limited Express / SPACIA X — wszystkie miejsca rezerwowane.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "SPACIA X 3: Asakusa 9:00 → Tobu-Nikkō 10:50 (rozkład Tobu). Wcześniejsze wejście do Tōshō-gū o 10:15 było przy tym pociągu nierealne. Ze stacji do Tōshō-gū autobusem ok. 10 min albo pieszo ok. 30–40 min pod górę."
+            },
+            {
+              "kind": "booking",
+              "text": "Miejsca do kupienia (status: do zrobienia); w październiku i listopadzie pociągi do Nikkō są bardzo pełne."
+            }
+          ]
         },
         {
           "id": "d07-03",
-          "start": "10:15",
-          "end": "12:15",
-          "approx": false,
+          "start": "11:15",
+          "end": "13:15",
+          "approx": true,
           "type": "attraction",
           "title": "Tōshō-gū",
           "priority": "must",
           "placeId": "toshogu",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Trzy mądre małpy są na stajni świętych koni (Shinkyūsha) zaraz za pierwszą bramą, a śpiący kot Nemuri-neko nad przejściem do grobu Ieyasu (Okumiya). Za kotem ok. 200 kamiennych schodów: z dzieckiem nosidło."
+            }
+          ]
         },
         {
           "id": "d07-04",
-          "start": "12:15",
+          "start": "13:15",
           "end": null,
           "approx": true,
           "type": "decision",
@@ -930,6 +1089,12 @@
               "id": "B",
               "label": "Okunikkō: lunch + Kegon + Chūzenji → powrót"
             }
+          ],
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Przy przyjeździe 10:50 wariant B (Kegon i Chūzenji, autobus w góry ok. 40–50 min w jedną stronę, w listopadzie korki na serpentynach Irohazaka) robi się bardzo ciasny; realniejszy jest wariant A."
+            }
           ]
         },
         {
@@ -941,7 +1106,13 @@
           "title": "Lunch",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Spróbować yuba, lokalnej specjalności z kożucha z mleka sojowego (tofu skin): np. yuba-don, yuba w zupie albo w zestawie. Restauracje z yuba są przy ulicy od stacji do świątyń."
+            }
+          ]
         },
         {
           "id": "d07-06",
@@ -1064,6 +1235,17 @@
           "note": null
         },
         {
+          "id": "d08-02a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Depachika (hale z jedzeniem w podziemiach)",
+          "priority": "bonus",
+          "placeId": "depachika-ginza",
+          "note": "W ramach Ginzy albo jako lunch, 30–45 min."
+        },
+        {
           "id": "d08-03",
           "start": null,
           "end": null,
@@ -1094,7 +1276,21 @@
           "title": "teamLab Planets",
           "priority": "must",
           "placeId": "teamlab",
-          "note": "Bilet na konkretną godzinę, tylko online."
+          "note": "Bilet na konkretną godzinę, tylko online.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Wózków nie wpuszcza się na wystawę, zostawia się je w wyznaczonym miejscu przed wejściem. Nosidło jest dozwolone."
+            },
+            {
+              "kind": "tip",
+              "text": "Część sal to woda, ciemne pomieszczenia, lustra i intensywne światła. Zabrać ubranie na zmianę dla dziecka (zostaje w szafce) i w razie potrzeby zapytać obsługę o obejście sal."
+            },
+            {
+              "kind": "booking",
+              "text": "Bilet na 16:00 nadal do kupienia (status: do zrobienia); dzieci do 3 lat bezpłatnie wg oficjalnej strony."
+            }
+          ]
         },
         {
           "id": "d08-06",
@@ -1173,7 +1369,13 @@
           "title": "Przyjazd do Hase",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Kolejkę Enoden traktować jako atrakcję samą w sobie: stare wagoniki jadą między domami i wzdłuż morza, najładniej między Hase a Enoshimą. Płatność Suicą."
+            }
+          ]
         },
         {
           "id": "d09-03",
@@ -1217,7 +1419,17 @@
           "title": "Komachi-dōri",
           "priority": "want",
           "placeId": "komachi",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Hato Sablé najlepiej kupić w głównym sklepie Toshimaya przy alei Wakamiya-ōji; w pudełkach dobrze znoszą podróż.",
+              "link": {
+                "label": "Toshimaya na mapie",
+                "url": "https://www.google.com/maps/search/?api=1&query=Toshimaya%20Honten%2C%20Kamakura"
+              }
+            }
+          ]
         },
         {
           "id": "d09-07",
@@ -1322,7 +1534,17 @@
           "title": "Wyjście z hotelu na dworzec Tokio",
           "priority": null,
           "placeId": null,
-          "note": "Ueno → Tokio linią Yamanote lub Keihin-Tōhoku, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu."
+          "note": "Ueno → Tokio linią Yamanote lub Keihin-Tōhoku, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu.",
+          "tips": [
+            {
+              "kind": "experience",
+              "text": "Ekiben, czyli lunchbox z dworca jedzony w shinkansenie: największy wybór na dworcu Tokio ma sklep Ekibenya Matsuri wewnątrz bramek, z pudełkami z całej Japonii."
+            },
+            {
+              "kind": "important",
+              "text": "Godzina między wyjściem z hotelu a pociągiem to nie czas na zakupy: przejazd, windy, przejście do peronów Tokaido Shinkansen, bagaż i dziecko. Ekiben kupić szybko po drodze i być na peronie ok. 13:05."
+            }
+          ]
         },
         {
           "id": "d10-03",
@@ -1333,7 +1555,17 @@
           "title": "Shinkansen Nozomi 407 Tokio → Kioto",
           "priority": "must",
           "placeId": null,
-          "note": "Kupione. Wagon 12 (zwykły, N700, 16 wagonów), miejsca 1-D, 1-E, 2-D, 2-E. Fuji po prawej stronie (strona miejsc D/E)."
+          "note": "Kupione. Wagon 12 (zwykły, N700, 16 wagonów), miejsca 1-D, 1-E, 2-D, 2-E. Fuji po prawej stronie (strona miejsc D/E).",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Bagaż o sumie wymiarów 160–250 cm wymaga miejsca z przestrzenią na duży bagaż (bez rezerwacji dopłata), powyżej 250 cm nie wolno. Wózek dziecięcy według dostępnych informacji nie wymaga tej rezerwacji; złożony trzymać przy sobie lub w przestrzeni na końcu wagonu. Zasady sprawdzić na stronie smart EX.",
+              "link": {
+                "label": "smart EX: duży bagaż",
+                "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
+              }
+            }
+          ]
         },
         {
           "id": "d10-04",
@@ -1445,6 +1677,27 @@
           "note": null
         },
         {
+          "id": "d11-03a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Ogród Ōkōchi Sansō",
+          "priority": "bonus",
+          "placeId": "okochi-sanso",
+          "note": "Na końcu bambusowej ścieżki, ok. 30–45 min. Po Tenryū-ji wyjść północną bramą w bambusy i dojść ścieżką pod górę, bez osobnego dojazdu.",
+          "tips": [
+            {
+              "kind": "highlight",
+              "text": "Najcenniejszy BONUS dnia, szczególnie jesienią."
+            },
+            {
+              "kind": "tip",
+              "text": "W cenie biletu (wg serwisów turystycznych 1000 ¥, 9:00–17:00) jest zwykle matcha ze słodyczą w herbaciarni na koniec spaceru; aktualną ofertę sprawdzić przy wejściu."
+            }
+          ]
+        },
+        {
           "id": "d11-04",
           "start": "10:30",
           "end": "11:30",
@@ -1487,6 +1740,12 @@
           "priority": "bonus",
           "placeId": null,
           "note": null
+        }
+      ],
+      "tips": [
+        {
+          "kind": "general",
+          "text": "Walizki do NOHGA HOTEL mają dojść na 24.11: na noce 23–24.11 i dzień przejazdu zostawić sobie bagaż podręczny."
         }
       ]
     },
@@ -1554,7 +1813,13 @@
           "title": "Nara Park",
           "priority": "must",
           "placeId": "nara-park",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Jelenie są dzikimi zwierzętami: gryzą, napierają, potrafią uderzyć głową, zwłaszcza na widok krakersów, a jesienią samce bywają nerwowe. Małe dziecko trzymać na rękach lub w nosidle, pod bezpośrednią kontrolą dorosłych; nie powinno samo karmić jeleni. Krakersy trzyma i szybko rozdaje dorosły."
+            }
+          ]
         },
         {
           "id": "d12-04",
@@ -1565,7 +1830,13 @@
           "title": "Tōdai-ji",
           "priority": "must",
           "placeId": "todai-ji",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "W bramie Nandaimon zatrzymać się przy dwóch ponad 8-metrowych drewnianych posągach strażników Niō z początku XIII wieku, stojących po obu stronach przejścia; 5–10 min."
+            }
+          ]
         },
         {
           "id": "d12-05",
@@ -1670,7 +1941,13 @@
           "title": "Fushimi Inari",
           "priority": "must",
           "placeId": "fushimi-inari",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Bramy torii to schody i podejścia: zamiast wózka nosidło."
+            }
+          ]
         },
         {
           "id": "d13-03",
@@ -1692,7 +1969,13 @@
           "title": "Kiyomizu-dera",
           "priority": "must",
           "placeId": "kiyomizu",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Wieczorna iluminacja Kiyomizu-dera ma ruszyć dopiero 21.11 (wg tenki.jp 21–30.11; świątynia jeszcze tego nie ogłosiła). To ewentualna opcja na wieczór dnia buforowego 23.11, zwiedzanie 20.11 bez zmian."
+            }
+          ]
         },
         {
           "id": "d13-05",
@@ -1703,7 +1986,13 @@
           "title": "Sannenzaka / Ninenzaka + lunch",
           "priority": "want",
           "placeId": "sannenzaka",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Strome, brukowane uliczki i schody Higashiyamy: nosidło praktyczniejsze niż wózek."
+            }
+          ]
         },
         {
           "id": "d13-06",
@@ -1725,7 +2014,13 @@
           "title": "Gion",
           "priority": "must",
           "placeId": "gion",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Nie fotografować maiko i geiko bez zgody ani ich nie zatrzymywać; przestrzegać tabliczek z zakazem wejścia do prywatnych uliczek przy Hanami-kōji."
+            }
+          ]
         },
         {
           "id": "d13-08",
@@ -1747,7 +2042,17 @@
           "title": "Iluminacja Kōdai-ji",
           "priority": "bonus",
           "placeId": "kodai-ji",
-          "note": "Bilet na miejscu."
+          "note": "Bilet na miejscu.",
+          "tips": [
+            {
+              "kind": "highlight",
+              "text": "Szczególnie warte uwagi: jesienna iluminacja Kōdai-ji trwa 23.10–13.12.2026, światła od 17:00, ostatnie wejście 21:30, zamknięcie 22:00 (oficjalna strona świątyni). W 2026 nowy projection mapping w ogrodzie. Bilet na miejscu, cena taka sama jak za dnia.",
+              "link": {
+                "label": "Kōdai-ji: iluminacja",
+                "url": "https://www.kodaiji.com/saiji.html"
+              }
+            }
+          ]
         },
         {
           "id": "d13-10",
@@ -1826,7 +2131,24 @@
           "title": "Kaiyukan",
           "priority": "must",
           "placeId": "kaiyukan",
-          "note": "E-ticket na ~10:30."
+          "note": "E-ticket na ~10:30.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "E-ticket na ~10:30 nadal do kupienia (status: do zrobienia); w ten weekend kupić jak najszybciej."
+            }
+          ]
+        },
+        {
+          "id": "d14-03a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Diabelski młyn Tempozan",
+          "priority": "bonus",
+          "placeId": "tempozan-wheel",
+          "note": "Obok Kaiyukan, ok. 15 min jazdy. Tylko przy dobrej pogodzie i krótkiej kolejce."
         },
         {
           "id": "d14-04",
@@ -1848,7 +2170,13 @@
           "title": "Dōtonbori",
           "priority": "want",
           "placeId": "dotonbori",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Przy kushikatsu obowiązuje zasada: we wspólnym pojemniku sos tylko raz, nie maczamy ponownie nadgryzionego. Takoyaki w środku są bardzo gorące, dziecku ostudzić."
+            }
+          ]
         },
         {
           "id": "d14-06",
@@ -1876,7 +2204,13 @@
       "dayTrip": {
         "from": "Kioto",
         "to": "Osaka"
-      }
+      },
+      "tips": [
+        {
+          "kind": "important",
+          "text": "Początek długiego weekendu 21–23.11 (23.11 to święto) w szczycie jesiennych klonów: większe tłumy w atrakcjach, pociągach i restauracjach."
+        }
+      ]
     },
     {
       "id": "2026-11-22",
@@ -1934,6 +2268,17 @@
           "note": null
         },
         {
+          "id": "d15-02a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Ryōan-ji",
+          "priority": "bonus",
+          "placeId": "ryoan-ji",
+          "note": "Tylko jeśli zostanie czas: ok. 20 min pieszo lub kilka minut autobusem od Kinkaku-ji, zwiedzanie 30–45 min. Przesuwa Nijō o ok. godzinę."
+        },
+        {
           "id": "d15-03",
           "start": "11:00",
           "end": "12:30",
@@ -1953,7 +2298,13 @@
           "title": "Nishiki Market + lunch",
           "priority": "want",
           "placeId": "nishiki",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Jemy przy stoisku, gdzie kupiliśmy, albo w miejscach do tego przeznaczonych; nie w trakcie przeciskania się przez tłum."
+            }
+          ]
         },
         {
           "id": "d15-05",
@@ -1965,6 +2316,12 @@
           "priority": "bonus",
           "placeId": "pontocho",
           "note": null
+        }
+      ],
+      "tips": [
+        {
+          "kind": "important",
+          "text": "Niedziela długiego weekendu w sezonie jesiennych liści: tłumy wszędzie, zwłaszcza po 10:00."
         }
       ]
     },
@@ -2046,6 +2403,35 @@
           "note": null
         },
         {
+          "id": "d16-04a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Nowe doświadczenie: ceremonia herbaciana, wagashi lub kaligrafia (jedno do wyboru)",
+          "priority": "bonus",
+          "placeId": null,
+          "note": "45–90 min. Szczegóły i linki w Rezerwacjach, w sekcji Doświadczenia.",
+          "tips": [
+            {
+              "kind": "experience",
+              "text": "Warsztaty wagashi w Kanshundo (Higashiyama): ok. 75 min, na koniec własne słodycze z matchą; wg serwisów dzieci od 5 lat."
+            },
+            {
+              "kind": "experience",
+              "text": "Ceremonia herbaciana z matchą w herbaciarniach Camellia: wg oficjalnej strony od 4 lat, sesje wspólne od 6 lat; o roczne dziecko zapytać mailowo."
+            },
+            {
+              "kind": "experience",
+              "text": "Krótka lekcja kaligrafii (ok. 60 min) dla turystów: zasady dla małych dzieci potwierdzić u organizatora."
+            },
+            {
+              "kind": "tip",
+              "text": "Większość zajęć nie przyjmuje rocznego dziecka jako uczestnika; najprościej, gdy jeden dorosły zostaje z dzieckiem, a reszta idzie na zajęcia."
+            }
+          ]
+        },
+        {
           "id": "d16-05",
           "start": null,
           "end": null,
@@ -2057,6 +2443,17 @@
           "note": null
         },
         {
+          "id": "d16-05a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Sanjūsangen-dō",
+          "priority": "bonus",
+          "placeId": "sanjusangen-do",
+          "note": "Tylko jeśli będzie ochota na dodatkowe zwiedzanie, ok. 45 min."
+        },
+        {
           "id": "d16-06",
           "start": null,
           "end": null,
@@ -2066,6 +2463,16 @@
           "priority": null,
           "placeId": null,
           "note": null
+        }
+      ],
+      "tips": [
+        {
+          "kind": "important",
+          "text": "23.11 to japońskie święto państwowe (Labor Thanksgiving Day): atrakcje zwykle otwarte, ale tłoczno; zajęcia rezerwować z wyprzedzeniem. Dzień zostaje buforowy, wszystko poniżej to BONUS."
+        },
+        {
+          "kind": "tip",
+          "text": "Wieczorem ewentualnie iluminacja Kiyomizu-dera, jeśli się potwierdzi start 21.11 (zob. 20.11)."
         }
       ]
     },
@@ -2144,7 +2551,13 @@
           "title": "Zameldowanie: NOHGA HOTEL UENO TOKYO / odpoczynek",
           "priority": "must",
           "placeId": null,
-          "note": "Z dworca Tokio do Ueno linią Yamanote, ok. 10 min; hotel ok. 3 min pieszo od wyjścia 3 stacji Ueno (Ginza/Hibiya)."
+          "note": "Z dworca Tokio do Ueno linią Yamanote, ok. 10 min; hotel ok. 3 min pieszo od wyjścia 3 stacji Ueno (Ginza/Hibiya).",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Check-in od 15:00 (wg serwisów rezerwacyjnych), więc po przyjeździe pokój powinien być gotowy. Wcześniej mailem potwierdzić z hotelem, że przyjmie walizki wysłane z Kioto przed naszym przyjazdem i w razie potrzeby przechowa bagaż."
+            }
+          ]
         },
         {
           "id": "d17-05",
@@ -2245,7 +2658,17 @@
           "title": "Akihabara",
           "priority": "must",
           "placeId": "akihabara",
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Akihabara Radio Kaikan przy wyjściu Electric Town: kilkanaście pięter sklepów z figurkami, anime, kartami, grami i gadżetami; zwykle 10:00–20:00, godziny zależą od sklepu."
+            },
+            {
+              "kind": "tip",
+              "text": "Zajrzeć do sklepów z używanymi grami i do sklepów z setkami automatów gachapon; przygotować monety 100 ¥."
+            }
+          ]
         },
         {
           "id": "d18-03",
@@ -2301,7 +2724,13 @@
           "priority": "bonus",
           "placeId": "skytree",
           "note": null,
-          "variant": "B"
+          "variant": "B",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Pokémon Center Skytree Town (Solamachi, East Yard 4F, codziennie ok. 10:00–21:00) można odwiedzić bez biletu na taras widokowy."
+            }
+          ]
         },
         {
           "id": "d18-07",
@@ -2440,7 +2869,13 @@
           "title": "Wyjazd na lotnisko",
           "priority": null,
           "placeId": null,
-          "note": "Narita: Skyliner z Ueno albo N'EX; kupić miejsca po ustaleniu trasy."
+          "note": "Narita: Skyliner z Ueno albo N'EX; kupić miejsca po ustaleniu trasy.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Przy zakupach tax-free doliczyć na lotnisku dodatkowy bufor (ok. 30–60 min) na terminal i ewentualną kontrolę celną przed nadaniem bagażu."
+            }
+          ]
         },
         {
           "id": "d19-09",
@@ -2452,6 +2887,20 @@
           "priority": "must",
           "placeId": null,
           "note": "Narita T1 → Warszawa (WAW), lot 14 h 40 min, przylot 27.11 o 05:45 czasu polskiego."
+        }
+      ],
+      "tips": [
+        {
+          "kind": "important",
+          "text": "TAX-FREE od 1.11.2026: w sklepie płacimy pełną cenę z podatkiem (paszport przy kasie, zakupy od 5000 ¥ netto w jednym sklepie jednego dnia). Zwrot dopiero po potwierdzeniu wywozu: na lotnisku, przed nadaniem bagażu, paszport w terminalu tax-free; czerwony wynik oznacza kontrolę celną z towarami. Zwrot wypłaca sklep lub jego operator, sposób zwrotu sprawdzić przy zakupie.",
+          "link": {
+            "label": "Oficjalna procedura (JTA)",
+            "url": "https://www.mlit.go.jp/kankocho/tax-free/page01_000001_00028.html"
+          }
+        },
+        {
+          "kind": "tip",
+          "text": "Zachować paragony, nie zużywać ani nie oddawać zakupionych rzeczy i mieć je przy sobie na kontroli: brak jednej rzeczy z paragonu unieważnia zwrot za cały paragon."
         }
       ]
     },
@@ -3926,6 +4375,166 @@
         "lat": 35.7101,
         "lng": 139.8107
       }
+    },
+    "ueno-toshogu": {
+      "id": "ueno-toshogu",
+      "name": "Ueno Tōshō-gū",
+      "nameJa": "上野東照宮",
+      "city": "Tokio",
+      "area": "Ueno",
+      "category": "shrine",
+      "short": "Pozłacany chram Tokugawy Ieyasu w parku Ueno, mała wersja Tōshō-gū z Nikkō.",
+      "description": "Chram poświęcony Tokugawie Ieyasu, w obecnej formie z 1651 roku; jeden z niewielu budynków epoki Edo w Tokio, które przetrwały trzęsienie ziemi i wojnę. Do złoconego pawilonu prowadzi aleja kamiennych i brązowych latarni. Dojście i teren przed chramem są wolne, wejście za bramę Karamon płatne. Według GO TOKYO (I 2026) otwarte 9:00–16:30, godziny zmieniają się sezonowo.",
+      "photo": null,
+      "links": {
+        "official": "https://www.uenotoshogu.com/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
+      },
+      "mapsQuery": "Ueno Toshogu Shrine, Tokyo",
+      "coords": {
+        "lat": 35.7163,
+        "lng": 139.771
+      }
+    },
+    "tsukiji-hongwanji": {
+      "id": "tsukiji-hongwanji",
+      "name": "Tsukiji Hongwanji",
+      "nameJa": "築地本願寺",
+      "city": "Tokio",
+      "area": "Tsukiji",
+      "category": "temple",
+      "short": "Świątynia buddyjska w stylu indyjskim, kilka minut od targu Tsukiji.",
+      "description": "Kamienna świątynia z 1934 roku, zupełnie niepodobna do typowych japońskich: kopuła i fasada inspirowane architekturą starożytnych Indii, rzeźby zwierząt na schodach, a w głównej hali organy. Wstęp wolny. Według dostępnych źródeł główna hala jest otwarta zwykle ok. 6:00–16:00, teren dłużej.",
+      "photo": null,
+      "links": {
+        "official": "https://tsukijihongwanji.jp/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
+      },
+      "mapsQuery": "Tsukiji Hongwanji, Tokyo",
+      "coords": {
+        "lat": 35.6665,
+        "lng": 139.772
+      }
+    },
+    "momiji-kairo": {
+      "id": "momiji-kairo",
+      "name": "Momiji Kairō (korytarz klonów)",
+      "nameJa": "もみじ回廊",
+      "city": "Fujikawaguchiko",
+      "area": "Kawaguchiko",
+      "category": "park",
+      "short": "Tunel z czerwonych klonów nad strumieniem na północnym brzegu Kawaguchiko.",
+      "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min. Najbliżej z przystanku autobusu turystycznego „Kubota Itchiku Museum”.",
+      "photo": null,
+      "links": {
+        "official": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
+      },
+      "mapsQuery": "Momiji Kairo, Fujikawaguchiko",
+      "coords": {
+        "lat": 35.5197,
+        "lng": 138.735
+      }
+    },
+    "depachika-ginza": {
+      "id": "depachika-ginza",
+      "name": "Depachika w Ginzie",
+      "nameJa": "デパ地下",
+      "city": "Tokio",
+      "area": "Ginza",
+      "category": "market",
+      "short": "Podziemne hale z jedzeniem w domach towarowych: bento, słodycze, degustacje.",
+      "description": "Depachika to piętra spożywcze w podziemiach japońskich domów towarowych: setki stoisk z bento, sushi na wynos, smażonymi przekąskami, wagashi, ciastami i owocami pakowanymi jak biżuteria, często z degustacją. W Ginzie największe są w Mitsukoshi i Matsuya, mniejsza w Ginza Six. Dobre miejsce na lunch na wynos i słodkie pamiątki; jedzenie je się poza halą, np. na tarasie na dachu domu towarowego. W niedzielę koło południa jest tłoczno.",
+      "photo": null,
+      "links": {
+        "official": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
+      },
+      "mapsQuery": "Ginza Mitsukoshi depachika, Tokyo",
+      "coords": {
+        "lat": 35.671,
+        "lng": 139.7656
+      }
+    },
+    "okochi-sanso": {
+      "id": "okochi-sanso",
+      "name": "Ōkōchi Sansō",
+      "nameJa": "大河内山荘",
+      "city": "Kioto",
+      "area": "Arashiyama",
+      "category": "garden",
+      "short": "Ogród i willa aktora na końcu bambusowej ścieżki, z widokiem na Kioto i matchą w cenie.",
+      "description": "Dawna willa aktora filmów samurajskich Denjirō Ōkōchiego, który przez około 30 lat tworzył ten ogród na zboczu góry Ogura. Ścieżki prowadzą między klonami, mchem i tradycyjnymi pawilonami do punktów widokowych na Kioto i góry Arashiyamy. Jesienią jedno z najładniejszych, a zarazem spokojniejszych miejsc w okolicy. Ścieżki są strome, z dzieckiem lepiej nosidło.",
+      "photo": null,
+      "links": {
+        "official": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
+      },
+      "mapsQuery": "Okochi Sanso Garden, Kyoto",
+      "coords": {
+        "lat": 35.0172,
+        "lng": 135.6699
+      }
+    },
+    "tempozan-wheel": {
+      "id": "tempozan-wheel",
+      "name": "Diabelski młyn Tempozan",
+      "nameJa": "天保山大観覧車",
+      "city": "Osaka",
+      "area": "Tempozan",
+      "category": "viewpoint",
+      "short": "Wielki diabelski młyn tuż obok Kaiyukan, z widokiem na port Osaki.",
+      "description": "Diabelski młyn o wysokości ok. 112 m stojący obok akwarium Kaiyukan. Obrót trwa ok. 15 minut; przy dobrej widoczności widać port i Zatokę Osaka, a w oddali góry Rokkō. Według Osaka Info zwykle 10:00–22:00, ok. 800 ¥, przy silnym wietrze wstrzymywany.",
+      "photo": null,
+      "links": {
+        "official": null,
+        "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
+      },
+      "mapsQuery": "Tempozan Ferris Wheel, Osaka",
+      "coords": {
+        "lat": 34.6564,
+        "lng": 135.431
+      }
+    },
+    "ryoan-ji": {
+      "id": "ryoan-ji",
+      "name": "Ryōan-ji",
+      "nameJa": "龍安寺",
+      "city": "Kioto",
+      "area": "Kinugasa",
+      "category": "temple",
+      "short": "Świątynia zen z najsłynniejszym kamiennym ogrodem Japonii.",
+      "description": "Świątynia zen ze słynnym suchym ogrodem kare-sansui: 15 kamieni na grabionym białym żwirze, ustawionych tak, że z werandy nie widać wszystkich naraz. Ogląda się go w ciszy, siedząc na drewnianej werandzie. Wokół staw Kyōyōchi i jesienne klony. Według serwisów turystycznych od marca do listopada 8:00–17:00, ok. 600 ¥.",
+      "photo": null,
+      "links": {
+        "official": "https://www.ryoanji.jp/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
+      },
+      "mapsQuery": "Ryoan-ji, Kyoto",
+      "coords": {
+        "lat": 35.0345,
+        "lng": 135.7182
+      }
+    },
+    "sanjusangen-do": {
+      "id": "sanjusangen-do",
+      "name": "Sanjūsangen-dō",
+      "nameJa": "三十三間堂",
+      "city": "Kioto",
+      "area": "Higashiyama",
+      "category": "temple",
+      "short": "Długa na 120 m hala z 1001 posągami bogini Kannon.",
+      "description": "Drewniana hala z XIII wieku, długa na ok. 120 metrów, w której w równych rzędach stoi 1001 złoconych posągów tysiącrękiej Kannon: tysiąc stojących wokół jednej dużej, siedzącej figury, a przed nimi 28 strażników. Wrażenie robi skala i powtarzalność. W środku nie wolno robić zdjęć. Według serwisów turystycznych od 16.11 otwarte 9:00–16:00 (ostatnie wejście 15:30), ok. 600 ¥.",
+      "photo": null,
+      "links": {
+        "official": "https://www.sanjusangendo.jp/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
+      },
+      "mapsQuery": "Sanjusangendo, Kyoto",
+      "coords": {
+        "lat": 34.9879,
+        "lng": 135.7718
+      }
     }
   },
   "bookings": [
@@ -4141,6 +4750,32 @@
       ],
       "dayIds": [],
       "status": "todo"
+    },
+    {
+      "kind": "experience",
+      "name": "Warsztaty wagashi: Kanshundo Higashi (Kioto)",
+      "checked": "Robienie tradycyjnych słodyczy, ok. 75 min, z matchą",
+      "conclusion": "Wg serwisów rezerwacyjnych dzieci od 5 lat, kilka sesji dziennie; potwierdzić, czy można przyjść z rocznym dzieckiem.",
+      "when": "Opcja na 23.11 (święto), rezerwować wcześniej",
+      "url": "https://kanshundo.co.jp/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-23"
+      ],
+      "status": "todo"
+    },
+    {
+      "kind": "experience",
+      "name": "Ceremonia herbaciana: Camellia (Kioto)",
+      "checked": "Ceremonia z matchą w kilku herbaciarniach",
+      "conclusion": "Wg oficjalnej strony od 4 lat, sesje wspólne od 6 lat; o niemowlę zapytać przez contact@camelliakyoto.com.",
+      "when": "Opcja na 23.11 (święto), rezerwować wcześniej",
+      "url": "https://www.tea-kyoto.com/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-23"
+      ],
+      "status": "todo"
     }
   ],
   "food": {
@@ -4286,6 +4921,10 @@
               "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fugu_sashimi.jpg"
             }
           }
+        ],
+        "tips": [
+          "Przy jedzeniu dla dziecka sprawdzać skład, zwłaszcza mleko i jego pochodne (乳 / 乳成分, nyū / nyū seibun). Na paczkowanym jedzeniu mleko należy do alergenów obowiązkowo oznaczanych; w restauracjach pytać.",
+          "Nie każda restauracja ma krzesełko dziecięce (お子様椅子): w małych barach ramen i izakayach często go nie ma, pewniejsze są food courty, sieciówki i restauracje w domach towarowych."
         ]
       },
       {

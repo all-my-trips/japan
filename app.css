@@ -364,6 +364,11 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .icard .short { color: var(--muted); font-size: .9rem; display: -webkit-box; -webkit-line-clamp: 3; -webkit-box-orient: vertical; overflow: hidden; }
 .icard .short.empty { font-style: italic; opacity: .8; }
 .icard .note { font-size: .85rem; color: var(--ink); background: var(--surface-2); padding: 6px 9px; border-radius: 8px; }
+.tips { display: grid; gap: 5px; font-size: .85rem; line-height: 1.45; }
+.tip b { font-size: .68rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--c, var(--ai)); margin-right: 2px; }
+.tip.k-tip { --c: var(--ai); } .tip.k-important { --c: var(--req); } .tip.k-booking { --c: var(--rec); }
+.tip.k-experience { --c: var(--trip); } .tip.k-highlight { --c: var(--bonus); } .tip.k-general { --c: var(--must); }
+.lline .tips, .decision .tips { margin-top: 4px; color: var(--ink); }
 .icard .thumb { border-radius: 10px; overflow: hidden; aspect-ratio: 1; position: relative; align-self: start; }
 @media (min-width: 640px) { .icard .thumb { aspect-ratio: 4 / 3; } }
 .icard .thumb img, .icard .thumb .ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }

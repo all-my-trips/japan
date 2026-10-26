@@ -51,6 +51,11 @@
     get(k, d) { try { const v = localStorage.getItem("jp26." + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem("jp26." + k, JSON.stringify(v)); } catch (e) { /* bez pamięci */ } }
   };
+  // Wskazówki przy punktach i dniach: [{kind, text, link?}] (format w data/README.md)
+  const TIP_LABEL = { tip: "Tip", important: "Ważne", booking: "Rezerwacja", experience: "Doświadczenie", highlight: "Wysoki priorytet", general: "Na cały wyjazd" };
+  const tipList = (tips, links) => (tips || []).length
+    ? `<span class="tips">${tips.map((x) => `<span class="tip k-${esc(x.kind || "tip")}"><b>${esc(TIP_LABEL[x.kind] || TIP_LABEL.tip)}</b> ${esc(x.text)}${links && x.link ? ` <a href="${esc(x.link.url)}" target="_blank" rel="noopener">${esc(x.link.label)}</a>` : ""}</span>`).join("")}</span>`
+    : "";
   const legend = (group, id) => (S.trip.legend[group] || []).find((x) => x.id === id) || { id, label: id, meaning: "" };
 
   function nowTokyo() {
@@ -295,6 +300,7 @@
         </div>
         ${day.booking.level !== "none" ? `<div class="callout bk-${day.booking.level}"><span class="ic"></span><span class="eyebrow">Rezerwacje · ${esc(legend("booking", day.booking.level).meaning)}</span><span>${esc(day.booking.text)}</span></div>` : ""}
         ${day.notes ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Uwagi</span><span>${esc(day.notes)}</span></div>` : ""}
+        ${(day.tips || []).length ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Wskazówki</span>${tipList(day.tips, true)}</div>` : ""}
         ${day.videos && day.videos.length ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Filmy</span><span class="vids">${day.videos.map((v) => `<a href="${esc(v.url)}" target="_blank" rel="noopener">${icon("link")} ${esc(v.title)}</a>`).join("")}</span></div>` : ""}
       </header>
 
@@ -377,6 +383,7 @@
     if (i.type === "decision") {
       return `<div class="decision"><div class="q">${icon("decision")} ${esc(i.title)}</div>
         ${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}
+        ${tipList(i.tips, true)}
         <div class="seg">${(i.options || []).map((o) => `<button type="button" data-variant="${esc(o.id)}" data-day="${esc(day.id)}" aria-pressed="${chosen === o.id}"><b>WARIANT ${esc(o.id)}</b>${esc(o.label)}</button>`).join("")}</div></div>`;
     }
     if (place || i.priority) {
@@ -390,11 +397,12 @@
           ${place && place.nameJa ? `<span class="jn">${esc(place.nameJa)}</span>` : ""}
           ${short}
           ${i.note ? `<span class="note">${esc(i.note)}</span>` : ""}
+          ${tipList(i.tips, !place)}
         </span>
         <span class="thumb">${media(photoFor(i, place), i.placeId || i.id, place ? place.nameJa : null, i.type)}</span>
       </${tag}>`;
     }
-    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}</div></div>`;
+    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}${tipList(i.tips, true)}</div></div>`;
   }
 
   // ---------- place sheet ----------
@@ -419,6 +427,7 @@
           ${item && item.priority ? `<div class="row1" style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">${prioBadge(item.priority)}<span class="muted" style="font-size:.88rem">${esc(legend("priorities", item.priority).usage)}</span></div>` : ""}
           ${place.description ? `<p class="desc">${esc(place.description)}</p>` : `<p class="desc empty">Opis „co to jest” pojawi się w etapie z treścią.</p>`}
           ${item && item.note ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">W planie</span><span>${esc(item.note)}</span></div>` : ""}
+          ${item && (item.tips || []).length ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Wskazówki</span>${tipList(item.tips, true)}</div>` : ""}
           <div class="links">
             <a class="btn primary" href="${esc(mapsUrl(place))}" target="_blank" rel="noopener">${icon("pin")} Mapa</a>
             ${place.links && place.links.official ? `<a class="btn" href="${esc(place.links.official)}" target="_blank" rel="noopener">${icon("link")} Strona oficjalna</a>` : ""}
