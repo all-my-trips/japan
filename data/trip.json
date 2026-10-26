@@ -235,20 +235,20 @@
       "earliestDeparture": "12:00 z Krakowa",
       "pace": "light",
       "paceLabel": "Lekko",
-      "summary": "Dzień podróży. W południe wyjazd z Krakowa, spokojny obiad w Warszawie, o 18:45 parking START przy Okęciu i wieczorny lot LO79 do Tokio. Godziny w tym dniu są czasu polskiego. Na pokładzie od razu przechodzimy na czas Japonii i śpimy w pierwszej połowie lotu, plan snu jest w instrukcjach pod planem dnia.",
+      "summary": "Dzień podróży. W południe wyjazd z Krakowa, spokojny obiad w Warszawie (dowolna restauracja po drodze), o 18:45 parking START przy Okęciu i wieczorny lot LO79 do Tokio. Godziny w tym dniu są czasu polskiego. Na pokładzie od razu przechodzimy na czas Japonii i śpimy w pierwszej połowie lotu, plan snu jest w instrukcjach pod planem dnia.",
       "coverPhoto": null,
       "priorities": {
         "must": "Parking 18:45 → lot LO79 22:50",
-        "want": "Obiad w Starym Domu",
+        "want": "Spokojny obiad w Warszawie",
         "bonus": "—"
       },
       "notes": "Godziny w tym dniu: czas polski. Twarda granica: odprawa bagażu LO79 zamyka się 70 min przed odlotem (21:40). Zapas jest w obiedzie: przy opóźnieniu skracamy go albo pomijamy, nie ryzykujemy lotu.",
       "booking": {
-        "level": "recommended",
-        "text": "Do zrobienia przed wyjazdem: START Parking z transferem (online, taniej niż na miejscu), stolik w Starym Domu na 16:00 (telefon), kołyska LOT dla Zosi (Contact Center, min. 24 h przed lotem)."
+        "level": "booked",
+        "text": "Zarezerwowane: START Parking z transferem, kołyska LOT dla Zosi."
       },
       "source": {
-        "orderText": "12:00 Kraków → 16:00 obiad Warszawa → 18:45 START Parking → transfer → Chopin → 22:50 wylot"
+        "orderText": "12:00 Kraków → 16:00 obiad w Warszawie → 18:45 START Parking → transfer → Chopin → 22:50 wylot"
       },
       "items": [
         {
@@ -271,11 +271,11 @@
           "title": "Wyjazd samochodem z Krakowa",
           "priority": "must",
           "placeId": null,
-          "note": "Ok. 295 km, sama jazda ok. 3–3,5 h + jeden postój dla Zosi (20–30 min). Dojazd pod restaurację ok. 15:45–16:15.",
+          "note": "Ok. 295 km, sama jazda ok. 3–3,5 h + jeden postój dla Zosi (20–30 min). W Warszawie ok. 15:45–16:15.",
           "tips": [
             {
               "kind": "important",
-              "text": "W niedzielę po południu S7 i wjazd do Warszawy (Janki, Puławska) bywają zakorkowane. Przed wyjazdem sprawdzić czas w nawigacji z ruchem. Jeśli pokazuje dojazd po 16:45, wyjechać wcześniej albo od razu skrócić obiad."
+              "text": "W niedzielę po południu S7 i wjazd do Warszawy (Janki, Puławska, Al. Krakowska) bywają zakorkowane. Przed wyjazdem sprawdzić czas w nawigacji z ruchem. Jeśli pokazuje dojazd po 16:45, wyjechać wcześniej albo od razu skrócić obiad."
             },
             {
               "kind": "tip",
@@ -289,26 +289,14 @@
           "end": "17:30",
           "approx": true,
           "type": "meal",
-          "title": "Obiad: Restauracja Stary Dom",
+          "title": "Obiad w Warszawie",
           "priority": "want",
           "placeId": null,
-          "note": "Puławska 104/106, Mokotów. Otwarte codziennie 12:00–23:30, także w niedzielę. Kuchnia polska, krzesełka i przewijak dla dziecka, menu dla maluchów.",
+          "note": "Dowolna spokojna restauracja, najlepiej na południu miasta, po drodze na Okęcie (Mokotów, Włochy, Ochota), żeby potem do parkingu było 15–25 min.",
           "tips": [
             {
-              "kind": "booking",
-              "text": "Stolik na 16:00 zarezerwować telefonicznie: +48 22 646 42 08 (na stronie nie ma rezerwacji online).",
-              "link": {
-                "label": "Strona",
-                "url": "https://restauracjastarydom.pl/"
-              }
-            },
-            {
               "kind": "tip",
-              "text": "Parking: restauracja nie podaje własnego. W niedzielę strefa płatnego parkowania w Warszawie nie działa; szukać miejsca w bocznych ulicach przy Puławskiej, zapytać przy rezerwacji.",
-              "link": {
-                "label": "Mapa",
-                "url": "https://www.google.com/maps/search/?api=1&query=Restauracja+Stary+Dom%2C+Pu%C5%82awska+104%2F106%2C+Warszawa"
-              }
+              "text": "Przy wyborze: parking przy restauracji lub w pobliżu (w niedzielę strefa płatnego parkowania w Warszawie nie działa), krzesełko dla dziecka, przewijak, miejsce na wózek. Przy niedzielnym obiedzie warto zarezerwować stolik."
             },
             {
               "kind": "important",
@@ -329,7 +317,7 @@
           "title": "Przejazd na START Parking Okęcie",
           "priority": null,
           "placeId": null,
-          "note": "Z Puławskiej na Wykusz 56 (Włochy) to ok. 10 km i zwykle 20–30 min w niedzielny wieczór. Reszta okna to zapas, nie trzeba się spieszyć."
+          "note": "Z południa Warszawy na Wykusz 56 (Włochy) zwykle 15–30 min w niedzielny wieczór. Reszta okna to zapas, nie trzeba się spieszyć."
         },
         {
           "id": "d01-05",
@@ -352,7 +340,7 @@
             },
             {
               "kind": "booking",
-              "text": "Transfer nie jest w cenie parkingu: to opcja „START Transfer” w rezerwacji, 55 zł online (110 zł na miejscu, ale może być niedostępny). Przy rezerwacji sprawdzić, na ile osób jest transfer: strona podaje różne limity.",
+              "text": "Parking z transferem zarezerwowany. Kod z rezerwacji otwiera szlaban; bilet parkingowy zachować, jest na nim numer do transferu powrotnego.",
               "link": {
                 "label": "START Parking",
                 "url": "https://www.startparking.pl/parkingi-okecie-warszawa"
@@ -440,21 +428,17 @@
       "todos": [
         {
           "id": "todo-start-parking",
-          "text": "Zarezerwować START Parking Okęcie z transferem",
+          "text": "Zarezerwowane: START Parking Okęcie z transferem",
           "where": "startparking.pl, online",
-          "note": "Przyjazd 8.11 ok. 18:45, powrót 27.11 rano (LO80 ląduje 5:45). Zaznaczyć transfer dla 3 dorosłych + dziecko; online 55 zł zamiast 110 zł, na miejscu może go nie być."
-        },
-        {
-          "id": "todo-stary-dom",
-          "text": "Zarezerwować stolik w Starym Domu na 16:00",
-          "where": "tel. +48 22 646 42 08",
-          "note": "3 dorosłych + krzesełko dla dziecka, miejsce na wózek. Zapytać o parking przy restauracji."
+          "note": "Przyjazd 8.11 ok. 18:45, powrót 27.11 rano (LO80 ląduje 5:45). Kod z rezerwacji otwiera szlaban.",
+          "done": true
         },
         {
           "id": "todo-lot-bassinet",
-          "text": "Zamówić kołyskę dla Zosi na LO79 i LO80",
+          "text": "Zamówione: kołyska dla Zosi na LO79 i LO80",
           "where": "LOT Contact Center",
-          "note": "Bezpłatna, liczba miejsc ograniczona: zgłosić jak najwcześniej, najpóźniej 24 h przed lotem. Limit: 12 kg i 75 cm wzrostu w dniu lotu, więc zmierzyć Zosię."
+          "note": "Limit w dniu lotu: 12 kg i 75 cm wzrostu.",
+          "done": true
         },
         {
           "id": "todo-checkin-lot",
@@ -4778,19 +4762,7 @@
       "dayIds": [
         "2026-11-08"
       ],
-      "status": "todo"
-    },
-    {
-      "name": "Restauracja Stary Dom",
-      "checked": "Stolik na niedzielę 8.11, 16:00",
-      "conclusion": "Rezerwacja telefoniczna +48 22 646 42 08; otwarte 12:00–23:30.",
-      "when": "Kilka dni przed 8.11",
-      "url": "https://restauracjastarydom.pl/",
-      "placeIds": [],
-      "dayIds": [
-        "2026-11-08"
-      ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "Kołyska LOT dla Zosi",
@@ -4803,7 +4775,7 @@
         "2026-11-08",
         "2026-11-26"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "Ueno Zoo",
@@ -5482,43 +5454,21 @@
     "d1-logistics": {
       "id": "d1-logistics",
       "eyebrow": "Warszawa · czas polski",
-      "title": "Logistyka: obiad, parking, lotnisko",
+      "title": "Logistyka: parking i lotnisko",
       "color": "ai",
       "open": true,
       "blocks": [
         {
           "type": "facts",
-          "title": "Restauracja Stary Dom",
+          "title": "Obiad w Warszawie",
           "items": [
             {
-              "label": "Adres",
-              "text": "Puławska 104/106, 02-620 Warszawa (Mokotów)",
-              "link": {
-                "label": "Mapa",
-                "url": "https://www.google.com/maps/search/?api=1&query=Restauracja+Stary+Dom%2C+Pu%C5%82awska+104%2F106%2C+Warszawa"
-              }
+              "label": "Kiedy",
+              "text": "Ok. 16:00–17:30, dowolna restauracja po drodze na Okęcie."
             },
             {
-              "label": "Godziny",
-              "text": "Codziennie 12:00–23:30, także w niedzielę.",
-              "link": {
-                "label": "Strona",
-                "url": "https://restauracjastarydom.pl/"
-              },
-              "evidence": "official"
-            },
-            {
-              "label": "Rezerwacja",
-              "text": "Telefonicznie: +48 22 646 42 08 (lub info@restauracjastarydom.pl). Stolik na 16:00, 3 dorosłych + krzesełko."
-            },
-            {
-              "label": "Dla dziecka",
-              "text": "Krzesełka, przewijak, menu dla maluchów; w weekend osobne menu.",
-              "evidence": "official"
-            },
-            {
-              "label": "Parking",
-              "text": "Brak informacji o własnym parkingu. W niedzielę parkowanie w strefie płatnej jest bezpłatne; miejsca w bocznych ulicach. Potwierdzić przy rezerwacji."
+              "label": "Na co patrzeć",
+              "text": "Parking (w niedzielę strefa płatna nie działa), krzesełko i przewijak, miejsce na wózek, 15–25 min do Wykusz 56."
             },
             {
               "label": "Plan B",

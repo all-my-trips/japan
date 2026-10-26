@@ -331,7 +331,7 @@
     if (!list.length) return "";
     return `<section class="todo" aria-labelledby="todo-${esc(day.id)}">
       <h2 class="eyebrow" id="todo-${esc(day.id)}">${icon("check")} Ważne TODO</h2>
-      <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}" ${S.done[x.id] ? "checked" : ""}>
+      <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}" ${S.done[x.id] || x.done ? "checked" : ""} ${x.done ? "disabled" : ""}>
         <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</span></label></li>`).join("")}</ul>
     </section>`;
   }
