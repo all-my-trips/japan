@@ -232,23 +232,23 @@
       "title": "Kraków → Tokio",
       "base": "Kraków → Tokio",
       "stay": null,
-      "earliestDeparture": "wieczór",
+      "earliestDeparture": "12:00 z Krakowa",
       "pace": "light",
       "paceLabel": "Lekko",
-      "summary": "Dzień podróży. Spokojnie w domu, dojazd na lotnisko i wieczorny wylot LO79 do Tokio. Warto spróbować przespać jak najwięcej lotu, bo na miejscu ląduje się wieczorem czasu japońskiego i od razu kładzie spać, co pomaga szybciej przestawić się na nową strefę.",
+      "summary": "Dzień podróży. W południe wyjazd z Krakowa, spokojny obiad w Warszawie, o 18:45 parking START przy Okęciu i wieczorny lot LO79 do Tokio. Godziny w tym dniu są czasu polskiego. Na pokładzie od razu przechodzimy na czas Japonii i śpimy w pierwszej połowie lotu, plan snu jest w instrukcjach pod planem dnia.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Lot",
-        "want": "—",
+        "must": "Parking 18:45 → lot LO79 22:50",
+        "want": "Obiad w Starym Domu",
         "bonus": "—"
       },
-      "notes": "Dzień podróży.",
+      "notes": "Godziny w tym dniu: czas polski. Twarda granica: odprawa bagażu LO79 zamyka się 70 min przed odlotem (21:40). Zapas jest w obiedzie: przy opóźnieniu skracamy go albo pomijamy, nie ryzykujemy lotu.",
       "booking": {
-        "level": "none",
-        "text": "Brak — lot jest już elementem planu; przed podróżą tylko odprawa online wg zasad linii."
+        "level": "recommended",
+        "text": "Do zrobienia przed wyjazdem: START Parking z transferem (online, taniej niż na miejscu), stolik w Starym Domu na 16:00 (telefon), kołyska LOT dla Zosi (Contact Center, min. 24 h przed lotem)."
       },
       "source": {
-        "orderText": "Spokojny dzień → lotnisko → 22:50 wylot"
+        "orderText": "12:00 Kraków → 16:00 obiad Warszawa → 18:45 START Parking → transfer → Chopin → 22:50 wylot"
       },
       "items": [
         {
@@ -257,24 +257,165 @@
           "end": null,
           "approx": false,
           "type": "free",
-          "title": "Spokojny dzień w domu",
+          "title": "Spokojny poranek w domu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Ostatnie pakowanie bez pośpiechu. Pobudka wg przesuniętego planu snu (instrukcja „Przed wyjazdem” niżej)."
         },
         {
           "id": "d01-02",
-          "start": null,
+          "start": "12:00",
           "end": null,
           "approx": false,
-          "type": "transport",
-          "title": "Dojazd na lotnisko",
-          "priority": null,
+          "type": "departure",
+          "title": "Wyjazd samochodem z Krakowa",
+          "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Ok. 295 km, sama jazda ok. 3–3,5 h + jeden postój dla Zosi (20–30 min). Dojazd pod restaurację ok. 15:45–16:15.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "W niedzielę po południu S7 i wjazd do Warszawy (Janki, Puławska) bywają zakorkowane. Przed wyjazdem sprawdzić czas w nawigacji z ruchem. Jeśli pokazuje dojazd po 16:45, wyjechać wcześniej albo od razu skrócić obiad."
+            },
+            {
+              "kind": "tip",
+              "text": "Kierowca: kawa w porządku do ok. 15:30. Później bez kofeiny, żeby łatwiej zasnąć w samolocie ok. 0:30."
+            }
+          ]
         },
         {
           "id": "d01-03",
+          "start": "16:00",
+          "end": "17:30",
+          "approx": true,
+          "type": "meal",
+          "title": "Obiad: Restauracja Stary Dom",
+          "priority": "want",
+          "placeId": null,
+          "note": "Puławska 104/106, Mokotów. Otwarte codziennie 12:00–23:30, także w niedzielę. Kuchnia polska, krzesełka i przewijak dla dziecka, menu dla maluchów.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Stolik na 16:00 zarezerwować telefonicznie: +48 22 646 42 08 (na stronie nie ma rezerwacji online).",
+              "link": {
+                "label": "Strona",
+                "url": "https://restauracjastarydom.pl/"
+              }
+            },
+            {
+              "kind": "tip",
+              "text": "Parking: restauracja nie podaje własnego. W niedzielę strefa płatnego parkowania w Warszawie nie działa; szukać miejsca w bocznych ulicach przy Puławskiej, zapytać przy rezerwacji.",
+              "link": {
+                "label": "Mapa",
+                "url": "https://www.google.com/maps/search/?api=1&query=Restauracja+Stary+Dom%2C+Pu%C5%82awska+104%2F106%2C+Warszawa"
+              }
+            },
+            {
+              "kind": "important",
+              "text": "Przy opóźnieniu: przyjazd po 16:45 = szybki obiad (ok. 45 min, wyjazd najpóźniej 17:45). Przyjazd po 17:30 = pomijamy, jedziemy prosto na parking i jemy na lotnisku. Wyjazd od stołu najpóźniej 18:15."
+            },
+            {
+              "kind": "tip",
+              "text": "Zjeść porządnie, ale bez przejedzenia i alkoholu: w samolocie wystarczy wtedy mała porcja i łatwiej zasnąć. Bez kawy do deseru."
+            }
+          ]
+        },
+        {
+          "id": "d01-04",
+          "start": "17:30",
+          "end": "18:30",
+          "approx": true,
+          "type": "transport",
+          "title": "Przejazd na START Parking Okęcie",
+          "priority": null,
+          "placeId": null,
+          "note": "Z Puławskiej na Wykusz 56 (Włochy) to ok. 10 km i zwykle 20–30 min w niedzielny wieczór. Reszta okna to zapas, nie trzeba się spieszyć."
+        },
+        {
+          "id": "d01-05",
+          "start": "18:45",
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Przyjazd na START Parking (cel: 18:45)",
+          "priority": "must",
+          "placeId": null,
+          "note": "ul. Wykusz 56, Warszawa-Włochy. Parking całodobowy, szlaban otwiera się po zeskanowaniu kodu z rezerwacji (telefon lub bilet).",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Docelowo 18:45. Bezpieczna granica to ok. 19:30: wtedy w terminalu jesteśmy ok. 20:00, nadal ponad 1,5 h przed zamknięciem odprawy.",
+              "link": {
+                "label": "Nawigacja",
+                "url": "https://www.google.com/maps/dir/?api=1&destination=START+Parking+Ok%C4%99cie%2C+Wykusz+56%2C+Warszawa"
+              }
+            },
+            {
+              "kind": "booking",
+              "text": "Transfer nie jest w cenie parkingu: to opcja „START Transfer” w rezerwacji, 55 zł online (110 zł na miejscu, ale może być niedostępny). Przy rezerwacji sprawdzić, na ile osób jest transfer: strona podaje różne limity.",
+              "link": {
+                "label": "START Parking",
+                "url": "https://www.startparking.pl/parkingi-okecie-warszawa"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d01-06",
+          "start": "18:45",
+          "end": "19:15",
+          "approx": true,
+          "type": "free",
+          "title": "Rozpakowanie i organizacja transferu",
+          "priority": null,
+          "placeId": null,
+          "note": "Walizki na wózek bagażowy, rozłożony wózek dla Zosi, kurtki zimowe do walizki lub w ręku (w Tokio ok. 10–17°C). Zdjęcie miejsca parkingowego i biletu parkingowego: na bilecie jest numer do zamówienia transferu powrotnego."
+        },
+        {
+          "id": "d01-07",
+          "start": "19:15",
+          "end": "19:40",
+          "approx": true,
+          "type": "transport",
+          "title": "Transfer na Lotnisko Chopina",
+          "priority": null,
+          "placeId": null,
+          "note": "Autobus START co ok. 25 min (także w nocy), jazda ok. 9 min, duże autobusy (35 i 100 miejsc) z miejscem na bagaż. Fotelika nie ma: Zosia jedzie w wózku albo na kolanach (zasady operatora)."
+        },
+        {
+          "id": "d01-08",
+          "start": "19:40",
+          "end": "21:15",
+          "approx": true,
+          "type": "flight",
+          "title": "Odprawa, bagaż i kontrola bezpieczeństwa",
+          "priority": "must",
+          "placeId": null,
+          "note": "Terminal A, stanowiska LOT. Nadanie bagażu, potem kontrola bezpieczeństwa i kontrola paszportowa (lot poza Schengen).",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Odprawa i nadanie bagażu na lot długodystansowy LOT zamyka się 70 min przed odlotem, czyli o 21:40. Na Chopinie do końca 2026 trwa wymiana linii kontroli bezpieczeństwa i kolejki bywają dłuższe, dlatego wchodzimy do terminalu ok. 3 h przed lotem."
+            },
+            {
+              "kind": "tip",
+              "text": "Wózek Zosi zostaje z nami do samolotu i jest nadawany przy wejściu na pokład. Mleko, woda i jedzenie dla dziecka mogą przejść kontrolę w ilości potrzebnej na lot (do pokazania osobno)."
+            }
+          ]
+        },
+        {
+          "id": "d01-09",
+          "start": "21:15",
+          "end": "22:10",
+          "approx": true,
+          "type": "free",
+          "title": "Przy bramce: przygotowanie do lotu",
+          "priority": null,
+          "placeId": null,
+          "note": "Toaleta, przewinięcie i piżamka dla Zosi, woda do butelek. Zestaw do snu wyjąć na wierzch plecaka. Rodziny z małymi dziećmi zwykle wchodzą na pokład pierwsze."
+        },
+        {
+          "id": "d01-10",
           "start": "22:50",
           "end": null,
           "approx": false,
@@ -282,8 +423,68 @@
           "title": "Wylot do Tokio (LO79)",
           "priority": "must",
           "placeId": null,
-          "note": "Warszawa (WAW) → Narita T1, lot 12 h 50 min, przylot 9.11 o 19:40 czasu japońskiego."
+          "note": "Warszawa (WAW) → Narita T1, lot 12 h 50 min, przylot 9.11 o 19:40 czasu japońskiego.",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Zaraz po starcie zegarki i telefony na czas Japonii (+8 h, start = 6:50). Plan snu na pokładzie: instrukcja „Plan lotu” niżej."
+            },
+            {
+              "kind": "tip",
+              "text": "Zosia: przy starcie pierś, butelka, kubek albo smoczek, żeby przełykała. Jeśli śpi głęboko, nie trzeba jej budzić."
+            }
+          ]
         }
+      ],
+      "timezone": "Europe/Warsaw",
+      "todos": [
+        {
+          "id": "todo-start-parking",
+          "text": "Zarezerwować START Parking Okęcie z transferem",
+          "where": "startparking.pl, online",
+          "note": "Przyjazd 8.11 ok. 18:45, powrót 27.11 rano (LO80 ląduje 5:45). Zaznaczyć transfer dla 3 dorosłych + dziecko; online 55 zł zamiast 110 zł, na miejscu może go nie być."
+        },
+        {
+          "id": "todo-stary-dom",
+          "text": "Zarezerwować stolik w Starym Domu na 16:00",
+          "where": "tel. +48 22 646 42 08",
+          "note": "3 dorosłych + krzesełko dla dziecka, miejsce na wózek. Zapytać o parking przy restauracji."
+        },
+        {
+          "id": "todo-lot-bassinet",
+          "text": "Zamówić kołyskę dla Zosi na LO79 i LO80",
+          "where": "LOT Contact Center",
+          "note": "Bezpłatna, liczba miejsc ograniczona: zgłosić jak najwcześniej, najpóźniej 24 h przed lotem. Limit: 12 kg i 75 cm wzrostu w dniu lotu, więc zmierzyć Zosię."
+        },
+        {
+          "id": "todo-checkin-lot",
+          "text": "Odprawa online LO79 (od 36 h przed wylotem)",
+          "where": "lot.com / aplikacja LOT",
+          "note": "Na lotnisku zostaje wtedy tylko nadanie bagażu."
+        },
+        {
+          "id": "todo-vjw",
+          "text": "Visit Japan Web dla 4 osób (także Zosi)",
+          "where": "vjw-lp.digital.go.jp",
+          "note": "Kody QR do kontroli paszportowej i celnej na Naricie skracają wieczór przylotu."
+        },
+        {
+          "id": "todo-sleep-kit",
+          "text": "Spakować zestaw do snu do bagażu podręcznego",
+          "where": "Plecak przy fotelu",
+          "note": "Maski na oczy, stopery lub słuchawki z ANC, poduszka na szyję, ciepła bluza i skarpety, butelka na wodę, piżamka i rzeczy Zosi do zasypiania."
+        }
+      ],
+      "guides": [
+        "d1-logistics",
+        "jl-pill",
+        "jl-flight",
+        "jl-arrival",
+        "jl-zosia",
+        "jl-before",
+        "jl-first-days",
+        "jl-melatonin",
+        "jl-sources"
       ]
     },
     {
@@ -348,18 +549,24 @@
           "title": "Przylot na Naritę (LO79)",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Wyjście z samolotu, kontrola paszportowa (QR z Visit Japan Web), bagaż i odprawa celna: realnie 45–75 min. Potem SIM, gotówka, bilety na Skyliner.",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Od lądowania nie drzemać, także w Skylinerze (ok. 45 min): krótki sen teraz zabiera senność potrzebną o 23:00. Pomaga rozmowa, stanie, chłodna woda."
+            }
+          ]
         },
         {
           "id": "d02-02",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "21:00",
+          "end": "22:15",
+          "approx": true,
           "type": "transport",
           "title": "Transfer z Narity do Ueno",
           "priority": "must",
           "placeId": null,
-          "note": "Skyliner z Narity jedzie prosto do Keisei Ueno; warto kupić bilety z miejscówką.",
+          "note": "Skyliner z Narity T1 do Keisei Ueno: ok. 45 min, co 20–40 min, ostatni ok. 23:00. Z Keisei Ueno do hotelu ok. 10 min pieszo przez stację (z walizkami można wziąć taksówkę).",
           "tips": [
             {
               "kind": "tip",
@@ -369,25 +576,31 @@
         },
         {
           "id": "d02-03",
-          "start": null,
+          "start": "22:30",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "hotel",
           "title": "Zameldowanie: Mitsui Garden Hotel Ueno",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "W pokoju od razu: zasłony zaciągnięte do końca, przygaszone światło, łóżeczko lub miejsce do spania Zosi przygotowane przed rozpakowaniem reszty."
+            }
+          ]
         },
         {
           "id": "d02-04",
-          "start": null,
+          "start": "22:45",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "meal",
           "title": "Szybkie jedzenie",
           "priority": "want",
           "placeId": null,
-          "note": null
+          "note": "Mały posiłek, jeśli ktoś jest głodny (kolacja była w samolocie ok. 17:30): onigiri, zupa, jogurt z konbini przy hotelu. Bez dużej kolacji i bez alkoholu."
         },
         {
           "id": "d02-05",
@@ -398,18 +611,30 @@
           "title": "Krótki spacer przy hotelu",
           "priority": "bonus",
           "placeId": null,
-          "note": null
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Dziś raczej pominąć: jasne neony o 23:00 przesuwają zegar w złą stronę, a priorytetem jest sen."
+            }
+          ]
         },
         {
           "id": "d02-06",
-          "start": null,
+          "start": "23:15",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "rest",
           "title": "Sen",
           "priority": "must",
           "placeId": null,
-          "note": null
+          "note": "Cel: w łóżku ok. 23:00–23:30. Pobudka 10.11 ok. 7:00–7:30 z budzikiem, nawet po słabej nocy.",
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Obudzenie o 3:00–4:00 jest normalne pierwszej nocy. Zostać w ciemności, bez telefonu i jedzenia; jeśli sen nie wraca po 20–30 min, wstać do przyciemnionego światła i spokojnie czytać, wrócić do łóżka przy senności."
+            }
+          ]
         }
       ],
       "tips": [
@@ -429,6 +654,11 @@
           "kind": "general",
           "text": "Przed wyjazdem zapisać w Google Maps listę miejsc z planu i adresy trzech hoteli; adres hotelu mieć też po japońsku jako zrzut ekranu."
         }
+      ],
+      "guides": [
+        "jl-arrival",
+        "jl-first-days",
+        "jl-zosia"
       ]
     },
     {
@@ -4539,6 +4769,43 @@
   },
   "bookings": [
     {
+      "name": "START Parking Okęcie + transfer",
+      "checked": "Parking i transfer na lotnisko Chopina",
+      "conclusion": "Transfer to płatna opcja (55 zł online, 110 zł na miejscu i może być niedostępny). Kupić online razem z parkingiem 8–27.11.",
+      "when": "Przed 8.11",
+      "url": "https://www.startparking.pl/parkingi-okecie-warszawa",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-08"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Restauracja Stary Dom",
+      "checked": "Stolik na niedzielę 8.11, 16:00",
+      "conclusion": "Rezerwacja telefoniczna +48 22 646 42 08; otwarte 12:00–23:30.",
+      "when": "Kilka dni przed 8.11",
+      "url": "https://restauracjastarydom.pl/",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-08"
+      ],
+      "status": "todo"
+    },
+    {
+      "name": "Kołyska LOT dla Zosi",
+      "checked": "Bassinet na LO79 i LO80",
+      "conclusion": "Bezpłatna, przez LOT Contact Center, najpóźniej 24 h przed lotem; liczba miejsc ograniczona. Limit 12 kg i 75 cm.",
+      "when": "Jak najwcześniej",
+      "url": "https://www.lot.com/pl/pl/centrum-pomocy/podroz-z-dziecmi/rezerwacja-kolyski-dla-dziecka",
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-08",
+        "2026-11-26"
+      ],
+      "status": "todo"
+    },
+    {
       "name": "Ueno Zoo",
       "checked": "Bilety i wejście",
       "conclusion": "Online opcjonalny; można kupić na miejscu.",
@@ -5210,5 +5477,720 @@
         ]
       }
     ]
+  },
+  "guides": {
+    "d1-logistics": {
+      "id": "d1-logistics",
+      "eyebrow": "Warszawa · czas polski",
+      "title": "Logistyka: obiad, parking, lotnisko",
+      "color": "ai",
+      "open": true,
+      "blocks": [
+        {
+          "type": "facts",
+          "title": "Restauracja Stary Dom",
+          "items": [
+            {
+              "label": "Adres",
+              "text": "Puławska 104/106, 02-620 Warszawa (Mokotów)",
+              "link": {
+                "label": "Mapa",
+                "url": "https://www.google.com/maps/search/?api=1&query=Restauracja+Stary+Dom%2C+Pu%C5%82awska+104%2F106%2C+Warszawa"
+              }
+            },
+            {
+              "label": "Godziny",
+              "text": "Codziennie 12:00–23:30, także w niedzielę.",
+              "link": {
+                "label": "Strona",
+                "url": "https://restauracjastarydom.pl/"
+              },
+              "evidence": "official"
+            },
+            {
+              "label": "Rezerwacja",
+              "text": "Telefonicznie: +48 22 646 42 08 (lub info@restauracjastarydom.pl). Stolik na 16:00, 3 dorosłych + krzesełko."
+            },
+            {
+              "label": "Dla dziecka",
+              "text": "Krzesełka, przewijak, menu dla maluchów; w weekend osobne menu.",
+              "evidence": "official"
+            },
+            {
+              "label": "Parking",
+              "text": "Brak informacji o własnym parkingu. W niedzielę parkowanie w strefie płatnej jest bezpłatne; miejsca w bocznych ulicach. Potwierdzić przy rezerwacji."
+            },
+            {
+              "label": "Plan B",
+              "text": "Przyjazd po 16:45: szybki obiad, wyjazd najpóźniej 17:45. Po 17:30: pomijamy i jemy na lotnisku."
+            }
+          ]
+        },
+        {
+          "type": "facts",
+          "title": "START Parking Okęcie",
+          "items": [
+            {
+              "label": "Adres",
+              "text": "ul. Wykusz 56, Warszawa-Włochy. Parking całodobowy, poczekalnia z toaletą 24/7.",
+              "link": {
+                "label": "Nawigacja",
+                "url": "https://www.google.com/maps/dir/?api=1&destination=START+Parking+Ok%C4%99cie%2C+Wykusz+56%2C+Warszawa"
+              }
+            },
+            {
+              "label": "Wjazd",
+              "text": "Szlaban otwiera się po zeskanowaniu kodu z rezerwacji (telefon lub bilet). Przy wyjeździe po dłuższym postoju ewentualna dopłata przy szlabanie.",
+              "evidence": "official"
+            },
+            {
+              "label": "Transfer",
+              "text": "Opcja płatna osobno: 55 zł online, 110 zł na miejscu (może być niedostępny). Kupić razem z parkingiem.",
+              "link": {
+                "label": "Rezerwacja",
+                "url": "https://www.startparking.pl/parkingi-okecie-warszawa"
+              },
+              "evidence": "official"
+            },
+            {
+              "label": "Kursy",
+              "text": "Co ok. 25 min, także w nocy, jazda ok. 9 min. Z parkingu na lotnisko nie jeżdżą tylko 0:30–2:00.",
+              "evidence": "official"
+            },
+            {
+              "label": "Ile osób",
+              "text": "Autobusy 35 i 100 miejsc, więc 3 dorosłych, wózek i walizki się mieszczą. Strona podaje różne limity osób na jeden transfer (2, 4, do 10): przy rezerwacji wybrać wariant na 4 osoby lub zapytać."
+            },
+            {
+              "label": "Fotelik",
+              "text": "Nie jest zapewniany. W autobusach START w Warszawie dziecko jedzie w wózku lub na kolanach.",
+              "evidence": "official"
+            },
+            {
+              "label": "Powrót 27.11",
+              "text": "Po odebraniu bagażu z LO80 (lądowanie 5:45) zadzwonić pod numer z biletu parkingowego i zgłosić gotowość. Odbiór z zadaszonego przystanku transferowego. Infolinia: 22 295 25 55 (pn–pt 9–12, 14–17)."
+            }
+          ]
+        },
+        {
+          "type": "facts",
+          "title": "Lotnisko Chopina, LO79",
+          "items": [
+            {
+              "label": "Zamknięcie odprawy",
+              "text": "70 min przed odlotem = 21:40 (loty długodystansowe LOT).",
+              "evidence": "official"
+            },
+            {
+              "label": "Kontrola",
+              "text": "Do końca 2026 trwa modernizacja kontroli bezpieczeństwa; lotnisko i LOT proszą o wcześniejszy przyjazd. Plan: terminal ok. 19:40, ok. 3 h przed lotem."
+            },
+            {
+              "label": "Zapas",
+              "text": "Między 18:45 na parkingu a 21:40 są prawie 3 h, z czego realnie potrzebne ok. 1,5–2 h. Najwięcej zapasu jest przed obiadem."
+            }
+          ]
+        }
+      ]
+    },
+    "jl-pill": {
+      "id": "jl-pill",
+      "eyebrow": "Jet lag w pigułce",
+      "title": "6 zasad dla dorosłych",
+      "color": "must",
+      "open": true,
+      "lead": "Japonia to +8 h i lot na wschód, czyli trzeba przesunąć zegar wcześniej, co jest trudniejsze niż na zachód. Zwykle zajmuje to kilka dni; te zasady skracają ten czas.",
+      "blocks": [
+        {
+          "type": "rules",
+          "items": [
+            {
+              "title": "Po starcie od razu czas Japonii.",
+              "text": "Zegarki i telefony na +8 h. Jemy, śpimy i pijemy kawę według zegara Tokio.",
+              "evidence": "practice"
+            },
+            {
+              "title": "Śpimy w pierwszej połowie lotu, ile się da.",
+              "text": "Ok. 8:30–14:00 JP (0:30–6:00 PL) to wasza biologiczna noc. Pobudka ok. 14:00 JP.",
+              "evidence": "estimate"
+            },
+            {
+              "title": "Ostatnie 5 h lotu bez długiego snu.",
+              "text": "Najwyżej jedna drzemka 20–30 min przed 16:00 JP. Po lądowaniu bez drzemek, także w pociągu.",
+              "evidence": "official"
+            },
+            {
+              "title": "Kofeina tylko rano wg Japonii, alkohol wcale.",
+              "text": "Ostatnia kawa ok. 6 h przed snem: w dniu przylotu do ok. 15:00–16:00 JP.",
+              "evidence": "official"
+            },
+            {
+              "title": "Przez pierwsze 2–3 dni bez mocnego światła przed południem.",
+              "text": "Okulary przeciwsłoneczne do ok. 12:00 (10.11), 11:00 (11.11), 10:00 (12.11); po tej godzinie jak najwięcej dziennego światła.",
+              "evidence": "estimate"
+            },
+            {
+              "title": "Pierwsza noc: łóżko ok. 23:00, pobudka z budzikiem ok. 7:00.",
+              "text": "Przebudzenie o 3–4 to norma: ciemno, bez telefonu, leżymy.",
+              "evidence": "practice"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Oznaczenia: BADANIA i OFICJALNIE = zalecenia z badań lub CDC/AASM; SZACUNEK = nasze wyliczenie z tych zasad dla tego lotu; PRAKTYKA = zdrowy rozsądek bez mocnych dowodów."
+        }
+      ]
+    },
+    "jl-flight": {
+      "id": "jl-flight",
+      "eyebrow": "Plan lotu LO79",
+      "title": "Kiedy spać w samolocie",
+      "color": "ai",
+      "open": true,
+      "lead": "Start 22:50 PL = 6:50 JP, lądowanie 19:40 JP = 11:40 PL, lot 12 h 50 min. Pierwsza połowa lotu wypada w waszą polską noc, druga to już popołudnie w Japonii.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Polska",
+            "Japonia",
+            "Co robić",
+            "Dlaczego"
+          ],
+          "rows": [
+            {
+              "cells": [
+                "21:15–22:10",
+                "5:15–6:10",
+                "Toaleta, przewinięcie Zosi, woda. Zestaw do snu na wierzchu plecaka.",
+                "Po zgaszeniu świateł nikt nie szuka maski w walizce."
+              ]
+            },
+            {
+              "cells": [
+                "22:50",
+                "6:50",
+                "Start. Zegarki i telefony na czas Japonii. Zosia: picie lub smoczek.",
+                "Od teraz decyzje o śnie i kofeinie podejmujemy wg Tokio."
+              ],
+              "hl": true
+            },
+            {
+              "cells": [
+                "23:15–0:30",
+                "7:15–8:30",
+                "Posiłek: mała porcja albo pominąć (obiad był o 16:00). Woda, bez alkoholu i kawy.",
+                "Alkohol i ciężki posiłek pogarszają sen; kofeina działa jeszcze kilka godzin."
+              ],
+              "evidence": "official"
+            },
+            {
+              "cells": [
+                "0:30–6:00",
+                "8:30–14:00",
+                "GŁÓWNY SEN. Maska, stopery lub ANC, pas zapięty na kocu, oparcie w dół. Spać, ile się da w tym oknie (realnie 4–6 h).",
+                "To biologiczna noc: sen przychodzi najłatwiej. Nie skracamy go celowo do 3 h."
+              ],
+              "hl": true,
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "ok. 6:00",
+                "ok. 14:00",
+                "Pobudka (budzik). Ekran lub światło do czytania, woda, toaleta, rozciąganie.",
+                "Światło po pobudce w tej porze przesuwa zegar wcześniej, czyli we właściwą stronę."
+              ],
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "6:00–9:30",
+                "14:00–17:30",
+                "Czuwanie: filmy, zabawa z Zosią. Co 1–2 h spacer i ćwiczenia stóp i łydek. Kawa lub herbata najpóźniej ok. 15:00 JP.",
+                "Budujemy senność na 23:00. Ruch zmniejsza ryzyko zakrzepicy na długim locie."
+              ],
+              "evidence": "official"
+            },
+            {
+              "cells": [
+                "do 8:00",
+                "do 16:00",
+                "Jeśli ktoś pada z nóg: jedna drzemka 20–30 min (budzik). Później już nie.",
+                "Krótka drzemka pomaga; długa w tej porze to bezsenna noc w hotelu."
+              ],
+              "evidence": "official"
+            },
+            {
+              "cells": [
+                "9:30–10:30",
+                "17:30–18:30",
+                "Drugi posiłek jako kolacja wg Japonii.",
+                "Pierwszy posiłek o „japońskiej” porze; pomaga, choć dowody są słabsze."
+              ],
+              "evidence": "practice"
+            },
+            {
+              "cells": [
+                "11:00–11:40",
+                "19:00–19:40",
+                "Zniżanie i lądowanie. Zosia: pierś, butelka, smoczek.",
+                "Przełykanie wyrównuje ciśnienie w uszach."
+              ],
+              "hl": true
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Kiedy spać dłużej, a kiedy krócej",
+          "items": [
+            {
+              "text": "Zaśnięcie później niż ok. 9:30 JP (Zosia, posiłek, turbulencje): i tak wstać najpóźniej ok. 14:30 JP.",
+              "evidence": "estimate"
+            },
+            {
+              "text": "Przespane mniej niż 3 h, bo się nie udało: wolno pospać do ok. 15:00 JP. Duży niedobór snu jest gorszy niż pół godziny przesunięcia.",
+              "evidence": "estimate"
+            },
+            {
+              "text": "Nie zarywać celowo nocy przed lotem ani w samolocie. Ok. 9 h czuwania od 14:00 do 23:00 wystarczy, żeby w hotelu zasnąć.",
+              "evidence": "practice"
+            },
+            {
+              "text": "Między dorosłymi: śpimy na zmianę tylko wtedy, gdy Zosia nie śpi. Jedna osoba czuwa przy niej, pozostałe śpią w głównym oknie.",
+              "evidence": "practice"
+            }
+          ]
+        },
+        {
+          "type": "check",
+          "title": "W samolocie",
+          "items": [
+            "Woda regularnie, małymi porcjami: butelka do napełnienia po kontroli.",
+            "Kofeina tylko po pobudce (14:00–15:00 JP), alkohol wcale, także „na sen”.",
+            "Maska na oczy, stopery lub słuchawki z ANC, poduszka na szyję, ciepłe skarpety i bluza.",
+            "Ruch co 1–2 h w czasie czuwania: spacer do toalety, krążenie stopami, napinanie łydek.",
+            "Bez tabletek nasennych dla dorosłych opiekujących się dzieckiem."
+          ]
+        },
+        {
+          "type": "details",
+          "title": "Dlaczego właśnie tak (wyjaśnienie)",
+          "blocks": [
+            {
+              "type": "text",
+              "text": "Zegar biologiczny ma najniższą temperaturę ciała ok. 2 h przed zwykłą pobudką, czyli przy pobudce 7:00 ok. 5:00 PL = 13:00 JP. Światło przed tym punktem przesuwa zegar później, a po nim wcześniej. Przy +8 h zegar trzeba przesunąć wcześniej, więc światło ma padać po tym punkcie, który co dzień wędruje ok. 1 h wcześniej (CDC, AASM, prace Eastman i wsp.)."
+            },
+            {
+              "type": "text",
+              "text": "Sen w pierwszej połowie lotu wypada w waszej biologicznej nocy, więc jest najłatwiejszy i najbardziej regenerujący. Badania nie wyznaczają konkretnej liczby godzin snu w samolocie, dlatego 4–6 h to nasz szacunek dla tego lotu. Kluczowe jest, żeby nie spać długo w ostatnich godzinach przed lądowaniem."
+            }
+          ]
+        }
+      ]
+    },
+    "jl-arrival": {
+      "id": "jl-arrival",
+      "eyebrow": "9.11 · czas japoński",
+      "title": "Po przylocie: pierwszy wieczór",
+      "color": "ai",
+      "open": true,
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Godzina",
+            "Polska",
+            "Co robić",
+            "Dlaczego"
+          ],
+          "rows": [
+            {
+              "cells": [
+                "19:40",
+                "11:40",
+                "Lądowanie. Paszporty i QR z Visit Japan Web pod ręką.",
+                "Szybsza kontrola paszportowa i celna."
+              ]
+            },
+            {
+              "cells": [
+                "20:00–21:00",
+                "12:00–13:00",
+                "Kontrola, bagaż, cło. Potem SIM, gotówka, bilety na Skyliner.",
+                "Realnie 45–75 min; z dzieckiem i trzema walizkami raczej dłużej."
+              ]
+            },
+            {
+              "cells": [
+                "21:00–22:15",
+                "13:00–14:15",
+                "Skyliner do Keisei Ueno (ok. 45 min) i ok. 10 min do hotelu. Bez drzemki w pociągu.",
+                "Każda drzemka teraz utrudnia zaśnięcie o 23:00."
+              ],
+              "evidence": "official"
+            },
+            {
+              "cells": [
+                "22:30",
+                "14:30",
+                "Zameldowanie. Zasłony zaciągnięte, przygaszone światło, łóżeczko Zosi.",
+                "Jasne światło późnym wieczorem przesuwa zegar w złą stronę."
+              ],
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "22:45",
+                "14:45",
+                "Mały posiłek tylko dla głodnych: onigiri, zupa, jogurt. Bez alkoholu.",
+                "Kolacja była w samolocie; głód może budzić w nocy, przejedzenie też."
+              ],
+              "evidence": "practice"
+            },
+            {
+              "cells": [
+                "23:00–23:30",
+                "15:00–15:30",
+                "Łóżko. Budzik na 7:00–7:30.",
+                "Stała pora pobudki od pierwszego dnia przyspiesza adaptację."
+              ],
+              "hl": true,
+              "evidence": "official"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Obudzenie o 3:00–4:00",
+          "items": [
+            "To normalne pierwszej i drugiej nocy (w Polsce jest wtedy wieczór).",
+            "Nie włączać światła ani telefonu, nie jeść. Leżeć spokojnie w ciemności.",
+            "Jeśli sen nie wraca po 20–30 min: wstać do przyciemnionego światła, czytać, wrócić do łóżka przy senności.",
+            "Rano i tak wstać o 7:00–7:30. Wyspanie się do południa przedłuża jet lag."
+          ]
+        }
+      ]
+    },
+    "jl-zosia": {
+      "id": "jl-zosia",
+      "eyebrow": "Zosia · roczne dziecko",
+      "title": "Plan dla Zosi",
+      "color": "momiji",
+      "open": true,
+      "lead": "Zosia nie realizuje planu dorosłych. U małych dzieci liczy się wyspanie i znany rytm; zegar przestawia się sam w kilka dni, szybciej przy dziennym świetle i stałych posiłkach.",
+      "blocks": [
+        {
+          "type": "rules",
+          "items": [
+            {
+              "title": "W samolocie śpi, kiedy chce.",
+              "text": "Nie budzić i nie przetrzymywać, nie skracać snu, żeby szybciej zmienić strefę."
+            },
+            {
+              "title": "Start i lądowanie: przełykanie.",
+              "text": "Pierś, butelka, kubek lub smoczek przy starcie i przy zniżaniu (ok. 30–40 min przed lądowaniem). Jeśli śpi głęboko, nie trzeba budzić."
+            },
+            {
+              "title": "Kołyska LOT, jeśli się zmieści.",
+              "text": "Boeing 787: maks. 12 kg i 75 cm wzrostu w dniu lotu, wymiary 84 × 40 cm. Bezpłatna, przez Contact Center, najpóźniej 24 h przed lotem; miejsc jest mało, więc zgłosić od razu. Przy włączonych pasach dziecko zwykle trzeba wyjąć i zapiąć pasem.",
+              "evidence": "official"
+            },
+            {
+              "title": "Od 10.11 posiłki i drzemki wg Japonii, stopniowo.",
+              "text": "Przesuwać o ok. 30–60 min dziennie w stronę zwykłych pór. Drzemki zostają, ale nie późnym popołudniem i nie dużo dłuższe niż w domu; rano budzić o stałej porze ok. 7:30."
+            },
+            {
+              "title": "Wieczorem znany rytuał.",
+              "text": "Te same kroki co w domu: kąpiel, piżamka, ta sama przytulanka, kołysanka lub szum. Pokój zaciemniony."
+            },
+            {
+              "title": "Nocne przebudzenia: ciemno i cicho.",
+              "text": "Przyciemnione światło, bez zabawy i ekranów, karmienie, jeśli potrzebne. Kilka trudniejszych nocy to norma."
+            },
+            {
+              "title": "Bez melatoniny i leków nasennych.",
+              "text": "Także bez leków „na uspokojenie” w samolocie (np. przeciwhistaminowych), chyba że zaleci je pediatra."
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "title": "Logistyka z dzieckiem 8.11",
+          "items": [
+            "Transfer START: fotelika nie ma, Zosia jedzie w wózku lub na kolanach.",
+            "Wózek do bramki, nadawany przy wejściu na pokład; odbiór przy samolocie lub przy taśmie w Naricie.",
+            "W bagażu podręcznym: pieluchy na 24 h, ubranko na zmianę dla Zosi i jednego dorosłego, mleko lub jedzenie, ulubione zabawki."
+          ]
+        },
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "LOT: rezerwacja kołyski dla dziecka",
+              "url": "https://www.lot.com/pl/pl/centrum-pomocy/podroz-z-dziecmi/rezerwacja-kolyski-dla-dziecka",
+              "note": "Warunki i kontakt z Contact Center"
+            }
+          ]
+        }
+      ]
+    },
+    "jl-before": {
+      "id": "jl-before",
+      "eyebrow": "5–7.11 · przed wyjazdem",
+      "title": "Przygotowanie: 3 dni przed lotem",
+      "color": "must",
+      "open": false,
+      "lead": "Cel: przesunąć zegar o 1–2 h wcześniej jeszcze w Polsce. Badania pokazują ok. 1,5–2 h przesunięcia po 3 dniach z porannym jasnym światłem. Bez skracania snu: liczy się, żeby wsiąść do samolotu wyspanym.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Dzień",
+            "Sen",
+            "Co robić",
+            "Dlaczego"
+          ],
+          "rows": [
+            {
+              "cells": [
+                "czw. 5.11",
+                "−30–60 min",
+                "Spać i wstać 30–60 min wcześniej niż zwykle. Zaraz po pobudce jasne światło: wszystkie lampy, po wschodzie (ok. 6:50) spacer na dworze.",
+                "Poranne światło po pobudce przesuwa zegar wcześniej."
+              ],
+              "evidence": "research"
+            },
+            {
+              "cells": [
+                "pt. 6.11",
+                "−1–2 h",
+                "Kolejne 30–60 min wcześniej. Kolacja też odpowiednio wcześniej.",
+                "CDC: 1 h dziennie przez 2–3 dni; szybciej (2 h dziennie) nie działa lepiej."
+              ],
+              "evidence": "research"
+            },
+            {
+              "cells": [
+                "sob. 7.11",
+                "−1,5–3 h",
+                "Jeszcze 30–60 min wcześniej, jeśli się da. Wieczorem przygaszone światło i mniej ekranów na 2 h przed snem.",
+                "Jasne światło wieczorem przesuwa zegar w przeciwną stronę."
+              ],
+              "evidence": "official"
+            },
+            {
+              "cells": [
+                "nd. 8.11",
+                "jak 7.11",
+                "Pobudka o przesuniętej porze, poranne światło, kawa tylko do ok. 15:30.",
+                "Łatwiej zasnąć w samolocie ok. 0:30."
+              ],
+              "evidence": "estimate"
+            }
+          ]
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "text": "Kofeina: w dniach przesuwania ostatnia kawa ok. 8 h przed nową porą snu.",
+              "evidence": "practice"
+            },
+            {
+              "text": "Posiłki: przesuwać razem ze snem. To pomaga, ale dowody są słabsze niż dla światła.",
+              "evidence": "practice"
+            },
+            {
+              "text": "Z Zosią w domu: przesuwać się tylko na tyle, na ile pozwala jej rytm; jej samej nie trzeba przestawiać.",
+              "evidence": "practice"
+            },
+            {
+              "text": "Nie udało się przesunąć snu? Nic straconego. Ważniejsze jest wyspanie przed podróżą; plan na pokładzie i w Japonii działa także bez przygotowania.",
+              "evidence": "practice"
+            }
+          ]
+        }
+      ]
+    },
+    "jl-first-days": {
+      "id": "jl-first-days",
+      "eyebrow": "10–12.11 · adaptacja",
+      "title": "Pierwsze 3 dni w Japonii",
+      "color": "want",
+      "open": false,
+      "lead": "Przy +8 h na wschód zasada „jak najwięcej porannego słońca” może zaszkodzić: rano w Tokio jest jeszcze wasza biologiczna noc, a światło w tej porze przesuwa zegar później, czyli w złą stronę.",
+      "blocks": [
+        {
+          "type": "table",
+          "columns": [
+            "Dzień",
+            "Unikać mocnego światła",
+            "Łapać dzienne światło",
+            "Uwagi"
+          ],
+          "rows": [
+            {
+              "cells": [
+                "10.11",
+                "do ok. 12:00",
+                "12:00–16:30",
+                "Rano okulary przeciwsłoneczne i czapka (zoo bez zmian), po południu jak najwięcej na dworze."
+              ],
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "11.11",
+                "do ok. 11:00",
+                "11:00–16:30",
+                "Okno przesuwa się ok. 1 h dziennie wcześniej."
+              ],
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "12.11",
+                "do ok. 10:00",
+                "od 10:00",
+                "Fuji: rano w pociągu bez wpatrywania się w ostre słońce, potem normalnie."
+              ],
+              "evidence": "estimate"
+            },
+            {
+              "cells": [
+                "od 13.11",
+                "—",
+                "od rana",
+                "Dalej normalnie; poranne światło już pomaga."
+              ],
+              "evidence": "estimate"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "text": "Godziny liczone dla pobudki ok. 7:00 w Polsce. Kto wstaje w domu później, przesuwa okna o tyle samo później. Zachód słońca w Tokio ok. 16:35. W pomieszczeniach światło nie przeszkadza, mocne jest tylko dzienne na dworze."
+        },
+        {
+          "type": "list",
+          "items": [
+            {
+              "label": "Drzemki:",
+              "text": "najwyżej jedna, 20–30 min, przed 15:00; nie po 16:00.",
+              "evidence": "official"
+            },
+            {
+              "label": "Posiłki:",
+              "text": "od pierwszego ranka śniadanie, lunch i kolacja o japońskich porach, nawet bez apetytu (mała porcja).",
+              "evidence": "practice"
+            },
+            {
+              "label": "Kofeina:",
+              "text": "rano i do wczesnego popołudnia; nie później niż 6 h przed snem.",
+              "evidence": "official"
+            },
+            {
+              "label": "Wieczorem:",
+              "text": "od ok. 21:00 przygaszone światło, mniej ekranów, bez dużej ilości alkoholu i ciężkiej kolacji późno; pobudka zawsze o stałej porze.",
+              "evidence": "official"
+            }
+          ]
+        }
+      ]
+    },
+    "jl-melatonin": {
+      "id": "jl-melatonin",
+      "eyebrow": "Opcjonalnie",
+      "title": "Melatonina: co mówią badania",
+      "color": "travel",
+      "open": false,
+      "lead": "Nie jest obowiązkowa. Może pomóc dorosłym przy zasypianiu w pierwszych nocach. Nigdy dla Zosi.",
+      "blocks": [
+        {
+          "type": "facts",
+          "items": [
+            {
+              "label": "Dowody",
+              "text": "Przegląd Cochrane (10 badań): zmniejsza objawy jet lagu po lotach przez 5 i więcej stref, zwłaszcza na wschód. AASM zalicza ją do zaleceń dla jet lagu.",
+              "evidence": "research"
+            },
+            {
+              "label": "Dawka",
+              "text": "Badane 0,5–5 mg. 5 mg szybciej usypia, ale wyższe dawki nie działają lepiej. CDC: często wystarcza 0,5–1 mg, nie brać więcej niż 5 mg.",
+              "evidence": "research"
+            },
+            {
+              "label": "Kiedy",
+              "text": "Wieczorem w Japonii, ok. 30–90 min przed snem, przez pierwsze 2–4 noce (9–12.11). Nie przed wylotem i nie w samolocie.",
+              "evidence": "research"
+            },
+            {
+              "label": "Kiedy szkodzi",
+              "text": "Wzięta w złej porze, np. rano lub w dzień w Japonii, usypia i może opóźnić adaptację.",
+              "evidence": "research"
+            },
+            {
+              "label": "Ograniczenia",
+              "text": "Suplement: rzeczywista dawka może różnić się od etykiety. Senność, ból głowy; nie prowadzić po zażyciu. Nie łączyć z alkoholem."
+            },
+            {
+              "label": "Ostrożnie",
+              "text": "Leki przeciwzakrzepowe (np. warfaryna), przeciwpadaczkowe, uspokajające i nasenne, ciąża i karmienie piersią, choroby przewlekłe: najpierw lekarz lub farmaceuta."
+            },
+            {
+              "label": "Zosia",
+              "text": "Nie stosować u rocznego dziecka bez zalecenia lekarza."
+            }
+          ]
+        }
+      ]
+    },
+    "jl-sources": {
+      "id": "jl-sources",
+      "eyebrow": "Źródła",
+      "title": "Skąd te zalecenia",
+      "color": "travel",
+      "open": false,
+      "blocks": [
+        {
+          "type": "links",
+          "items": [
+            {
+              "label": "CDC Yellow Book 2026: Jet Lag Disorder",
+              "url": "https://www.cdc.gov/yellow-book/hcp/travel-air-sea/jet-lag-disorder.html",
+              "note": "Przesuwanie snu przed lotem, światło, kofeina, drzemki, melatonina"
+            },
+            {
+              "label": "AASM: zalecenia dla zaburzeń rytmu dobowego (Sleep, 2007)",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC2082098/",
+              "note": "Melatonina i światło w jet lagu"
+            },
+            {
+              "label": "Burgess, Eastman i wsp. 2003: 3 dni przesuwania snu przed lotem na wschód",
+              "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC1262683/",
+              "note": "Ok. 1,5–2,1 h przesunięcia z porannym jasnym światłem"
+            },
+            {
+              "label": "Cochrane: melatonina w jet lagu (Herxheimer, Petrie)",
+              "url": "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD001520/full",
+              "note": "Dawki 0,5–5 mg, pora podania, bezpieczeństwo"
+            },
+            {
+              "label": "START Parking Okęcie i FAQ transferu",
+              "url": "https://www.startparking.pl/faq",
+              "note": "Transfer, dzieci w autobusie, powrót"
+            },
+            {
+              "label": "LOT: kołyska dla dziecka",
+              "url": "https://www.lot.com/pl/pl/centrum-pomocy/podroz-z-dziecmi/rezerwacja-kolyski-dla-dziecka",
+              "note": "Limity 12 kg / 75 cm, zamówienie min. 24 h przed"
+            }
+          ]
+        }
+      ]
+    }
   }
 }
