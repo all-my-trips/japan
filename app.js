@@ -58,16 +58,18 @@
     : "";
   const legend = (group, id) => (S.trip.legend[group] || []).find((x) => x.id === id) || { id, label: id, meaning: "" };
 
-  function nowTokyo() {
+  function nowTokyo(tz) {
     if (S.sim) return S.sim;
     try {
-      const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: S.trip.meta.timezone, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date()).map((x) => [x.type, x.value]));
+      const p = Object.fromEntries(new Intl.DateTimeFormat("en-CA", { timeZone: tz || S.trip.meta.timezone, year: "numeric", month: "2-digit", day: "2-digit", hour: "2-digit", minute: "2-digit", hourCycle: "h23" }).formatToParts(new Date()).map((x) => [x.type, x.value]));
       return { date: `${p.year}-${p.month}-${p.day}`, min: +p.hour * 60 + +p.minute };
     } catch (e) {
       const d = new Date(); return { date: d.toISOString().slice(0, 10), min: d.getHours() * 60 + d.getMinutes() };
     }
   }
-  const todayDay = () => S.byId[nowTokyo().date] || null;
+  // dzień z własną strefą (np. wyjazd z Polski, days[].timezone) ma pierwszeństwo, dopóki u niego trwa ta data
+  const nowFor = (day) => nowTokyo(day && day.timezone);
+  const todayDay = () => S.trip.days.find((d) => d.timezone && nowFor(d).date === d.id) || S.byId[nowTokyo().date] || null;
 
   function segment(day) {
     const id = day.stay && day.stay.hotelId;
@@ -254,7 +256,7 @@
 
   // ---------- day ----------
   function renderDay(day, opts) {
-    const t = S.trip, now = nowTokyo(), isToday = now.date === day.id;
+    const t = S.trip, now = nowFor(day), isToday = todayDay() === day;
     const idx = t.days.indexOf(day), prev = t.days[idx - 1], next = t.days[idx + 1];
     const p = dateParts(day.date);
     const firstMust = day.items.find((i) => i.priority === "must" && i.placeId && S.trip.places[i.placeId]);
@@ -312,6 +314,7 @@
         </div>
       </div>
       <ol class="tl">${timeline(day, isToday ? now.min : null)}</ol>
+      ${guides(day)}
 
       <div class="dhead"><div class="nav">
         ${prev ? `<a class="btn" href="#d-${prev.id}">${icon("left")} ${shortDate(prev.date)} ${esc(prev.title)}</a>` : "<span></span>"}
@@ -331,6 +334,33 @@
       <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}" ${S.done[x.id] ? "checked" : ""}>
         <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</span></label></li>`).join("")}</ul>
     </section>`;
+  }
+
+  // Instrukcje pod planem dnia: days[].guides = [id] z trip.guides (format w data/README.md)
+  const EVID = { research: "Badania", estimate: "Szacunek", practice: "Praktyka", official: "Oficjalnie" };
+  const evTag = (e) => e && EVID[e] ? `<span class="ev ev-${esc(e)}">${EVID[e]}</span>` : "";
+  const gLink = (l) => l ? ` <a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>` : "";
+  const gText = (x) => typeof x === "string" ? esc(x) : `${x.label ? `<b>${esc(x.label)}</b> ` : ""}${esc(x.text || "")}${gLink(x.link)}${evTag(x.evidence)}`;
+  function guideBlock(b) {
+    if (b.type === "rules") return `<ol class="g-rules">${b.items.map((x) => `<li><b>${esc(x.title)}</b>${x.text ? `<span>${esc(x.text)}${evTag(x.evidence)}</span>` : ""}</li>`).join("")}</ol>`;
+    if (b.type === "list" || b.type === "check") return `${b.title ? `<h3 class="eyebrow">${esc(b.title)}</h3>` : ""}<ul class="g-list ${b.type === "check" ? "is-check" : ""}">${b.items.map((x) => `<li>${gText(x)}</li>`).join("")}</ul>`;
+    if (b.type === "facts") return `${b.title ? `<h3 class="eyebrow">${esc(b.title)}</h3>` : ""}<dl class="g-facts">${b.items.map((x) => `<div><dt>${esc(x.label)}</dt><dd>${esc(x.text)}${gLink(x.link)}${evTag(x.evidence)}</dd></div>`).join("")}</dl>`;
+    if (b.type === "table") return `${b.title ? `<h3 class="eyebrow">${esc(b.title)}</h3>` : ""}<table class="g-table"><thead><tr>${b.columns.map((c) => `<th scope="col">${esc(c)}</th>`).join("")}</tr></thead>
+      <tbody>${b.rows.map((r) => `<tr class="${r.hl ? "hl" : ""}">${r.cells.map((c, k) => `<td data-l="${esc(b.columns[k])}">${esc(c)}${k === r.cells.length - 1 ? evTag(r.evidence) : ""}</td>`).join("")}</tr>`).join("")}</tbody></table>${b.note ? `<p class="g-note">${esc(b.note)}</p>` : ""}`;
+    if (b.type === "text") return `<p class="g-text">${esc(b.text)}</p>`;
+    if (b.type === "alert") return `<div class="g-alert"><b>${esc(b.title)}</b> ${esc(b.text)}</div>`;
+    if (b.type === "links") return `<ul class="g-links">${b.items.map((x) => `<li><a href="${esc(x.url)}" target="_blank" rel="noopener">${icon("link")} ${esc(x.label)}</a>${x.note ? `<span>${esc(x.note)}</span>` : ""}</li>`).join("")}</ul>`;
+    if (b.type === "details") return `<details class="g-more"><summary>${esc(b.title)}</summary>${(b.blocks || []).map(guideBlock).join("")}</details>`;
+    return "";
+  }
+  function guides(day) {
+    const list = (day.guides || []).map((id) => (S.trip.guides || {})[id]).filter(Boolean);
+    if (!list.length) return "";
+    return `<div class="tl-h"><h2>Instrukcje</h2></div>
+      <div class="guides">${list.map((g) => `<details class="guide" id="g-${esc(g.id)}" style="--c:var(--${esc(g.color || "ai")})" ${g.open ? "open" : ""}>
+        <summary><span class="eyebrow">${esc(g.eyebrow || "")}</span><span class="gt">${esc(g.title)}</span></summary>
+        <div class="gbody">${g.lead ? `<p class="g-lead">${esc(g.lead)}</p>` : ""}${(g.blocks || []).map(guideBlock).join("")}</div>
+      </details>`).join("")}</div>`;
   }
 
   function timeline(day, nowMin) {
