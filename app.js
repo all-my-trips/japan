@@ -56,6 +56,8 @@
   const tipList = (tips, links) => (tips || []).length
     ? `<span class="tips">${tips.map((x) => `<span class="tip k-${esc(x.kind || "tip")}"><b>${esc(TIP_LABEL[x.kind] || TIP_LABEL.tip)}</b> ${esc(x.text)}${links && x.link ? ` <a href="${esc(x.link.url)}" target="_blank" rel="noopener">${esc(x.link.label)}</a>` : ""}</span>`).join("")}</span>`
     : "";
+  // TODO bez wykonanych: done:true w danych albo odhaczone w tej przeglądarce
+  const openTodos = (d) => (d.todos || []).filter((x) => !x.done && !S.done[x.id]);
   const legend = (group, id) => (S.trip.legend[group] || []).find((x) => x.id === id) || { id, label: id, meaning: "" };
 
   function nowTokyo(tz) {
@@ -249,7 +251,7 @@
         ${pics}
         ${d.summary ? `<span class="sum">${esc(d.summary)}</span>` : ""}
         <span class="must"><b>MUST</b><span>${esc(d.priorities.must)}</span></span>
-        ${(d.todos || []).length ? `<span class="ptodo"><b>${icon("check")} Ważne TODO</b><span>${d.todos.map((x) => esc(x.text)).join(" · ")}</span></span>` : ""}
+        ${openTodos(d).length ? `<span class="ptodo"><b>${icon("check")} Ważne TODO</b><span>${openTodos(d).map((x) => esc(x.text)).join(" · ")}</span></span>` : ""}
         <span class="meta"><span class="chip" title="Tempo">${paceBars(d.pace)}${esc(d.paceLabel)}</span>${bookingChip(d.booking)}</span>
       </a></li>`;
   }
@@ -325,13 +327,13 @@
     if (cur) cur.scrollIntoView({ block: "nearest", inline: "center" });
   }
 
-  // Ważne TODO dnia: lista do odhaczenia, stan tylko w tej przeglądarce
+  // Ważne TODO dnia: odhaczone znika od razu, stan tylko w tej przeglądarce
   function todoList(day) {
-    const list = day.todos || [];
+    const list = openTodos(day);
     if (!list.length) return "";
     return `<section class="todo" aria-labelledby="todo-${esc(day.id)}">
       <h2 class="eyebrow" id="todo-${esc(day.id)}">${icon("check")} Ważne TODO</h2>
-      <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}" ${S.done[x.id] || x.done ? "checked" : ""} ${x.done ? "disabled" : ""}>
+      <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}">
         <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</span></label></li>`).join("")}</ul>
     </section>`;
   }
@@ -585,8 +587,12 @@
   document.addEventListener("change", (e) => {
     const id = e.target.dataset && e.target.dataset.todo;
     if (!id) return;
-    if (e.target.checked) S.done[id] = true; else delete S.done[id];
+    if (!e.target.checked) return;
+    S.done[id] = true;
     store.set("todo", S.done);
+    const li = e.target.closest("li"), box = e.target.closest("section.todo");
+    li.remove();
+    if (box && !box.querySelector("li")) box.remove();
   });
   sheet.addEventListener("click", (e) => { if (e.target === sheet) sheet.close(); });
   window.addEventListener("hashchange", route);
