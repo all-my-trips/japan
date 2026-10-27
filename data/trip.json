@@ -4426,7 +4426,13 @@
       "category": "park",
       "short": "Tunel z czerwonych klonów nad strumieniem na północnym brzegu Kawaguchiko.",
       "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min. Najbliżej z przystanku autobusu turystycznego „Kubota Itchiku Museum”.",
-      "photo": null,
+      "photo": {
+        "src": "img/momiji-kairo.jpg",
+        "alt": "Podświetlone jesienne klony nocą w Kawaguchiko",
+        "credit": "lumoplank / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_II_-_Kawaguchiko6811.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
@@ -4498,7 +4504,13 @@
       "category": "viewpoint",
       "short": "Wielki diabelski młyn tuż obok Kaiyukan, z widokiem na port Osaki.",
       "description": "Diabelski młyn o wysokości ok. 112 m stojący obok akwarium Kaiyukan. Obrót trwa ok. 15 minut; przy dobrej widoczności widać port i Zatokę Osaka, a w oddali góry Rokkō. Według Osaka Info zwykle 10:00–22:00, ok. 800 ¥, przy silnym wietrze wstrzymywany.",
-      "photo": null,
+      "photo": {
+        "src": "img/tempozan-wheel.jpg",
+        "alt": "Diabelski młyn Tempozan",
+        "credit": "David Offf / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempozan_Ferris_wheel_in_20110507.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
