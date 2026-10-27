@@ -4374,7 +4374,13 @@
       "category": "shrine",
       "short": "Pozłacany chram Tokugawy Ieyasu w parku Ueno, mała wersja Tōshō-gū z Nikkō.",
       "description": "Chram poświęcony Tokugawie Ieyasu, w obecnej formie z 1651 roku; jeden z niewielu budynków epoki Edo w Tokio, które przetrwały trzęsienie ziemi i wojnę. Do złoconego pawilonu prowadzi aleja kamiennych i brązowych latarni. Dojście i teren przed chramem są wolne, wejście za bramę Karamon płatne. Według GO TOKYO (I 2026) otwarte 9:00–16:30, godziny zmieniają się sezonowo.",
-      "photo": null,
+      "photo": {
+        "src": "img/ueno-toshogu.jpg",
+        "alt": "Ueno Tōshō-gū",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_Park_(14038495292).jpg"
+      },
       "links": {
         "official": "https://www.uenotoshogu.com/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
@@ -4394,7 +4400,13 @@
       "category": "temple",
       "short": "Świątynia buddyjska w stylu indyjskim, kilka minut od targu Tsukiji.",
       "description": "Kamienna świątynia z 1934 roku, zupełnie niepodobna do typowych japońskich: kopuła i fasada inspirowane architekturą starożytnych Indii, rzeźby zwierząt na schodach, a w głównej hali organy. Wstęp wolny. Według dostępnych źródeł główna hala jest otwarta zwykle ok. 6:00–16:00, teren dłużej.",
-      "photo": null,
+      "photo": {
+        "src": "img/tsukiji-hongwanji.jpg",
+        "alt": "Tsukiji Hongwanji",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tsukiji_Honganji.jpg"
+      },
       "links": {
         "official": "https://tsukijihongwanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
@@ -4434,7 +4446,13 @@
       "category": "market",
       "short": "Podziemne hale z jedzeniem w domach towarowych: bento, słodycze, degustacje.",
       "description": "Depachika to piętra spożywcze w podziemiach japońskich domów towarowych: setki stoisk z bento, sushi na wynos, smażonymi przekąskami, wagashi, ciastami i owocami pakowanymi jak biżuteria, często z degustacją. W Ginzie największe są w Mitsukoshi i Matsuya, mniejsza w Ginza Six. Dobre miejsce na lunch na wynos i słodkie pamiątki; jedzenie je się poza halą, np. na tarasie na dachu domu towarowego. W niedzielę koło południa jest tłoczno.",
-      "photo": null,
+      "photo": {
+        "src": "img/depachika-ginza.jpg",
+        "alt": "Depachika, hala z jedzeniem",
+        "credit": "ayustety / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Depachika.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
@@ -4454,7 +4472,13 @@
       "category": "garden",
       "short": "Ogród i willa aktora na końcu bambusowej ścieżki, z widokiem na Kioto i matchą w cenie.",
       "description": "Dawna willa aktora filmów samurajskich Denjirō Ōkōchiego, który przez około 30 lat tworzył ten ogród na zboczu góry Ogura. Ścieżki prowadzą między klonami, mchem i tradycyjnymi pawilonami do punktów widokowych na Kioto i góry Arashiyamy. Jesienią jedno z najładniejszych, a zarazem spokojniejszych miejsc w okolicy. Ścieżki są strome, z dzieckiem lepiej nosidło.",
-      "photo": null,
+      "photo": {
+        "src": "img/okochi-sanso.jpg",
+        "alt": "Ogród Ōkōchi Sansō",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okochi_Sanso09n4592.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
