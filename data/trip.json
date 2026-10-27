@@ -4518,7 +4518,13 @@
       "category": "temple",
       "short": "Świątynia zen z najsłynniejszym kamiennym ogrodem Japonii.",
       "description": "Świątynia zen ze słynnym suchym ogrodem kare-sansui: 15 kamieni na grabionym białym żwirze, ustawionych tak, że z werandy nie widać wszystkich naraz. Ogląda się go w ciszy, siedząc na drewnianej werandzie. Wokół staw Kyōyōchi i jesienne klony. Według serwisów turystycznych od marca do listopada 8:00–17:00, ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/ryoan-ji.jpg",
+        "alt": "Kamienny ogród Ryōan-ji",
+        "credit": "Carla Antonini / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryoanji_rock_garden_857.jpg"
+      },
       "links": {
         "official": "https://www.ryoanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
@@ -4538,7 +4544,13 @@
       "category": "temple",
       "short": "Długa na 120 m hala z 1001 posągami bogini Kannon.",
       "description": "Drewniana hala z XIII wieku, długa na ok. 120 metrów, w której w równych rzędach stoi 1001 złoconych posągów tysiącrękiej Kannon: tysiąc stojących wokół jednej dużej, siedzącej figury, a przed nimi 28 strażników. Wrażenie robi skala i powtarzalność. W środku nie wolno robić zdjęć. Według serwisów turystycznych od 16.11 otwarte 9:00–16:00 (ostatnie wejście 15:30), ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/sanjusangen-do.jpg",
+        "alt": "Hala Sanjūsangen-dō",
+        "credit": "Akonnchiroll / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanjusangendo_2022.jpg"
+      },
       "links": {
         "official": "https://www.sanjusangendo.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
