@@ -4374,7 +4374,13 @@
       "category": "shrine",
       "short": "Pozłacany chram Tokugawy Ieyasu w parku Ueno, mała wersja Tōshō-gū z Nikkō.",
       "description": "Chram poświęcony Tokugawie Ieyasu, w obecnej formie z 1651 roku; jeden z niewielu budynków epoki Edo w Tokio, które przetrwały trzęsienie ziemi i wojnę. Do złoconego pawilonu prowadzi aleja kamiennych i brązowych latarni. Dojście i teren przed chramem są wolne, wejście za bramę Karamon płatne. Według GO TOKYO (I 2026) otwarte 9:00–16:30, godziny zmieniają się sezonowo.",
-      "photo": null,
+      "photo": {
+        "src": "img/ueno-toshogu.jpg",
+        "alt": "Ueno Tōshō-gū",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_Park_(14038495292).jpg"
+      },
       "links": {
         "official": "https://www.uenotoshogu.com/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
@@ -4394,7 +4400,13 @@
       "category": "temple",
       "short": "Świątynia buddyjska w stylu indyjskim, kilka minut od targu Tsukiji.",
       "description": "Kamienna świątynia z 1934 roku, zupełnie niepodobna do typowych japońskich: kopuła i fasada inspirowane architekturą starożytnych Indii, rzeźby zwierząt na schodach, a w głównej hali organy. Wstęp wolny. Według dostępnych źródeł główna hala jest otwarta zwykle ok. 6:00–16:00, teren dłużej.",
-      "photo": null,
+      "photo": {
+        "src": "img/tsukiji-hongwanji.jpg",
+        "alt": "Tsukiji Hongwanji",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tsukiji_Honganji.jpg"
+      },
       "links": {
         "official": "https://tsukijihongwanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
@@ -4414,7 +4426,13 @@
       "category": "park",
       "short": "Tunel z czerwonych klonów nad strumieniem na północnym brzegu Kawaguchiko.",
       "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min. Najbliżej z przystanku autobusu turystycznego „Kubota Itchiku Museum”.",
-      "photo": null,
+      "photo": {
+        "src": "img/momiji-kairo.jpg",
+        "alt": "Podświetlone jesienne klony nocą w Kawaguchiko",
+        "credit": "lumoplank / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_II_-_Kawaguchiko6811.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
@@ -4434,7 +4452,13 @@
       "category": "market",
       "short": "Podziemne hale z jedzeniem w domach towarowych: bento, słodycze, degustacje.",
       "description": "Depachika to piętra spożywcze w podziemiach japońskich domów towarowych: setki stoisk z bento, sushi na wynos, smażonymi przekąskami, wagashi, ciastami i owocami pakowanymi jak biżuteria, często z degustacją. W Ginzie największe są w Mitsukoshi i Matsuya, mniejsza w Ginza Six. Dobre miejsce na lunch na wynos i słodkie pamiątki; jedzenie je się poza halą, np. na tarasie na dachu domu towarowego. W niedzielę koło południa jest tłoczno.",
-      "photo": null,
+      "photo": {
+        "src": "img/depachika-ginza.jpg",
+        "alt": "Depachika, hala z jedzeniem",
+        "credit": "ayustety / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Depachika.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
@@ -4454,7 +4478,13 @@
       "category": "garden",
       "short": "Ogród i willa aktora na końcu bambusowej ścieżki, z widokiem na Kioto i matchą w cenie.",
       "description": "Dawna willa aktora filmów samurajskich Denjirō Ōkōchiego, który przez około 30 lat tworzył ten ogród na zboczu góry Ogura. Ścieżki prowadzą między klonami, mchem i tradycyjnymi pawilonami do punktów widokowych na Kioto i góry Arashiyamy. Jesienią jedno z najładniejszych, a zarazem spokojniejszych miejsc w okolicy. Ścieżki są strome, z dzieckiem lepiej nosidło.",
-      "photo": null,
+      "photo": {
+        "src": "img/okochi-sanso.jpg",
+        "alt": "Ogród Ōkōchi Sansō",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okochi_Sanso09n4592.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
@@ -4474,7 +4504,13 @@
       "category": "viewpoint",
       "short": "Wielki diabelski młyn tuż obok Kaiyukan, z widokiem na port Osaki.",
       "description": "Diabelski młyn o wysokości ok. 112 m stojący obok akwarium Kaiyukan. Obrót trwa ok. 15 minut; przy dobrej widoczności widać port i Zatokę Osaka, a w oddali góry Rokkō. Według Osaka Info zwykle 10:00–22:00, ok. 800 ¥, przy silnym wietrze wstrzymywany.",
-      "photo": null,
+      "photo": {
+        "src": "img/tempozan-wheel.jpg",
+        "alt": "Diabelski młyn Tempozan",
+        "credit": "David Offf / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempozan_Ferris_wheel_in_20110507.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
@@ -4494,7 +4530,13 @@
       "category": "temple",
       "short": "Świątynia zen z najsłynniejszym kamiennym ogrodem Japonii.",
       "description": "Świątynia zen ze słynnym suchym ogrodem kare-sansui: 15 kamieni na grabionym białym żwirze, ustawionych tak, że z werandy nie widać wszystkich naraz. Ogląda się go w ciszy, siedząc na drewnianej werandzie. Wokół staw Kyōyōchi i jesienne klony. Według serwisów turystycznych od marca do listopada 8:00–17:00, ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/ryoan-ji.jpg",
+        "alt": "Kamienny ogród Ryōan-ji",
+        "credit": "Carla Antonini / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryoanji_rock_garden_857.jpg"
+      },
       "links": {
         "official": "https://www.ryoanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
@@ -4514,7 +4556,13 @@
       "category": "temple",
       "short": "Długa na 120 m hala z 1001 posągami bogini Kannon.",
       "description": "Drewniana hala z XIII wieku, długa na ok. 120 metrów, w której w równych rzędach stoi 1001 złoconych posągów tysiącrękiej Kannon: tysiąc stojących wokół jednej dużej, siedzącej figury, a przed nimi 28 strażników. Wrażenie robi skala i powtarzalność. W środku nie wolno robić zdjęć. Według serwisów turystycznych od 16.11 otwarte 9:00–16:00 (ostatnie wejście 15:30), ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/sanjusangen-do.jpg",
+        "alt": "Hala Sanjūsangen-dō",
+        "credit": "Akonnchiroll / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanjusangendo_2022.jpg"
+      },
       "links": {
         "official": "https://www.sanjusangendo.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
