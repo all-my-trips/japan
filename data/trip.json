@@ -757,97 +757,161 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "07:30",
+      "earliestDeparture": "08:10",
       "pace": "long",
       "paceLabel": "Długi",
-      "summary": "Wyjazd do Fuji, najdłuższy dzień pierwszego tygodnia. Rano pagoda Chureito, skąd jest najsłynniejszy widok na górę, potem lunch i powolny spacer brzegiem jeziora Kawaguchiko z Fuji odbijającą się w wodzie. Ten dzień zależy od pogody: gdy prognoza pokazuje chmury nad Fuji, lepiej zamienić go z innym dniem w Tokio, bo bez widoku na górę traci sens.",
+      "summary": "Autobusem nad jezioro Kawaguchiko: jesienny korytarz klonów Momiji Kairō, obiad i spacer północnym brzegiem jeziora z widokiem na Fuji ponad wodą.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Kawaguchiko / widok na Fuji",
-        "want": "Chureito",
+        "must": "Momiji Kairō i spacer brzegiem z widokiem na Fuji",
+        "want": null,
         "bonus": "Oishi Park"
       },
       "booking": {
-        "level": "required",
-        "text": "Fuji Excursion: zarezerwować miejsca tam i z powrotem (JR East, do 1 mies. naprzód). Atrakcje bez rezerwacji."
+        "level": "booked",
+        "text": "Oba autobusy kupione (0113 tam, 0028 z powrotem)."
       },
       "source": {
-        "orderText": "07:30 wyjście → ~10:00–11:15 Chureito → 12:00 Kawaguchiko/lunch → 13:00–15:30 jezioro → 16:00–16:30 powrót → ~19:00–20:00 Tokio"
+        "orderText": "08:10 wyjście → 09:25–11:20 Highway Bus 0113 → 12:10–13:15 Momiji Kairō → 13:15–14:00 obiad → 14:00–15:20 spacer brzegiem → 15:20–16:35 powrót na stację → 17:00–19:05 Highway Bus 0028 → ~20:00 hotel"
       },
       "items": [
         {
           "id": "d05-01",
-          "start": "07:30",
+          "start": "08:10",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "departure",
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
         },
         {
           "id": "d05-02",
-          "start": "08:30",
-          "end": "10:13",
-          "approx": false,
+          "start": "08:20",
+          "end": "08:40",
+          "approx": true,
           "type": "transport",
-          "title": "Przejazd w rejon Fuji",
+          "title": "JR Ueno → Tokyo",
           "priority": null,
           "placeId": null,
-          "tips": [
-            {
-              "kind": "important",
-              "text": "Celujemy w Fuji Excursion 7: Shinjuku 8:30 → Shimoyoshida 10:13 (dni robocze wg JR). Pociąg o 7:30 jest przy tym wyjściu nieosiągalny; Ueno → Shinjuku linią Yamanote ok. 30 min."
-            }
-          ],
-          "note": null
+          "note": "Yamanote albo Keihin-Tōhoku w kierunku Tokyo, 4 stacje, ok. 8 min. Na Tokyo wyjście Yaesu North."
         },
         {
           "id": "d05-03",
-          "start": "10:30",
-          "end": "11:30",
+          "start": "08:40",
+          "end": "09:05",
           "approx": true,
-          "type": "attraction",
-          "title": "Pagoda Chureito",
-          "priority": "want",
-          "placeId": "chureito",
+          "type": "walk",
+          "title": "Yaesu North Exit → przystanek przy Tekko Building (South Tower, 1F)",
+          "priority": null,
+          "placeId": null,
           "note": null,
           "tips": [
             {
               "kind": "important",
-              "text": "Ze stacji Shimoyoshida ok. 10 min pieszo, potem prawie 400 schodów do pagody: wózek się nie sprawdzi, nosidło."
+              "text": "Autobus odjeżdża spod Tekko Building, nie z dworca autobusowego Yaesu South Exit.",
+              "link": {
+                "url": "https://www.google.com/maps/dir/?api=1&destination=Tekko+Building,+1-8-2+Marunouchi,+Chiyoda+City,+Tokyo&travelmode=walking",
+                "label": "Nawigacja do przystanku"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d05-03a",
+          "start": "09:05",
+          "end": "09:25",
+          "approx": true,
+          "type": "transport",
+          "title": "Bufor przy przystanku, wsiadanie",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d05-03b",
+          "start": "09:25",
+          "end": "11:20",
+          "approx": false,
+          "type": "transport",
+          "title": "Highway Bus 0113: Tokio (Tekko Building) → Kawaguchiko Station",
+          "priority": null,
+          "placeId": null,
+          "note": "Kupiony. Korki mogą opóźnić przyjazd.",
+          "links": [
+            {
+              "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+              "label": "Bilety (Fujiyama Connect)"
             },
             {
-              "kind": "tip",
-              "text": "Dalej lokalny pociąg Fujikyu Shimoyoshida → Kawaguchiko, ok. 15 min."
+              "url": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko%20Station",
+              "label": "Mapa: Kawaguchiko Station"
             }
           ]
         },
         {
           "id": "d05-04",
-          "start": "12:15",
-          "end": null,
+          "start": "11:20",
+          "end": "12:10",
+          "approx": true,
+          "type": "transport",
+          "title": "Dojazd na północny brzeg (Red Line)",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Red Line spod stacji (stanowisko 1), co 15 min, ok. 21 min do przystanku „Itchiku Kubota Art Museum”, dalej 5 min pieszo. W sezonie liści bywa kolejka do autobusu i korki; przy długiej kolejce taksówka spod stacji, ok. 15 min.",
+              "link": {
+                "url": "https://en.kawaguchiko.net/img/pdf/bus_timetable_en.pdf",
+                "label": "Rozkład Red Line (PDF)"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d05-05",
+          "start": "12:10",
+          "end": "13:15",
+          "approx": true,
+          "type": "attraction",
+          "title": "Momiji Kairō (korytarz klonów)",
+          "priority": "must",
+          "placeId": "momiji-kairo",
+          "note": null
+        },
+        {
+          "id": "d05-06",
+          "start": "13:15",
+          "end": "14:00",
           "approx": true,
           "type": "meal",
-          "title": "Kawaguchiko — lunch",
+          "title": "Obiad",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
-          "id": "d05-05",
-          "start": "13:15",
-          "end": "16:15",
-          "approx": false,
-          "type": "attraction",
-          "title": "Jezioro Kawaguchiko i widok na Fuji",
+          "id": "d05-07",
+          "start": "14:00",
+          "end": "15:20",
+          "approx": true,
+          "type": "walk",
+          "title": "Spacer północnym brzegiem z widokiem na Fuji",
           "priority": "must",
           "placeId": "kawaguchiko",
-          "note": null
+          "note": "Od Momiji Kairō brzegiem na wschód do Nagasaki Park (ok. 1 km), Fuji po prawej nad jeziorem. Powrót autobusem z przystanku „Sunnide Resort/Nagasaki Park Ent.”."
         },
         {
-          "id": "d05-06",
+          "id": "d05-08",
           "start": null,
           "end": null,
           "approx": false,
@@ -855,58 +919,89 @@
           "title": "Oishi Park",
           "priority": "bonus",
           "placeId": "oishi-park",
-          "note": "Przy jeziorze, w ramach czasu nad Kawaguchiko."
+          "note": "Dalej brzegiem ok. 10 min od Nagasaki Park; wtedy autobus z przystanku „Kawaguchiko Natural Living Center”."
         },
         {
-          "id": "d05-06a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Momiji Kairō (Maple Corridor)",
-          "priority": "bonus",
-          "placeId": "momiji-kairo",
-          "note": "Zamiennie z Oishi Park, gdy czasu jest mało: wybieramy jedno z dwóch.",
-          "tips": [
-            {
-              "kind": "tip",
-              "text": "7–29.11 trwa tu festiwal jesiennych liści (wstęp wolny); podświetlenie dopiero od zmierzchu, po naszym odjeździe."
-            }
-          ]
-        },
-        {
-          "id": "d05-07",
-          "start": "16:48",
-          "end": "18:48",
-          "approx": false,
+          "id": "d05-09",
+          "start": "15:20",
+          "end": "16:35",
+          "approx": true,
           "type": "transport",
-          "title": "Powrót do Tokio",
+          "title": "Powrót na stację Kawaguchiko",
           "priority": null,
           "placeId": null,
-          "note": null,
-          "tips": [
-            {
-              "kind": "important",
-              "text": "Fuji Excursion 44: Kawaguchiko 16:48 → Shinjuku 18:48 (dni robocze wg JR). Między 16:00 a 16:30 nie ma bezpośredniego pociągu; wcześniejszy 14:58, późniejszy 17:41."
-            }
-          ]
+          "note": "Red Line w stronę stacji, ok. 25–30 min wg rozkładu; w sezonie liści korki i kolejki to wydłużają. Na stacji najpóźniej 16:35–16:40."
         },
         {
-          "id": "d05-08",
-          "start": "19:00",
-          "end": "20:00",
+          "id": "d05-09a",
+          "start": "16:35",
+          "end": "17:00",
           "approx": true,
-          "type": "hotel",
-          "title": "Przyjazd do Tokio",
+          "type": "transport",
+          "title": "Bufor na wejście do autobusu",
           "priority": null,
           "placeId": null,
           "note": null
+        },
+        {
+          "id": "d05-10",
+          "start": "17:00",
+          "end": "19:05",
+          "approx": false,
+          "type": "transport",
+          "title": "Highway Bus 0028: Kawaguchiko Station → Tokyo Station Nihonbashi Exit",
+          "priority": null,
+          "placeId": null,
+          "note": "Kupiony. Wysiadka przy Nihonbashi Exit, a nie przy Tekko Building, skąd rano odjeżdża autobus. Korki mogą opóźnić przyjazd.",
+          "links": [
+            {
+              "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+              "label": "Bilety (Fujiyama Connect)"
+            },
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20Nihonbashi%20Exit",
+              "label": "Mapa: Nihonbashi Exit"
+            }
+          ]
+        },
+        {
+          "id": "d05-11",
+          "start": "19:05",
+          "end": "20:00",
+          "approx": true,
+          "type": "hotel",
+          "title": "Tokyo → Ueno (JR), hotel",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
         }
       ],
       "dayTrip": {
         "from": "Tokio",
         "to": "Fuji i Kawaguchiko"
-      }
+      },
+      "tips": [
+        {
+          "kind": "important",
+          "text": "Widoczność Fuji jest zależna od pogody. Sprawdź prognozę i kamery na żywo 48–72 godziny wcześniej. Bilety autobusowe są już kupione — zmiana dnia może wiązać się z opłatą za anulowanie i zakupem nowych biletów, zależnie od dostępności.",
+          "links": [
+            {
+              "url": "https://www.jma.go.jp/bosai/forecast/#area_type=class20s&area_code=1943000",
+              "label": "Prognoza JMA (Fujikawaguchiko)"
+            },
+            {
+              "url": "https://fujiyama.tv/live/",
+              "label": "Kamery Fuji na żywo"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "2026-11-13",
@@ -3117,32 +3212,6 @@
         "lng": 139.7982
       }
     },
-    "chureito": {
-      "id": "chureito",
-      "name": "Pagoda Chureito",
-      "nameJa": "忠霊塔",
-      "city": "Fujiyoshida",
-      "area": "Arakurayama Sengen Park",
-      "category": "temple",
-      "short": "Pięciopiętrowa pagoda z najsłynniejszym widokiem na Fuji.",
-      "description": "Czerwona pagoda Chureito należy do chramu Arakura Fuji Sengen i stoi na zboczu nad miastem Fujiyoshida. Zbudowano ją w 1963 roku jako pomnik poległych. Prowadzi do niej prawie 400 schodów, a z tarasu widokowego za pagodą rozciąga się kadr znany z plakatów: pagoda na pierwszym planie, Fuji w tle. W listopadzie zbocze przebarwia się na czerwono i złoto. Najlepsza widoczność jest zwykle rano, zanim nad górą zbiorą się chmury.",
-      "photo": {
-        "src": "img/chureito.jpg",
-        "alt": "Pagoda Chureito",
-        "credit": "Stjepko Krehula / Wikimedia Commons",
-        "license": "CC BY 4.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chureito_Pagoda_and_Mount_Fuji_2023-03-07.jpg"
-      },
-      "links": {
-        "official": null,
-        "maps": null
-      },
-      "mapsQuery": "Pagoda Chureito, Fujiyoshida, Japan",
-      "coords": {
-        "lat": 35.5012,
-        "lng": 138.8016
-      }
-    },
     "kawaguchiko": {
       "id": "kawaguchiko",
       "name": "Jezioro Kawaguchiko",
@@ -3161,7 +3230,7 @@
       },
       "links": {
         "official": null,
-        "maps": null
+        "maps": "https://www.google.com/maps/dir/?api=1&origin=Momiji+Kairo,+Fujikawaguchiko&destination=Nagasaki+Park,+Fujikawaguchiko&travelmode=walking"
       },
       "mapsQuery": "Jezioro Kawaguchiko, Fujikawaguchiko, Japan",
       "coords": {
@@ -3187,7 +3256,7 @@
       },
       "links": {
         "official": null,
-        "maps": null
+        "maps": "https://www.google.com/maps/search/?api=1&query=Oishi%20Park%2C%20Fujikawaguchiko"
       },
       "mapsQuery": "Oishi Park, Fujikawaguchiko, Japan",
       "coords": {
@@ -4425,7 +4494,7 @@
       "area": "Kawaguchiko",
       "category": "park",
       "short": "Tunel z czerwonych klonów nad strumieniem na północnym brzegu Kawaguchiko.",
-      "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min. Najbliżej z przystanku autobusu turystycznego „Kubota Itchiku Museum”.",
+      "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min.",
       "photo": {
         "src": "img/momiji-kairo.jpg",
         "alt": "Podświetlone jesienne klony nocą w Kawaguchiko",
@@ -4615,16 +4684,16 @@
       "status": "todo"
     },
     {
-      "name": "Fuji Excursion / JR East",
-      "checked": "Rezerwacja pociągu do Kawaguchiko",
-      "conclusion": "Rezerwacja miejsca zalecana przy tej wycieczce; JR East umożliwia rezerwacje do 1 mies. naprzód.",
-      "when": "Dla 12.11: od ok. 12.10",
-      "url": "https://www.jreast.co.jp/en/multi/traininformation/azusa_kaiji/index.html",
+      "name": "Autobus Tokio ⇄ Kawaguchiko — 12.11",
+      "checked": "Highway Bus 0113 i 0028",
+      "conclusion": "09:25–11:20 autobus 0113, Tekko Building → Kawaguchiko. 17:00–19:05 autobus 0028, Kawaguchiko → Tokyo Station Nihonbashi Exit. Oba bilety kupione. Anulowanie (za osobę, za odcinek): do 2 dni przed odjazdem 110 JPY, 1 dzień przed 50% ceny, po odjeździe 100%; w dniu odjazdu sprawdź w Fujiyama Connect.",
+      "when": "Kupione",
+      "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
       "placeIds": [],
       "dayIds": [
         "2026-11-12"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "SHIBUYA SKY",

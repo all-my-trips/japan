@@ -51,10 +51,10 @@
     get(k, d) { try { const v = localStorage.getItem("jp26." + k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
     set(k, v) { try { localStorage.setItem("jp26." + k, JSON.stringify(v)); } catch (e) { /* bez pamięci */ } }
   };
-  // Wskazówki przy punktach i dniach: [{kind, text, link?}] (format w data/README.md)
+  // Wskazówki przy punktach i dniach: [{kind, text, link?, links?}] (format w data/README.md)
   const TIP_LABEL = { tip: "Tip", important: "Ważne", booking: "Rezerwacja", experience: "Doświadczenie", highlight: "Wysoki priorytet", general: "Na cały wyjazd" };
   const tipList = (tips, links) => (tips || []).length
-    ? `<span class="tips">${tips.map((x) => `<span class="tip k-${esc(x.kind || "tip")}"><b>${esc(TIP_LABEL[x.kind] || TIP_LABEL.tip)}</b> ${esc(x.text)}${links && x.link ? ` <a href="${esc(x.link.url)}" target="_blank" rel="noopener">${esc(x.link.label)}</a>` : ""}</span>`).join("")}</span>`
+    ? `<span class="tips">${tips.map((x) => `<span class="tip k-${esc(x.kind || "tip")}"><b>${esc(TIP_LABEL[x.kind] || TIP_LABEL.tip)}</b> ${esc(x.text)}${links ? (x.links || (x.link ? [x.link] : [])).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(" · ").replace(/^/, " ") : ""}</span>`).join("")}</span>`
     : "";
   // TODO bez wykonanych: done:true w danych albo odhaczone w tej przeglądarce
   const openTodos = (d) => (d.todos || []).filter((x) => !x.done && !S.done[x.id]);
@@ -300,7 +300,7 @@
           <div><span class="eyebrow">Nocleg</span><span class="v">${day.stay ? esc(day.stay.hotelName || "do zarezerwowania") : "w samolocie / w domu"}</span>${day.stay && day.stay.address ? `<span class="addr">${esc(day.stay.address)}</span>` : ""}</div>
         </div>
         <div class="pri3">
-          ${["must", "want", "bonus"].map((k) => `<div>${prioBadge(k)}<span>${esc(day.priorities[k])}</span></div>`).join("")}
+          ${["must", "want", "bonus"].filter((k) => day.priorities[k]).map((k) => `<div>${prioBadge(k)}<span>${esc(day.priorities[k])}</span></div>`).join("")}
         </div>
         ${day.booking.level !== "none" ? `<div class="callout bk-${day.booking.level}"><span class="ic"></span><span class="eyebrow">Rezerwacje · ${esc(legend("booking", day.booking.level).meaning)}</span><span>${esc(day.booking.text)}</span></div>` : ""}
         ${day.notes ? `<div class="callout" style="--c:var(--ai)"><span class="ic"></span><span class="eyebrow">Uwagi</span><span>${esc(day.notes)}</span></div>` : ""}
@@ -434,7 +434,8 @@
         <span class="thumb">${media(photoFor(i, place), i.placeId || i.id, place ? place.nameJa : null, i.type)}</span>
       </${tag}>`;
     }
-    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}${tipList(i.tips, true)}</div></div>`;
+    const links = (i.links || []).length ? `<div class="n">${i.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(" · ")}</div>` : "";
+    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}${links}${tipList(i.tips, true)}</div></div>`;
   }
 
   // ---------- place sheet ----------
