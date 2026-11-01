@@ -434,7 +434,8 @@
         <span class="thumb">${media(photoFor(i, place), i.placeId || i.id, place ? place.nameJa : null, i.type)}</span>
       </${tag}>`;
     }
-    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}${tipList(i.tips, true)}</div></div>`;
+    const links = (i.links || []).length ? `<div class="n">${i.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(" · ")}</div>` : "";
+    return `<div class="lline">${icon(i.type)}<div><div class="t">${esc(i.title)} ${vtag}</div>${i.note ? `<div class="n">${esc(i.note)}</div>` : ""}${links}${tipList(i.tips, true)}</div></div>`;
   }
 
   // ---------- place sheet ----------

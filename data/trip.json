@@ -760,7 +760,7 @@
       "earliestDeparture": "08:10",
       "pace": "long",
       "paceLabel": "Długi",
-      "summary": "Wycieczka nad jezioro Kawaguchiko bez pośpiechu: jesienny korytarz klonów Momiji Kairō, obiad i spacer północnym brzegiem jeziora z widokiem na Fuji ponad wodą.",
+      "summary": "Autobusem nad jezioro Kawaguchiko: jesienny korytarz klonów Momiji Kairō, obiad i spacer północnym brzegiem jeziora z widokiem na Fuji ponad wodą.",
       "coverPhoto": null,
       "priorities": {
         "must": "Momiji Kairō i spacer brzegiem z widokiem na Fuji",
@@ -769,7 +769,7 @@
       },
       "booking": {
         "level": "booked",
-        "text": "Highway Bus tam i z powrotem kupiony: 0113 o 09:25 z Tekko Building, 0028 o 17:00 z Kawaguchiko."
+        "text": "Oba autobusy kupione (0113 tam, 0028 z powrotem)."
       },
       "source": {
         "orderText": "08:10 wyjście → 09:25–11:20 Highway Bus 0113 → 12:10–13:15 Momiji Kairō → 13:15–14:00 obiad → 14:00–15:20 spacer brzegiem → 15:20–16:35 powrót na stację → 17:00–19:05 Highway Bus 0028 → ~20:00 hotel"
@@ -784,7 +784,13 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
         },
         {
           "id": "d05-02",
@@ -795,7 +801,7 @@
           "title": "JR Ueno → Tokyo",
           "priority": null,
           "placeId": null,
-          "note": "Yamanote albo Keihin-Tōhoku (ten sam peron w kierunku Tokyo), 3 stacje, ok. 8 min."
+          "note": "Yamanote albo Keihin-Tōhoku w kierunku Tokyo, 4 stacje, ok. 8 min. Na Tokyo wyjście Yaesu North."
         },
         {
           "id": "d05-03",
@@ -803,7 +809,7 @@
           "end": "09:05",
           "approx": true,
           "type": "walk",
-          "title": "Yaesu North Exit → Tekko Building, South Tower, 1F",
+          "title": "Yaesu North Exit → przystanek przy Tekko Building (South Tower, 1F)",
           "priority": null,
           "placeId": null,
           "note": null,
@@ -812,8 +818,8 @@
               "kind": "important",
               "text": "Autobus odjeżdża spod Tekko Building, nie z dworca autobusowego Yaesu South Exit.",
               "link": {
-                "url": "https://www.google.com/maps/search/?api=1&query=Tekko%20Building%20South%20Tower%2C%20Marunouchi%2C%20Tokyo",
-                "label": "Mapa"
+                "url": "https://www.google.com/maps/dir/?api=1&destination=Tekko+Building,+1-8-2+Marunouchi,+Chiyoda+City,+Tokyo&travelmode=walking",
+                "label": "Nawigacja do przystanku"
               }
             }
           ]
@@ -839,14 +845,14 @@
           "priority": null,
           "placeId": null,
           "note": "Kupiony. Korki mogą opóźnić przyjazd.",
-          "tips": [
+          "links": [
             {
-              "kind": "booking",
-              "text": "Bilety na koncie.",
-              "link": {
-                "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
-                "label": "Bilety (Fujiyama Connect)"
-              }
+              "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+              "label": "Bilety (Fujiyama Connect)"
+            },
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko%20Station",
+              "label": "Mapa: Kawaguchiko Station"
             }
           ]
         },
@@ -946,15 +952,15 @@
           "title": "Highway Bus 0028: Kawaguchiko Station → Tokyo Station Nihonbashi Exit",
           "priority": null,
           "placeId": null,
-          "note": "Kupiony. Wysiadka przy Nihonbashi Exit, nie tam, skąd rano odjeżdżał autobus.",
-          "tips": [
+          "note": "Kupiony. Wysiadka przy Nihonbashi Exit, a nie przy Tekko Building, skąd rano odjeżdża autobus. Korki mogą opóźnić przyjazd.",
+          "links": [
             {
-              "kind": "booking",
-              "text": "Bilety na koncie.",
-              "link": {
-                "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
-                "label": "Bilety (Fujiyama Connect)"
-              }
+              "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+              "label": "Bilety (Fujiyama Connect)"
+            },
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20Nihonbashi%20Exit",
+              "label": "Mapa: Nihonbashi Exit"
             }
           ]
         },
@@ -964,10 +970,16 @@
           "end": "20:00",
           "approx": true,
           "type": "hotel",
-          "title": "Tokyo → Ueno (JR) i hotel",
+          "title": "Tokyo → Ueno (JR), hotel",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
         }
       ],
       "dayTrip": {
@@ -977,7 +989,7 @@
       "tips": [
         {
           "kind": "important",
-          "text": "Fuji jest mocno zależna od widoczności. Około 48–72 godziny przed wycieczką sprawdź prognozę zachmurzenia dla Kawaguchiko i kamery na żywo. W przypadku złej prognozy rozważ zamianę dnia z 11 lub 16 listopada, jeśli pozwalają na to rezerwacje.",
+          "text": "Widoczność Fuji jest zależna od pogody. Sprawdź prognozę i kamery na żywo 48–72 godziny wcześniej. Bilety autobusowe są już kupione — zmiana dnia może wiązać się z opłatą za anulowanie i zakupem nowych biletów, zależnie od dostępności.",
           "links": [
             {
               "url": "https://www.jma.go.jp/bosai/forecast/#area_type=class20s&area_code=1943000",
@@ -4624,9 +4636,9 @@
       "status": "todo"
     },
     {
-      "name": "Highway Bus Tokio ⇄ Kawaguchiko",
-      "checked": "Autobus na wycieczkę do Fuji",
-      "conclusion": "0113: 09:25 Tekko Building → 11:20 Kawaguchiko. 0028: 17:00 Kawaguchiko → 19:05 Tokyo Station Nihonbashi Exit.",
+      "name": "Autobus Tokio ⇄ Kawaguchiko — 12.11",
+      "checked": "Highway Bus 0113 i 0028",
+      "conclusion": "09:25–11:20 autobus 0113, Tekko Building → Kawaguchiko. 17:00–19:05 autobus 0028, Kawaguchiko → Tokyo Station Nihonbashi Exit. Oba bilety kupione. Anulowanie (za osobę, za odcinek): do 2 dni przed odjazdem 110 JPY, 1 dzień przed 50% ceny, po odjeździe 100%; w dniu odjazdu sprawdź w Fujiyama Connect.",
       "when": "Kupione",
       "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
       "placeIds": [],
