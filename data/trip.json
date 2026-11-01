@@ -757,7 +757,7 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "07:30",
+      "earliestDeparture": "08:10",
       "pace": "long",
       "paceLabel": "Długi",
       "summary": "Wycieczka nad jezioro Kawaguchiko bez pośpiechu: jesienny korytarz klonów Momiji Kairō, obiad i spacer północnym brzegiem jeziora z widokiem na Fuji ponad wodą.",
@@ -768,18 +768,18 @@
         "bonus": "Oishi Park"
       },
       "booking": {
-        "level": "required",
-        "text": "Fuji Excursion tam i z powrotem: bilety jeszcze niekupione."
+        "level": "booked",
+        "text": "Highway Bus tam i z powrotem kupiony: 0113 o 09:25 z Tekko Building, 0028 o 17:00 z Kawaguchiko."
       },
       "source": {
-        "orderText": "07:30 wyjście → 08:30–10:26 Fuji Excursion → 11:15–12:30 Momiji Kairō → 12:30–13:30 obiad → 13:30–15:00 spacer brzegiem → 15:00–16:15 powrót na stację → 16:48–18:48 Fuji Excursion"
+        "orderText": "08:10 wyjście → 09:25–11:20 Highway Bus 0113 → 12:10–13:15 Momiji Kairō → 13:15–14:00 obiad → 14:00–15:20 spacer brzegiem → 15:20–16:35 powrót na stację → 17:00–19:05 Highway Bus 0028 → ~20:00 hotel"
       },
       "items": [
         {
           "id": "d05-01",
-          "start": "07:30",
+          "start": "08:10",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "departure",
           "title": "Wyjście z hotelu",
           "priority": null,
@@ -788,40 +788,72 @@
         },
         {
           "id": "d05-02",
-          "start": "07:35",
-          "end": "08:15",
+          "start": "08:20",
+          "end": "08:40",
           "approx": true,
           "type": "transport",
-          "title": "Ueno → Shinjuku (JR Yamanote)",
+          "title": "JR Ueno → Tokyo",
           "priority": null,
           "placeId": null,
-          "note": "Jazda ok. 25–30 min; reszta to zapas na przesiadkę i peron."
+          "note": "Yamanote albo Keihin-Tōhoku (ten sam peron w kierunku Tokyo), 3 stacje, ok. 8 min."
         },
         {
           "id": "d05-03",
-          "start": "08:30",
-          "end": "10:26",
-          "approx": false,
-          "type": "transport",
-          "title": "Fuji Excursion 7: Shinjuku → Kawaguchiko",
+          "start": "08:40",
+          "end": "09:05",
+          "approx": true,
+          "type": "walk",
+          "title": "Yaesu North Exit → Tekko Building, South Tower, 1F",
           "priority": null,
           "placeId": null,
           "note": null,
           "tips": [
             {
-              "kind": "booking",
-              "text": "Bilet Shinjuku → Kawaguchiko (stacja końcowa, bez wysiadania w Shimoyoshida), tam i z powrotem; wszystkie miejsca rezerwowane.",
+              "kind": "important",
+              "text": "Autobus odjeżdża spod Tekko Building, nie z dworca autobusowego Yaesu South Exit.",
               "link": {
-                "url": "https://www.eki-net.com/en/jreast-train-reservation/Top/Index",
-                "label": "JR East: rezerwacja"
+                "url": "https://www.google.com/maps/search/?api=1&query=Tekko%20Building%20South%20Tower%2C%20Marunouchi%2C%20Tokyo",
+                "label": "Mapa"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d05-03a",
+          "start": "09:05",
+          "end": "09:25",
+          "approx": true,
+          "type": "transport",
+          "title": "Bufor przy przystanku, wsiadanie",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d05-03b",
+          "start": "09:25",
+          "end": "11:20",
+          "approx": false,
+          "type": "transport",
+          "title": "Highway Bus 0113: Tokio (Tekko Building) → Kawaguchiko Station",
+          "priority": null,
+          "placeId": null,
+          "note": "Kupiony. Korki mogą opóźnić przyjazd.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Bilety na koncie.",
+              "link": {
+                "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+                "label": "Bilety (Fujiyama Connect)"
               }
             }
           ]
         },
         {
           "id": "d05-04",
-          "start": "10:26",
-          "end": "11:15",
+          "start": "11:20",
+          "end": "12:10",
           "approx": true,
           "type": "transport",
           "title": "Dojazd na północny brzeg (Red Line)",
@@ -841,8 +873,8 @@
         },
         {
           "id": "d05-05",
-          "start": "11:15",
-          "end": "12:30",
+          "start": "12:10",
+          "end": "13:15",
           "approx": true,
           "type": "attraction",
           "title": "Momiji Kairō (korytarz klonów)",
@@ -852,8 +884,8 @@
         },
         {
           "id": "d05-06",
-          "start": "12:30",
-          "end": "13:30",
+          "start": "13:15",
+          "end": "14:00",
           "approx": true,
           "type": "meal",
           "title": "Obiad",
@@ -863,8 +895,8 @@
         },
         {
           "id": "d05-07",
-          "start": "13:30",
-          "end": "15:00",
+          "start": "14:00",
+          "end": "15:20",
           "approx": true,
           "type": "walk",
           "title": "Spacer północnym brzegiem z widokiem na Fuji",
@@ -885,33 +917,54 @@
         },
         {
           "id": "d05-09",
-          "start": "15:00",
-          "end": "16:15",
+          "start": "15:20",
+          "end": "16:35",
           "approx": true,
           "type": "transport",
           "title": "Powrót na stację Kawaguchiko",
           "priority": null,
           "placeId": null,
-          "note": "Red Line w stronę stacji, ok. 25–30 min wg rozkładu; w sezonie liści korki to wydłużają. Na stacji najpóźniej 16:15, czyli 30 min przed pociągiem."
+          "note": "Red Line w stronę stacji, ok. 25–30 min wg rozkładu; w sezonie liści korki i kolejki to wydłużają. Na stacji najpóźniej 16:35–16:40."
         },
         {
-          "id": "d05-10",
-          "start": "16:48",
-          "end": "18:48",
-          "approx": false,
+          "id": "d05-09a",
+          "start": "16:35",
+          "end": "17:00",
+          "approx": true,
           "type": "transport",
-          "title": "Fuji Excursion 44: Kawaguchiko → Shinjuku",
+          "title": "Bufor na wejście do autobusu",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
+          "id": "d05-10",
+          "start": "17:00",
+          "end": "19:05",
+          "approx": false,
+          "type": "transport",
+          "title": "Highway Bus 0028: Kawaguchiko Station → Tokyo Station Nihonbashi Exit",
+          "priority": null,
+          "placeId": null,
+          "note": "Kupiony. Wysiadka przy Nihonbashi Exit, nie tam, skąd rano odjeżdżał autobus.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Bilety na koncie.",
+              "link": {
+                "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
+                "label": "Bilety (Fujiyama Connect)"
+              }
+            }
+          ]
+        },
+        {
           "id": "d05-11",
-          "start": "19:30",
-          "end": null,
+          "start": "19:05",
+          "end": "20:00",
           "approx": true,
           "type": "hotel",
-          "title": "Hotel w Ueno",
+          "title": "Tokyo → Ueno (JR) i hotel",
           "priority": null,
           "placeId": null,
           "note": null
@@ -4571,16 +4624,16 @@
       "status": "todo"
     },
     {
-      "name": "Fuji Excursion / JR East",
-      "checked": "Fuji Excursion Shinjuku ⇄ Kawaguchiko",
-      "conclusion": "Nr 7 (8:30) tam, nr 44 (16:48) z powrotem.",
-      "when": "Sprzedaż otwarta od 12.10",
-      "url": "https://www.eki-net.com/en/jreast-train-reservation/Top/Index",
+      "name": "Highway Bus Tokio ⇄ Kawaguchiko",
+      "checked": "Autobus na wycieczkę do Fuji",
+      "conclusion": "0113: 09:25 Tekko Building → 11:20 Kawaguchiko. 0028: 17:00 Kawaguchiko → 19:05 Tokyo Station Nihonbashi Exit.",
+      "when": "Kupione",
+      "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
       "placeIds": [],
       "dayIds": [
         "2026-11-12"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "SHIBUYA SKY",
