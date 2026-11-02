@@ -1132,19 +1132,19 @@
       "earliestDeparture": "08:15",
       "pace": "medium-long",
       "paceLabel": "Średnio / długi",
-      "summary": "Rano targ Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza leśnego chramu Meiji Jingu i kolorowe Harajuku z modą uliczną. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i, z biletem, taras Shibuya Sky na dachu wieżowca. Liczą się Tsukiji, Meiji Jingu i Shibuya; spacery poza nimi tylko przy zapasie czasu.",
+      "summary": "Rano targ Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza leśnego chramu Meiji Jingu i kolorowe Harajuku z modą uliczną. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i spacer po dzielnicy. Bez biletów i sztywnych godzin, więc tempo dyktuje Zosia.",
       "coverPhoto": null,
       "priorities": {
         "must": "Tsukiji + Meiji Jingu + Shibuya",
-        "want": "Harajuku + Shibuya Sky (z biletem)",
+        "want": "Harajuku",
         "bonus": "Omotesando, Tsukiji Hongwanji"
       },
       "booking": {
-        "level": "required",
-        "text": "SHIBUYA SKY: bilet jeszcze do kupienia, docelowe wejście ok. 15:30. Tsukiji, Meiji Jingu i Harajuku bez rezerwacji."
+        "level": "none",
+        "text": "Bez rezerwacji: Tsukiji, Meiji Jingu, Harajuku i Shibuya."
       },
       "source": {
-        "orderText": "08:15–08:30 wyjście → 09:00–10:00 Tsukiji → 10:00–11:00 przejazd → 11:00–12:00 Meiji Jingu → 12:00–13:30 Harajuku i lunch → 13:30–14:15 Omotesando (BONUS) → 14:15–15:15 Shibuya → 15:30–16:00 wejście Shibuya Sky (jeśli bilet) → wieczorna Shibuya"
+        "orderText": "08:15–08:30 wyjście → 09:00–10:00 Tsukiji → 10:00–11:00 przejazd → 11:00–12:15 Meiji Jingu → 12:15–14:00 Harajuku i lunch → 14:00–14:45 Omotesando (BONUS) → 15:00–17:30 Shibuya, Hachikō, skrzyżowanie i spacer → po 17:30 kolacja albo powrót do hotelu (godziny orientacyjne)"
       },
       "items": [
         {
@@ -1179,7 +1179,7 @@
           "id": "d06-01b",
           "start": "09:00",
           "end": "10:00",
-          "approx": false,
+          "approx": true,
           "type": "attraction",
           "title": "Tsukiji Outer Market",
           "priority": "must",
@@ -1217,8 +1217,8 @@
         {
           "id": "d06-02",
           "start": "11:00",
-          "end": "12:00",
-          "approx": false,
+          "end": "12:15",
+          "approx": true,
           "type": "attraction",
           "title": "Meiji Jingu",
           "priority": "must",
@@ -1227,9 +1227,9 @@
         },
         {
           "id": "d06-03",
-          "start": "12:00",
-          "end": "13:30",
-          "approx": false,
+          "start": "12:15",
+          "end": "14:00",
+          "approx": true,
           "type": "attraction",
           "title": "Harajuku i lunch",
           "priority": "want",
@@ -1244,9 +1244,9 @@
         },
         {
           "id": "d06-05",
-          "start": "13:30",
-          "end": "14:15",
-          "approx": false,
+          "start": "14:00",
+          "end": "14:45",
+          "approx": true,
           "type": "attraction",
           "title": "Omotesando",
           "priority": "bonus",
@@ -1261,39 +1261,22 @@
         },
         {
           "id": "d06-06",
-          "start": "14:15",
-          "end": "15:15",
-          "approx": false,
+          "start": "15:00",
+          "end": "17:30",
+          "approx": true,
           "type": "attraction",
-          "title": "Shibuya, Hachikō i skrzyżowanie",
+          "title": "Shibuya, Hachikō, skrzyżowanie i spacer",
           "priority": "must",
           "placeId": "shibuya",
           "note": null
         },
         {
-          "id": "d06-07",
-          "start": "15:30",
-          "end": "16:00",
-          "approx": false,
-          "type": "attraction",
-          "title": "Shibuya Sky (wejście)",
-          "priority": "want",
-          "placeId": "shibuya-sky",
-          "note": "Tylko z biletem. Wejście na 14. piętrze Shibuya Scramble Square; być tam ok. 15:15.",
-          "tips": [
-            {
-              "kind": "important",
-              "text": "Na dachu obowiązują ograniczenia dla wózków i bagażu (rzeczy zostają w szafkach), więc z Zosią wygodniejsze może być nosidło."
-            }
-          ]
-        },
-        {
           "id": "d06-08",
-          "start": null,
+          "start": "17:30",
           "end": null,
-          "approx": false,
-          "type": "free",
-          "title": "Po wejściu: widoki, zachód słońca i wieczorna Shibuya",
+          "approx": true,
+          "type": "meal",
+          "title": "Kolacja w Shibuyi albo powrót do hotelu",
           "priority": null,
           "placeId": null,
           "note": null
@@ -3124,19 +3107,19 @@
       "earliestDeparture": "09:30",
       "pace": "medium",
       "paceLabel": "Średnio",
-      "summary": "Ostatni pełny dzień. Rano Akihabara, królestwo elektroniki, anime, mangi i retro gier. Około 14:30 decydujemy, co dalej: albo luźne zakupy i spacer, albo Tokyo Skytree z tarasami na 450 metrach i centrum Solamachi. Wieczorem możemy jeszcze raz zajrzeć do Asakusy i nad Sumidę, gdzie zaczynaliśmy tydzień temu.",
+      "summary": "Ostatni pełny dzień. Rano Akihabara, królestwo elektroniki, anime, mangi i retro gier. Po południu Tokyo Skytree: oba tarasy, 350 i 450 m, w porze zachodu słońca. Potem, jeśli będzie ochota, zakupy w Solamachi u stóp wieży, a wieczorem Asakusa i Sumida, gdzie zaczynaliśmy dwa tygodnie temu.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Akihabara",
-        "want": "Luźne zakupy / spacer",
-        "bonus": "Tokyo Skytree + Solamachi / Asakusa / Sumida wieczorem"
+        "must": "Akihabara + Tokyo Skytree (oba tarasy)",
+        "want": "Tokyo Solamachi",
+        "bonus": "Asakusa / Sumida wieczorem"
       },
       "booking": {
-        "level": "recommended",
-        "text": "Tokyo Skytree tylko jeśli zdecydujecie się na BONUS: advance ticket zalecany i już w sprzedaży; inaczej zostawić elastycznie."
+        "level": "booked",
+        "text": "Tokyo Skytree kupione: Tembo Deck + Tembo Galleria, wejście 15:30–15:59 na 4F (kod QR)."
       },
       "source": {
-        "orderText": "09:30 wyjście → 10:00–13:00 Akihabara → lunch → 14:30 decyzja: Skytree + Solamachi (BONUS) albo wolne / zakupy / spokojniejsze Tokio → kolacja"
+        "orderText": "09:30 wyjście → 10:00–12:45 Akihabara → 12:45–13:45 lunch i odpoczynek → 13:45–14:15 zapas w Akihabarze → 14:15–14:55 przejazd → 14:55–15:20 dojście do wejścia 4F → 15:30–15:59 wejście Skytree (kupione) → 15:30–17:15 Tembo Deck + Tembo Galleria, zachód ok. 16:29 → 17:15–18:15 Solamachi (WANT) → po 18:15 hotel albo Asakusa / Sumida (BONUS)"
       },
       "items": [
         {
@@ -3153,8 +3136,8 @@
         {
           "id": "d18-02",
           "start": "10:00",
-          "end": "13:00",
-          "approx": false,
+          "end": "12:45",
+          "approx": true,
           "type": "attraction",
           "title": "Akihabara",
           "priority": "must",
@@ -3173,80 +3156,121 @@
         },
         {
           "id": "d18-03",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "12:45",
+          "end": "13:45",
+          "approx": true,
           "type": "meal",
-          "title": "Lunch",
+          "title": "Lunch i odpoczynek",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d18-03a",
+          "start": "13:45",
+          "end": "14:15",
+          "approx": true,
+          "type": "free",
+          "title": "Dodatkowy czas w Akihabarze, jeśli potrzebny",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
           "id": "d18-04",
-          "start": "14:30",
-          "end": null,
-          "approx": false,
-          "type": "decision",
-          "title": "Decyzja: Skytree czy spokojniejsze Tokio",
+          "start": "14:15",
+          "end": "14:55",
+          "approx": true,
+          "type": "transport",
+          "title": "Przejazd: Akihabara → Tokyo Skytree",
           "priority": null,
           "placeId": null,
-          "note": null,
-          "options": [
+          "note": "JR Sōbu (żółta, kierunek Chiba) 1 przystanek do Asakusabashi, krótkie przejście na linię Toei Asakusa i 4 przystanki do Oshiage 〈SKYTREE〉; ok. 20–25 min z przesiadką.",
+          "links": [
             {
-              "id": "A",
-              "label": "Wolne / zakupy / spokojniejsze Tokio"
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Akihabara+Station+Tokyo&destination=Tokyo+Skytree&travelmode=transit",
+              "label": "Połączenia Akihabara → Skytree"
             },
             {
-              "id": "B",
-              "label": "Tokyo Skytree + Solamachi (BONUS)"
+              "url": "https://www.tobu.co.jp/en/access/skytree/",
+              "label": "Dojazd (Tobu)"
             }
           ]
         },
         {
-          "id": "d18-05",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "free",
-          "title": "Luźne zakupy / spacer",
-          "priority": "want",
+          "id": "d18-04a",
+          "start": "14:55",
+          "end": "15:20",
+          "approx": true,
+          "type": "walk",
+          "title": "Dojście do wejścia 4F, kody QR gotowe",
+          "priority": null,
           "placeId": null,
-          "photo": {
-            "src": "img/nakamise.jpg",
-            "alt": "Nakamise-dōri w Asakusie",
-            "credit": "Maarten Heerlien from Voorschoten, The Netherlands / Wikimedia Commons",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakamise-Dōri,_Asakusa_(9409495501).jpg"
-          },
-          "note": null,
-          "variant": "A"
+          "note": "Na stacji Oshiage ruchomymi schodami lub windą (wózek) na 4F, dalej prosto do 4F main entrance; ok. 10 min. Każdy pokazuje swój kod QR.",
+          "links": [
+            {
+              "url": "https://www.tokyo-skytree.jp/ticket/admission/",
+              "label": "Instrukcja wejścia"
+            },
+            {
+              "url": "https://www.tokyo-skytree.jp/floor/",
+              "label": "Mapa poziomów"
+            }
+          ]
         },
         {
           "id": "d18-06",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "15:30",
+          "end": "17:15",
+          "approx": true,
           "type": "attraction",
-          "title": "Tokyo Skytree + Solamachi",
-          "priority": "bonus",
+          "title": "Tokyo Skytree — Tembo Deck + Tembo Galleria",
+          "priority": "must",
           "placeId": "skytree",
-          "note": null,
-          "variant": "B",
+          "note": "Kupione oba poziomy, okno wejścia 15:30–15:59. Kolejność pięter i czas na górze dowolne."
+        },
+        {
+          "id": "d18-06a",
+          "start": "16:29",
+          "end": null,
+          "approx": true,
+          "type": "free",
+          "title": "Zachód słońca nad Tokio",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d18-06b",
+          "start": "17:15",
+          "end": "18:15",
+          "approx": true,
+          "type": "attraction",
+          "title": "Tokyo Solamachi",
+          "priority": "want",
+          "placeId": null,
+          "photo": {
+            "src": "img/skytree.jpg",
+            "alt": "Tokyo Skytree i Solamachi",
+            "credit": "Kakidai / Wikimedia Commons",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg"
+          },
+          "note": "Zakupy u podstawy wieży, tylko jeśli jest ochota.",
           "tips": [
             {
               "kind": "tip",
-              "text": "Pokémon Center Skytree Town (Solamachi, East Yard 4F, codziennie ok. 10:00–21:00) można odwiedzić bez biletu na taras widokowy."
+              "text": "Pokémon Center Skytree Town: Solamachi, East Yard 4F, codziennie ok. 10:00–21:00."
             }
           ]
         },
         {
           "id": "d18-07",
-          "start": null,
+          "start": "18:15",
           "end": null,
-          "approx": false,
+          "approx": true,
           "type": "meal",
-          "title": "Kolacja",
+          "title": "Kolacja i powrót do hotelu",
           "priority": null,
           "placeId": null,
           "note": null
@@ -3828,32 +3852,6 @@
       "coords": {
         "lat": 35.6595,
         "lng": 139.7005
-      }
-    },
-    "shibuya-sky": {
-      "id": "shibuya-sky",
-      "name": "Shibuya Sky",
-      "nameJa": "SHIBUYA SKY",
-      "city": "Tokio",
-      "area": "Shibuya",
-      "category": "viewpoint",
-      "short": "Otwarty taras na dachu wieżowca, ok. 230 m nad skrzyżowaniem Shibuya.",
-      "description": "Punkt widokowy na szczycie wieżowca Shibuya Scramble Square, otwarty w 2019 roku. Najwyższe piętro to otwarty dach bez szyb, z widokiem na całe Tokio, a przy dobrej pogodzie także na Fuji. Prosto w dół widać skrzyżowanie Scramble. W listopadzie słońce zachodzi ok. 16:30, więc wejście 15:30–16:00 daje trzy widoki naraz: dzień, zachód i miasto po zmroku. Bilety na godziny zachodu znikają szybko, trzeba je kupić z wyprzedzeniem.",
-      "photo": {
-        "src": "img/shibuya-sky.jpg",
-        "alt": "Shibuya Sky",
-        "credit": "Stephen Kelly / Wikimedia Commons",
-        "license": "CC BY 2.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_Sky_Observation_Deck_(53415730632).jpg"
-      },
-      "links": {
-        "official": "https://www.shibuya-scramble-square.com/sky/ticket/",
-        "maps": null
-      },
-      "mapsQuery": "Shibuya Sky, Tokyo, Japan",
-      "coords": {
-        "lat": 35.6585,
-        "lng": 139.7022
       }
     },
     "toshogu": {
@@ -4826,7 +4824,7 @@
       "area": "Oshiage",
       "category": "viewpoint",
       "short": "Najwyższa wieża Japonii (634 m) z centrum handlowym Solamachi.",
-      "description": "Wieża telewizyjna otwarta w 2012 roku, z dwoma tarasami widokowymi na 350 i 450 metrach, czyli znacznie wyżej niż Shibuya Sky (ale za szybą). Przy dobrej pogodzie widać Fuji. Pod wieżą jest centrum Tokyo Solamachi z ponad 300 sklepami, restauracjami, akwarium i sklepem Pokémon. Po Shibuya Sky to opcja tylko przy ochocie na drugi duży widok.",
+      "description": "Wieża telewizyjna otwarta w 2012 roku, z 634 m najwyższa w Japonii. Mamy opłacone oba tarasy: Tembo Deck na 350 m i Tembo Galleria na 450 m, spiralną szklaną rampę wokół wieży. Panorama 360° na całe Tokio, przy dobrej pogodzie z Fuji, a o tej porze także zachód słońca. Wszystko wewnątrz budynku, więc wygodnie z małym dzieckiem. U podstawy wieży jest centrum Tokyo Solamachi ze sklepami, restauracjami i akwarium.",
       "photo": {
         "src": "img/skytree.jpg",
         "alt": "Tokyo Skytree + Solamachi",
@@ -4835,10 +4833,10 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg"
       },
       "links": {
-        "official": "https://official-ticket.tokyo-skytree.jp/en/faq",
-        "maps": null
+        "official": "https://official-ticket.tokyo-skytree.jp/en/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree"
       },
-      "mapsQuery": "Tokyo Skytree + Solamachi, Tokyo, Japan",
+      "mapsQuery": "Tokyo Skytree, Tokyo, Japan",
       "coords": {
         "lat": 35.7101,
         "lng": 139.8107
@@ -5106,20 +5104,6 @@
       "status": "booked"
     },
     {
-      "name": "SHIBUYA SKY",
-      "checked": "Okno sprzedaży biletów",
-      "conclusion": "Bilety sprzedawane do 2 tygodni naprzód; późne popołudnie jest najbardziej pożądane.",
-      "when": "Dla 13.11: od 30.10",
-      "url": "https://www.shibuya-scramble-square.com/sky/ticket/",
-      "placeIds": [
-        "shibuya-sky"
-      ],
-      "dayIds": [
-        "2026-11-13"
-      ],
-      "status": "todo"
-    },
-    {
       "name": "Shinkansen Ueno ⇄ Utsunomiya — Nikkō 14.11",
       "checked": "JR East, oba kierunki",
       "conclusion": "08:13–09:00 Yamabiko 127, Ueno → Utsunomiya. 18:37–19:22 Yamabiko 64, Utsunomiya → Ueno. 3 dorosłych + 1 dziecko, 17 210 JPY za kierunek (razem 34 420 JPY). Kupione; bilety papierowe do odbioru przed odjazdem.",
@@ -5239,18 +5223,18 @@
       "status": "todo"
     },
     {
-      "name": "Tokyo Skytree",
-      "checked": "Bilety z godziną wejścia",
-      "conclusion": "Advance tickets zalecane; bilety na dany miesiąc trafiają do sprzedaży 2 miesiące wcześniej.",
-      "when": "Dla 25.11 już w sprzedaży",
-      "url": "https://official-ticket.tokyo-skytree.jp/en/faq",
+      "name": "Tokyo Skytree — Tembo Deck + Tembo Galleria",
+      "checked": "Potwierdzenie zakupu",
+      "conclusion": "Kupione bilety Combo na poziomy 350 m i 450 m. Wejście 4F, kod QR. Zachód słońca około 16:29",
+      "when": "25.11.2026, wejście 15:30–15:59",
+      "url": "https://official-ticket.tokyo-skytree.jp/en/",
       "placeIds": [
         "skytree"
       ],
       "dayIds": [
         "2026-11-25"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "NOHGA HOTEL UENO TOKYO (24–26.11)",
