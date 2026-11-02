@@ -2568,7 +2568,7 @@
       "earliestDeparture": "08:30",
       "pace": "medium-long",
       "paceLabel": "Średnio / długi",
-      "summary": "Wycieczka do Osaki, miasta jedzenia. Przed południem Kaiyukan, jedno z największych akwariów świata z rekinem wielorybim. Po lunchu neonowe Dōtonbori, gdzie próbujemy takoyaki, okonomiyaki i kushikatsu, a potem zadaszony pasaż Shinsaibashi na zakupy. To sobota, dlatego wejście do akwarium rezerwujemy na konkretną godzinę.",
+      "summary": "Wycieczka do Osaki, miasta jedzenia. Przed południem Kaiyukan, jedno z największych akwariów świata z rekinem wielorybim. Po lunchu neonowe Dōtonbori, gdzie próbujemy takoyaki, okonomiyaki i kushikatsu, a potem zadaszony pasaż Shinsaibashi na zakupy.",
       "coverPhoto": null,
       "priorities": {
         "must": "Kaiyukan",
@@ -2576,11 +2576,11 @@
         "bonus": "Shinsaibashi / dodatkowe jedzenie"
       },
       "booking": {
-        "level": "required",
-        "text": "Kaiyukan: kup e-ticket na ~10:30 z wyprzedzeniem (sloty co 15 min). Sobota + długi weekend — nie zostawiać na dzień wizyty."
+        "level": "booked",
+        "text": "Kaiyukan kupione i opłacone: e-ticket, wejście 11:30–11:45."
       },
       "source": {
-        "orderText": "08:30 wyjście → ~10:00 Osaka → 10:30–13:00 Kaiyukan → 13:00–14:15 lunch → 14:30–17:00 Dōtonbori → 17:30–19:00 powrót"
+        "orderText": "08:30 wyjście → 08:30–10:45 dojazd do Kaiyukan → 10:45–11:30 bufor → 11:30–11:45 wejście Kaiyukan (kupione) → 11:30–13:45 Kaiyukan → 13:45–14:45 lunch i odpoczynek → ~14:45–15:15 przejazd → 15:15–17:30 Dōtonbori → po 17:30 powrót do Kioto"
       },
       "items": [
         {
@@ -2596,25 +2596,56 @@
         },
         {
           "id": "d14-02",
-          "start": "10:00",
-          "end": null,
+          "start": "08:30",
+          "end": "10:45",
           "approx": true,
           "type": "transport",
-          "title": "Przyjazd do Osaki",
+          "title": "Dojazd: Kioto (Shijō) → Kaiyukan",
+          "priority": null,
+          "placeId": null,
+          "note": "Hankyū z Karasuma do Ōsaka-umeda, metro Midōsuji do Hommachi, linia Chūō do Ōsakakō i ok. 5–10 min pieszo. Sam przejazd ok. 1–1,5 h, reszta to zapas na przesiadki.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Karasuma+Station+Kyoto&destination=Osaka+Aquarium+Kaiyukan&travelmode=transit",
+              "label": "Połączenia Kioto → Kaiyukan"
+            },
+            {
+              "url": "https://www.kaiyukan.com/info/access/",
+              "label": "Dojazd (Kaiyukan)"
+            }
+          ]
+        },
+        {
+          "id": "d14-02a",
+          "start": "10:45",
+          "end": "11:30",
+          "approx": true,
+          "type": "free",
+          "title": "Bufor przed wejściem",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
           "id": "d14-03",
-          "start": "10:30",
-          "end": "13:00",
+          "start": "11:30",
+          "end": "13:45",
           "approx": false,
           "type": "attraction",
           "title": "Kaiyukan",
           "priority": "must",
           "placeId": "kaiyukan",
-          "note": null
+          "note": "Kupione i opłacone (e-ticket). Okno wejścia 11:30–11:45; to godzina wejścia, nie koniec zwiedzania. Roczne dziecko bez biletu.",
+          "links": [
+            {
+              "url": "https://www.kaiyukan.com/info/ticket/kaiyukan/",
+              "label": "Bilety Kaiyukan"
+            },
+            {
+              "url": "https://www.kaiyukan.com/info/faq/",
+              "label": "FAQ / zasady wejścia"
+            }
+          ]
         },
         {
           "id": "d14-03a",
@@ -2629,20 +2660,31 @@
         },
         {
           "id": "d14-04",
-          "start": "13:00",
-          "end": "14:15",
+          "start": "13:45",
+          "end": "14:45",
           "approx": false,
           "type": "meal",
-          "title": "Lunch",
+          "title": "Lunch i odpoczynek",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
+          "id": "d14-04a",
+          "start": "14:45",
+          "end": "15:15",
+          "approx": true,
+          "type": "transport",
+          "title": "Przejazd: Kaiyukan → Dōtonbori",
+          "priority": null,
+          "placeId": null,
+          "note": "Linia Chūō z Ōsakakō do Hommachi, Midōsuji do Namby; ok. 25 min."
+        },
+        {
           "id": "d14-05",
-          "start": "14:30",
-          "end": "17:00",
-          "approx": false,
+          "start": "15:15",
+          "end": "17:30",
+          "approx": true,
           "type": "walk",
           "title": "Dōtonbori",
           "priority": "want",
@@ -2670,7 +2712,7 @@
           "id": "d14-07",
           "start": "17:30",
           "end": "19:00",
-          "approx": false,
+          "approx": true,
           "type": "transport",
           "title": "Powrót do Kioto",
           "priority": null,
@@ -4578,7 +4620,7 @@
       "area": "Tempozan",
       "category": "aquarium",
       "short": "Jedno z największych akwariów świata, z rekinem wielorybim.",
-      "description": "Akwarium w porcie Osaki zbudowane wokół idei Pacyficznego Pierścienia Ognia. Zwiedza się je spiralą z góry na dół, wokół ogromnego centralnego zbiornika o głębokości 9 metrów, w którym pływa rekin wielorybi, największa ryba świata, wraz z płaszczkami. Po drodze są wydry, pingwiny, foki i delfiny z różnych regionów Pacyfiku. W sobotę jest tłoczno, dlatego bilet na konkretną godzinę (ok. 10:30) jest ważny.",
+      "description": "Akwarium w porcie Osaki zbudowane wokół idei Pacyficznego Pierścienia Ognia. Zwiedza się je spiralą z góry na dół, wokół ogromnego centralnego zbiornika o głębokości 9 metrów, w którym pływa rekin wielorybi, największa ryba świata, wraz z płaszczkami. Po drodze są wydry, pingwiny, foki i delfiny z różnych regionów Pacyfiku.",
       "photo": {
         "src": "img/kaiyukan.jpg",
         "alt": "Kaiyukan",
@@ -4587,7 +4629,7 @@
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaiy%C5%ABkan.jpg"
       },
       "links": {
-        "official": "https://www.kaiyukan.com/about/news/20582.html",
+        "official": "https://www.kaiyukan.com/info/ticket/kaiyukan/",
         "maps": null
       },
       "mapsQuery": "Kaiyukan, Osaka, Japan",
@@ -5209,18 +5251,18 @@
       "status": "todo"
     },
     {
-      "name": "Kaiyukan",
-      "checked": "E-ticket z godziną wejścia",
-      "conclusion": "Oficjalnie rekomendowany zakup z wyprzedzeniem, szczególnie weekendy i święta; sloty co 15 min.",
-      "when": "Na 21.11 kupić możliwie wcześnie",
-      "url": "https://www.kaiyukan.com/about/news/20582.html",
+      "name": "Osaka Aquarium Kaiyukan",
+      "checked": "Potwierdzenie zakupu",
+      "conclusion": "Kupione i opłacone e-tickety Kaiyukan, 3 200 ¥ za osobę. Wejście z biletem elektronicznym; dziecko do 3 lat bez biletu.",
+      "when": "21.11.2026 (sobota), wejście 11:30–11:45",
+      "url": "https://www.kaiyukan.com/info/ticket/kaiyukan/",
       "placeIds": [
         "kaiyukan"
       ],
       "dayIds": [
         "2026-11-21"
       ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "Nijō-jō",
