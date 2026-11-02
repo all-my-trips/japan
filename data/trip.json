@@ -729,27 +729,27 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "08:00",
-      "pace": "medium",
-      "paceLabel": "Średnio",
-      "summary": "Dzień jedzenia i tradycji. Zaczynamy wcześnie na targu Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza ogrodu szogunów Hama Rikyu z matchą w herbaciarni na wodzie. Po przerwie jedziemy do Asakusy, do najstarszej świątyni Tokio Sensō-ji, a po zmroku, jeśli będzie ochota, idziemy nad Sumidę popatrzeć na podświetlone Skytree.",
+      "earliestDeparture": "09:00",
+      "pace": "light-medium",
+      "paceLabel": "Lekko / średnio",
+      "summary": "Spokojniejszy dzień bez porannego pośpiechu. Przed południem ogród szogunów Hama Rikyu nad zatoką, po lunchu Asakusa z najstarszą świątynią Tokio Sensō-ji i uliczką Nakamise-dōri. Po zmroku, jeśli będzie ochota, spacer nad Sumidą z widokiem na podświetlone Skytree.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Tsukiji + Sensō-ji",
+        "must": "Asakusa + Sensō-ji",
         "want": "Hama Rikyu",
         "bonus": "Sumida po zmroku"
       },
       "booking": {
         "level": "none",
-        "text": "Brak wcześniejszych rezerwacji dla Tsukiji / Hama Rikyu / Sensō-ji."
+        "text": "Bez rezerwacji. Bilet do Hama Rikyu na miejscu."
       },
       "source": {
-        "orderText": "08:00 wyjście → 08:45–10:30 Tsukiji → 11:00–12:30 Hama Rikyu → lunch/drzemka → 14:30–17:00 Asakusa + Sensō-ji"
+        "orderText": "09:00 wyjście → 09:45–11:15 Hama Rikyu → przejazd do Asakusy → 12:00–13:00 lunch / odpoczynek → 13:00–15:30 Asakusa, Sensō-ji, Nakamise-dōri → 15:30–16:30 spacer albo odpoczynek → po 16:30 Sumida (BONUS)"
       },
       "items": [
         {
           "id": "d04-01",
-          "start": "08:00",
+          "start": "09:00",
           "end": null,
           "approx": false,
           "type": "departure",
@@ -759,37 +759,32 @@
           "note": null
         },
         {
-          "id": "d04-02",
-          "start": "08:45",
-          "end": "10:30",
-          "approx": false,
-          "type": "attraction",
-          "title": "Tsukiji",
-          "priority": "must",
-          "placeId": "tsukiji",
-          "note": null
-        },
-        {
-          "id": "d04-02a",
+          "id": "d04-01a",
           "start": null,
           "end": null,
           "approx": false,
-          "type": "attraction",
-          "title": "Tsukiji Hongwanji",
-          "priority": "bonus",
-          "placeId": "tsukiji-hongwanji",
-          "note": "Kilka minut pieszo od targu, ok. 15 min."
+          "type": "transport",
+          "title": "Metro: Ueno → Shimbashi → Hama Rikyu",
+          "priority": null,
+          "placeId": null,
+          "note": "Linia Ginza z Ueno do Shimbashi bez przesiadek, potem ok. 10 min pieszo do ogrodu. Razem ok. 45 min.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Hama-rikyu+Gardens+Tokyo&travelmode=transit",
+              "label": "Połączenia Ueno → Hama Rikyu"
+            }
+          ]
         },
         {
           "id": "d04-03",
-          "start": "11:00",
-          "end": "12:30",
+          "start": "09:45",
+          "end": "11:15",
           "approx": false,
           "type": "attraction",
           "title": "Hama Rikyu",
           "priority": "want",
           "placeId": "hama-rikyu",
-          "note": null,
+          "note": "Spokojny spacer. Czynne 9:00–17:00 (wejście do 16:30), bilet 300 ¥ na miejscu.",
           "tips": [
             {
               "kind": "tip",
@@ -798,37 +793,65 @@
           ]
         },
         {
+          "id": "d04-03a",
+          "start": "11:15",
+          "end": "12:00",
+          "approx": true,
+          "type": "transport",
+          "title": "Metro: Shimbashi → Asakusa",
+          "priority": null,
+          "placeId": null,
+          "note": "Z ogrodu ok. 10 min pieszo do Shimbashi, potem linia Ginza bez przesiadek do Asakusy (ok. 20 min).",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Hama-rikyu+Gardens+Tokyo&destination=Asakusa+Station+Tokyo&travelmode=transit",
+              "label": "Połączenia Hama Rikyu → Asakusa"
+            }
+          ]
+        },
+        {
           "id": "d04-04",
-          "start": "12:30",
-          "end": "14:30",
+          "start": "12:00",
+          "end": "13:00",
           "approx": false,
           "type": "rest",
-          "title": "Lunch / drzemka",
+          "title": "Lunch / odpoczynek",
           "priority": null,
           "placeId": null,
           "note": null
         },
         {
           "id": "d04-05",
-          "start": "14:30",
-          "end": "17:00",
+          "start": "13:00",
+          "end": "15:30",
           "approx": false,
           "type": "attraction",
-          "title": "Asakusa + Sensō-ji",
+          "title": "Asakusa, Sensō-ji, Nakamise-dōri",
           "priority": "must",
           "placeId": "senso-ji",
+          "note": "Główna hala Sensō-ji czynna 6:30–17:00."
+        },
+        {
+          "id": "d04-05a",
+          "start": "15:30",
+          "end": "16:30",
+          "approx": false,
+          "type": "free",
+          "title": "Dalszy spacer albo odpoczynek",
+          "priority": null,
+          "placeId": null,
           "note": null
         },
         {
           "id": "d04-06",
-          "start": null,
+          "start": "16:30",
           "end": null,
           "approx": false,
           "type": "walk",
           "title": "Sumida po zmroku",
           "priority": "bonus",
           "placeId": "sumida",
-          "note": null
+          "note": "Powrót: linia Ginza z Asakusy do Ueno, ok. 5 min."
         }
       ]
     },
@@ -1106,29 +1129,29 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "08:30",
-      "pace": "medium",
-      "paceLabel": "Średnio",
-      "summary": "Dzień kontrastów zachodniego Tokio. Rano cisza leśnego chramu Meiji Jingu, potem kolorowe Harajuku z modą uliczną i elegancka aleja Omotesando z architekturą znanych projektantów. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i, z biletem, taras Shibuya Sky na dachu wieżowca, gdzie o zachodzie słońca zobaczymy Tokio za dnia i po zmroku.",
+      "earliestDeparture": "08:15",
+      "pace": "medium-long",
+      "paceLabel": "Średnio / długi",
+      "summary": "Rano targ Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza leśnego chramu Meiji Jingu i kolorowe Harajuku z modą uliczną. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i, z biletem, taras Shibuya Sky na dachu wieżowca. Liczą się Tsukiji, Meiji Jingu i Shibuya; spacery poza nimi tylko przy zapasie czasu.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Meiji Jingu + Shibuya",
-        "want": "Harajuku + Omotesando + Shibuya Sky",
-        "bonus": "—"
+        "must": "Tsukiji + Meiji Jingu + Shibuya",
+        "want": "Harajuku + Shibuya Sky (z biletem)",
+        "bonus": "Omotesando, Tsukiji Hongwanji"
       },
       "booking": {
         "level": "required",
-        "text": "SHIBUYA SKY: bilet na wejście 15:30–16:00. Sprzedaż 2 tyg. naprzód, o północy czasu japońskiego (29.10, 16:00 w Polsce)."
+        "text": "SHIBUYA SKY: bilet jeszcze do kupienia, docelowe wejście ok. 15:30. Tsukiji, Meiji Jingu i Harajuku bez rezerwacji."
       },
       "source": {
-        "orderText": "08:30 wyjście → 09:15–10:45 Meiji Jingu → 11:00–12:30 Harajuku → lunch → 14:00 Omotesando → 15:30–18:30 Shibuya + Shibuya Sky (jeśli bilet)"
+        "orderText": "08:15–08:30 wyjście → 09:00–10:00 Tsukiji → 10:00–11:00 przejazd → 11:00–12:00 Meiji Jingu → 12:00–13:30 Harajuku i lunch → 13:30–14:15 Omotesando (BONUS) → 14:15–15:15 Shibuya → 15:30–16:00 wejście Shibuya Sky (jeśli bilet) → wieczorna Shibuya"
       },
       "items": [
         {
           "id": "d06-01",
-          "start": "08:30",
-          "end": null,
-          "approx": false,
+          "start": "08:15",
+          "end": "08:30",
+          "approx": true,
           "type": "departure",
           "title": "Wyjście z hotelu",
           "priority": null,
@@ -1136,9 +1159,65 @@
           "note": null
         },
         {
+          "id": "d06-01a",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "transport",
+          "title": "Metro: Ueno → Tsukiji",
+          "priority": null,
+          "placeId": null,
+          "note": "Linia Hibiya bez przesiadek do stacji Tsukiji, ok. 15 min jazdy.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Tsukiji+Outer+Market+Tokyo&travelmode=transit",
+              "label": "Połączenia Ueno → Tsukiji"
+            }
+          ]
+        },
+        {
+          "id": "d06-01b",
+          "start": "09:00",
+          "end": "10:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tsukiji Outer Market",
+          "priority": "must",
+          "placeId": "tsukiji",
+          "note": "Przeniesione ze środy 11.11: to dzień zamknięcia rynku hurtowego wg kalendarza Tsukiji, a część sklepów działa według niego."
+        },
+        {
+          "id": "d06-01c",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "attraction",
+          "title": "Tsukiji Hongwanji",
+          "priority": "bonus",
+          "placeId": "tsukiji-hongwanji",
+          "note": "Kilka minut pieszo od targu, ok. 15 min; tylko jeśli nie opóźni wyjazdu do Meiji Jingu."
+        },
+        {
+          "id": "d06-01d",
+          "start": "10:00",
+          "end": "11:00",
+          "approx": true,
+          "type": "transport",
+          "title": "Metro: Tsukiji → Meiji-jingumae",
+          "priority": null,
+          "placeId": null,
+          "note": "Linia Hibiya do stacji Hibiya, przesiadka na linię Chiyoda do Meiji-jingumae 〈Harajuku〉; ok. 20 min jazdy plus przesiadka. Do bramy Meiji Jingu kilka minut pieszo.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Tsukiji+Station+Tokyo&destination=Meiji+Jingu+Tokyo&travelmode=transit",
+              "label": "Połączenia Tsukiji → Meiji Jingu"
+            }
+          ]
+        },
+        {
           "id": "d06-02",
-          "start": "09:15",
-          "end": "10:45",
+          "start": "11:00",
+          "end": "12:00",
           "approx": false,
           "type": "attraction",
           "title": "Meiji Jingu",
@@ -1148,11 +1227,11 @@
         },
         {
           "id": "d06-03",
-          "start": "11:00",
-          "end": "12:30",
+          "start": "12:00",
+          "end": "13:30",
           "approx": false,
           "type": "attraction",
-          "title": "Harajuku",
+          "title": "Harajuku i lunch",
           "priority": "want",
           "placeId": "harajuku",
           "note": null,
@@ -1164,26 +1243,15 @@
           ]
         },
         {
-          "id": "d06-04",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "meal",
-          "title": "Lunch",
-          "priority": null,
-          "placeId": null,
-          "note": null
-        },
-        {
           "id": "d06-05",
-          "start": "14:00",
-          "end": null,
+          "start": "13:30",
+          "end": "14:15",
           "approx": false,
           "type": "attraction",
           "title": "Omotesando",
-          "priority": "want",
+          "priority": "bonus",
           "placeId": "omotesando",
-          "note": null,
+          "note": "Przy opóźnieniu pomijamy.",
           "tips": [
             {
               "kind": "tip",
@@ -1193,11 +1261,11 @@
         },
         {
           "id": "d06-06",
-          "start": "15:30",
-          "end": "18:30",
+          "start": "14:15",
+          "end": "15:15",
           "approx": false,
           "type": "attraction",
-          "title": "Shibuya",
+          "title": "Shibuya, Hachikō i skrzyżowanie",
           "priority": "must",
           "placeId": "shibuya",
           "note": null
@@ -1211,13 +1279,24 @@
           "title": "Shibuya Sky (wejście)",
           "priority": "want",
           "placeId": "shibuya-sky",
-          "note": "Tylko z biletem.",
+          "note": "Tylko z biletem. Wejście na 14. piętrze Shibuya Scramble Square; być tam ok. 15:15.",
           "tips": [
             {
-              "kind": "tip",
-              "text": "Zachód słońca ok. 16:35, więc wejście 15:30–16:00 łapie dzień, zachód i zmrok."
+              "kind": "important",
+              "text": "Na dachu obowiązują ograniczenia dla wózków i bagażu (rzeczy zostają w szafkach), więc z Zosią wygodniejsze może być nosidło."
             }
           ]
+        },
+        {
+          "id": "d06-08",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "free",
+          "title": "Po wejściu: widoki, zachód słońca i wieczorna Shibuya",
+          "priority": null,
+          "placeId": null,
+          "note": null
         }
       ]
     },
@@ -3499,7 +3578,7 @@
       "area": "Tsukiji",
       "category": "market",
       "short": "Targ rybny w wersji „do jedzenia”: sushi, tamagoyaki i owoce morza od rana.",
-      "description": "Po przeniesieniu hurtowego targu rybnego do Toyosu w 2018 roku została tu zewnętrzna część, Outer Market: kilkaset małych sklepów i barów w wąskich uliczkach. Przychodzi się rano, żeby zjeść świeże sushi, grillowane przegrzebki, słodki omlet tamagoyaki czy truskawki daifuku prosto z ręki. Najlepiej być tu przed 10:00, zanim zrobi się tłoczno. Część sklepów zamyka się w wybrane środy, więc przed 11.11 warto sprawdzić kalendarz targu.",
+      "description": "Po przeniesieniu hurtowego targu rybnego do Toyosu w 2018 roku została tu zewnętrzna część, Outer Market: kilkaset małych sklepów i barów w wąskich uliczkach. Przychodzi się rano, żeby zjeść świeże sushi, grillowane przegrzebki, słodki omlet tamagoyaki czy truskawki daifuku prosto z ręki. Najlepiej być tu przed 10:00, zanim zrobi się tłoczno.",
       "photo": {
         "src": "img/tsukiji.jpg",
         "alt": "Tsukiji Outer Market",
@@ -5256,7 +5335,7 @@
             "id": "sushi",
             "name": "Sushi i sashimi",
             "nameJa": "刺身・寿司",
-            "text": "Sushi to ryba lub owoce morza na zakwaszonym ryżu, a sashimi to same plastry surowej, bardzo świeżej ryby, bez ryżu. Dobrym miejscem jest targ Tsukiji (11.11).",
+            "text": "Sushi to ryba lub owoce morza na zakwaszonym ryżu, a sashimi to same plastry surowej, bardzo świeżej ryby, bez ryżu. Dobrym miejscem jest targ Tsukiji (13.11).",
             "photo": {
               "src": "img/food/sushi.jpg",
               "alt": "Sushi i sashimi",
