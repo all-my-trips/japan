@@ -1146,27 +1146,45 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "08:15",
+      "earliestDeparture": "07:30",
       "pace": "long",
       "paceLabel": "Długi",
-      "summary": "Wycieczka do Nikkō, górskiego miasteczka z najbogatszymi świątyniami Japonii. Głównym punktem jest Tōshō-gū, złocone mauzoleum szoguna Tokugawy Ieyasu z trzema mądrymi małpami i śpiącym kotem. Około 13:15 wybieramy dalszy plan: wariant A to spokojne centrum z Rinnō-ji i czerwonym mostem Shinkyo, wariant B to wyjazd w góry do wodospadu Kegon i jeziora Chūzenji.",
+      "summary": "Wycieczka do Nikkō, górskiego miasteczka z najbogatszymi świątyniami Japonii. Shinkansenem do Utsunomiyi, lokalnym pociągiem do JR Nikkō, potem Tōshō-gū, złocone mauzoleum szoguna Tokugawy Ieyasu, świątynia Rinnō-ji i czerwony most Shinkyo. Spokojne tempo i powrót przed zmrokiem.",
       "coverPhoto": null,
       "priorities": {
         "must": "Tōshō-gū",
-        "want": "Rinno-ji + Shinkyo",
-        "bonus": "Kegon + Chūzenji (wariant B zamiast części centrum)"
+        "want": "Rinnō-ji + Most Shinkyo",
+        "bonus": null
       },
       "booking": {
-        "level": "required",
-        "text": "SPACIA X: wszystkie miejsca rezerwowane, bilety na 14.11 już w sprzedaży; w listopadzie pociągi do Nikkō są bardzo pełne. Tōshō-gū bez rezerwacji."
+        "level": "booked",
+        "text": "Oba Shinkanseny kupione (Yamabiko 127 tam, Yamabiko 64 z powrotem), bilety papierowe do odbioru przed 14.11. Lokalne pociągi i Tōshō-gū bez rezerwacji."
       },
       "source": {
-        "orderText": "07:30 wyjście → ~10:00 Nikkō → 10:15–12:15 Tōshō-gū → ~12:15 decyzja: A) lunch + Rinno-ji + Shinkyo → powrót; B) lunch + Kegon + Chūzenji → powrót"
+        "orderText": "07:30 wyjście → 08:13–09:00 Yamabiko 127 → 09:36–10:18 JR Nikkō Line 835M → ~10:55–12:45 Tōshō-gū → ~12:45–13:30 lunch → ~13:30–14:20 Rinnō-ji → ~14:20–15:00 Shinkyo → ~15:00–16:00 spacer / odpoczynek → ~16:50 JR Nikkō → 17:19–18:02 JR Nikkō Line 862M → 18:37–19:22 Yamabiko 64 → ~19:40 hotel"
       },
+      "todos": [
+        {
+          "id": "todo-jr-east-nikko-tickets",
+          "text": "Odebrać papierowe bilety JR East na Nikkō — oba kierunki",
+          "where": "Automat JR East lub punkt sprzedaży JR East, najlepiej 9–13.11 (przed 14.11)",
+          "note": "Mieć potwierdzenie zakupu, kartę płatniczą użytą do zakupu i paszport; przed odbiorem sprawdzić w instrukcji JR East, czego wymaga wybrany punkt. Nie w automatach JR Central. Suica do tych biletów niepotrzebna.",
+          "links": [
+            {
+              "url": "https://www.jreast.co.jp/en/multi/ticket/guide.html",
+              "label": "Instrukcja odbioru biletów"
+            },
+            {
+              "url": "https://www.jreast.co.jp/en/multi/ticketwindow/",
+              "label": "Punkty odbioru JR East"
+            }
+          ]
+        }
+      ],
       "items": [
         {
           "id": "d07-01",
-          "start": "08:15",
+          "start": "07:30",
           "end": null,
           "approx": true,
           "type": "departure",
@@ -1174,40 +1192,116 @@
           "priority": null,
           "placeId": null,
           "note": null,
-          "tips": [
+          "links": [
             {
-              "kind": "important",
-              "text": "Przy SPACIA X 3 (Asakusa 9:00) wystarczy wyjście 8:15. Jeśli 14.11 kursuje dodatkowy SPACIA X 61 (Asakusa 8:09 → Tobu-Nikkō 10:16), wyjść o 7:30, a cały dzień przesuwa się o ok. 35 min wcześniej."
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
+        },
+        {
+          "id": "d07-01a",
+          "start": "07:40",
+          "end": "08:00",
+          "approx": true,
+          "type": "walk",
+          "title": "JR Ueno: do peronów Shinkansen",
+          "priority": null,
+          "placeId": null,
+          "note": "Perony Shinkansen są na najniższym poziomie stacji, z wózkiem windą. Zapas na znalezienie właściwego wejścia.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Ueno%20Station%20Shinkansen",
+              "label": "Mapa: JR Ueno"
             }
           ]
         },
         {
           "id": "d07-02",
-          "start": "10:50",
-          "end": null,
+          "start": "08:13",
+          "end": "09:00",
           "approx": false,
           "type": "transport",
-          "title": "Przyjazd do Nikkō",
+          "title": "Shinkansen Yamabiko 127: Ueno → Utsunomiya",
           "priority": null,
           "placeId": null,
-          "tips": [
+          "note": "Kupiony, bilety papierowe (do odebrania wcześniej).",
+          "links": [
             {
-              "kind": "important",
-              "text": "SPACIA X 3: Asakusa 9:00 → Tobu-Nikkō 10:50. Do Tōshō-gū autobusem ok. 10 min albo pieszo 30–40 min pod górę."
+              "url": "https://www.eki-net.com/en/jreast-train-reservation/reserve/wb/ApplicationHistoryList/Index",
+              "label": "Moje rezerwacje JR East"
             }
-          ],
-          "note": null
+          ]
+        },
+        {
+          "id": "d07-02a",
+          "start": "09:00",
+          "end": "09:36",
+          "approx": true,
+          "type": "transport",
+          "title": "Utsunomiya: przesiadka na JR Nikkō Line",
+          "priority": null,
+          "placeId": null,
+          "note": "Z peronów Shinkansen do peronów linii lokalnych; peron sprawdzić na tablicy w dniu podróży.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Utsunomiya%20Station",
+              "label": "Mapa: JR Utsunomiya"
+            }
+          ]
+        },
+        {
+          "id": "d07-02b",
+          "start": "09:36",
+          "end": "10:18",
+          "approx": false,
+          "type": "transport",
+          "title": "JR Nikkō Line 835M: Utsunomiya → JR Nikkō",
+          "priority": null,
+          "placeId": null,
+          "note": "Pociąg lokalny bez rezerwacji, odjazd z peronu 5 (wg rozkładu). Bilet z automatu albo Suica.",
+          "links": [
+            {
+              "url": "https://timetables.jreast.co.jp/en/2611/timetable/tt0248/0248071.html",
+              "label": "Rozkład Utsunomiya → Nikkō"
+            },
+            {
+              "url": "https://timetables.jreast.co.jp/en/2611/train/110/113891.html",
+              "label": "Kurs 835M"
+            }
+          ]
+        },
+        {
+          "id": "d07-02c",
+          "start": "10:18",
+          "end": "10:55",
+          "approx": true,
+          "type": "transport",
+          "title": "JR Nikkō → Tōshō-gū",
+          "priority": null,
+          "placeId": null,
+          "note": "Autobus Tobu „World Heritage Meguri” (世界遺産めぐり) spod JR Nikkō do przystanku „Omotesando” przy Tōshō-gū; rozkład i stanowisko sprawdzić na miejscu, w sobotę możliwa kolejka. Pieszo 30–40 min, częściowo pod górę.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=JR+Nikko+Station&destination=Nikko+Toshogu&travelmode=transit",
+              "label": "Dojazd autobusem"
+            },
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=JR+Nikko+Station&destination=Nikko+Toshogu&travelmode=walking",
+              "label": "Dojście pieszo"
+            }
+          ]
         },
         {
           "id": "d07-03",
-          "start": "11:15",
-          "end": "13:15",
+          "start": "10:55",
+          "end": "12:45",
           "approx": true,
           "type": "attraction",
           "title": "Tōshō-gū",
           "priority": "must",
           "placeId": "toshogu",
-          "note": null,
+          "note": "Tōshō-gū i Rinnō-ji czynne do 16:00 (ostatnie wejście ok. 15:30), zachód słońca ok. 16:32. Bilety na miejscu.",
           "tips": [
             {
               "kind": "tip",
@@ -1216,107 +1310,152 @@
           ]
         },
         {
-          "id": "d07-04",
-          "start": "13:15",
-          "end": null,
-          "approx": true,
-          "type": "decision",
-          "title": "Decyzja: wariant A czy B",
-          "priority": null,
-          "placeId": null,
-          "note": "Kegon i Chūzenji nie dokładać po 14:30.",
-          "options": [
-            {
-              "id": "A",
-              "label": "Centrum Nikkō: lunch + Rinnō-ji + Shinkyo → powrót"
-            },
-            {
-              "id": "B",
-              "label": "Okunikkō: lunch + Kegon + Chūzenji → powrót"
-            }
-          ],
-          "tips": [
-            {
-              "kind": "important",
-              "text": "Wariant B to autobus w góry 40–50 min w jedną stronę, w listopadzie z korkami na serpentynach Irohazaka: przy przyjeździe 10:50 realniejszy jest wariant A."
-            }
-          ]
-        },
-        {
           "id": "d07-05",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "12:45",
+          "end": "13:30",
+          "approx": true,
           "type": "meal",
-          "title": "Lunch",
+          "title": "Lunch i odpoczynek",
           "priority": null,
           "placeId": null,
-          "note": null,
-          "tips": [
-            {
-              "kind": "tip",
-              "text": "Spróbować yuba, lokalnej specjalności z kożucha z mleka sojowego (tofu skin): np. yuba-don, yuba w zupie albo w zestawie. Restauracje z yuba są przy ulicy od stacji do świątyń."
-            }
-          ]
+          "note": null
         },
         {
           "id": "d07-06",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "13:30",
+          "end": "14:20",
+          "approx": true,
           "type": "attraction",
           "title": "Rinnō-ji",
           "priority": "want",
           "placeId": "rinno-ji",
-          "note": null,
-          "variant": "A"
+          "note": null
         },
         {
           "id": "d07-07",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "start": "14:20",
+          "end": "15:00",
+          "approx": true,
           "type": "attraction",
           "title": "Most Shinkyo",
           "priority": "want",
           "placeId": "shinkyo",
-          "note": null,
-          "variant": "A"
+          "note": null
         },
         {
-          "id": "d07-08",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Wodospad Kegon",
-          "priority": "bonus",
-          "placeId": "kegon",
-          "note": null,
-          "variant": "B"
-        },
-        {
-          "id": "d07-09",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Jezioro Chūzenji",
-          "priority": "bonus",
-          "placeId": "chuzenji",
-          "note": null,
-          "variant": "B"
-        },
-        {
-          "id": "d07-10",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "transport",
-          "title": "Powrót do Tokio",
+          "id": "d07-07a",
+          "start": "15:00",
+          "end": "16:00",
+          "approx": true,
+          "type": "free",
+          "title": "Spokojny spacer po okolicy lub odpoczynek",
           "priority": null,
           "placeId": null,
           "note": null
+        },
+        {
+          "id": "d07-09",
+          "start": "16:00",
+          "end": "16:50",
+          "approx": true,
+          "type": "transport",
+          "title": "Powrót do JR Nikkō",
+          "priority": null,
+          "placeId": null,
+          "note": "Od Shinkyo pieszo w dół ok. 25–30 min albo autobusem z przystanku „Shinkyo”. Zapas na sobotnie tłumy.",
+          "links": [
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Shinkyo+Bridge+Nikko&destination=JR+Nikko+Station&travelmode=walking",
+              "label": "Dojście pieszo"
+            },
+            {
+              "url": "https://www.google.com/maps/dir/?api=1&origin=Shinkyo+Bridge+Nikko&destination=JR+Nikko+Station&travelmode=transit",
+              "label": "Dojazd autobusem"
+            }
+          ]
+        },
+        {
+          "id": "d07-09a",
+          "start": "16:50",
+          "end": "17:19",
+          "approx": true,
+          "type": "transport",
+          "title": "Zapas na stacji JR Nikkō",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Nikko%20Station",
+              "label": "Mapa: JR Nikkō"
+            }
+          ]
+        },
+        {
+          "id": "d07-10",
+          "start": "17:19",
+          "end": "18:02",
+          "approx": false,
+          "type": "transport",
+          "title": "JR Nikkō Line 862M: JR Nikkō → Utsunomiya",
+          "priority": null,
+          "placeId": null,
+          "note": "Pociąg lokalny bez rezerwacji, odjazd z peronu 1 (wg rozkładu).",
+          "links": [
+            {
+              "url": "https://timetables.jreast.co.jp/en/2611/timetable/tt1180/1180011.html",
+              "label": "Rozkład Nikkō → Utsunomiya"
+            },
+            {
+              "url": "https://timetables.jreast.co.jp/en/2611/train/110/114091.html",
+              "label": "Kurs 862M"
+            }
+          ]
+        },
+        {
+          "id": "d07-10a",
+          "start": "18:02",
+          "end": "18:37",
+          "approx": true,
+          "type": "transport",
+          "title": "Utsunomiya: przesiadka na Shinkansen",
+          "priority": null,
+          "placeId": null,
+          "note": null
+        },
+        {
+          "id": "d07-11",
+          "start": "18:37",
+          "end": "19:22",
+          "approx": false,
+          "type": "transport",
+          "title": "Shinkansen Yamabiko 64: Utsunomiya → Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": "Kupiony, bilety papierowe.",
+          "links": [
+            {
+              "url": "https://www.eki-net.com/en/jreast-train-reservation/reserve/wb/ApplicationHistoryList/Index",
+              "label": "Moje rezerwacje JR East"
+            }
+          ]
+        },
+        {
+          "id": "d07-12",
+          "start": "19:22",
+          "end": "19:40",
+          "approx": true,
+          "type": "hotel",
+          "title": "Pieszo do hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "links": [
+            {
+              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
+              "label": "Mapa: hotel"
+            }
+          ]
         }
       ],
       "dayTrip": {
@@ -3472,58 +3611,6 @@
         "lng": 139.605
       }
     },
-    "kegon": {
-      "id": "kegon",
-      "name": "Wodospad Kegon",
-      "nameJa": "華厳滝",
-      "city": "Nikkō",
-      "area": "Okunikkō",
-      "category": "nature",
-      "short": "Prawie 100-metrowy wodospad, jeden z trzech najpiękniejszych w Japonii.",
-      "description": "Woda z jeziora Chūzenji spada tu z wysokości ok. 97 metrów do skalistego wąwozu. Windą zjeżdża się na platformę widokową u podnóża, skąd wodospad widać w całej okazałości. Dojazd z centrum Nikkō to ok. 40 minut autobusem krętą drogą Irohazaka z 48 zakrętami. W połowie listopada na tej wysokości jest już zimno, a liście w większości opadły, więc trzeba wziąć ciepłe ubrania.",
-      "photo": {
-        "src": "img/kegon.jpg",
-        "alt": "Wodospad Kegon",
-        "credit": "Uraomote yamaneko / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_chuzenji_and_kegon_waterfall.jpg"
-      },
-      "links": {
-        "official": null,
-        "maps": null
-      },
-      "mapsQuery": "Wodospad Kegon, Nikkō, Japan",
-      "coords": {
-        "lat": 36.7383,
-        "lng": 139.5025
-      }
-    },
-    "chuzenji": {
-      "id": "chuzenji",
-      "name": "Jezioro Chūzenji",
-      "nameJa": "中禅寺湖",
-      "city": "Nikkō",
-      "area": "Okunikkō",
-      "category": "nature",
-      "short": "Górskie jezioro na wysokości ok. 1270 m u stóp wulkanu Nantai.",
-      "description": "Jezioro powstało, gdy lawa z wulkanu Nantai zablokowała dolinę. Leży wysoko w górach, więc jest tu wyraźnie chłodniej niż w mieście. Na brzegach stały kiedyś letnie rezydencje zagranicznych ambasad, a dziś jest tu spokojny bulwar i przystań statków wycieczkowych. Jezioro i wodospad Kegon są blisko siebie, więc zwiedza się je razem jako wariant B dnia w Nikkō.",
-      "photo": {
-        "src": "img/chuzenji.jpg",
-        "alt": "Jezioro Chūzenji",
-        "credit": "Uraomote yamaneko / Wikimedia Commons",
-        "license": "CC BY-SA 3.0",
-        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_nantai_and_lake_chuzenji.jpg"
-      },
-      "links": {
-        "official": null,
-        "maps": null
-      },
-      "mapsQuery": "Jezioro Chūzenji, Nikkō, Japan",
-      "coords": {
-        "lat": 36.7333,
-        "lng": 139.4683
-      }
-    },
     "ginza": {
       "id": "ginza",
       "name": "Ginza",
@@ -4662,30 +4749,16 @@
       "status": "todo"
     },
     {
-      "name": "Tobu Limited Express / SPACIA X",
-      "checked": "Transport do Nikkō",
-      "conclusion": "Limited Express ma rezerwowane miejsca; sprzedaż od 9:00 pierwszego dnia poprzedniego miesiąca.",
-      "when": "Dla 14.11: już dostępne od 01.10",
-      "url": "https://www.tobu.co.jp/en/express_info/purchase/",
+      "name": "Shinkansen Ueno ⇄ Utsunomiya — Nikkō 14.11",
+      "checked": "JR East, oba kierunki",
+      "conclusion": "08:13–09:00 Yamabiko 127, Ueno → Utsunomiya. 18:37–19:22 Yamabiko 64, Utsunomiya → Ueno. 3 dorosłych + 1 dziecko, 17 210 JPY za kierunek (razem 34 420 JPY). Kupione; bilety papierowe do odbioru przed odjazdem.",
+      "when": "Kupione, odbiór 9–13.11",
+      "url": "https://www.eki-net.com/en/jreast-train-reservation/reserve/wb/ApplicationHistoryList/Index",
       "placeIds": [],
       "dayIds": [
         "2026-11-14"
       ],
-      "status": "todo"
-    },
-    {
-      "name": "Nikkō Tōshō-gū",
-      "checked": "Bilet wstępu",
-      "conclusion": "Można kupić z wyprzedzeniem, ale nie jest to konieczne dla indywidualnego zwiedzania.",
-      "when": "Opcjonalnie",
-      "url": "https://toshogu.jp/",
-      "placeIds": [
-        "toshogu"
-      ],
-      "dayIds": [
-        "2026-11-14"
-      ],
-      "status": "todo"
+      "status": "booked"
     },
     {
       "name": "teamLab Planets",

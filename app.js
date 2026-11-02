@@ -334,7 +334,7 @@
     return `<section class="todo" aria-labelledby="todo-${esc(day.id)}">
       <h2 class="eyebrow" id="todo-${esc(day.id)}">${icon("check")} Ważne TODO</h2>
       <ul>${list.map((x) => `<li><label><input type="checkbox" data-todo="${esc(x.id)}">
-        <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}</span></label></li>`).join("")}</ul>
+        <span><b>${esc(x.text)}</b>${x.where ? `<span class="where">${icon("pin")}${esc(x.where)}</span>` : ""}${x.note ? `<span class="n">${esc(x.note)}</span>` : ""}${(x.links || []).length ? `<span class="n">${x.links.map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(" · ")}</span>` : ""}</span></label></li>`).join("")}</ul>
     </section>`;
   }
 
