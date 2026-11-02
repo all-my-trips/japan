@@ -746,6 +746,20 @@
       "source": {
         "orderText": "09:00 wyjście → 09:45–11:15 Hama Rikyu → przejazd do Asakusy → 12:00–13:00 lunch / odpoczynek → 13:00–15:30 Asakusa, Sensō-ji, Nakamise-dōri → 15:30–16:30 spacer albo odpoczynek → po 16:30 Sumida (BONUS)"
       },
+      "todos": [
+        {
+          "id": "todo-teamlab-tickets",
+          "text": "Kupić bilety na teamLab Planets na 15.11 (ok. 16:00)",
+          "where": "Online, oficjalna sprzedaż teamLab Planets",
+          "note": "3 bilety dla dorosłych, wejście najlepiej ok. 16:00; sprawdzić dostępność tego przedziału. Zosia wchodzi bezpłatnie.",
+          "links": [
+            {
+              "url": "https://teamlabplanets.dmm.com/en",
+              "label": "Kup bilety (oficjalna strona)"
+            }
+          ]
+        }
+      ],
       "items": [
         {
           "id": "d04-01",
@@ -5118,8 +5132,8 @@
     {
       "name": "teamLab Planets",
       "checked": "Bilet czasowy",
-      "conclusion": "Kupno online; brak sprzedaży w kasie / automatach na miejscu. Bilety szybko schodzą, nie zwlekać.",
-      "when": "Dla 15.11: kup teraz",
+      "conclusion": "3 bilety dla dorosłych na 15.11, wejście ok. 16:00; Zosia bezpłatnie. Kupno tylko online, brak sprzedaży na miejscu. Bilety szybko schodzą.",
+      "when": "Kupić do śr. 11.11",
       "url": "https://teamlabplanets.dmm.com/en",
       "placeIds": [
         "teamlab"
