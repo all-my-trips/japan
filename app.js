@@ -102,14 +102,15 @@
   const bookingChip = (b) => { const l = legend("booking", b.level); return `<span class="chip bk-${b.level}" title="${esc(l.usage)}"><span class="bdot"></span>${esc(l.meaning)}</span>`; };
   const prioBadge = (p) => p ? `<span class="prio prio-${p}">${esc(legend("priorities", p).label)}</span>` : "";
 
-  // Zdjęcie: place.photo → legend.itemTypes[type].defaultPhoto → plakietka z nazwą po japońsku
+  // Zdjęcie: item.photo → place.photo → legend.itemTypes[type].defaultPhoto → plakietka z nazwą po japońsku
   function photoFor(item, place) {
+    if (item && item.photo) return item.photo;
     if (place && place.photo) return place.photo;
     const t = legend("itemTypes", item && item.type);
     return t.defaultPhoto || null;
   }
   function media(photo, seed, kanji, type) {
-    if (photo && photo.src) return `<img src="${esc(photo.src)}" alt="${esc(photo.alt || "")}" loading="lazy">`;
+    if (photo && photo.src) return `<img src="${esc(photo.src)}" alt="${esc(photo.alt || "")}"${photo.credit ? ` title="${esc(photo.credit + (photo.license ? " · " + photo.license : ""))}"` : ""} loading="lazy">`;
     const h = hash(seed) % 360;
     const inner = kanji ? `<span class="k">${vert(kanji, 4)}</span>` : icon(type);
     return `<div class="ph" style="--h:${h}" role="img" aria-label="Zdjęcie pojawi się później">${inner}</div>`;
@@ -229,6 +230,7 @@
       .filter(({ i }) => i.placeId && S.trip.places[i.placeId])
       .sort((a, b) => (rank[a.i.priority] ?? 3) - (rank[b.i.priority] ?? 3) || a.k - b.k)
       .forEach(({ i }) => { if (!seen.has(i.placeId)) { seen.add(i.placeId); out.push(S.trip.places[i.placeId]); } });
+    if (!out.length && d.coverPhoto) out.push({ id: d.id, name: d.coverPhoto.alt || d.title, nameJa: null, photo: d.coverPhoto });
     return out.slice(0, max);
   }
   const tripFlag = (d) => d.dayTrip
@@ -261,7 +263,8 @@
     const t = S.trip, now = nowFor(day), isToday = todayDay() === day;
     const idx = t.days.indexOf(day), prev = t.days[idx - 1], next = t.days[idx + 1];
     const p = dateParts(day.date);
-    const firstMust = day.items.find((i) => i.priority === "must" && i.placeId && S.trip.places[i.placeId]);
+    const withPhoto = (i) => i.placeId && S.trip.places[i.placeId] && S.trip.places[i.placeId].photo;
+    const firstMust = day.items.find((i) => i.priority === "must" && withPhoto(i)) || day.items.find(withPhoto);
     const coverPlace = firstMust && t.places[firstMust.placeId];
     const cover = day.coverPhoto || (coverPlace && coverPlace.photo) || null;
     const coverKanji = coverPlace ? coverPlace.nameJa : cityKanji(day);
