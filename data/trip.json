@@ -236,7 +236,13 @@
       "pace": "light",
       "paceLabel": "Lekko",
       "summary": "Dzień podróży: samochodem do Warszawy, obiad po drodze i nocny lot LO79 do Tokio. Godziny w tym dniu są czasu polskiego.",
-      "coverPhoto": null,
+      "coverPhoto": {
+        "src": "img/lot787.jpg",
+        "alt": "Boeing 787 Dreamliner PLL LOT",
+        "credit": "Tony Hisgett from Birmingham, UK / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:LOT_-_Polish_Airlines_Boeing_787-8_Dreamliner_SP-LRA_(14389157362).jpg"
+      },
       "priorities": {
         "must": "Parking 18:45 → lot LO79 22:50",
         "want": "Spokojny obiad w Warszawie",
@@ -259,6 +265,13 @@
           "title": "Wyjazd z Krakowa",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/krakow.jpg",
+            "alt": "Sukiennice na Rynku Głównym w Krakowie",
+            "credit": "Igor123121 / Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kraków_Cloth_Hall,_3_Main_Market_Square,_Old_Town,_Kraków,_Poland.jpg"
+          },
           "note": "Ok. 3–3,5 h jazdy + postój. W niedzielę po południu S7 i wjazd do Warszawy bywają zakorkowane."
         },
         {
@@ -270,6 +283,13 @@
           "title": "Obiad w Warszawie",
           "priority": "want",
           "placeId": null,
+          "photo": {
+            "src": "img/warsaw.jpg",
+            "alt": "Rynek Starego Miasta w Warszawie",
+            "credit": "Igor123121 / Wikimedia Commons",
+            "license": "CC BY 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Old_Town_Market_Square.,_2026,_Warsaw,_Poland.jpg"
+          },
           "note": "Dowolna restauracja na południu miasta, 15–25 min od parkingu. W niedzielę strefa płatnego parkowania nie działa."
         },
         {
@@ -281,6 +301,13 @@
           "title": "START Parking Okęcie",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/chopin.jpg",
+            "alt": "Terminal A Lotniska Chopina w Warszawie",
+            "credit": "PerpetualTraveler / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminal_A_of_Warsaw_Chopin_Airport_July_2024.jpg"
+          },
           "tips": [
             {
               "kind": "booking",
@@ -313,6 +340,13 @@
           "title": "Odprawa i kontrola",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/chopin.jpg",
+            "alt": "Terminal A Lotniska Chopina w Warszawie",
+            "credit": "PerpetualTraveler / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminal_A_of_Warsaw_Chopin_Airport_July_2024.jpg"
+          },
           "note": "Terminal A, stanowiska LOT. Wózek Zosi zostaje z nami do wejścia na pokład."
         },
         {
@@ -324,6 +358,13 @@
           "title": "Wylot do Tokio (LO79)",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/lot787.jpg",
+            "alt": "Boeing 787 Dreamliner PLL LOT",
+            "credit": "Tony Hisgett from Birmingham, UK / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:LOT_-_Polish_Airlines_Boeing_787-8_Dreamliner_SP-LRA_(14389157362).jpg"
+          },
           "note": "Narita T1, przylot 9.11 o 19:40 czasu japońskiego."
         }
       ],
@@ -382,7 +423,13 @@
       "pace": "light",
       "paceLabel": "Lekko",
       "summary": "Lądujemy na Naricie wieczorem, więc dziś bez atrakcji: Skyliner do Ueno, zameldowanie w hotelu na pierwsze osiem nocy i sen.",
-      "coverPhoto": null,
+      "coverPhoto": {
+        "src": "img/narita.jpg",
+        "alt": "Terminal 1 lotniska Narita",
+        "credit": "名無し野電車区 / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narita_International_Airport_Terminal_1.JPG"
+      },
       "priorities": {
         "must": "Dotarcie do hotelu + sen",
         "want": "Szybkie jedzenie",
@@ -423,6 +470,13 @@
           "title": "Przylot na Naritę (LO79)",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/narita.jpg",
+            "alt": "Terminal 1 lotniska Narita",
+            "credit": "名無し野電車区 / Wikimedia Commons",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narita_International_Airport_Terminal_1.JPG"
+          },
           "note": "Kontrola paszportowa (QR z Visit Japan Web), bagaż i cło: realnie 45–75 min. Potem SIM, gotówka i bilety na Skyliner."
         },
         {
@@ -434,6 +488,13 @@
           "title": "Transfer z Narity do Ueno",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/skyliner.jpg",
+            "alt": "Wnętrze pociągu Keisei Skyliner",
+            "credit": "PekePON / Wikimedia Commons",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Keisei_AE_series_(2009)_cabin.jpg"
+          },
           "note": "Skyliner z Narity T1 do Keisei Ueno: ok. 45 min, co 20–40 min, ostatni ok. 23:00. Z Keisei Ueno do hotelu ok. 10 min pieszo przez stację (z walizkami można wziąć taksówkę).",
           "tips": [
             {
@@ -451,6 +512,13 @@
           "title": "Zameldowanie: Mitsui Garden Hotel Ueno",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/mitsui-garden-ueno.jpg",
+            "alt": "Mitsui Garden Hotel Ueno",
+            "credit": "伊部リコ / Wikimedia Commons",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR上野駅前_-_panoramio.jpg"
+          },
           "note": null
         },
         {
@@ -462,6 +530,13 @@
           "title": "Szybkie jedzenie",
           "priority": "want",
           "placeId": null,
+          "photo": {
+            "src": "img/konbini.jpg",
+            "alt": "Konbini, japoński sklep całodobowy",
+            "credit": "Japanexperterna / Wikimedia Commons",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Convenience_store_interior.jpg"
+          },
           "note": "Konbini przy hotelu."
         },
         {
@@ -473,6 +548,13 @@
           "title": "Krótki spacer przy hotelu",
           "priority": "bonus",
           "placeId": null,
+          "photo": {
+            "src": "img/ameyoko.jpg",
+            "alt": "Ulica handlowa Ameyoko w Ueno",
+            "credit": "Syced / Wikimedia Commons",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ameyoko_June_2022.jpg"
+          },
           "note": null
         },
         {
@@ -484,6 +566,13 @@
           "title": "Sen",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/futon.jpg",
+            "alt": "Futon w japońskim pokoju",
+            "credit": "Atsushi Tadokoro / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Futon_(9455233917).jpg"
+          },
           "note": "W łóżku ok. 23:00–23:30, budzik na 7:00–7:30, nawet po słabej nocy."
         }
       ],
@@ -1828,6 +1917,13 @@
           "title": "Shinkansen Nozomi 407 Tokio → Kioto",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/shinkansen.jpg",
+            "alt": "Shinkansen N700S Nozomi",
+            "credit": "MaedaAkihiko / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR_Series-N700S-J30_Nozomi-4.jpg"
+          },
           "note": "Kupione. Wagon 12 (zwykły, N700, 16 wagonów), miejsca 1-D, 1-E, 2-D, 2-E. Fuji po prawej stronie (strona miejsc D/E).",
           "tips": [
             {
@@ -1849,6 +1945,13 @@
           "title": "Zameldowanie w MIMARU SUITES Kyoto Shijo",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/shijo-kawaramachi.jpg",
+            "alt": "Shijō / Kawaramachi",
+            "credit": "inunami / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shijo_Kawaramachi_2020-04-05.jpg"
+          },
           "note": "Z dworca Kioto do Shijō metrem Karasuma, ok. 15 min."
         },
         {
@@ -2011,6 +2114,13 @@
           "title": "Kawa / dłuższy spacer po Arashiyamie",
           "priority": "bonus",
           "placeId": null,
+          "photo": {
+            "src": "img/arashiyama-hills.jpg",
+            "alt": "Zalesione wzgórza Arashiyamy",
+            "credit": "wkc.1 / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ōkōchi_Sansō_garden,_Kyoto;_September_2014_(04).jpg"
+          },
           "note": null
         }
       ]
@@ -2303,6 +2413,13 @@
           "title": "Dłuższa kolacja",
           "priority": "bonus",
           "placeId": null,
+          "photo": {
+            "src": "img/food/shabu.jpg",
+            "alt": "Kolacja: shabu-shabu",
+            "credit": "jimg944 / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shabu-shabu-01.jpg"
+          },
           "note": null
         }
       ],
@@ -2620,6 +2737,13 @@
           "title": "Odpoczynek / zakupy / spacer po centrum",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/teramachi.jpg",
+            "alt": "Pasaż handlowy Teramachi w Kioto",
+            "credit": "Celuici / Wikimedia Commons",
+            "license": "CC BY-SA 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teramachi_shopping_street,_Kyoto,_May_2017.jpg"
+          },
           "note": null
         },
         {
@@ -2631,6 +2755,13 @@
           "title": "Nadrobienie czegoś z Kioto",
           "priority": "want",
           "placeId": null,
+          "photo": {
+            "src": "img/gion.jpg",
+            "alt": "Gion",
+            "credit": "663highland / Wikimedia Commons",
+            "license": "CC BY 2.5",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg"
+          },
           "note": null
         },
         {
@@ -2642,6 +2773,13 @@
           "title": "Nowe doświadczenie: ceremonia herbaciana, wagashi lub kaligrafia (jedno do wyboru)",
           "priority": "bonus",
           "placeId": null,
+          "photo": {
+            "src": "img/tea-ceremony.jpg",
+            "alt": "Ceremonia herbaciana",
+            "credit": "KuboBella / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Tea_Ceremony_Serving_Tea.jpg"
+          },
           "note": "45–90 min. Szczegóły i linki w Rezerwacjach, w sekcji Doświadczenia.",
           "tips": [
             {
@@ -2766,6 +2904,13 @@
           "title": "Shinkansen Nozomi 384 Kioto → Tokio",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/shinkansen.jpg",
+            "alt": "Shinkansen N700S Nozomi",
+            "credit": "MaedaAkihiko / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR_Series-N700S-J30_Nozomi-4.jpg"
+          },
           "note": "Kupione przez smart EX. Fuji tym razem po lewej stronie pociągu (strona miejsc D/E)."
         },
         {
@@ -2777,6 +2922,13 @@
           "title": "Zameldowanie: NOHGA HOTEL UENO TOKYO / odpoczynek",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/ryokan-room.jpg",
+            "alt": "Pokój w japońskim stylu",
+            "credit": "David McKelvey / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Futon_and_desk_in_a_Ryokan.jpg"
+          },
           "note": "Z dworca Tokio do Ueno linią Yamanote, ok. 10 min; hotel ok. 3 min pieszo od wyjścia 3 stacji Ueno (Ginza/Hibiya).",
           "tips": [
             {
@@ -2936,6 +3088,13 @@
           "title": "Luźne zakupy / spacer",
           "priority": "want",
           "placeId": null,
+          "photo": {
+            "src": "img/nakamise.jpg",
+            "alt": "Nakamise-dōri w Asakusie",
+            "credit": "Maarten Heerlien from Voorschoten, The Netherlands / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nakamise-Dōri,_Asakusa_(9409495501).jpg"
+          },
           "note": null,
           "variant": "A"
         },
@@ -2993,7 +3152,13 @@
       "pace": "light",
       "paceLabel": "Lekko",
       "summary": "Dzień wylotu. Pakujemy się, wymeldowujemy i zostawiamy bagaże w hotelu, a resztę dnia przeznaczamy na ostatnie zakupy i ulubioną dzielnicę. Po wczesnej kolacji odbieramy bagaże i jedziemy na Naritę. Wylot LO80 o 23:05, więc na lotnisku trzeba być najpóźniej ok. 21:00.",
-      "coverPhoto": null,
+      "coverPhoto": {
+        "src": "img/tokyo-dusk.jpg",
+        "alt": "Panorama Tokio o zmierzchu",
+        "credit": "Foooomio / Wikimedia Commons",
+        "license": "CC BY 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_At_Dusk_(223572511).jpeg"
+      },
       "priorities": {
         "must": "Wylot 23:05",
         "want": "Zakupy + spokojna końcówka",
@@ -3038,6 +3203,13 @@
           "title": "Zakupy / ulubiona dzielnica",
           "priority": "want",
           "placeId": null,
+          "photo": {
+            "src": "img/ameyoko.jpg",
+            "alt": "Ulica handlowa Ameyoko w Ueno",
+            "credit": "Syced / Wikimedia Commons",
+            "license": "CC0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ameyoko_June_2022.jpg"
+          },
           "note": null
         },
         {
@@ -3049,6 +3221,13 @@
           "title": "Nadrobienie krótkiego punktu",
           "priority": "bonus",
           "placeId": null,
+          "photo": {
+            "src": "img/tokyo-dusk.jpg",
+            "alt": "Panorama Tokio o zmierzchu",
+            "credit": "Foooomio / Wikimedia Commons",
+            "license": "CC BY 3.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Tower_At_Dusk_(223572511).jpeg"
+          },
           "note": null
         },
         {
@@ -3110,6 +3289,13 @@
           "title": "Wylot z Narity (LO80)",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/lot787.jpg",
+            "alt": "Boeing 787 Dreamliner PLL LOT",
+            "credit": "Tony Hisgett from Birmingham, UK / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:LOT_-_Polish_Airlines_Boeing_787-8_Dreamliner_SP-LRA_(14389157362).jpg"
+          },
           "note": "Narita T1 → Warszawa (WAW), lot 14 h 40 min, przylot 27.11 o 05:45 czasu polskiego."
         }
       ],
@@ -3140,7 +3326,13 @@
       "pace": "travel",
       "paceLabel": "Podróż",
       "summary": "Przylot do Warszawy o 05:45 po 14 h 40 min lotu. Ten dzień to odpoczynek i powolny powrót do polskiej strefy czasowej.",
-      "coverPhoto": null,
+      "coverPhoto": {
+        "src": "img/krakow.jpg",
+        "alt": "Sukiennice na Rynku Głównym w Krakowie",
+        "credit": "Igor123121 / Wikimedia Commons",
+        "license": "CC BY 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kraków_Cloth_Hall,_3_Main_Market_Square,_Old_Town,_Kraków,_Poland.jpg"
+      },
       "priorities": {
         "must": "Powrót do domu",
         "want": "—",
@@ -3163,6 +3355,13 @@
           "title": "Przylot do Warszawy (LO80)",
           "priority": "must",
           "placeId": null,
+          "photo": {
+            "src": "img/chopin.jpg",
+            "alt": "Terminal A Lotniska Chopina w Warszawie",
+            "credit": "PerpetualTraveler / Wikimedia Commons",
+            "license": "CC BY-SA 4.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminal_A_of_Warsaw_Chopin_Airport_July_2024.jpg"
+          },
           "note": "Lądowanie na Lotnisku Chopina (WAW)."
         }
       ]
@@ -4530,7 +4729,13 @@
       "category": "shrine",
       "short": "Pozłacany chram Tokugawy Ieyasu w parku Ueno, mała wersja Tōshō-gū z Nikkō.",
       "description": "Chram poświęcony Tokugawie Ieyasu, w obecnej formie z 1651 roku; jeden z niewielu budynków epoki Edo w Tokio, które przetrwały trzęsienie ziemi i wojnę. Do złoconego pawilonu prowadzi aleja kamiennych i brązowych latarni. Dojście i teren przed chramem są wolne, wejście za bramę Karamon płatne. Według GO TOKYO (I 2026) otwarte 9:00–16:30, godziny zmieniają się sezonowo.",
-      "photo": null,
+      "photo": {
+        "src": "img/ueno-toshogu.jpg",
+        "alt": "Ueno Tōshō-gū",
+        "credit": "Guilhem Vellut from Annecy, France / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_Park_(14038495292).jpg"
+      },
       "links": {
         "official": "https://www.uenotoshogu.com/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
@@ -4550,7 +4755,13 @@
       "category": "temple",
       "short": "Świątynia buddyjska w stylu indyjskim, kilka minut od targu Tsukiji.",
       "description": "Kamienna świątynia z 1934 roku, zupełnie niepodobna do typowych japońskich: kopuła i fasada inspirowane architekturą starożytnych Indii, rzeźby zwierząt na schodach, a w głównej hali organy. Wstęp wolny. Według dostępnych źródeł główna hala jest otwarta zwykle ok. 6:00–16:00, teren dłużej.",
-      "photo": null,
+      "photo": {
+        "src": "img/tsukiji-hongwanji.jpg",
+        "alt": "Tsukiji Hongwanji",
+        "credit": "Kakidai / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tsukiji_Honganji.jpg"
+      },
       "links": {
         "official": "https://tsukijihongwanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
@@ -4570,7 +4781,13 @@
       "category": "park",
       "short": "Tunel z czerwonych klonów nad strumieniem na północnym brzegu Kawaguchiko.",
       "description": "Aleja starych klonów nad strumykiem przy muzeum Itchiku Kubota, która w listopadzie tworzy czerwono-złoty tunel. To główne miejsce Fuji Kawaguchiko Autumn Leaves Festival: stoiska z jedzeniem i rękodziełem, wieczorem podświetlenie. Spacer 20–40 min.",
-      "photo": null,
+      "photo": {
+        "src": "img/momiji-kairo.jpg",
+        "alt": "Podświetlone jesienne klony nocą w Kawaguchiko",
+        "credit": "lumoplank / Wikimedia Commons",
+        "license": "CC0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_II_-_Kawaguchiko6811.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
@@ -4590,7 +4807,13 @@
       "category": "market",
       "short": "Podziemne hale z jedzeniem w domach towarowych: bento, słodycze, degustacje.",
       "description": "Depachika to piętra spożywcze w podziemiach japońskich domów towarowych: setki stoisk z bento, sushi na wynos, smażonymi przekąskami, wagashi, ciastami i owocami pakowanymi jak biżuteria, często z degustacją. W Ginzie największe są w Mitsukoshi i Matsuya, mniejsza w Ginza Six. Dobre miejsce na lunch na wynos i słodkie pamiątki; jedzenie je się poza halą, np. na tarasie na dachu domu towarowego. W niedzielę koło południa jest tłoczno.",
-      "photo": null,
+      "photo": {
+        "src": "img/depachika-ginza.jpg",
+        "alt": "Depachika, hala z jedzeniem",
+        "credit": "ayustety / Wikimedia Commons",
+        "license": "CC BY-SA 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Depachika.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
@@ -4610,7 +4833,13 @@
       "category": "garden",
       "short": "Ogród i willa aktora na końcu bambusowej ścieżki, z widokiem na Kioto i matchą w cenie.",
       "description": "Dawna willa aktora filmów samurajskich Denjirō Ōkōchiego, który przez około 30 lat tworzył ten ogród na zboczu góry Ogura. Ścieżki prowadzą między klonami, mchem i tradycyjnymi pawilonami do punktów widokowych na Kioto i góry Arashiyamy. Jesienią jedno z najładniejszych, a zarazem spokojniejszych miejsc w okolicy. Ścieżki są strome, z dzieckiem lepiej nosidło.",
-      "photo": null,
+      "photo": {
+        "src": "img/okochi-sanso.jpg",
+        "alt": "Ogród Ōkōchi Sansō",
+        "credit": "663highland / Wikimedia Commons",
+        "license": "CC BY 2.5",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okochi_Sanso09n4592.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
@@ -4630,7 +4859,13 @@
       "category": "viewpoint",
       "short": "Wielki diabelski młyn tuż obok Kaiyukan, z widokiem na port Osaki.",
       "description": "Diabelski młyn o wysokości ok. 112 m stojący obok akwarium Kaiyukan. Obrót trwa ok. 15 minut; przy dobrej widoczności widać port i Zatokę Osaka, a w oddali góry Rokkō. Według Osaka Info zwykle 10:00–22:00, ok. 800 ¥, przy silnym wietrze wstrzymywany.",
-      "photo": null,
+      "photo": {
+        "src": "img/tempozan-wheel.jpg",
+        "alt": "Diabelski młyn Tempozan",
+        "credit": "David Offf / Wikimedia Commons",
+        "license": "CC BY 2.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempozan_Ferris_wheel_in_20110507.jpg"
+      },
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
@@ -4650,7 +4885,13 @@
       "category": "temple",
       "short": "Świątynia zen z najsłynniejszym kamiennym ogrodem Japonii.",
       "description": "Świątynia zen ze słynnym suchym ogrodem kare-sansui: 15 kamieni na grabionym białym żwirze, ustawionych tak, że z werandy nie widać wszystkich naraz. Ogląda się go w ciszy, siedząc na drewnianej werandzie. Wokół staw Kyōyōchi i jesienne klony. Według serwisów turystycznych od marca do listopada 8:00–17:00, ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/ryoan-ji.jpg",
+        "alt": "Kamienny ogród Ryōan-ji",
+        "credit": "Carla Antonini / Wikimedia Commons",
+        "license": "CC BY-SA 3.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryoanji_rock_garden_857.jpg"
+      },
       "links": {
         "official": "https://www.ryoanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
@@ -4670,7 +4911,13 @@
       "category": "temple",
       "short": "Długa na 120 m hala z 1001 posągami bogini Kannon.",
       "description": "Drewniana hala z XIII wieku, długa na ok. 120 metrów, w której w równych rzędach stoi 1001 złoconych posągów tysiącrękiej Kannon: tysiąc stojących wokół jednej dużej, siedzącej figury, a przed nimi 28 strażników. Wrażenie robi skala i powtarzalność. W środku nie wolno robić zdjęć. Według serwisów turystycznych od 16.11 otwarte 9:00–16:00 (ostatnie wejście 15:30), ok. 600 ¥.",
-      "photo": null,
+      "photo": {
+        "src": "img/sanjusangen-do.jpg",
+        "alt": "Hala Sanjūsangen-dō",
+        "credit": "Akonnchiroll / Wikimedia Commons",
+        "license": "CC BY-SA 4.0",
+        "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanjusangendo_2022.jpg"
+      },
       "links": {
         "official": "https://www.sanjusangendo.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
