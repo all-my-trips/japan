@@ -1,0 +1,533 @@
+{
+  "about": "Warstwa prezentacji zakładki „Historia Japonii”. Tekst pochodzi wyłącznie z historia-japonii.md i nie jest tu powielany. Kotwice wskazują akapity po początku ich tekstu (startsWith). Miejsca i daty pobiera strona z data/trip.json (placeId / itemId). Format opisany w data/README.md.",
+  "source": "content/historia-japonii.md",
+  "trip": "8–27 listopada 2026",
+  "hero": {
+    "photo": {
+      "place": "kiyomizu",
+      "n": 1
+    },
+    "caption": "Kiyomizu-dera jesienią, z drewnianym tarasem."
+  },
+  "anchors": {
+    "jomon": "Na archipelagu japońskim ludzie żyli",
+    "fuji": "Widać to dobrze w dwóch punktach naszej trasy.",
+    "fushimi-inari": "Drugi przykład to **Fushimi Inari Taisha",
+    "nara-heijo": "Na początku VIII wieku dwór przeniósł się",
+    "todai-ji": "Najważniejszym zabytkiem tego okresu na naszej trasie",
+    "daibutsuden": "Wielkiego Buddę ogląda się w",
+    "kasuga": "Zaraz obok znajduje się **Nara Park**",
+    "heian-dwor": "Na dworze Heian ogromną wagę",
+    "palac-cesarski": "**Pałac Cesarski w Kioto",
+    "kiyomizu": "Znacznie starsze są początki **Kiyomizu-dera",
+    "sanjusangen-do": "Jeżeli skorzystamy z opcji odwiedzenia **Sanjūsangen-dō",
+    "gion": "Inny wymiar historii Kioto zobaczymy",
+    "minamoto": "W XII wieku cesarski dwór nie był już",
+    "tsurugaoka": "W **Tsurugaoka Hachiman-gū",
+    "wielki-budda-kamakura": "Inny obraz epoki daje **Wielki Budda",
+    "najazdy-mongolskie": "Szogunat Kamakura musiał też odeprzeć",
+    "komachi": "Po świątyniach przejdziemy przez **Komachi-dōri**",
+    "tenryu-ji": "Z tym światem wiąże się **Tenryū-ji",
+    "arashiyama": "Nie wszystko w Arashiyamie pochodzi",
+    "kinkaku-ji": "Najbardziej rozpoznawalnym śladem potęgi Ashikagów",
+    "ryoan-ji": "Jeśli wystarczy czasu na **Ryōan-ji",
+    "zjednoczyciele": "Druga połowa XVI wieku przyniosła",
+    "tokugawa-ieyasu": "Po śmierci Hideyoshiego zwyciężył",
+    "nijo-jo": "**Nijō-jō w Kioto",
+    "nikko-tosho-gu": "**Nikkō Tōshō-gū (14 listopada)**",
+    "edo": "**Edo — dzisiejsze Tokio**",
+    "kultura-edo": "W epoce Edo szybko rozwijały się",
+    "perry": "W **1853 roku** do Japonii przybyła",
+    "meiji-reformy": "**Cesarz Meiji** był symbolem przemian",
+    "meiji-jingu": "W **Meiji Jingū (13 listopada)**",
+    "ginza-ueno": "**Ginza (15 listopada)** stała się",
+    "yanaka": "W **Yanace i Nezu",
+    "shinkansen": "Punktem zwrotnym w wizerunku powojennej Japonii",
+    "akihabara": "W **Akihabarze (25 listopada)**",
+    "skytree": "**Tokyo Skytree (25 listopada)**",
+    "kaiyukan": "W **Osace (21 listopada)** zaplanowaliśmy"
+  },
+  "chapters": {
+    "wstep": {
+      "kanji": "序"
+    },
+    "zanim-pojawili-sie-samurajowie": {
+      "kanji": "縄文・弥生",
+      "photo": {
+        "place": "kawaguchiko",
+        "n": 2
+      },
+      "caption": "Fuji nad jeziorem Kawaguchiko."
+    },
+    "nara": {
+      "kanji": "奈良時代",
+      "photo": {
+        "place": "todai-ji",
+        "n": 0
+      },
+      "caption": "Daibutsuden w Tōdai-ji. Obecna hala pochodzi z początku XVIII wieku."
+    },
+    "kioto-w-epoce-heian": {
+      "kanji": "平安時代",
+      "photo": {
+        "place": "imperial-palace-kyoto",
+        "n": 0
+      },
+      "caption": "Pałac Cesarski w Kioto. Większość obecnej zabudowy powstała w XIX wieku."
+    },
+    "kamakura": {
+      "kanji": "鎌倉時代",
+      "photo": {
+        "place": "daibutsu",
+        "n": 0
+      },
+      "caption": "Wielki Budda w Kōtoku-in, Kamakura."
+    },
+    "szogunowie-ashikaga": {
+      "kanji": "室町時代",
+      "photo": {
+        "place": "tenryu-ji",
+        "n": 0
+      },
+      "caption": "Ogród Tenryū-ji ze wzgórzami Arashiyamy w tle (shakkei)."
+    },
+    "trzech-zjednoczycieli-i-szogunat-tokugawa": {
+      "kanji": "江戸時代",
+      "photo": {
+        "place": "nijo-jo",
+        "n": 0
+      },
+      "caption": "Brama Karamon zamku Nijō-jō w Kioto."
+    },
+    "restauracja-meiji-imperium-i-ii-wojna-swiatowa": {
+      "kanji": "明治",
+      "photo": {
+        "place": "meiji-jingu",
+        "n": 2
+      },
+      "caption": "Torii w lesie Meiji Jingū."
+    },
+    "od-odbudowy-do-wspolczesnosci": {
+      "kanji": "昭和・平成・令和",
+      "photo": {
+        "src": "img/shinkansen.jpg"
+      },
+      "caption": "Dzisiejszy Shinkansen Nozomi (seria N700S), nie pociąg z 1964 roku."
+    },
+    "zakonczenie": {
+      "kanji": "結"
+    },
+    "os-czasu": {
+      "kanji": "年表"
+    },
+    "wybrane-zrodla-i-dalsza-lektura": {
+      "kanji": "出典"
+    }
+  },
+  "figures": [
+    {
+      "after": "jomon",
+      "photos": [
+        {
+          "src": "img/history/jomon-vessel.jpg",
+          "alt": "Gliniane naczynie z okresu Jōmon z bogatą, płomienistą dekoracją brzegu",
+          "credit": "Daderot / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Jomon_Vessel_with_Flame-like_Ornamentation,_attributed_provenance_Umataka,_Nagaoka-shi,_Niigata,_Jomon_period,_3000-2000_BC_-_Tokyo_National_Museum_-_DSC05620.JPG",
+          "kind": "artefact"
+        }
+      ],
+      "caption": "Naczynie z „płomienistą” dekoracją z okresu Jōmon (3000–2000 p.n.e.), Muzeum Narodowe w Tokio."
+    },
+    {
+      "after": "fuji",
+      "photos": [
+        {
+          "src": "img/history/hokusai-red-fuji.jpg",
+          "alt": "Drzeworyt Hokusaia: czerwony stożek Fuji na tle nieba z obłokami",
+          "credit": "Katsushika Hokusai / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Katsushika_Hokusai,_published_by_Nishimuraya_Yohachi_(Eijud%C5%8D)_-_Fine_Wind,_Clear_Weather_(Gaif%C5%AB_kaisei),_also_known_as_Red_Fuji,_from_the_series_Thirty-six_Views_o..._-_Google_Art_Project_-_Cropped.jpg",
+          "kind": "artwork"
+        }
+      ],
+      "caption": "Katsushika Hokusai, „Czerwona Fuji” (Gaifū kaisei) z serii Trzydzieści sześć widoków góry Fuji, ok. 1830–1831."
+    },
+    {
+      "after": "fushimi-inari",
+      "photos": [
+        {
+          "place": "fushimi-inari",
+          "n": 0
+        }
+      ],
+      "caption": "Tunel torii w Fushimi Inari. Na bramach widać inskrypcje ofiarodawców."
+    },
+    {
+      "after": "kasuga",
+      "photos": [
+        {
+          "place": "kasuga",
+          "n": 2
+        },
+        {
+          "place": "nara-park",
+          "n": 2
+        }
+      ],
+      "caption": "Kamienne lampiony Kasuga Taisha i jeleń w Nara Park."
+    },
+    {
+      "after": "kiyomizu",
+      "photos": [
+        {
+          "place": "kiyomizu",
+          "n": 0
+        }
+      ],
+      "caption": "Kiyomizu-dera z tarasem na drewnianej konstrukcji z odbudowy z 1633 roku."
+    },
+    {
+      "after": "tsurugaoka",
+      "photos": [
+        {
+          "place": "tsurugaoka",
+          "n": 1
+        }
+      ],
+      "caption": "Tsurugaoka Hachiman-gū w Kamakurze."
+    },
+    {
+      "after": "najazdy-mongolskie",
+      "photos": [
+        {
+          "src": "img/history/moko-shurai.jpg",
+          "alt": "Konny samuraj Takezaki Suenaga atakowany strzałami, obok wybuchający pocisk",
+          "credit": "Mōko Shūrai Ekotoba / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Samurai_Takezaki_Suenaga_detail_M%C5%8Dko_Sh%C5%ABrai_Ekotoba.jpg",
+          "kind": "artwork"
+        }
+      ],
+      "caption": "Samuraj Takezaki Suenaga podczas najazdu mongolskiego. Fragment zwoju Mōko Shūrai Ekotoba, zamówionego przez niego pod koniec XIII wieku."
+    },
+    {
+      "after": "ryoan-ji",
+      "photos": [
+        {
+          "place": "kinkaku-ji",
+          "n": 1
+        },
+        {
+          "place": "ryoan-ji",
+          "n": 1
+        }
+      ],
+      "caption": "Kinkaku-ji (pawilon odbudowany w 1955 roku) i kamienny ogród Ryōan-ji."
+    },
+    {
+      "after": "tokugawa-ieyasu",
+      "photos": [
+        {
+          "src": "img/history/sekigahara.jpg",
+          "alt": "Parawan z panoramą bitwy pod Sekigaharą: oddziały, chorągwie i obozy na tle wzgórz",
+          "credit": "Sekigahara Kassen Byōbu / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sekigaharascreen.jpg",
+          "kind": "artwork"
+        }
+      ],
+      "caption": "Bitwa pod Sekigaharą (1600) na późniejszym parawanie Sekigahara Kassen Byōbu."
+    },
+    {
+      "after": "nijo-jo",
+      "photos": [
+        {
+          "place": "nijo-jo",
+          "n": 1
+        }
+      ],
+      "caption": "Pałac Ninomaru w zamku Nijō-jō."
+    },
+    {
+      "after": "nikko-tosho-gu",
+      "photos": [
+        {
+          "src": "img/history/ieyasu.jpg",
+          "alt": "Portret Tokugawy Ieyasu w czarnej szacie dworskiej, siedzącego pod zasłoną z herbami rodu",
+          "credit": "Kanō Tan’yū / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokugawa_Ieyasu2.JPG",
+          "kind": "artwork"
+        },
+        {
+          "place": "toshogu",
+          "n": 1
+        }
+      ],
+      "caption": "Portret Tokugawy Ieyasu pędzla Kanō Tan’yū (wczesna epoka Edo) i brama Yōmeimon w Nikkō Tōshō-gū."
+    },
+    {
+      "after": "edo",
+      "photos": [
+        {
+          "place": "hama-rikyu",
+          "n": 1
+        },
+        {
+          "place": "senso-ji",
+          "n": 1
+        }
+      ],
+      "caption": "Ogród Hama-rikyū i Sensō-ji w Asakusie. Budynki świątyni są w dużej części powojenne."
+    },
+    {
+      "after": "meiji-reformy",
+      "photos": [
+        {
+          "src": "img/history/perry.jpg",
+          "alt": "Amerykańscy marynarze i muzycy wojskowi namalowani na japońskim zwoju",
+          "credit": "Hibata Ōsuke / British Museum / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_Mission_of_Commodore_Perry_to_Japan_in_1854_(BM_2013,3002.1_68).jpg",
+          "kind": "artwork"
+        },
+        {
+          "src": "img/history/yokohama-railway.jpg",
+          "alt": "Drzeworyt: pociąg parowy jadący wzdłuż brzegu morza w Jokohamie",
+          "credit": "Utagawa Hiroshige III / Wikimedia Commons",
+          "license": "Domena publiczna",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yokohama_Railway_1874.jpg",
+          "kind": "artwork"
+        }
+      ],
+      "caption": "Wyprawa komodora Perry’ego w 1854 roku na japońskim zwoju z lat 1854–1858 oraz kolej w Jokohamie na drzeworycie Hiroshigego III (1874)."
+    },
+    {
+      "after": "meiji-jingu",
+      "photos": [
+        {
+          "place": "meiji-jingu",
+          "n": 1
+        }
+      ],
+      "caption": "Meiji Jingū, chram z 1920 roku."
+    },
+    {
+      "after": "skytree",
+      "photos": [
+        {
+          "place": "skytree",
+          "n": 2
+        }
+      ],
+      "caption": "Tokyo Skytree nad rzeką Sumida, widok od strony Asakusy."
+    }
+  ],
+  "tripLinks": [
+    {
+      "after": "fushimi-inari",
+      "places": [
+        "kawaguchiko",
+        "momiji-kairo",
+        "fushimi-inari"
+      ]
+    },
+    {
+      "after": "kasuga",
+      "places": [
+        "todai-ji",
+        "nara-park",
+        "kasuga"
+      ]
+    },
+    {
+      "after": "sanjusangen-do",
+      "places": [
+        "kiyomizu",
+        "sannenzaka",
+        "imperial-palace-kyoto",
+        "sanjusangen-do"
+      ]
+    },
+    {
+      "after": "gion",
+      "places": [
+        "yasaka",
+        "gion",
+        "shirakawa",
+        "pontocho",
+        "shijo-kawaramachi"
+      ]
+    },
+    {
+      "after": "komachi",
+      "places": [
+        "tsurugaoka",
+        "daibutsu",
+        "hase-dera",
+        "komachi",
+        "enoshima"
+      ]
+    },
+    {
+      "after": "arashiyama",
+      "places": [
+        "tenryu-ji",
+        "bamboo-grove",
+        "togetsukyo",
+        "okochi-sanso"
+      ]
+    },
+    {
+      "after": "ryoan-ji",
+      "places": [
+        "kinkaku-ji",
+        "ryoan-ji"
+      ]
+    },
+    {
+      "after": "nikko-tosho-gu",
+      "places": [
+        "nijo-jo",
+        "toshogu",
+        "rinno-ji",
+        "shinkyo"
+      ]
+    },
+    {
+      "after": "kultura-edo",
+      "places": [
+        "hama-rikyu",
+        "senso-ji",
+        "ueno-toshogu",
+        "nishiki",
+        "dotonbori",
+        "shinsaibashi"
+      ]
+    },
+    {
+      "after": "meiji-jingu",
+      "places": [
+        "meiji-jingu",
+        "harajuku",
+        "omotesando"
+      ]
+    },
+    {
+      "after": "ginza-ueno",
+      "places": [
+        "ginza",
+        "ueno-park",
+        "ueno-zoo"
+      ]
+    },
+    {
+      "after": "shinkansen",
+      "items": [
+        "d10-03",
+        "d17-03"
+      ]
+    },
+    {
+      "after": "skytree",
+      "places": [
+        "akihabara",
+        "shibuya",
+        "shinjuku",
+        "tocho",
+        "skytree"
+      ]
+    },
+    {
+      "after": "kaiyukan",
+      "places": [
+        "teamlab",
+        "tsukiji",
+        "kaiyukan"
+      ]
+    }
+  ],
+  "backlinks": {
+    "kawaguchiko": "fuji",
+    "fushimi-inari": "fushimi-inari",
+    "todai-ji": "todai-ji",
+    "nara-park": "kasuga",
+    "kasuga": "kasuga",
+    "imperial-palace-kyoto": "palac-cesarski",
+    "kiyomizu": "kiyomizu",
+    "sanjusangen-do": "sanjusangen-do",
+    "tsurugaoka": "tsurugaoka",
+    "daibutsu": "wielki-budda-kamakura",
+    "hase-dera": "wielki-budda-kamakura",
+    "tenryu-ji": "tenryu-ji",
+    "kinkaku-ji": "kinkaku-ji",
+    "ryoan-ji": "ryoan-ji",
+    "kodai-ji": "zjednoczyciele",
+    "nijo-jo": "nijo-jo",
+    "toshogu": "nikko-tosho-gu",
+    "rinno-ji": "nikko-tosho-gu",
+    "shinkyo": "nikko-tosho-gu",
+    "hama-rikyu": "edo",
+    "senso-ji": "edo",
+    "ueno-toshogu": "edo",
+    "meiji-jingu": "meiji-jingu",
+    "ueno-park": "ginza-ueno"
+  },
+  "eras": [
+    {
+      "name": "Jōmon, Yayoi, Yamato",
+      "kanji": "縄文",
+      "dates": "Przed VI w.",
+      "target": "zanim-pojawili-sie-samurajowie"
+    },
+    {
+      "name": "Nara",
+      "kanji": "奈良",
+      "dates": "710–784",
+      "target": "nara"
+    },
+    {
+      "name": "Heian",
+      "kanji": "平安",
+      "dates": "794–1185",
+      "target": "kioto-w-epoce-heian"
+    },
+    {
+      "name": "Kamakura",
+      "kanji": "鎌倉",
+      "dates": "1185–1333",
+      "target": "kamakura"
+    },
+    {
+      "name": "Muromachi (Ashikaga)",
+      "kanji": "室町",
+      "dates": "1336–1573",
+      "target": "szogunowie-ashikaga"
+    },
+    {
+      "name": "Trzech zjednoczycieli",
+      "kanji": "統一",
+      "dates": "Druga połowa XVI w.",
+      "target": "zjednoczyciele"
+    },
+    {
+      "name": "Edo (Tokugawa)",
+      "kanji": "江戸",
+      "dates": "1603–1867",
+      "target": "tokugawa-ieyasu"
+    },
+    {
+      "name": "Meiji, imperium, wojna",
+      "kanji": "明治",
+      "dates": "1853–1945",
+      "target": "restauracja-meiji-imperium-i-ii-wojna-swiatowa"
+    },
+    {
+      "name": "Od odbudowy do dziś",
+      "kanji": "現代",
+      "dates": "1945–2026",
+      "target": "od-odbudowy-do-wspolczesnosci"
+    }
+  ]
+}
