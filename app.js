@@ -4,6 +4,9 @@
   "use strict";
 
   const DATA_URLS = ["data/trip.json", "../data/trip.json"];
+  // Zakładka „Historia Japonii”: tekst (Markdown, renderowany bez zmian) + osobna mapa powiązań z planem
+  const HIST_MD_URLS = ["content/historia-japonii.md", "../content/historia-japonii.md"];
+  const HIST_LINKS_URLS = ["content/historia-powiazania.json", "../content/historia-powiazania.json"];
   const KANJI_WD = ["日", "月", "火", "水", "木", "金", "土"];
   const MONTHS = ["stycznia", "lutego", "marca", "kwietnia", "maja", "czerwca", "lipca", "sierpnia", "września", "października", "listopada", "grudnia"];
   const PACE_LEVEL = { "very-light": 1, "light": 2, "light-medium": 3, "medium": 3, "medium-long": 4, "long": 5, "travel": 0 };
@@ -30,10 +33,12 @@
     info: '<circle cx="12" cy="12" r="9"/><path d="M12 11v5M12 8h.01"/>',
     check: '<path d="M5 12.5l4.5 4.5L19 7"/>',
     bowl: '<path d="M3 11h18a9 9 0 0 1-18 0zM8 21h8M9 7c0-1.5 1-2 1-3.5M13 7c0-1.5 1-2 1-3.5"/>',
-    ticket: '<path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/>'
+    ticket: '<path d="M4 8a2 2 0 0 0 2-2h12a2 2 0 0 0 2 2v2a2 2 0 0 0 0 4v2a2 2 0 0 0-2 2H6a2 2 0 0 0-2-2v-2a2 2 0 0 0 0-4z"/>',
+    book: '<path d="M12 6.5C10 5 7 4.5 4 5v13.5c3-.5 6 0 8 1.5 2-1.5 5-2 8-1.5V5c-3-.5-6 0-8 1.5zM12 6.5V20"/>',
+    up: '<path d="M6 14l6-6 6 6"/>'
   };
 
-  const S = { trip: null, byId: {}, filters: { want: true, bonus: true }, variant: {}, sim: null, done: {} };
+  const S = { trip: null, byId: {}, filters: { want: true, bonus: true }, variant: {}, sim: null, done: {}, hist: null, histMd: null, histDoc: null, histY: 0, tab: null, lastDay: null };
   const $ = (sel, el) => (el || document).querySelector(sel);
   const view = $("#view"), side = $("#side"), sheet = $("#sheet");
 
@@ -176,6 +181,7 @@
         <a href="#today" ${tab === "today" ? 'aria-current="page"' : ""}>Dziś</a>
         <a href="#bookings" ${tab === "bookings" ? 'aria-current="page"' : ""}>Rezerwacje</a>
         ${t.food ? `<a href="#food" ${tab === "food" ? 'aria-current="page"' : ""}>Jedzenie</a>` : ""}
+        <a class="wide" href="#historia" ${tab === "historia" ? 'aria-current="page"' : ""}>Historia Japonii</a>
       </nav>
       ${groups.map((g) => `
         <div class="side-group">
@@ -356,7 +362,7 @@
           <button type="button" class="f-bonus" data-filter="bonus" aria-pressed="${S.filters.bonus}"><span class="bx"></span>BONUS</button>
         </div>
       </div>
-      <ol class="tl">${timeline(day, isToday ? now.min : null)}</ol>
+      <ol class="tl">${timeline(day, isToday ? now.min : null, opts && opts.focus)}</ol>
       ${guides(day)}
 
       <div class="dhead"><div class="nav">
@@ -406,9 +412,10 @@
       </details>`).join("")}</div>`;
   }
 
-  function timeline(day, nowMin) {
+  function timeline(day, nowMin, focus) {
     const chosen = S.variant[day.id] || null;
     const items = day.items.filter((i) => {
+      if (focus && i.id === focus) return true; // punkt otwarty z historii jest widoczny mimo filtrów
       if (i.priority === "want" && !S.filters.want) return false;
       if (i.priority === "bonus" && !S.filters.bonus) return false;
       if (i.variant && chosen && i.variant !== chosen) return false;
@@ -433,7 +440,7 @@
     let out = "";
     items.forEach((i, k) => {
       if (k === lineAt) out += nowLine(nowMin);
-      out += `<li class="p-${i.priority || "none"} t-${i.type} ${state[k]}">${timeCell(i)}<div class="rail"><span class="dot"></span></div><div class="content">${itemBody(i, day, chosen)}</div></li>`;
+      out += `<li id="it-${esc(i.id)}" class="p-${i.priority || "none"} t-${i.type} ${state[k]}">${timeCell(i)}<div class="rail"><span class="dot"></span></div><div class="content">${itemBody(i, day, chosen)}${histLink(i.placeId)}</div></li>`;
     });
     if (lineAt === items.length) out += nowLine(nowMin);
     return out;
@@ -505,6 +512,7 @@
             <a class="btn primary" href="${esc(mapsUrl(place))}" target="_blank" rel="noopener">${icon("pin")} Mapa</a>
             ${place.links && place.links.official ? `<a class="btn" href="${esc(place.links.official)}" target="_blank" rel="noopener">${icon("link")} Strona oficjalna</a>` : ""}
           </div>
+          ${histLink(placeId, true)}
           ${bookings.length ? `<div class="kv">${bookings.map((b) => `<div><span class="eyebrow">Rezerwacja · <span class="status status-${b.status}">${statusLabel(b.status)}</span></span><span>${esc(b.conclusion)}</span><span class="muted">${esc(b.when)}</span><a href="${esc(b.url)}" target="_blank" rel="noopener">Strona rezerwacji</a></div>`).join("")}</div>` : ""}
           ${days.length ? `<div class="kv"><div><span class="eyebrow">W planie</span><div class="also">${days.map((d) => `<a class="chip" href="#d-${d.id}" data-close>Dzień ${d.dayNumber} · ${shortDate(d.date)}</a>`).join("")}</div></div></div>` : ""}
         </div>
@@ -575,25 +583,259 @@
       ${f.source ? `<p class="footer">${esc(f.source)}</p>` : ""}`;
   }
 
+  // ---------- historia ----------
+  // Tekst artykułu pochodzi wyłącznie z content/historia-japonii.md (renderer md.js, bez zmian treści).
+  // Zdjęcia, ramki „Zobaczymy podczas podróży”, oś epok i spis treści to osobne elementy interfejsu
+  // (data-ui), opisane w content/historia-powiazania.json; miejsca, daty i priorytety bierzemy z trip.json.
+  const PRIO_RANK = { must: 0, want: 1, bonus: 2 };
+  const histKey = (k) => "historia-" + k;
+  // Link „Poznaj historię tego miejsca” przy atrakcjach planu (tylko te z mapy backlinks)
+  function histLink(placeId, inSheet) {
+    const a = placeId && S.hist && S.hist.backlinks && S.hist.backlinks[placeId];
+    if (!a) return "";
+    return `<a class="hist-link${inSheet ? " in-sheet" : ""}" href="#${esc(histKey(a))}" ${inSheet ? "data-close" : ""}>${icon("book")}<span>Poznaj historię tego miejsca</span></a>`;
+  }
+  // Zdjęcie z mapy: {place, n} → places[place].photo / gallery[n-1]; {src, …} → metadane z trip.json po src
+  function histPhoto(ref) {
+    if (!ref) return null;
+    if (ref.place) {
+      const pl = S.trip.places[ref.place]; if (!pl) return null;
+      const all = [pl.photo].concat(pl.gallery || []).filter((p) => p && p.src);
+      const p = all[ref.n || 0] || all[0];
+      return p ? Object.assign({ kind: "photo" }, p, { kind: ref.kind || "photo" }) : null;
+    }
+    if (ref.src) return Object.assign({ kind: "photo" }, S.photoBySrc[ref.src] || {}, ref);
+    return null;
+  }
+  const KIND_LABEL = { photo: "Fotografia współczesna", artwork: "Dawne przedstawienie", artefact: "Zabytek w muzeum" };
+  function histCredits(photos) {
+    return photos.filter((p) => p.credit).map((p) => `<span class="credit">${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">${esc(p.credit)}</a>` : esc(p.credit)}${p.license ? " · " + esc(p.license) : ""}</span>`).join("");
+  }
+  function histFigure(refs, caption, cls) {
+    const photos = refs.map(histPhoto).filter(Boolean);
+    if (!photos.length) return "";
+    const kinds = [...new Set(photos.map((p) => p.kind))];
+    return `<figure class="h-fig n${photos.length} ${cls || ""}" data-ui>
+      <div class="h-fig-row">${photos.map((p) => `<button type="button" class="h-zoom" data-zoom="${esc(p.src)}" aria-label="Powiększ zdjęcie: ${esc(p.alt || caption || "")}">
+        <img src="${esc(p.src)}" alt="${esc(p.alt || "")}" loading="lazy" decoding="async"${p.kind === "photo" ? "" : ' class="contain"'}></button>`).join("")}</div>
+      <figcaption>${kinds.map((k) => `<span class="h-kind k-${esc(k)}">${esc(KIND_LABEL[k] || KIND_LABEL.photo)}</span>`).join("")}${caption ? `<span class="cap">${esc(caption)}</span>` : ""}${histCredits(photos)}</figcaption>
+    </figure>`;
+  }
+  // „Zobaczymy podczas podróży”: punkty planu pogrupowane po dniach, z aktualnymi datami i priorytetami
+  function histTrip(link) {
+    const t = S.trip, rows = [];
+    t.days.forEach((d) => {
+      const best = {};
+      d.items.forEach((i, k) => {
+        const key = (link.places || []).includes(i.placeId) ? "p:" + i.placeId : (link.items || []).includes(i.id) ? "i:" + i.id : null;
+        if (!key) return;
+        const cur = best[key];
+        if (!cur || (PRIO_RANK[i.priority] ?? 3) < (PRIO_RANK[cur.i.priority] ?? 3)) best[key] = { i, k };
+      });
+      const list = Object.values(best).sort((a, b) => a.k - b.k);
+      if (list.length) rows.push({ d, list });
+    });
+    if (!rows.length) return "";
+    return `<aside class="h-trip" data-ui aria-label="Zobaczymy podczas podróży">
+      <span class="eyebrow">${icon("pin")} Zobaczymy podczas podróży</span>
+      ${rows.map(({ d, list }) => `<div class="h-trip-day">
+        <div class="h-trip-h"><b>${esc(d.title)}</b><span class="num"> — ${fmtDate(d.date)} ${dateParts(d.date).y}</span></div>
+        <ul>${list.map(({ i }) => { const pl = i.placeId && t.places[i.placeId]; return `<li><a href="#d-${esc(d.id)}/${esc(i.id)}">
+          ${prioBadge(i.priority)}<span class="nm">${esc(pl ? pl.name : i.title)}</span><span class="go">Zobacz w planie →</span></a></li>`; }).join("")}</ul>
+      </div>`).join("")}
+    </aside>`;
+  }
+  function histParse() {
+    if (S.histDoc) return S.histDoc;
+    const doc = MD.parse(S.histMd), links = S.hist || {};
+    const anchors = links.anchors || {};
+    // kotwica → indeks akapitu (po początku tekstu)
+    const at = {};
+    Object.entries(anchors).forEach(([key, start]) => {
+      const k = doc.blocks.findIndex((b) => b.type === "para" && (b.raw.startsWith(start) || b.text.startsWith(MD.plain(start))));
+      if (k >= 0) at[k] = key; else console.warn("Historia: nie znaleziono kotwicy", key);
+    });
+    doc.anchorAt = at;
+    doc.anchorIds = new Set(Object.values(at));
+    return (S.histDoc = doc);
+  }
+  // h2 „1. Zanim pojawili się samurajowie. Początki…”: numer i podtytuł tylko inaczej złożone, ten sam tekst
+  function h2Html(b) {
+    let html = b.html, num = "";
+    const m = /^(\d+\.)\s/.exec(html);
+    if (m) { num = `<span class="h-num">${m[1]}</span> `; html = html.slice(m[0].length); }
+    const dot = html.indexOf(". ");
+    if (dot > 0 && dot < html.length - 2) html = `<span class="h-main">${html.slice(0, dot + 2)}</span><span class="h-subt">${html.slice(dot + 2)}</span>`;
+    return `<h2 id="${esc(histKey(b.id))}">${num}${html}</h2>`;
+  }
+  function renderHistory() {
+    const doc = histParse(), L = S.hist || {}, blocks = doc.blocks;
+    const h1 = blocks.find((b) => b.type === "heading" && b.level === 1);
+    const firstH2 = blocks.findIndex((b) => b.type === "heading" && b.level === 2);
+    const pre = blocks.slice(0, firstH2 < 0 ? blocks.length : firstH2).filter((b) => b !== h1);
+    const heads = blocks.filter((b) => b.type === "heading" && b.level >= 2 && b.level <= 3);
+    const words = blocks.reduce((n, b) => n + (b.text || (b.rowsText || []).flat().join(" ") || (b.items || []).map((x) => x.text).join(" ")).split(/\s+/).length, 0);
+    const minutes = Math.max(1, Math.round(words / 200));
+    const after = (list, key) => (list || []).filter((x) => x.after === key);
+
+    let body = "", open = false;
+    blocks.slice(firstH2).forEach((b, off) => {
+      const k = firstH2 + off;
+      if (b.type === "heading" && b.level === 2) {
+        if (open) body += "</section>";
+        const ch = (L.chapters || {})[b.id] || {};
+        body += `<section class="h-sec" aria-labelledby="${esc(histKey(b.id))}">
+          ${ch.kanji ? `<span class="h-kanji ja" aria-hidden="true" data-ui>${esc(ch.kanji)}</span>` : ""}
+          ${h2Html(b)}
+          ${ch.photo ? histFigure([ch.photo], ch.caption, "opener") : ""}`;
+        open = true; return;
+      }
+      if (b.type === "heading") { body += `<h${b.level} id="${esc(histKey(b.id))}">${b.html}</h${b.level}>`; return; }
+      if (b.type === "para") {
+        const key = doc.anchorAt[k];
+        const cls = /^\*\*Podczas zwiedzania:\*\*/.test(b.raw) ? "h-visit" : /^\*[^*].*\*$/.test(b.raw) ? "h-note" : "";
+        body += `<p${key ? ` id="${esc(histKey(key))}"` : ""}${cls ? ` class="${cls}"` : ""}>${b.html}</p>`;
+        if (key) {
+          after(L.figures, key).forEach((f) => { body += histFigure(f.photos, f.caption); });
+          after(L.tripLinks, key).forEach((x) => { body += histTrip(x); });
+        }
+        return;
+      }
+      body += MD.blockHtml(b);
+    });
+    if (open) body += "</section>";
+    if (doc.footnotes.length) body += `<section class="h-fn" aria-label="Przypisy"><ol>${doc.footnotes.map((f) => `<li id="fn-${esc(f.id)}" value="${f.n}">${f.html} <a href="#fnref-${esc(f.id)}" aria-label="Wróć do tekstu">↩</a></li>`).join("")}</ol></section>`;
+
+    const hero = histPhoto(L.hero && L.hero.photo);
+    const last = S.lastDay && S.byId[S.lastDay];
+    const tocList = (cls) => `<ol class="${cls}">${heads.map((h) => `<li class="lv${h.level}"><a href="#${esc(histKey(h.id))}" data-toc="${esc(histKey(h.id))}">${esc(h.text)}</a></li>`).join("")}</ol>`;
+    const eraTarget = (x) => histKey(x.target);
+    view.innerHTML = `
+      <div class="hist" data-hist>
+        <div class="h-progress" data-ui aria-hidden="true"><i></i></div>
+        <header class="h-hero">
+          ${hero ? `<figure class="h-hero-media" data-ui><img src="${esc(hero.src)}" alt="${esc(hero.alt || "")}" fetchpriority="high" decoding="async">
+            <figcaption><span class="h-kind">${esc(KIND_LABEL[hero.kind] || KIND_LABEL.photo)}</span>${L.hero.caption ? `<span class="cap">${esc(L.hero.caption)}</span>` : ""}${histCredits([hero])}</figcaption></figure>` : ""}
+          <div class="h-hero-text">
+            <span class="eyebrow" data-ui>Przewodnik historyczny · przygotowany do podróży ${esc(L.trip || rangeLabel())}</span>
+            ${h1 ? `<h1 id="${esc(histKey(h1.id))}">${h1.html}</h1>` : ""}
+            ${pre.map((b) => b.type === "para" ? `<p class="h-lead">${b.html}</p>` : MD.blockHtml(b)).join("")}
+            <div class="h-actions" data-ui>
+              <a class="btn primary" href="#historia-spis">${icon("book")} Spis treści</a>
+              <a class="btn" href="#historia-epoki">Oś epok</a>
+              ${last ? `<a class="btn" href="#d-${esc(last.id)}">${icon("left")} Wróć do planu: ${shortDate(last.date)} ${esc(last.title)}</a>` : ""}
+              <span class="muted h-meta">${heads.filter((h) => h.level === 2).length} części · ok. ${minutes} min czytania</span>
+            </div>
+          </div>
+        </header>
+
+        ${(L.eras || []).length ? `<nav class="h-eras" id="historia-epoki" data-ui aria-label="Oś czasu epok">
+          <span class="eyebrow">Epoki w przewodniku</span>
+          <ol>${L.eras.map((x) => `<li><a href="#${esc(eraTarget(x))}"><span class="k ja" aria-hidden="true">${esc(x.kanji || "")}</span><span class="d num">${esc(x.dates)}</span><span class="n">${esc(x.name)}</span></a></li>`).join("")}</ol>
+        </nav>` : ""}
+
+        <details class="h-toc" id="historia-spis" data-ui>
+          <summary><span class="eyebrow">Spis treści</span><span class="muted">${heads.length} pozycji</span></summary>
+          ${tocList("h-toc-list")}
+        </details>
+
+        <div class="h-layout">
+          <article class="h-article" lang="pl">${body}</article>
+          <aside class="h-side" data-ui aria-label="Spis treści"><span class="eyebrow">Spis treści</span>${tocList("h-side-list")}</aside>
+        </div>
+        <p class="footer" data-ui>Tekst: ${esc(L.source || "content/historia-japonii.md")}, wyświetlany bez zmian. Daty wizyt i priorytety w ramkach „Zobaczymy podczas podróży” pochodzą z aktualnego planu.</p>
+        <a class="h-totop" href="#historia-spis" data-ui aria-label="Powrót do spisu treści">${icon("up")}<span>Spis treści</span></a>
+      </div>`;
+    histScroll();
+  }
+  // pasek postępu, aktywny rozdział w bocznym spisie treści, przycisk powrotu do spisu
+  function histScroll() {
+    const root = view.querySelector("[data-hist]"); if (!root) return;
+    const art = root.querySelector(".h-article"), bar = root.querySelector(".h-progress i"), top = root.querySelector(".h-totop");
+    const r = art.getBoundingClientRect(), vh = window.innerHeight;
+    const p = Math.max(0, Math.min(1, (vh * 0.3 - r.top) / Math.max(1, r.height - vh * 0.5)));
+    bar.style.transform = `scaleX(${p})`;
+    top.classList.toggle("on", r.top < 0 && r.bottom > vh * 0.6);
+    let cur = null;
+    root.querySelectorAll(".h-article h2, .h-article h3").forEach((h) => { if (h.getBoundingClientRect().top < vh * 0.25) cur = h.id; });
+    root.querySelectorAll(".h-side-list a").forEach((a) => { if (a.dataset.toc === cur) a.setAttribute("aria-current", "true"); else a.removeAttribute("aria-current"); });
+  }
+  window.addEventListener("scroll", () => { if (S.tab === "historia") { cancelAnimationFrame(S.hRaf); S.hRaf = requestAnimationFrame(histScroll); } }, { passive: true });
+  window.addEventListener("resize", () => { if (S.tab === "historia") histScroll(); }, { passive: true });
+
+  async function fetchFirst(urls, kind) {
+    for (const url of urls) {
+      try { const r = await fetch(url, { cache: "no-cache" }); if (r.ok) return kind === "json" ? await r.json() : await r.text(); } catch (e) { /* następny adres */ }
+    }
+    throw new Error("Nie udało się wczytać " + urls[0]);
+  }
+  // #historia, #historia-<rozdział lub kotwica>, #historia-spis, #historia-epoki
+  function routeHistory(h, fromTab) {
+    const target = h === "historia" ? null : h;
+    const already = S.tab === "historia" && view.querySelector("[data-hist]");
+    S.tab = "historia";
+    renderSide(null, "historia"); setTab("historia");
+    const go = (smooth) => {
+      const el = target && document.getElementById(target);
+      if (el && el.tagName === "DETAILS") el.open = true;
+      if (el) el.scrollIntoView({ behavior: smooth ? "smooth" : "auto", block: "start" });
+      else window.scrollTo(0, fromTab === "historia" ? window.scrollY : S.histY || 0);
+      histScroll();
+    };
+    if (already) { go(true); return; }
+    if (S.histMd == null) {
+      view.innerHTML = `<div class="loading">Wczytuję historię Japonii…</div>`;
+      fetchFirst(HIST_MD_URLS, "text").then((md) => {
+        S.histMd = md;
+        if (S.tab === "historia" && decodeURIComponent(location.hash.replace(/^#/, "")) === h) { renderHistory(); go(false); }
+      }).catch(() => {
+        view.innerHTML = `<div class="err"><h1>Nie mogę wczytać historii</h1><p>Strona czyta tekst z <code>content/historia-japonii.md</code>. Sprawdź połączenie z internetem i odśwież stronę.</p></div>`;
+      });
+      return;
+    }
+    renderHistory(); go(false);
+  }
+
+  // powiększenie zdjęcia z artykułu
+  let lightbox = null;
+  function openZoom(btn) {
+    const fig = btn.closest("figure"), img = btn.querySelector("img");
+    if (!lightbox) {
+      lightbox = document.createElement("dialog"); lightbox.className = "lightbox";
+      lightbox.addEventListener("click", (e) => { if (!e.target.closest("a")) lightbox.close(); });
+      document.body.appendChild(lightbox);
+    }
+    const cap = fig && fig.querySelector("figcaption");
+    lightbox.innerHTML = `<button class="close" type="button" aria-label="Zamknij">${icon("close")}</button><img src="${esc(img.getAttribute("src"))}" alt="${esc(img.alt)}">${cap ? `<div class="lb-cap">${cap.innerHTML}</div>` : ""}`;
+    try { lightbox.showModal(); } catch (e) { lightbox.setAttribute("open", ""); }
+  }
+
   // ---------- router ----------
   function route() {
     if (sheet.open) sheet.close();
+    if (lightbox && lightbox.open) lightbox.close();
     const h = decodeURIComponent(location.hash.replace(/^#/, ""));
-    let tab = "plan", active = null;
-    if (h.startsWith("d-") && S.byId[h.slice(2)]) {
-      const d = S.byId[h.slice(2)]; active = d.id;
+    const prevTab = S.tab;
+    if (prevTab === "historia" && view.querySelector("[data-hist]")) S.histY = window.scrollY;
+    if (h === "historia" || h.startsWith("historia-")) { routeHistory(h, prevTab); return; }
+    let tab = "plan", active = null, focus = null;
+    // #d-2026-11-14 albo #d-2026-11-14/<itemId> (punkt planu, np. z historii)
+    const dm = /^d-(\d{4}-\d{2}-\d{2})(?:\/(.+))?$/.exec(h);
+    if (dm && S.byId[dm[1]]) {
+      const d = S.byId[dm[1]]; active = d.id; S.lastDay = d.id;
+      focus = dm[2] && d.items.some((i) => i.id === dm[2]) ? dm[2] : null;
       tab = todayDay() && todayDay().id === d.id ? "today" : "plan";
-      renderDay(d);
+      renderDay(d, { focus });
     } else if (h === "today") {
       tab = "today";
       const d = todayDay(), now = nowTokyo();
       const fallback = now.date < S.trip.meta.dateFrom ? S.trip.days[0] : S.trip.days[S.trip.days.length - 1];
-      active = (d || fallback).id;
+      active = (d || fallback).id; S.lastDay = active;
       renderDay(d || fallback, { fromToday: !d });
     } else if (h === "bookings") {
       tab = "bookings"; renderBookings();
     } else if (h.startsWith("food") && S.trip.food) {
-      tab = "food"; renderFood();
+      tab = "food"; renderFood(); S.tab = tab;
       const sec = h.startsWith("food-") && document.getElementById(h);
       renderSide(active, tab); setTab(tab);
       if (sec) sec.scrollIntoView(); else window.scrollTo(0, 0);
@@ -601,15 +843,25 @@
     } else {
       renderOverview();
     }
+    S.tab = tab;
     renderSide(active, tab);
     setTab(tab);
     window.scrollTo(0, 0);
+    const el = focus && document.getElementById("it-" + focus);
+    if (el) {
+      el.scrollIntoView({ block: "start" });
+      el.classList.add("is-focus");
+      setTimeout(() => el.classList.remove("is-focus"), 2600);
+      // adres bez punktu: odświeżenie co 5 min i przeładowanie strony nie przewijają ponownie
+      try { history.replaceState(history.state, "", "#d-" + active); } catch (e) { /* bez historii */ }
+    }
   }
 
   // ---------- events ----------
   document.addEventListener("click", (e) => {
-    const t = e.target.closest("[data-place],[data-variant],[data-filter],[data-close],[data-sim]");
+    const t = e.target.closest("[data-place],[data-variant],[data-filter],[data-close],[data-sim],[data-zoom]");
     if (!t) return;
+    if (t.dataset.zoom) { openZoom(t); return; }
     if (t.dataset.place) { openPlace(t.dataset.place, t.dataset.item); return; }
     if (t.dataset.variant) {
       const d = t.dataset.day; S.variant[d] = S.variant[d] === t.dataset.variant ? null : t.dataset.variant;
@@ -647,9 +899,14 @@
     }
     throw new Error("Nie udało się wczytać trip.json");
   }
-  function start(trip) {
+  function start(trip, hist) {
     S.trip = trip;
+    S.hist = hist || null;
     trip.days.forEach((d) => { S.byId[d.id] = d; });
+    // metadane zdjęć (autor, licencja) po ścieżce pliku, do ponownego użycia w historii
+    S.photoBySrc = {};
+    const walk = (o) => { if (Array.isArray(o)) o.forEach(walk); else if (o && typeof o === "object") { if (typeof o.src === "string" && o.credit && !S.photoBySrc[o.src]) S.photoBySrc[o.src] = o; Object.values(o).forEach(walk); } };
+    walk(trip);
     S.filters = Object.assign(S.filters, store.get("filters", {}));
     S.done = store.get("todo", {}) || {};
     route();
@@ -664,5 +921,7 @@
       f.text().then((s) => start(JSON.parse(s))).catch(() => { view.querySelector(".err p").textContent = "To nie jest poprawny plik trip.json."; });
     });
   }
-  load().then(start).catch(showLoadError);
+  // mapa powiązań historii jest opcjonalna: bez niej plan działa jak dotąd
+  Promise.all([load(), fetchFirst(HIST_LINKS_URLS, "json").catch(() => null)])
+    .then(([trip, hist]) => start(trip, hist)).catch(showLoadError);
 })();
