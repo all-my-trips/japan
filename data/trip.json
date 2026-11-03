@@ -3042,7 +3042,17 @@
             "license": "CC BY-SA 4.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR_Series-N700S-J30_Nozomi-4.jpg"
           },
-          "note": "Kupione przez smart EX. Fuji tym razem po lewej stronie pociągu (strona miejsc D/E)."
+          "note": "Kupione przez smart EX. Fuji tym razem po lewej stronie pociągu (strona miejsc D/E).",
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Bagaż o sumie wymiarów 160–250 cm wymaga miejsca z przestrzenią na duży bagaż (bez rezerwacji dopłata), powyżej 250 cm nie wolno. Wózek dziecięcy tego nie wymaga.",
+              "link": {
+                "label": "smart EX",
+                "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
+              }
+            }
+          ]
         },
         {
           "id": "d17-04",
