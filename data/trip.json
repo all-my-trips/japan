@@ -2748,20 +2748,42 @@
       "earliestDeparture": "08:30",
       "pace": "medium",
       "paceLabel": "Średnio",
-      "summary": "Klasyczne Kioto. Zaczynamy od Złotego Pawilonu Kinkaku-ji zaraz po otwarciu, bo to niedziela długiego weekendu i później będą ogromne tłumy. Potem zamek szogunów Nijō z „podłogami słowika”, a na lunch targ Nishiki, nazywany kuchnią Kioto. Popołudnie jest wolne: zakupy przy Kawaramachi, Ponto-chō i spokojna kolacja.",
+      "summary": "Klasyczne Kioto. Zaczynamy od Złotego Pawilonu Kinkaku-ji zaraz po otwarciu, bo to niedziela długiego weekendu i później będą ogromne tłumy. Potem zamek szogunów Nijō: pałac Ninomaru ze „słowiczymi podłogami” i ogrody, a na lunch targ Nishiki, nazywany kuchnią Kioto. Popołudnie jest wolne: zakupy przy Kawaramachi, Ponto-chō i spokojna kolacja.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Kinkaku-ji",
-        "want": "Nijō-jō + Nishiki",
-        "bonus": "Ponto-chō / Kawaramachi / spokojna kolacja"
+        "must": "Kinkaku-ji + Nijō-jō (Ninomaru i ogrody)",
+        "want": "Nishiki",
+        "bonus": "Honmaru-goten / Ponto-chō / Kawaramachi / spokojna kolacja"
       },
       "booking": {
-        "level": "recommended",
-        "text": "Kinkaku-ji / Nishiki: brak. Nijō-jō: standard + Ninomaru bez rezerwacji (web ticket opcjonalny); Honmaru-goten wymaga wcześniejszej rezerwacji."
+        "level": "none",
+        "text": "Bez wcześniejszej rezerwacji. Bilety do Kinkaku-ji i Nijō-jō kupujemy na miejscu; Honmaru-goten tylko opcjonalnie, jeśli będą wolne wejścia."
       },
       "source": {
         "orderText": "08:30 wyjście → 09:00–10:30 Kinkaku-ji → 11:00–12:30 Nijō-jō → 12:45–14:15 Nishiki Market + lunch → 14:30+ wolne / Kawaramachi / Ponto-chō"
       },
+      "todos": [
+        {
+          "id": "todo-nijo-tickets",
+          "priority": "must",
+          "text": "Kupić bilety do Nijō-jō (Ninomaru + ogrody)",
+          "where": "Kasa przy wejściu do zamku, na miejscu",
+          "note": "Na miejscu kupić standardowe bilety do zamku Nijō-jō, obejmujące pałac Ninomaru i ogrody. Nie rezerwować wcześniej. 3 dorosłych, ok. 1 300 JPY za osobę (zamek + Ninomaru); Zosia bezpłatnie."
+        },
+        {
+          "id": "todo-nijo-honmaru",
+          "priority": "bonus",
+          "text": "Opcjonalnie: kupić bilety do pałacu Honmaru",
+          "where": "Punkt informacji na terenie zamku, na miejscu",
+          "note": "Jeśli będzie czas i ochota, sprawdzić dostępność wejść do Honmaru w punkcie informacji na terenie zamku. Jeśli będą miejsca, dokupić bilet. W przeciwnym razie pominąć bez zmiany pozostałego planu. Dopłata ok. 1 000 JPY za dorosłego, wejście na konkretną godzinę; w długi weekend miejsc może nie być.",
+          "links": [
+            {
+              "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/honmaru/?lang=en",
+              "label": "Honmaru-goten (oficjalna strona)"
+            }
+          ]
+        }
+      ],
       "items": [
         {
           "id": "d15-01",
@@ -2802,10 +2824,10 @@
           "end": "12:30",
           "approx": false,
           "type": "attraction",
-          "title": "Zamek Nijō",
-          "priority": "want",
+          "title": "Zamek Nijō: Ninomaru + ogrody",
+          "priority": "must",
           "placeId": "nijo-jo",
-          "note": null
+          "note": "Honmaru-goten to BONUS: tylko jeśli będą wolne wejścia, czas i ochota (ok. 40 min); nie wydłużamy dla niego dnia."
         },
         {
           "id": "d15-04",
@@ -4702,7 +4724,7 @@
       "area": "Centrum",
       "category": "castle",
       "short": "Zamek szogunów z „podłogami słowika”, które śpiewają pod stopami.",
-      "description": "Rezydencja szogunów Tokugawa w Kioto, zbudowana od 1603 roku, wpisana na listę UNESCO. Najciekawszy jest pałac Ninomaru: przechodzi się przez sale z malowanymi złotem parawanami, a drewniane podłogi skrzypią przy każdym kroku jak ćwierkanie ptaków. Był to podobno system alarmowy przeciw skrytobójcom. To tu w 1867 roku ostatni szogun oddał władzę cesarzowi. Wokół pałacu są ogrody i mury z fosą.",
+      "description": "Rezydencja szogunów Tokugawa w Kioto, zbudowana od 1603 roku, wpisana na listę UNESCO. To tu w 1867 roku ostatni szogun oddał władzę cesarzowi. Wokół pałaców są ogrody i mury z fosą.\n\nNinomaru-goten (MUST): główny pałac zwiedzany podczas wizyty. Historyczne sale z malowanymi złotem parawanami i słynne „słowicze podłogi”, które skrzypią przy każdym kroku jak ćwierkanie ptaków (podobno alarm przeciw skrytobójcom). Wchodzi się bez wcześniejszej rezerwacji.\n\nHonmaru-goten (BONUS): dodatkowy, odrestaurowany pałac. Wejście na konkretną godzinę, w miarę dostępności miejsc; zwiedzanie wnętrz trwa około 40 minut.",
       "photo": {
         "src": "img/nijo-jo.jpg",
         "alt": "Zamek Nijō",
