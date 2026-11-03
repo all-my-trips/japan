@@ -422,7 +422,26 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .sheet .media img, .sheet .media .ph { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
 .sheet .media .ph .k { font-size: clamp(2.5rem, 10vw, 4rem); }
 .sheet .close { position: absolute; top: 12px; right: 12px; width: 38px; height: 38px; border-radius: 50%; border: 0; background: rgba(10,12,18,.55); color: #fff; display: grid; place-items: center; cursor: pointer; z-index: 2; }
-.sheet .credit { position: absolute; right: 10px; bottom: 8px; font-size: .7rem; color: #fff; background: rgba(0,0,0,.45); padding: 2px 6px; border-radius: 4px; }
+.sheet .credit { position: absolute; right: 10px; bottom: 8px; max-width: calc(100% - 20px); font-size: .7rem; color: #fff; background: rgba(0,0,0,.45); padding: 2px 6px; border-radius: 4px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sheet .credit a { color: inherit; text-decoration: none; }
+/* galeria zdjęć miejsca: przesuwanie palcem (scroll-snap), strzałki i kropki */
+.gal { position: absolute; inset: 0; }
+.gal-track { position: absolute; inset: 0; display: flex; overflow-x: auto; overflow-y: hidden; scroll-snap-type: x mandatory; overscroll-behavior-x: contain; scrollbar-width: none; -webkit-overflow-scrolling: touch; }
+.gal-track::-webkit-scrollbar { display: none; }
+.gal-track:focus-visible { outline: 3px solid var(--ai, #fff); outline-offset: -3px; }
+.gal-slide { position: relative; flex: 0 0 100%; height: 100%; margin: 0; scroll-snap-align: start; scroll-snap-stop: always; }
+.sheet .gal-slide img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; user-select: none; -webkit-user-select: none; }
+.gal-slide .credit { bottom: 30px; }
+.gal-nav { position: absolute; top: 50%; transform: translateY(-50%); width: 40px; height: 40px; border-radius: 50%; border: 0; background: rgba(10,12,18,.62); color: #fff; display: grid; place-items: center; cursor: pointer; z-index: 2; transition: opacity .2s; box-shadow: 0 2px 8px rgba(0,0,0,.3); }
+.gal-nav svg { width: 22px; height: 22px; fill: none; stroke: currentColor; stroke-width: 2.4; stroke-linecap: round; stroke-linejoin: round; }
+.gal-nav.prev { left: 10px; } .gal-nav.next { right: 10px; }
+.gal-nav:disabled { opacity: 0; pointer-events: none; }
+.gal-count { position: absolute; top: 14px; left: 12px; z-index: 2; font-size: .75rem; color: #fff; background: rgba(10,12,18,.55); padding: 3px 9px; border-radius: 999px; letter-spacing: .04em; }
+.gal-dots { position: absolute; left: 0; right: 0; bottom: 10px; display: flex; justify-content: center; gap: 4px; z-index: 2; pointer-events: none; }
+.gal-dots button { pointer-events: auto; width: 22px; height: 22px; padding: 0; border: 0; background: none; cursor: pointer; display: grid; place-items: center; }
+.gal-dots button::before { content: ""; width: 7px; height: 7px; border-radius: 50%; background: rgba(255,255,255,.55); box-shadow: 0 0 3px rgba(0,0,0,.5); transition: width .2s, background .2s; }
+.gal-dots button.on::before { width: 18px; border-radius: 4px; background: #fff; }
+@media (hover: none) { .gal-nav { display: none; } }
 .sheet .inner { padding: 18px 20px 24px; display: grid; gap: 14px; }
 .sheet h2 { font-family: var(--f-display); font-size: var(--step-3); line-height: 1.02; }
 .sheet .jn { font-family: var(--f-ja); color: var(--muted); font-size: 1.05rem; }
