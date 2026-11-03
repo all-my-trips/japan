@@ -22,6 +22,8 @@
     pin: '<path d="M12 21s-7-6.2-7-11.5a7 7 0 0 1 14 0C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/>',
     link: '<path d="M14 4h6v6M20 4l-9 9M18 14v5a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1h5"/>',
     close: '<path d="M6 6l12 12M18 6 6 18"/>',
+    prev: '<path d="M15 5l-7 7 7 7"/>',
+    next: '<path d="M9 5l7 7-7 7"/>',
     left: '<path d="M15 5l-7 7 7 7"/>',
     right: '<path d="M9 5l7 7-7 7"/>',
     clock: '<circle cx="12" cy="12" r="8"/><path d="M12 7v5l3 2"/>',
@@ -114,6 +116,42 @@
     const h = hash(seed) % 360;
     const inner = kanji ? `<span class="k">${vert(kanji, 4)}</span>` : icon(type);
     return `<div class="ph" style="--h:${h}" role="img" aria-label="Zdjęcie pojawi się później">${inner}</div>`;
+  }
+  // Galeria w karcie miejsca: zdjęcie główne (photoFor) + place.gallery[], bez duplikatów
+  function placePhotos(item, place) {
+    const out = [], main = photoFor(item, place);
+    if (main && main.src) out.push(main);
+    ((place && place.gallery) || []).forEach((p) => { if (p && p.src && !out.some((x) => x.src === p.src)) out.push(p); });
+    return out;
+  }
+  const creditTag = (p) => p && p.credit ? `<span class="credit">${p.sourceUrl ? `<a href="${esc(p.sourceUrl)}" target="_blank" rel="noopener">${esc(p.credit)}</a>` : esc(p.credit)}${p.license ? " · " + esc(p.license) : ""}</span>` : "";
+  function gallery(photos, seed, kanji, type) {
+    if (photos.length < 2) return `${media(photos[0], seed, kanji, type)}${creditTag(photos[0])}`;
+    const n = photos.length;
+    return `<div class="gal" data-gal>
+        <div class="gal-track" tabindex="0" aria-label="Zdjęcia: przewijaj w bok">${photos.map((p, i) => `<figure class="gal-slide" aria-label="Zdjęcie ${i + 1} z ${n}"><img src="${esc(p.src)}" alt="${esc(p.alt || "")}" draggable="false">${creditTag(p)}</figure>`).join("")}</div>
+        <button class="gal-nav prev" type="button" data-gal-step="-1" aria-label="Poprzednie zdjęcie" disabled>${icon("prev")}</button>
+        <button class="gal-nav next" type="button" data-gal-step="1" aria-label="Następne zdjęcie">${icon("next")}</button>
+        <span class="gal-count" aria-hidden="true"><b>1</b>/${n}</span>
+        <div class="gal-dots">${photos.map((_, i) => `<button type="button" data-gal-go="${i}" class="${i ? "" : "on"}" aria-label="Pokaż zdjęcie ${i + 1}"></button>`).join("")}</div>
+      </div>`;
+  }
+  function wireGallery(root) {
+    const g = root.querySelector("[data-gal]"); if (!g) return;
+    const track = g.querySelector(".gal-track"), slides = track.children, n = slides.length;
+    const dots = g.querySelectorAll("[data-gal-go]"), prev = g.querySelector(".prev"), next = g.querySelector(".next"), cnt = g.querySelector(".gal-count b");
+    const cur = () => Math.round(track.scrollLeft / Math.max(1, track.clientWidth));
+    const go = (i) => { i = Math.max(0, Math.min(n - 1, i)); track.scrollTo({ left: i * track.clientWidth, behavior: "smooth" }); };
+    const sync = () => { const i = cur(); dots.forEach((d, k) => d.classList.toggle("on", k === i)); prev.disabled = i === 0; next.disabled = i === n - 1; cnt.textContent = i + 1; };
+    track.addEventListener("scroll", () => { cancelAnimationFrame(g._raf); g._raf = requestAnimationFrame(sync); }, { passive: true });
+    g.addEventListener("click", (e) => {
+      const b = e.target.closest("[data-gal-step],[data-gal-go]"); if (!b) return;
+      go(b.dataset.galGo != null ? +b.dataset.galGo : cur() + +b.dataset.galStep);
+    });
+    track.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowRight") { e.preventDefault(); go(cur() + 1); }
+      if (e.key === "ArrowLeft") { e.preventDefault(); go(cur() - 1); }
+    });
   }
   function mapsUrl(place) {
     if (place.links && place.links.maps) return place.links.maps;
@@ -447,11 +485,10 @@
     let item = null;
     const days = S.trip.days.filter((d) => d.items.some((i) => { if (i.id === itemId) item = i; return i.placeId === placeId; }));
     const bookings = S.trip.bookings.filter((b) => (b.placeIds || []).includes(placeId));
-    const photo = photoFor(item, place);
+    const photos = placePhotos(item, place);
     sheet.innerHTML = `
       <div class="scroll">
-        <div class="media">${media(photo, placeId, place.nameJa, item ? item.type : "attraction")}
-          ${photo && photo.credit ? `<span class="credit">${esc(photo.credit)}${photo.license ? " · " + esc(photo.license) : ""}</span>` : ""}
+        <div class="media">${gallery(photos, placeId, place.nameJa, item ? item.type : "attraction")}
           <button class="close" type="button" data-close aria-label="Zamknij">${icon("close")}</button>
         </div>
         <div class="inner">
@@ -472,6 +509,7 @@
           ${days.length ? `<div class="kv"><div><span class="eyebrow">W planie</span><div class="also">${days.map((d) => `<a class="chip" href="#d-${d.id}" data-close>Dzień ${d.dayNumber} · ${shortDate(d.date)}</a>`).join("")}</div></div></div>` : ""}
         </div>
       </div>`;
+    wireGallery(sheet);
     if (!sheet.open) { try { sheet.showModal(); } catch (e) { sheet.setAttribute("open", ""); } }
   }
   const statusLabel = (s) => ({ todo: "do zrobienia", booked: "zarezerwowane", "not-needed": "niepotrzebne" }[s] || s);

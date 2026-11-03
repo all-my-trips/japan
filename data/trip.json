@@ -3588,6 +3588,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_park.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/ueno-park-2.jpg",
+          "alt": "Ueno Park",
+          "credit": "Kestrel / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_Park_P5163963.jpg"
+        },
+        {
+          "src": "img/ueno-park-3.jpg",
+          "alt": "Ueno Park",
+          "credit": "EllieBellie25 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanami_Matsuri_picknick_in_Ueno_park,_Tokyo_Japan.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3614,6 +3630,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_Zoo_2012.JPG"
       },
+      "gallery": [
+        {
+          "src": "img/ueno-zoo-2.jpg",
+          "alt": "Ueno Zoo",
+          "credit": "Daniel Ramirez / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lion_-_Ueno_Zoo.jpg"
+        },
+        {
+          "src": "img/ueno-zoo-3.jpg",
+          "alt": "Ueno Zoo",
+          "credit": "pelican / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ueno_zoo,_Tokyo,_Japan_(14158176795).jpg"
+        }
+      ],
       "links": {
         "official": "https://www.tokyo-zoo.net/en/ueno/visitor-info/tickets/index.html",
         "maps": null
@@ -3640,6 +3672,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_-_Yanaka_143.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/yanaka-nezu-2.jpg",
+          "alt": "Yanaka i Nezu",
+          "credit": "Stephen Kelly / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yanaka_Ginza,_Yanaka_(53417016334).jpg"
+        },
+        {
+          "src": "img/yanaka-nezu-3.jpg",
+          "alt": "Yanaka i Nezu",
+          "credit": "1904.CC / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yanaka_Ginza_entrance.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3666,6 +3714,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukiji_Outer_Market_2.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tsukiji-2.jpg",
+          "alt": "Tsukiji Outer Market",
+          "credit": "jzawdubya / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukiji_fish_market_-_4139453359.jpg"
+        },
+        {
+          "src": "img/tsukiji-3.jpg",
+          "alt": "Tsukiji Outer Market",
+          "credit": "Cheng-en Cheng / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2014-09-09_sushi_at_Sushizanmai_in_Tsukiji_Outer_Market.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.tsukiji.or.jp/english/",
         "maps": null
@@ -3692,6 +3756,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamarikyu_Garden_as_seen_from_Shiodome.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/hama-rikyu-2.jpg",
+          "alt": "Hama Rikyu",
+          "credit": "Reinhold Möller Ermell / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokio_Hamarikyu-Garten-20091017-RM-141110.jpg"
+        },
+        {
+          "src": "img/hama-rikyu-3.jpg",
+          "alt": "Hama Rikyu",
+          "credit": "Guilhem Vellut / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hamarikyu_Gardens_(9155530513).jpg"
+        }
+      ],
       "links": {
         "official": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/",
         "maps": null
@@ -3718,6 +3798,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_2023.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/senso-ji-2.jpg",
+          "alt": "Sensō-ji",
+          "credit": "Joli Rumi / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sensoji_temple,_Asakusa,_Tokyo,_Japan.jpg"
+        },
+        {
+          "src": "img/senso-ji-3.jpg",
+          "alt": "Sensō-ji",
+          "credit": "Jakub Hałun / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Main_Hall,_Sens%C5%8D-ji_Temple,_Tokyo,_20240824_1104_5619.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.senso-ji.jp/",
         "maps": null
@@ -3744,6 +3840,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumidagawa_river.JPG"
       },
+      "gallery": [
+        {
+          "src": "img/sumida-2.jpg",
+          "alt": "Rzeka Sumida",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:X-shaped_pedestrian_Sakura_bridge_over_Sumida_river,_linking_Tait%C5%8D_and_Sumida_wards,_view_from_Tokyo_Skytree,_Japan.jpg"
+        },
+        {
+          "src": "img/sumida-3.jpg",
+          "alt": "Rzeka Sumida",
+          "credit": "Guilhem Vellut / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sumida_River_(14062782073).jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3770,6 +3882,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_view_from_Lake_Kawaguchi_2024-12-01.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kawaguchiko-2.jpg",
+          "alt": "Jezioro Kawaguchiko",
+          "credit": "Midori / Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lake_Kawaguchiko_Sakura_Mount_Fuji_4.JPG"
+        },
+        {
+          "src": "img/kawaguchiko-3.jpg",
+          "alt": "Jezioro Kawaguchiko",
+          "credit": "Marion & Christoph Aistleitner / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fuji_Kawaguchi_457.JPG"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/dir/?api=1&origin=Momiji+Kairo,+Fujikawaguchiko&destination=Nagasaki+Park,+Fujikawaguchiko&travelmode=walking"
@@ -3796,6 +3924,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_III_-_Kawaguchiko6783.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/oishi-park-2.jpg",
+          "alt": "Oishi Park",
+          "credit": "Alpsdake / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_from_Oishi_Park.jpg"
+        },
+        {
+          "src": "img/oishi-park-3.jpg",
+          "alt": "Oishi Park",
+          "credit": "Olaf2 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Oishi_in_Fujikawaguchiko_02.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Oishi%20Park%2C%20Fujikawaguchiko"
@@ -3822,6 +3966,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meiji_Jingu_2023-3.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/meiji-jingu-2.jpg",
+          "alt": "Meiji Jingu",
+          "credit": "Hyppolyte de Saint-Rambert / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meiji-jing%C5%AB_main_hall.jpg"
+        },
+        {
+          "src": "img/meiji-jingu-3.jpg",
+          "alt": "Meiji Jingu",
+          "credit": "Hyppolyte de Saint-Rambert / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Meiji-jing%C5%AB_grand_torii_d%27entr%C3%A9e.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.meijijingu.or.jp/en/",
         "maps": null
@@ -3848,6 +4008,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Takeshita_Street.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/harajuku-2.jpg",
+          "alt": "Harajuku",
+          "credit": "Ryosuke Yagi / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Harajuku_Takeshita_Street_snow_2016-01-18.jpg"
+        },
+        {
+          "src": "img/harajuku-3.jpg",
+          "alt": "Harajuku",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Marion_Cr%C3%AApes_in_Harajuku_Takeshita_2.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3874,6 +4050,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omotesando_Tokyo_spring_2012.JPG"
       },
+      "gallery": [
+        {
+          "src": "img/omotesando-2.jpg",
+          "alt": "Omotesando",
+          "credit": "gog.creator / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Omotesando_Avenue_at_sunset_from_pedestrian_bridge,_Jingumae,_Shibuya,_Tokyo.jpg"
+        },
+        {
+          "src": "img/omotesando-3.jpg",
+          "alt": "Omotesando",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:November_2024,_Buildings_in_Omotesando_-27392.jpeg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3900,6 +4092,22 @@
         "license": "CC BY 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_Crossing,_Aerial.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shibuya-2.jpg",
+          "alt": "Shibuya",
+          "credit": "Benh LIEU SONG (Flickr) / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Shibuya_Scramble_Crossing_2018-10-09.jpg"
+        },
+        {
+          "src": "img/shibuya-3.jpg",
+          "alt": "Shibuya",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shibuya_crossing_(12214).jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -3926,6 +4134,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:200801_Nikko_Tosho-gu_Nikko_Japan03s3.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/toshogu-2.jpg",
+          "alt": "Nikkō Tōshō-gū",
+          "credit": "Jpatokal / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nikko_Toshogu_Yomeimon_Gate_2024.jpg"
+        },
+        {
+          "src": "img/toshogu-3.jpg",
+          "alt": "Nikkō Tōshō-gū",
+          "credit": "kanegen / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nikk%C5%8D_T%C5%8Dsh%C5%8D-g%C5%AB,_Shinto_shrine_located_in_Nikk%C5%8D,_Tochigi_Prefecture;_May_2008_(01).jpg"
+        }
+      ],
       "links": {
         "official": "https://toshogu.jp/",
         "maps": null
@@ -3952,6 +4176,22 @@
         "license": "domena publiczna",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:NikkoRinnoji5390.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/rinno-ji-2.jpg",
+          "alt": "Rinnō-ji",
+          "credit": "Joli Rumi / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nikkosan_Rinnoji_Temple,_Nikko,_Japan.jpg"
+        },
+        {
+          "src": "img/rinno-ji-3.jpg",
+          "alt": "Rinnō-ji",
+          "credit": "Joli Rumi / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rinn%C5%8Dji_Temple_in_Nikko,_Tochigi,_Japan.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.rinnoji.or.jp/",
         "maps": null
@@ -3978,6 +4218,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinkyo_Bridge_over_the_Daiya_River_at_Nikko,_Japan.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shinkyo-2.jpg",
+          "alt": "Most Shinkyo",
+          "credit": "Saigen Jiro / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinkyo_(Nikko)_-2.JPG"
+        },
+        {
+          "src": "img/shinkyo-3.jpg",
+          "alt": "Most Shinkyo",
+          "credit": "Guilhem Vellut / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_-_Tochigi,_Nikko_Shinkyo_-_april_2014.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4004,6 +4260,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ginza-WAKO_at_night.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/ginza-2.jpg",
+          "alt": "Ginza",
+          "credit": "Fabio Achilli / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chuo_Dori_Street,_Ginza_(30312237258).jpg"
+        },
+        {
+          "src": "img/ginza-3.jpg",
+          "alt": "Ginza",
+          "credit": "そらみみ (Soramimi) / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Chuo-dori_Street_from_Ginza_5-Chome_Crossroads_(north).JPG"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4030,6 +4302,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Photos_at_teamlab_planets_tokyo.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/teamlab-2.jpg",
+          "alt": "teamLab Planets",
+          "credit": "Maarten Heerlien / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_2024-04-28_(53893216325).jpg"
+        },
+        {
+          "src": "img/teamlab-3.jpg",
+          "alt": "teamLab Planets",
+          "credit": "Manmakro / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:The_glistening_balls.jpg"
+        }
+      ],
       "links": {
         "official": "https://teamlabplanets.dmm.com/en",
         "maps": null
@@ -4056,6 +4344,22 @@
         "license": "CC BY 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odaiba_close_up_-_2025_Jan_14_01-27PM.jpeg"
       },
+      "gallery": [
+        {
+          "src": "img/toyosu-odaiba-2.jpg",
+          "alt": "Toyosu / Odaiba",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odaiba_views.jpg"
+        },
+        {
+          "src": "img/toyosu-odaiba-3.jpg",
+          "alt": "Toyosu / Odaiba",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Odaiba_town_and_sea_promenade.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4082,6 +4386,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:HasederaKannondo20120716.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/hase-dera-2.jpg",
+          "alt": "Hase-dera",
+          "credit": "663highland / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:230128_Hasedera_Kamakura_Kanagawa_pref_Japan04s3.jpg"
+        },
+        {
+          "src": "img/hase-dera-3.jpg",
+          "alt": "Hase-dera",
+          "credit": "sailko / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hasedera_kannon,_veduta_su_kamakura_01.JPG"
+        }
+      ],
       "links": {
         "official": "https://www.hasedera.jp/en/guide/",
         "maps": null
@@ -4108,6 +4428,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:230128_Kamakura_Daibutsu_Japan04s3.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/daibutsu-2.jpg",
+          "alt": "Wielki Budda (Kōtoku-in)",
+          "credit": "Suicasmo / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kamakura_Daibutsu_20170210.jpg"
+        },
+        {
+          "src": "img/daibutsu-3.jpg",
+          "alt": "Wielki Budda (Kōtoku-in)",
+          "credit": "Gilles Desjardins / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kamakura_-_Grand_Bouddha.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kotoku-in.jp/en/",
         "maps": null
@@ -4134,6 +4470,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kamakura_Komachi_street_2024.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/komachi-2.jpg",
+          "alt": "Komachi-dōri",
+          "credit": "Urashimataro / Wikimedia Commons",
+          "license": "Public domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Komachi_Dori-Kamakura.jpg"
+        },
+        {
+          "src": "img/komachi-3.jpg",
+          "alt": "Komachi-dōri",
+          "credit": "Nesnad / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Komachi-dori_Street_-_Kamakura_-_2026_Oct_1_various_1.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4160,6 +4512,22 @@
         "license": "domena publiczna",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:TsurugaokaHachiman-M8867.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tsurugaoka-2.jpg",
+          "alt": "Tsurugaoka Hachiman-gū",
+          "credit": "Ocdp / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_001.jpg"
+        },
+        {
+          "src": "img/tsurugaoka-3.jpg",
+          "alt": "Tsurugaoka Hachiman-gū",
+          "credit": "Nerotaso / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsurugaoka_Hachimangu_Shrine.JPG"
+        }
+      ],
       "links": {
         "official": "https://www.hachimangu.or.jp/",
         "maps": null
@@ -4186,6 +4554,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enoshima_Island.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/enoshima-2.jpg",
+          "alt": "Enoshima",
+          "credit": "wellflat . / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Enoshima,_Japan_(15662062438).jpg"
+        },
+        {
+          "src": "img/enoshima-3.jpg",
+          "alt": "Enoshima",
+          "credit": "DXR / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Fujisawa_as_seen_from_Enoshima_Island_130809_7.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4212,6 +4596,22 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shijo_Kawaramachi_2020-04-05.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shijo-kawaramachi-2.jpg",
+          "alt": "Shijō / Kawaramachi",
+          "credit": "nobu3withfoxy / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto-Kawaramachi_Station_building_at_Shijo-Kawaramachi_2021-10-08.jpg"
+        },
+        {
+          "src": "img/shijo-kawaramachi-3.jpg",
+          "alt": "Shijō / Kawaramachi",
+          "credit": "Own work / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shijo_Kawaramachi_Hankyu.JPG"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4238,6 +4638,22 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pontocho_by_Wolfiewolf_in_Nabeyacho,_Kyoto.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/pontocho-2.jpg",
+          "alt": "Ponto-chō",
+          "credit": "Wolfiewolf / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pontocho_by_Wolfiewolf_in_Kashiwayacho,_Kyoto.jpg"
+        },
+        {
+          "src": "img/pontocho-3.jpg",
+          "alt": "Ponto-chō",
+          "credit": "Daderot / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Pontocho_Kaburenjo_Theater_-_Kyoto,_Japan_-_DSC07307.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4264,6 +4680,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Bamboo_Grove,_Arashiyama,_Kyoto,_Japan.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/bamboo-grove-2.jpg",
+          "alt": "Arashiyama Bamboo Grove",
+          "credit": "Naokijp / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:2021_Sagano_Bamboo_forest_in_Arashiyama,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/bamboo-grove-3.jpg",
+          "alt": "Arashiyama Bamboo Grove",
+          "credit": "Bjørn Christian Tørrissen / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arashiyama-Bamboo-Grove-Sunset.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4290,6 +4722,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenryuji_Kyoto.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tenryu-ji-2.jpg",
+          "alt": "Tenryū-ji",
+          "credit": "Gavin Anderson / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Garden_at_Tenryuji_Temple_3.jpg"
+        },
+        {
+          "src": "img/tenryu-ji-3.jpg",
+          "alt": "Tenryū-ji",
+          "credit": "Daderot / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tenryuji_Garden-_DSC06032.JPG"
+        }
+      ],
       "links": {
         "official": "https://www.tenryuji.com/en/visit/index.html",
         "maps": null
@@ -4316,6 +4764,22 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Arashiyama_hills_and_Hozu_river_from_Togetsu_bridge_(3261758437).jpg"
       },
+      "gallery": [
+        {
+          "src": "img/arashiyama-river-2.jpg",
+          "alt": "Rzeka w Arashiyamie (Katsura)",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Katsura_River_bank_with_pleasure_boats_and_illuminated_building_at_sunset_Kyoto_Japan.jpg"
+        },
+        {
+          "src": "img/arashiyama-river-3.jpg",
+          "alt": "Rzeka w Arashiyamie (Katsura)",
+          "credit": "DimiTalen / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:View_of_the_Katsura_River_and_the_Arashiyama_mountains_from_Togetsukyo_Bridge,_Kyoto,_2016.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4342,6 +4806,22 @@
         "license": "domena publiczna",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Togetsukyo_Bridge_in_Arashiyama,_Kyoto.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/togetsukyo-2.jpg",
+          "alt": "Most Togetsukyō",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Togetsu-ky%C5%8D_bridge_at_golden_hour,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/togetsukyo-3.jpg",
+          "alt": "Most Togetsukyō",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Togetsu-kyo_bridge_at_dusk,_Kyoto,_Japan.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4368,6 +4848,22 @@
         "license": "CC BY 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nara_Park_-_panoramio_(2).jpg"
       },
+      "gallery": [
+        {
+          "src": "img/nara-park-2.jpg",
+          "alt": "Nara Park",
+          "credit": "Marek Ślusarczyk (Tupungato) / Wikimedia Commons",
+          "license": "CC BY 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:003_Nara_deer_in_Japan_-_deer_of_Nara_Park_under_autumn_leaves.jpg"
+        },
+        {
+          "src": "img/nara-park-3.jpg",
+          "alt": "Nara Park",
+          "credit": "User:uniquex / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:A_deer_at_Nara_Park,_Japan.jpeg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4394,6 +4890,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Kon-d%C5%8D.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/todai-ji-2.jpg",
+          "alt": "Tōdai-ji",
+          "credit": "Bob Tan / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Aerial_perspective_of_T%C5%8Ddai-ji_Buddhist_Temple.jpg"
+        },
+        {
+          "src": "img/todai-ji-3.jpg",
+          "alt": "Tōdai-ji",
+          "credit": "Epicgenius / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:T%C5%8Ddai-ji_Mar_2025_05.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.todaiji.or.jp/en/",
         "maps": null
@@ -4420,6 +4932,22 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kasuga-taisha11bs3200.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kasuga-2.jpg",
+          "alt": "Kasuga Taisha",
+          "credit": "Gzzz / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Lanterns_Kasuga-taisha_Nara.jpg"
+        },
+        {
+          "src": "img/kasuga-3.jpg",
+          "alt": "Kasuga Taisha",
+          "credit": "Zairon / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nara_Kasuga-taisha_Lanterns_10.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kasugataisha.or.jp/en/",
         "maps": null
@@ -4446,6 +4974,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/fushimi-inari-2.jpg",
+          "alt": "Fushimi Inari Taisha",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Double_torii_path_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/fushimi-inari-3.jpg",
+          "alt": "Fushimi Inari Taisha",
+          "credit": "Jakub Hałun / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tamayama_Inarisha,_Fushimi_Inari-taisha,_Kyoto,_20240818_1344_4414.jpg"
+        }
+      ],
       "links": {
         "official": "https://inari.jp/en/",
         "maps": null
@@ -4472,6 +5016,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyomizu.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kiyomizu-2.jpg",
+          "alt": "Kiyomizu-dera",
+          "credit": "Martin Falbisoner / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-01.jpg"
+        },
+        {
+          "src": "img/kiyomizu-3.jpg",
+          "alt": "Kiyomizu-dera",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Four_ladies_wearing_a_yukata_in_front_of_the_North_Gate_of_Kiyomizu-dera_temple_Kyoto_Japan.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kiyomizudera.or.jp/en/",
         "maps": null
@@ -4498,6 +5058,22 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sannenzaka_street,_Kyoto_(3811257874).jpg"
       },
+      "gallery": [
+        {
+          "src": "img/sannenzaka-2.jpg",
+          "alt": "Sannenzaka i Ninenzaka",
+          "credit": "Aporon999 / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanneizaka-kyoto.JPG"
+        },
+        {
+          "src": "img/sannenzaka-3.jpg",
+          "alt": "Sannenzaka i Ninenzaka",
+          "credit": "HAGAT hOMSZE / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:JP_%E6%97%A5%E6%9C%AC_Japan_%E4%BA%AC%E9%83%BD_Kyoto_%E6%9D%B1%E5%B1%B1%E5%8D%80_Higashiyama-ku_tourist_%E4%B8%89%E5%B9%B4%E5%9D%82_Sannen-zaka_Street_n_temple_June_2026_N13P_07.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4524,6 +5100,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Yasaka_jinja.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/yasaka-2.jpg",
+          "alt": "Yasaka-jinja",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:White_paper_lanterns_hanging_in_Buden_Yasaka_Shrine_in_Kyoto_Japan.jpg"
+        },
+        {
+          "src": "img/yasaka-3.jpg",
+          "alt": "Yasaka-jinja",
+          "credit": "Zairon / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto_Yasaka-jinja_B%C3%BChne_%26_Nebentor_2.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.yasaka-jinja.or.jp/en/",
         "maps": null
@@ -4550,6 +5142,22 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/gion-2.jpg",
+          "alt": "Gion",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_and_bamboo_facades_of_dwellings_with_sudare_in_a_cobbled_street_of_Gion,_perspective_effect_with_vanishing_point,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/gion-3.jpg",
+          "alt": "Gion",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Portrait_photograph_of_a_walking_woman_wearing_a_red_yukata_with_an_oil-paper_umbrella,_in_Gion,_Kyoto,_Japan.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4576,6 +5184,22 @@
         "license": "CC BY-SA 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shirakara_Canal,_Gion,_Kyoto.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shirakawa-2.jpg",
+          "alt": "Shirakawa",
+          "credit": "Moja / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto_gion01.jpg"
+        },
+        {
+          "src": "img/shirakawa-3.jpg",
+          "alt": "Shirakawa",
+          "credit": "Yiannis Theologos Michellis / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japan_Road_Through_Gion_(14125414632).jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4602,6 +5226,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:170923_Kodaiji_Kyoto_Japan09n.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kodai-ji-2.jpg",
+          "alt": "Kōdai-ji (iluminacja)",
+          "credit": "663highland / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:170923_Kodaiji_Kyoto_Japan38n.jpg"
+        },
+        {
+          "src": "img/kodai-ji-3.jpg",
+          "alt": "Kōdai-ji (iluminacja)",
+          "credit": "Fg2 / Wikimedia Commons",
+          "license": "Public domain",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kodaiji_Teahouse_Dimage_0159.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kodaiji.com/saiji.html",
         "maps": null
@@ -4628,6 +5268,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kaiy%C5%ABkan.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kaiyukan-2.jpg",
+          "alt": "Kaiyukan",
+          "credit": "Dick Thomas Johnson / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Aquarium_Kaiyukan_2022-04-24.jpg"
+        },
+        {
+          "src": "img/kaiyukan-3.jpg",
+          "alt": "Kaiyukan",
+          "credit": "TenSafeFrogs / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:KaiyukanOsakaAquariumRay.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kaiyukan.com/info/ticket/kaiyukan/",
         "maps": null
@@ -4654,6 +5310,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Osaka_Dotonbori_Ebisu_Bridge.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/dotonbori-2.jpg",
+          "alt": "Dōtonbori",
+          "credit": "Oilstreet / Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dotonbori_Osaka_Japan01-r.jpg"
+        },
+        {
+          "src": "img/dotonbori-3.jpg",
+          "alt": "Dōtonbori",
+          "credit": "Sakai Yayoi / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Dotonbori_ao_02.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4680,6 +5352,22 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinsaibashi_Osaka_Japan01-r.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shinsaibashi-2.jpg",
+          "alt": "Shinsaibashi",
+          "credit": "Francisco Restivo / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinsaibashi-suji_(4793145349).jpg"
+        },
+        {
+          "src": "img/shinsaibashi-3.jpg",
+          "alt": "Shinsaibashi",
+          "credit": "Mc681 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Semba_Shinsaibashi-suji_in_201510.JPG"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4706,6 +5394,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Golden_Pavilion_Kinkaku-ji_water_mirror_2024.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/kinkaku-ji-2.jpg",
+          "alt": "Kinkaku-ji",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Water_reflection_of_Kinkaku-ji_Temple_a_sunny_day,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/kinkaku-ji-3.jpg",
+          "alt": "Kinkaku-ji",
+          "credit": "Hyppolyte de Saint-Rambert / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Rokuon-ji_(Kita-ku_Kyoto)_Kinkaku-ji_Golden_pavilion_trees_hdsr_S5_08.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.shokoku-ji.jp/en/kinkakuji/",
         "maps": null
@@ -4732,6 +5436,22 @@
         "license": "domena publiczna",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:NinomaruPalace.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/nijo-jo-2.jpg",
+          "alt": "Zamek Nijō",
+          "credit": "稲垣啓二 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nijo_Castle_2023.jpg"
+        },
+        {
+          "src": "img/nijo-jo-3.jpg",
+          "alt": "Zamek Nijō",
+          "credit": "Ewong17 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nijo_Castle_landscape.jpg"
+        }
+      ],
       "links": {
         "official": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en",
         "maps": null
@@ -4758,6 +5478,22 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_matsuyuki.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/nishiki-2.jpg",
+          "alt": "Nishiki Market",
+          "credit": "collinox / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukemono_shop_by_collinox_in_Nishiki_Ichiba,_Kyoto.jpg"
+        },
+        {
+          "src": "img/nishiki-3.jpg",
+          "alt": "Nishiki Market",
+          "credit": "pokpok313 / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Nishiki_Ichiba_by_pokpok313_in_Kyoto.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.kyoto-nishiki.or.jp/",
         "maps": null
@@ -4784,6 +5520,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto-gosho_Shishinden_zenkei-5.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/imperial-palace-kyoto-2.jpg",
+          "alt": "Pałac Cesarski w Kioto",
+          "credit": "Nacaru / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto_Imperial_palace_garden.jpg"
+        },
+        {
+          "src": "img/imperial-palace-kyoto-3.jpg",
+          "alt": "Pałac Cesarski w Kioto",
+          "credit": "Marie-Sophie Mejan / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kyoto_Imperial_Palace_(%E4%BA%AC%E9%83%BD%E5%BE%A1%E6%89%80,_Ky%C5%8Dto_Gosho)_dak.jpg"
+        }
+      ],
       "links": {
         "official": "https://sankan.kunaicho.go.jp/english/guide/kyoto.html",
         "maps": null
@@ -4810,6 +5562,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Skyscrapers_of_Shinjuku_2009_January.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/shinjuku-2.jpg",
+          "alt": "Shinjuku",
+          "credit": "Martin Falbisoner / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Night_in_Shinjuku_3.JPG"
+        },
+        {
+          "src": "img/shinjuku-3.jpg",
+          "alt": "Shinjuku",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shinjuku_Gyoen_National_Garden_and_NTT_DoCoMo_Yoyogi_Building,_Tokyo,_Japan.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4836,6 +5604,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Metropolitan_Government_Building_2024.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tocho-2.jpg",
+          "alt": "Tokyo Metropolitan Government Building",
+          "credit": "Insightwm / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Projection_show_at_the_Tokyo_Metropolitan_Government_Building.jpg"
+        },
+        {
+          "src": "img/tocho-3.jpg",
+          "alt": "Tokyo Metropolitan Government Building",
+          "credit": "Syced / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:August_2007_view_from_Cafe_202_in_Tokyo_Metropolitan_Government_Office_45F.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4862,6 +5646,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sotokanda,_Akihabara_Electric_Town_at_night_20231114.png"
       },
+      "gallery": [
+        {
+          "src": "img/akihabara-2.jpg",
+          "alt": "Akihabara",
+          "credit": "Jmho / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akiba_denkigai.jpg"
+        },
+        {
+          "src": "img/akihabara-3.jpg",
+          "alt": "Akihabara",
+          "credit": "Jakub Hałun / Wikimedia Commons",
+          "license": "CC BY 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Akihabara_Electric_Town,_Tokyo,_20240823_1617_5580.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": null
@@ -4888,6 +5688,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Skytree_2014_%E2%85%A2.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/skytree-2.jpg",
+          "alt": "Tokyo Skytree + Solamachi",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Worm%27s-eye_view_of_Tokyo_Skytree_with_vertical_symmetry_impression,_a_sunny_day,_in_Japan.jpg"
+        },
+        {
+          "src": "img/skytree-3.jpg",
+          "alt": "Tokyo Skytree + Solamachi",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Asahi_Breweries_headquarters_building_with_the_Asahi_Flame_and_Skytree_at_blue_hour_with_full_moon,_Sumida-ku,_Tokyo,_Japan.jpg"
+        }
+      ],
       "links": {
         "official": "https://official-ticket.tokyo-skytree.jp/en/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree"
@@ -4914,6 +5730,22 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Toshogu_Shrine_@_Ueno_Park_(14038495292).jpg"
       },
+      "gallery": [
+        {
+          "src": "img/ueno-toshogu-2.jpg",
+          "alt": "Ueno Tōshō-gū",
+          "credit": "Guilhem Vellut / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peony_Festival_@_Garden_of_Toshogu_Shrine_@_Ueno_Park_(14038512451).jpg"
+        },
+        {
+          "src": "img/ueno-toshogu-3.jpg",
+          "alt": "Ueno Tōshō-gū",
+          "credit": "Guilhem Vellut / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Peony_Festival_@_Garden_of_Toshogu_Shrine_@_Ueno_Park_(14042158364).jpg"
+        }
+      ],
       "links": {
         "official": "https://www.uenotoshogu.com/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
@@ -4940,6 +5772,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:2019_Tsukiji_Honganji.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tsukiji-hongwanji-2.jpg",
+          "alt": "Tsukiji Hongwanji",
+          "credit": "Sekicho / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tsukiji_Hongwanji.JPG"
+        },
+        {
+          "src": "img/tsukiji-hongwanji-3.jpg",
+          "alt": "Tsukiji Hongwanji",
+          "credit": "Shakher59 / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tokyo_Feb_2008_-Tsukiji_Hongwanji_Temple.jpg"
+        }
+      ],
       "links": {
         "official": "https://tsukijihongwanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
@@ -4966,6 +5814,22 @@
         "license": "CC0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_II_-_Kawaguchiko6811.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/momiji-kairo-2.jpg",
+          "alt": "Momiji Kairō (korytarz klonów)",
+          "credit": "lumoplank / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_I_-_Kawaguchiko6819.jpg"
+        },
+        {
+          "src": "img/momiji-kairo-3.jpg",
+          "alt": "Momiji Kairō (korytarz klonów)",
+          "credit": "lumoplank / Wikimedia Commons",
+          "license": "CC0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Kawaguchiko,_Part_I_-_Kawaguchiko6815.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
@@ -4992,6 +5856,22 @@
         "license": "CC BY-SA 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Depachika.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/depachika-ginza-2.jpg",
+          "alt": "Depachika w Ginzie",
+          "credit": "Kent Wang / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E5%A4%A7%E6%B5%B7%E8%80%81%E3%83%95%E3%83%A9%E3%82%A4_(37686899324).jpg"
+        },
+        {
+          "src": "img/depachika-ginza-3.jpg",
+          "alt": "Depachika w Ginzie",
+          "credit": "Hiroaki Sakuma / Wikimedia Commons",
+          "license": "CC BY-SA 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:%E3%81%8A%E3%81%8B%E3%81%9A%E5%B8%82%E5%A0%B4%E5%8F%A3_(3253532756).jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
@@ -5018,6 +5898,22 @@
         "license": "CC BY 2.5",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okochi_Sanso09n4592.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/okochi-sanso-2.jpg",
+          "alt": "Ōkōchi Sansō",
+          "credit": "Basile Morin / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Wooden_gate_in_Okochi_Sanso_Garden,_Kyoto,_Japan.jpg"
+        },
+        {
+          "src": "img/okochi-sanso-3.jpg",
+          "alt": "Ōkōchi Sansō",
+          "credit": "663highland / Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Okochi_Sanso21s3s4592.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
@@ -5044,6 +5940,22 @@
         "license": "CC BY 2.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempozan_Ferris_wheel_in_20110507.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/tempozan-wheel-2.jpg",
+          "alt": "Diabelski młyn Tempozan",
+          "credit": "そらみみ / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ajigawa_River_and_grand_ferris_wheel_of_Tempozan_Harbor_Village_from_Tempozan_Ferry.jpg"
+        },
+        {
+          "src": "img/tempozan-wheel-3.jpg",
+          "alt": "Diabelski młyn Tempozan",
+          "credit": "そらみみ / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Tempozan_Market_Place_Building_and_grand_ferris_wheel_of_Tempozan_Harbor_Village.jpg"
+        }
+      ],
       "links": {
         "official": null,
         "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
@@ -5070,6 +5982,22 @@
         "license": "CC BY-SA 3.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ryoanji_rock_garden_857.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/ryoan-ji-2.jpg",
+          "alt": "Ryōan-ji",
+          "credit": "Stephane D'Alu / Wikimedia Commons",
+          "license": "CC BY-SA 3.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:RyoanJi-Dry_garden.jpg"
+        },
+        {
+          "src": "img/ryoan-ji-3.jpg",
+          "alt": "Ryōan-ji",
+          "credit": "Hyppolyte de Saint-Rambert / Wikimedia Commons",
+          "license": "CC BY-SA 4.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ry%C5%8Dan-ji_eau_bassin.jpg"
+        }
+      ],
       "links": {
         "official": "https://www.ryoanji.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
@@ -5096,6 +6024,22 @@
         "license": "CC BY-SA 4.0",
         "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanjusangendo_2022.jpg"
       },
+      "gallery": [
+        {
+          "src": "img/sanjusangen-do-2.jpg",
+          "alt": "Sanjūsangen-dō",
+          "credit": "663highland / Wikimedia Commons",
+          "license": "CC BY 2.5",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sanjusangendo_temple01s1408.jpg"
+        },
+        {
+          "src": "img/sanjusangen-do-3.jpg",
+          "alt": "Sanjūsangen-dō",
+          "credit": "Stephen Kelly / Wikimedia Commons",
+          "license": "CC BY 2.0",
+          "sourceUrl": "https://commons.wikimedia.org/wiki/File:Hanging_Around,_Sanjusangen-do_Temple_(12020823704).jpg"
+        }
+      ],
       "links": {
         "official": "https://www.sanjusangendo.jp/",
         "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
