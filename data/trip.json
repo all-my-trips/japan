@@ -2928,38 +2928,6 @@
           "note": null
         },
         {
-          "id": "d16-04a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "free",
-          "title": "Nowe doświadczenie: ceremonia herbaciana, wagashi lub kaligrafia (jedno do wyboru)",
-          "priority": "bonus",
-          "placeId": null,
-          "photo": {
-            "src": "img/tea-ceremony.jpg",
-            "alt": "Ceremonia herbaciana",
-            "credit": "KuboBella / Wikimedia Commons",
-            "license": "CC BY-SA 4.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Japanese_Tea_Ceremony_Serving_Tea.jpg"
-          },
-          "note": "45–90 min. Szczegóły i linki w Rezerwacjach, w sekcji Doświadczenia.",
-          "tips": [
-            {
-              "kind": "experience",
-              "text": "Warsztaty wagashi w Kanshundo (Higashiyama): ok. 75 min, na koniec własne słodycze z matchą; wg serwisów dzieci od 5 lat."
-            },
-            {
-              "kind": "experience",
-              "text": "Ceremonia herbaciana z matchą w herbaciarniach Camellia: wg oficjalnej strony od 4 lat, sesje wspólne od 6 lat; o roczne dziecko zapytać mailowo."
-            },
-            {
-              "kind": "experience",
-              "text": "Krótka lekcja kaligrafii (ok. 60 min) dla turystów: zasady dla małych dzieci potwierdzić u organizatora."
-            }
-          ]
-        },
-        {
           "id": "d16-05",
           "start": null,
           "end": null,
@@ -2996,7 +2964,7 @@
       "tips": [
         {
           "kind": "important",
-          "text": "Święto państwowe: atrakcje otwarte, ale tłoczno; zajęcia rezerwować z wyprzedzeniem."
+          "text": "Święto państwowe: atrakcje otwarte, ale tłoczno."
         },
         {
           "kind": "tip",
@@ -5134,20 +5102,6 @@
       "status": "booked"
     },
     {
-      "name": "Ueno Zoo",
-      "checked": "Bilety i wejście",
-      "conclusion": "Online opcjonalny; można kupić na miejscu.",
-      "when": "Brak pośpiechu",
-      "url": "https://www.tokyo-zoo.net/en/ueno/visitor-info/tickets/index.html",
-      "placeIds": [
-        "ueno-zoo"
-      ],
-      "dayIds": [
-        "2026-11-10"
-      ],
-      "status": "todo"
-    },
-    {
       "name": "Autobus Tokio ⇄ Kawaguchiko — 12.11",
       "checked": "Highway Bus 0113 i 0028",
       "conclusion": "09:25–11:20 autobus 0113, Tekko Building → Kawaguchiko. 17:00–19:05 autobus 0028, Kawaguchiko → Tokyo Station Nihonbashi Exit. Oba bilety kupione. Anulowanie (za osobę, za odcinek): do 2 dni przed odjazdem 110 JPY, 1 dzień przed 50% ceny, po odjeździe 100%; w dniu odjazdu sprawdź w Fujiyama Connect.",
@@ -5210,47 +5164,6 @@
       "status": "booked"
     },
     {
-      "name": "SmartEX oversized baggage",
-      "checked": "Bagaż 160–250 cm",
-      "conclusion": "Wymagane specjalne miejsce z przestrzenią na duży bagaż; te miejsca otwierają się 1 mies. przed.",
-      "when": "17.10 i 24.10 dla obu przejazdów",
-      "url": "https://smart-ex.jp/en/entraining/oversized-baggage/",
-      "placeIds": [],
-      "dayIds": [
-        "2026-11-17",
-        "2026-11-24"
-      ],
-      "status": "todo"
-    },
-    {
-      "name": "Tenryū-ji",
-      "checked": "Bilety",
-      "conclusion": "Bilety sprzedawane przy wejściach; brak potrzeby wcześniejszej rezerwacji.",
-      "when": "Na miejscu",
-      "url": "https://www.tenryuji.com/en/visit/index.html",
-      "placeIds": [
-        "tenryu-ji"
-      ],
-      "dayIds": [
-        "2026-11-18"
-      ],
-      "status": "todo"
-    },
-    {
-      "name": "Kōdai-ji illumination",
-      "checked": "Jesienna iluminacja 2026",
-      "conclusion": "20.11 wydarzenie działa; brak potrzeby włączania go jako rezerwacji czasowej.",
-      "when": "Na miejscu / jeśli zostanie energia",
-      "url": "https://www.kodaiji.com/saiji.html",
-      "placeIds": [
-        "kodai-ji"
-      ],
-      "dayIds": [
-        "2026-11-20"
-      ],
-      "status": "todo"
-    },
-    {
       "name": "Osaka Aquarium Kaiyukan",
       "checked": "Potwierdzenie zakupu",
       "conclusion": "Kupione i opłacone e-tickety Kaiyukan, 3 200 ¥ za osobę. Wejście z biletem elektronicznym; dziecko do 3 lat bez biletu.",
@@ -5263,20 +5176,6 @@
         "2026-11-21"
       ],
       "status": "booked"
-    },
-    {
-      "name": "Nijō-jō",
-      "checked": "Bilety i Honmaru-goten",
-      "conclusion": "Zwykłe wejście i Ninomaru bez rezerwacji; Honmaru-goten wymaga wcześniejszej rezerwacji.",
-      "when": "Tylko jeśli chcecie Honmaru",
-      "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en",
-      "placeIds": [
-        "nijo-jo"
-      ],
-      "dayIds": [
-        "2026-11-22"
-      ],
-      "status": "todo"
     },
     {
       "name": "Tokyo Skytree — Tembo Deck + Tembo Galleria",
@@ -5316,32 +5215,6 @@
         "harajuku"
       ],
       "dayIds": [],
-      "status": "todo"
-    },
-    {
-      "kind": "experience",
-      "name": "Warsztaty wagashi: Kanshundo Higashi (Kioto)",
-      "checked": "Robienie tradycyjnych słodyczy, ok. 75 min, z matchą",
-      "conclusion": "Wg serwisów rezerwacyjnych dzieci od 5 lat, kilka sesji dziennie; potwierdzić, czy można przyjść z rocznym dzieckiem.",
-      "when": "Opcja na 23.11 (święto), rezerwować wcześniej",
-      "url": "https://kanshundo.co.jp/",
-      "placeIds": [],
-      "dayIds": [
-        "2026-11-23"
-      ],
-      "status": "todo"
-    },
-    {
-      "kind": "experience",
-      "name": "Ceremonia herbaciana: Camellia (Kioto)",
-      "checked": "Ceremonia z matchą w kilku herbaciarniach",
-      "conclusion": "Wg oficjalnej strony od 4 lat, sesje wspólne od 6 lat; o niemowlę zapytać przez contact@camelliakyoto.com.",
-      "when": "Opcja na 23.11 (święto), rezerwować wcześniej",
-      "url": "https://www.tea-kyoto.com/",
-      "placeIds": [],
-      "dayIds": [
-        "2026-11-23"
-      ],
       "status": "todo"
     }
   ],
@@ -5736,7 +5609,7 @@
             "id": "nerikiri",
             "name": "Nerikiri",
             "nameJa": "練り切り",
-            "text": "Najbardziej artystyczne wagashi: z białej pasty fasolowej, ręcznie formowane w kwiaty i liście pór roku. Podawane do herbaty; w Kioto są warsztaty ich robienia.",
+            "text": "Najbardziej artystyczne wagashi: z białej pasty fasolowej, ręcznie formowane w kwiaty i liście pór roku. Podawane do herbaty.",
             "photo": {
               "src": "img/food/nerikiri.jpg",
               "alt": "Nerikiri",
