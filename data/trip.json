@@ -2576,15 +2576,7 @@
       "dayTrip": {
         "from": "Kioto",
         "to": "Nara"
-      },
-      "todos": [
-        {
-          "id": "todo-bags-tokyo",
-          "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do NOHGA HOTEL UENO TOKYO",
-          "where": "Recepcja MIMARU SUITES Kyoto Shijo",
-          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015, tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
-        }
-      ]
+      }
     },
     {
       "id": "2026-11-19",
@@ -2617,6 +2609,14 @@
       "source": {
         "orderText": "07:30 wyjście → ~08:30–09:00 Bamboo Grove → 09:00–10:30 Tenryū-ji → (Ōkōchi Sansō) → 11:15–11:45 rzeka → Togetsukyō → 12:00–13:00 lunch → 13:30–13:40 Torokko Saga → 14:02–14:25 Sagano 11 → JR Umahori → Kyōto → hotel"
       },
+      "todos": [
+        {
+          "id": "todo-bags-tokyo",
+          "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do NOHGA HOTEL UENO TOKYO",
+          "where": "Recepcja MIMARU SUITES Kyoto Shijo",
+          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015, tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
+        }
+      ],
       "items": [
         {
           "id": "d12-01",
