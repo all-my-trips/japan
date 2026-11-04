@@ -160,7 +160,110 @@
   }
   function mapsUrl(place) {
     if (place.links && place.links.maps) return place.links.maps;
-    return "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(place.mapsQuery || place.name);
+    return gmSearch(geoLoc(place.id) || { q: place.mapsQuery || place.name });
+  }
+
+  // ---------- Google Maps: lokalizacje i trasy (oficjalne Maps URLs, bez klucza API) ----------
+  // Punkt planu: points{} (stacje, hotele, przystanki) albo places{}; "@start" = hotel, w którym zaczynamy dzień,
+  // "@stay" = hotel na noc tego dnia. Zapytanie: q (nazwa + miasto/adres) albo współrzędne.
+  const GM = "https://www.google.com/maps/";
+  const MODE = {
+    walking: { em: "🚶", label: "pieszo" },
+    transit: { em: "🚆", label: "komunikacją" },
+    driving: { em: "🚗", label: "samochodem" },
+    ride: { em: "🎫", label: "przejazd z biletem" }
+  };
+  const gmQ = (l) => l.q || (l.lat != null ? `${l.lat},${l.lng}` : l.name);
+  const gmSearch = (l) => `${GM}search/?api=1&query=${encodeURIComponent(gmQ(l))}`;
+  const gmDir = (from, to, mode, via) => `${GM}dir/?api=1${from ? `&origin=${encodeURIComponent(gmQ(from))}` : ""}&destination=${encodeURIComponent(gmQ(to))}&travelmode=${mode === "ride" ? "transit" : mode}${via && via.length ? `&waypoints=${encodeURIComponent(via.map(gmQ).join("|"))}` : ""}`;
+  function hotelOf(d) { return d && d.stay && d.stay.hotelId ? geoLoc(d.stay.hotelId) : null; }
+  function geoLoc(id, day) {
+    if (!id) return null;
+    const t = S.trip;
+    if (id === "@stay") return hotelOf(day);
+    if (id === "@start") { const prev = t.days[t.days.indexOf(day) - 1]; return hotelOf(prev); }
+    const pt = (t.points || {})[id];
+    if (pt) return Object.assign({ key: id }, pt);
+    const pl = t.places[id];
+    if (pl) return { key: id, name: pl.name, q: pl.mapsQuery || null, lat: pl.coords && pl.coords.lat, lng: pl.coords && pl.coords.lng };
+    return null;
+  }
+  const distKm = (a, b) => {
+    if (!a || !b || a.lat == null || b.lat == null) return null;
+    const r = Math.PI / 180, x = (b.lng - a.lng) * r * Math.cos((a.lat + b.lat) * r / 2), y = (b.lat - a.lat) * r;
+    return 6371 * Math.hypot(x, y);
+  };
+  const autoMode = (a, b) => { const k = distKm(a, b); return k != null && k < 1.3 ? "walking" : "transit"; };
+  // Odcinki dnia dla widocznych punktów: każdy punkt dostaje swoje miejsce (at) i etapy dojścia (legs)
+  function dayRoutes(day, items) {
+    let pos = geoLoc("@start", day);
+    const res = new Map();
+    for (const i of items) {
+      const at = i.at === null ? null : geoLoc(i.at || i.placeId, day);
+      let legs = [];
+      if (i.legs) {
+        legs = i.legs.map((l) => {
+          const from = l.from ? geoLoc(l.from, day) : pos, to = l.to ? geoLoc(l.to, day) : at;
+          const leg = Object.assign({}, l, { from, to, mode: l.mode || autoMode(from, to) });
+          if (to) pos = to;
+          return leg;
+        }).filter((l) => l.to);
+      } else if (at && pos && at.key !== pos.key && i.type !== "decision") {
+        legs = [{ from: pos, to: at, mode: autoMode(pos, at) }];
+      }
+      if (at && !legs.length) pos = at;
+      if (at || legs.length) res.set(i.id, { at, legs });
+    }
+    const home = hotelOf(day);
+    const back = day.back === false || !home || !pos || pos.key === home.key ? null
+      : Object.assign({}, day.back || {}, { from: pos, to: home, mode: (day.back && day.back.mode) || autoMode(pos, home) });
+    return { res, back };
+  }
+  function legLine(l, many, k) {
+    const m = MODE[l.mode] || MODE.transit;
+    const min = l.min && typeof l.min === "object" ? l.from && l.min[l.from.key] : l.min;
+    l = Object.assign({}, l, { min });
+    const time = l.min ? ` · ok. ${esc(l.min)} min` : "";
+    const route = `${esc(l.from ? l.from.name : "Twoja lokalizacja")} → ${esc(l.to.name)}`;
+    const head = many ? "" : l.mode === "walking" ? "Z poprzedniego punktu: " : "";
+    const btn = l.mode === "ride"
+      ? ""
+      : `<a class="gm-btn" href="${esc(gmDir(l.from, l.to, l.mode))}" target="_blank" rel="noopener">🧭 ${many ? "Etap " + (k + 1) : "Nawiguj"}</a>`;
+    return { btn, text: `<span class="gm-leg">${m.em} ${head}${l.mode === "walking" ? `${l.min ? "ok. " + esc(l.min) + " min " : ""}pieszo · ${route}` : `${route} · ${m.label}${time}`}${l.text ? `<span class="gm-tx">${esc(l.text)}</span>` : ""}</span>` };
+  }
+  function geoBlock(r) {
+    if (!r) return "";
+    const { at, legs } = r, many = legs.length > 1;
+    const last = legs[legs.length - 1], dest = at || (last && last.to);
+    const here = last ? last.to : at;
+    const hereMode = !last || many || last.mode === "ride" ? "transit" : last.mode;
+    const lines = legs.map((l, k) => legLine(l, many, k));
+    const row = [
+      dest ? `<a class="gm-btn" href="${esc(gmSearch(dest))}" target="_blank" rel="noopener" aria-label="Mapa: ${esc(dest.name)}">📍 Mapa</a>` : "",
+      !many && lines[0] ? lines[0].btn : "",
+      here ? `<a class="gm-btn ghost" href="${esc(gmDir(null, here, hereMode))}" target="_blank" rel="noopener">Z mojej lokalizacji</a>` : ""
+    ].join("");
+    const legRows = many
+      ? lines.map((x) => `<div class="gm-row">${x.btn}${x.text}</div>`).join("")
+      : lines.length ? `<div class="gm-row">${lines[0].text}</div>` : "";
+    return `<div class="gm"><div class="gm-btns">${row}</div>${legRows}</div>`;
+  }
+  // Trasa całego dnia: tylko ciągi odcinków pieszych (Google nie obsługuje punktów pośrednich w trybie transit),
+  // po maks. 3 punkty pośrednie (limit przeglądarek mobilnych)
+  function dayWalks(routes, items) {
+    const chunks = []; let cur = null;
+    for (const i of items) {
+      const r = routes.res.get(i.id); if (!r) continue;
+      for (const l of r.legs) {
+        if (l.mode === "walking" && l.from) {
+          if (cur && cur[cur.length - 1].key === l.from.key) cur.push(l.to);
+          else chunks.push(cur = [l.from, l.to]);
+        } else cur = null;
+      }
+    }
+    const out = [];
+    chunks.filter((c) => c.length >= 3).forEach((c) => { for (let s = 0; s < c.length - 1; s += 4) { const part = c.slice(s, s + 5); if (part.length >= 3) out.push(part); } });
+    return out;
   }
 
   // ---------- shell ----------
@@ -437,12 +540,24 @@
     let lineAt = -1;
     if (nowMin != null && !hasNow) { lineAt = state.findIndex((x) => x !== "is-past"); if (lineAt === -1) lineAt = items.length; }
 
+    const routes = dayRoutes(day, items);
     let out = "";
     items.forEach((i, k) => {
       if (k === lineAt) out += nowLine(nowMin);
-      out += `<li id="it-${esc(i.id)}" class="p-${i.priority || "none"} t-${i.type} ${state[k]}">${timeCell(i)}<div class="rail"><span class="dot"></span></div><div class="content">${itemBody(i, day, chosen)}${histLink(i.placeId)}</div></li>`;
+      out += `<li id="it-${esc(i.id)}" class="p-${i.priority || "none"} t-${i.type} ${state[k]}">${timeCell(i)}<div class="rail"><span class="dot"></span></div><div class="content">${itemBody(i, day, chosen)}${geoBlock(routes.res.get(i.id))}${histLink(i.placeId)}</div></li>`;
     });
     if (lineAt === items.length) out += nowLine(nowMin);
+    if (routes.back) {
+      out += `<li class="p-none t-hotel tl-back"><div class="time"></div><div class="rail"><span class="dot"></span></div><div class="content">
+        <div class="lline">${icon("hotel")}<div><div class="t">Powrót do hotelu</div><div class="n">${esc(routes.back.to.name)}</div></div></div>${geoBlock({ at: routes.back.to, legs: [routes.back] })}</div></li>`;
+    }
+    const walks = dayWalks(routes, items);
+    if (walks.length) {
+      out += `<li class="p-none tl-walks"><div class="time"></div><div class="rail"></div><div class="content"><div class="gm gm-day">
+        <span class="eyebrow">🗺️ Trasa dnia pieszo</span>
+        ${walks.map((w) => `<a class="gm-btn" href="${esc(gmDir(w[0], w[w.length - 1], "walking", w.slice(1, -1)))}" target="_blank" rel="noopener">🗺️ ${w.map((x) => esc(x.name)).join(" → ")}</a>`).join("")}
+        <span class="gm-tx">Przejazdy komunikacją są osobno przy punktach planu.</span></div></div></li>`;
+    }
     return out;
   }
   const nowLine = (m) => `<li class="nowline" aria-label="Teraz ${fmtMin(m)}"><span class="t">${fmtMin(m)}</span><span class="ln"></span></li>`;
@@ -534,9 +649,11 @@
     const todo = all.filter((b) => b.status === "todo").length;
     const bkCard = (b) => `
         <article class="bk">
-          <div class="h"><b>${esc(b.name)}</b><span class="status status-${b.status}">${statusLabel(b.status)}</span></div>
+          <div class="h"><b>${esc(b.name)}</b><span class="status status-${b.status}">${b.statusLabel ? esc(b.statusLabel) : statusLabel(b.status)}</span></div>
           <div class="when">${icon("clock")}<span><b>${esc(b.when)}</b></span></div>
           <div>${esc(b.conclusion)} <span class="muted">(${esc(b.checked)})</span></div>
+          ${(b.facts || []).length ? `<dl class="bk-facts">${b.facts.map((f) => `<div><dt>${esc(f.label)}</dt><dd>${esc(f.text)}</dd></div>`).join("")}</dl>` : ""}
+          ${(b.points || []).length ? `<div class="gm-btns">${b.points.map((id) => geoLoc(id)).filter(Boolean).map((l) => `<a class="gm-btn" href="${esc(gmSearch(l))}" target="_blank" rel="noopener">📍 ${esc(l.name)}</a>`).join("")}</div>` : ""}
           <div class="foot">${(b.dayIds || []).map((id) => S.byId[id] ? `<a class="chip" href="#d-${id}">Dzień ${S.byId[id].dayNumber} · ${shortDate(id)}</a>` : "").join("")}
             <a class="btn" href="${esc(b.url)}" target="_blank" rel="noopener" style="margin-left:auto">${icon("link")} Strona</a></div>
         </article>`;
