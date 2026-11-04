@@ -756,3 +756,21 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .hist-link.in-sheet { margin-top: -4px; }
 .tl > li { scroll-margin-top: 84px; }
 .tl > li.is-focus .icard { box-shadow: 0 0 0 3px color-mix(in srgb, var(--momiji) 55%, transparent); transition: box-shadow .3s; }
+
+/* Google Maps: małe przyciski pod punktem planu */
+.gm { display: grid; gap: 6px; margin-top: 8px; font-size: .82rem; }
+.gm-btns { display: flex; flex-wrap: wrap; gap: 6px; }
+.gm-btn { display: inline-flex; align-items: center; gap: 4px; min-height: 30px; padding: 3px 9px; border-radius: 999px; border: 1px solid var(--line); background: var(--surface); color: var(--ink); font-weight: 600; font-size: .76rem; line-height: 1.2; text-decoration: none; -webkit-tap-highlight-color: transparent; }
+.gm-btn:hover { border-color: var(--muted); text-decoration: none; }
+.gm-btn.ghost { background: transparent; color: var(--muted); font-weight: 500; }
+.gm-row { display: flex; flex-wrap: wrap; align-items: center; gap: 4px 8px; }
+.gm-leg { color: var(--muted); line-height: 1.4; min-width: 0; }
+.gm-leg b { color: var(--ink); font-weight: 600; }
+.gm-tx { display: block; color: var(--ink); }
+.gm-day { padding: 10px 12px; border: 1px dashed var(--line); border-radius: var(--r); }
+.gm-day .gm-btn { justify-self: start; white-space: normal; }
+.gm-day .gm-tx { color: var(--muted); }
+.tl-back .lline .n { color: var(--muted); }
+.bk-facts { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 6px 12px; margin: 0; font-size: .88rem; }
+.bk-facts dt { font-size: .7rem; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+.bk-facts dd { margin: 0; font-weight: 600; font-variant-numeric: tabular-nums; }

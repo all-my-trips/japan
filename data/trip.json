@@ -318,7 +318,15 @@
               }
             }
           ],
-          "note": null
+          "note": null,
+          "at": "start-parking",
+          "legs": [
+            {
+              "mode": "driving",
+              "to": "start-parking",
+              "text": "Dojazd z miejsca obiadu."
+            }
+          ]
         },
         {
           "id": "d01-07",
@@ -329,7 +337,15 @@
           "title": "Transfer na lotnisko",
           "priority": null,
           "placeId": null,
-          "note": "Fotelika nie ma: Zosia jedzie w wózku lub na kolanach."
+          "note": "Fotelika nie ma: Zosia jedzie w wózku lub na kolanach.",
+          "at": "waw-airport",
+          "legs": [
+            {
+              "mode": "ride",
+              "to": "waw-airport",
+              "text": "Bus transferowy START Parking."
+            }
+          ]
         },
         {
           "id": "d01-08",
@@ -347,7 +363,8 @@
             "license": "CC BY-SA 4.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminal_A_of_Warsaw_Chopin_Airport_July_2024.jpg"
           },
-          "note": "Terminal A, stanowiska LOT. Wózek Zosi zostaje z nami do wejścia na pokład."
+          "note": "Terminal A, stanowiska LOT. Wózek Zosi zostaje z nami do wejścia na pokład.",
+          "at": "waw-airport"
         },
         {
           "id": "d01-10",
@@ -477,7 +494,8 @@
             "license": "CC BY-SA 3.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Narita_International_Airport_Terminal_1.JPG"
           },
-          "note": "Kontrola paszportowa (QR z Visit Japan Web), bagaż i cło: realnie 45–75 min. Potem SIM, gotówka i bilety na Skyliner."
+          "note": "Kontrola paszportowa (QR z Visit Japan Web), bagaż i cło: realnie 45–75 min. Potem SIM, gotówka i bilety na Skyliner.",
+          "at": "narita-t1"
         },
         {
           "id": "d02-02",
@@ -501,6 +519,14 @@
               "kind": "tip",
               "text": "Nie kupować z góry biletu na konkretny Skyliner. Bilet z miejscówką kupić w kasie lub automacie Keisei na Naricie dopiero po kontroli paszportowej i odebraniu bagażu, na najbliższy pociąg z wolnymi miejscami."
             }
+          ],
+          "at": "keisei-ueno",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "narita-t1",
+              "to": "keisei-ueno"
+            }
           ]
         },
         {
@@ -519,7 +545,15 @@
             "license": "CC BY 3.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:JR上野駅前_-_panoramio.jpg"
           },
-          "note": null
+          "note": null,
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "keisei-ueno",
+              "to": "@stay"
+            }
+          ]
         },
         {
           "id": "d02-04",
@@ -640,7 +674,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d03-02",
@@ -651,7 +686,12 @@
           "title": "Ueno Park",
           "priority": "must",
           "placeId": "ueno-park",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d03-02a",
@@ -662,7 +702,12 @@
           "title": "Ueno Tōshō-gū",
           "priority": "bonus",
           "placeId": "ueno-toshogu",
-          "note": "W ramach spaceru po Ueno Park, ok. 15–25 min."
+          "note": "W ramach spaceru po Ueno Park, ok. 15–25 min.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d03-03",
@@ -684,7 +729,12 @@
           "title": "Ueno Zoo",
           "priority": "want",
           "placeId": "ueno-zoo",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d03-05",
@@ -705,6 +755,11 @@
               "kind": "tip",
               "text": "W Nezu-jinja alejka czerwonych bram torii na zboczu obok głównego budynku: kilka minut, zwykle bez tłumów."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
+            }
           ]
         }
       ],
@@ -713,7 +768,10 @@
           "kind": "general",
           "text": "Przewijaki i pokoje do karmienia (授乳室, junyūshitsu) są w domach towarowych, na dużych stacjach i w centrach handlowych; w świątyniach i małych lokalach zwykle ich nie ma."
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit"
+      }
     },
     {
       "id": "2026-11-11",
@@ -770,7 +828,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d04-01a",
@@ -782,10 +841,11 @@
           "priority": null,
           "placeId": null,
           "note": "Linia Ginza z Ueno do Shimbashi bez przesiadek, potem ok. 10 min pieszo do ogrodu. Razem ok. 45 min.",
-          "links": [
+          "at": "shimbashi-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Hama-rikyu+Gardens+Tokyo&travelmode=transit",
-              "label": "Połączenia Ueno → Hama Rikyu"
+              "mode": "transit",
+              "to": "shimbashi-station"
             }
           ]
         },
@@ -804,6 +864,11 @@
               "kind": "tip",
               "text": "Herbaciarnia Nakajima-no-Ochaya na wysepce w stawie: matcha z wagashi, płatne osobno od wstępu (ok. 1000 ¥), wg przewodników ok. 9:00–16:30."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
+            }
           ]
         },
         {
@@ -816,10 +881,11 @@
           "priority": null,
           "placeId": null,
           "note": "Z ogrodu ok. 10 min pieszo do Shimbashi, potem linia Ginza bez przesiadek do Asakusy (ok. 20 min).",
-          "links": [
+          "at": "asakusa-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Hama-rikyu+Gardens+Tokyo&destination=Asakusa+Station+Tokyo&travelmode=transit",
-              "label": "Połączenia Hama Rikyu → Asakusa"
+              "mode": "transit",
+              "to": "asakusa-station"
             }
           ]
         },
@@ -843,7 +909,12 @@
           "title": "Asakusa, Sensō-ji, Nakamise-dōri",
           "priority": "must",
           "placeId": "senso-ji",
-          "note": "Główna hala Sensō-ji czynna 6:30–17:00."
+          "note": "Główna hala Sensō-ji czynna 6:30–17:00.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d04-05a",
@@ -865,9 +936,18 @@
           "title": "Sumida po zmroku",
           "priority": "bonus",
           "placeId": "sumida",
-          "note": "Powrót: linia Ginza z Asakusy do Ueno, ok. 5 min."
+          "note": "Powrót: linia Ginza z Asakusy do Ueno, ok. 5 min.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit",
+        "text": "Metro Ginza z Asakusy do Ueno, ok. 5 min."
+      }
     },
     {
       "id": "2026-11-12",
@@ -911,12 +991,7 @@
           "priority": null,
           "placeId": null,
           "note": null,
-          "links": [
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
-              "label": "Mapa: hotel"
-            }
-          ]
+          "at": "@start"
         },
         {
           "id": "d05-02",
@@ -927,7 +1002,14 @@
           "title": "JR Ueno → Tokyo",
           "priority": null,
           "placeId": null,
-          "note": "Yamanote albo Keihin-Tōhoku w kierunku Tokyo, 4 stacje, ok. 8 min. Na Tokyo wyjście Yaesu North."
+          "note": "Yamanote albo Keihin-Tōhoku w kierunku Tokyo, 4 stacje, ok. 8 min. Na Tokyo wyjście Yaesu North.",
+          "at": "tokyo-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "tokyo-station"
+            }
+          ]
         },
         {
           "id": "d05-03",
@@ -947,6 +1029,14 @@
                 "url": "https://www.google.com/maps/dir/?api=1&destination=Tekko+Building,+1-8-2+Marunouchi,+Chiyoda+City,+Tokyo&travelmode=walking",
                 "label": "Nawigacja do przystanku"
               }
+            }
+          ],
+          "at": "tekko-bus",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "tokyo-station",
+              "to": "tekko-bus"
             }
           ]
         },
@@ -975,10 +1065,14 @@
             {
               "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
               "label": "Bilety (Fujiyama Connect)"
-            },
+            }
+          ],
+          "at": "kawaguchiko-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=Kawaguchiko%20Station",
-              "label": "Mapa: Kawaguchiko Station"
+              "mode": "ride",
+              "from": "tekko-bus",
+              "to": "kawaguchiko-station"
             }
           ]
         },
@@ -1001,6 +1095,14 @@
                 "label": "Rozkład Red Line (PDF)"
               }
             }
+          ],
+          "at": "momiji-kairo",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "momiji-kairo",
+              "text": "Retro bus Red Line (Kawaguchiko Sightseeing Bus) ze stacji."
+            }
           ]
         },
         {
@@ -1012,7 +1114,8 @@
           "title": "Momiji Kairō (korytarz klonów)",
           "priority": "must",
           "placeId": "momiji-kairo",
-          "note": null
+          "note": null,
+          "at": "momiji-kairo"
         },
         {
           "id": "d05-06",
@@ -1034,7 +1137,14 @@
           "title": "Spacer północnym brzegiem z widokiem na Fuji",
           "priority": "must",
           "placeId": "kawaguchiko",
-          "note": "Od Momiji Kairō brzegiem na wschód do Nagasaki Park (ok. 1 km), Fuji po prawej nad jeziorem. Powrót autobusem z przystanku „Sunnide Resort/Nagasaki Park Ent.”."
+          "note": "Od Momiji Kairō brzegiem na wschód do Nagasaki Park (ok. 1 km), Fuji po prawej nad jeziorem. Powrót autobusem z przystanku „Sunnide Resort/Nagasaki Park Ent.”.",
+          "at": "nagasaki-park",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "nagasaki-park"
+            }
+          ]
         },
         {
           "id": "d05-08",
@@ -1045,7 +1155,12 @@
           "title": "Oishi Park",
           "priority": "bonus",
           "placeId": "oishi-park",
-          "note": "Dalej brzegiem ok. 10 min od Nagasaki Park; wtedy autobus z przystanku „Kawaguchiko Natural Living Center”."
+          "note": "Dalej brzegiem ok. 10 min od Nagasaki Park; wtedy autobus z przystanku „Kawaguchiko Natural Living Center”.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d05-09",
@@ -1056,7 +1171,14 @@
           "title": "Powrót na stację Kawaguchiko",
           "priority": null,
           "placeId": null,
-          "note": "Red Line w stronę stacji, ok. 25–30 min wg rozkładu; w sezonie liści korki i kolejki to wydłużają. Na stacji najpóźniej 16:35–16:40."
+          "note": "Red Line w stronę stacji, ok. 25–30 min wg rozkładu; w sezonie liści korki i kolejki to wydłużają. Na stacji najpóźniej 16:35–16:40.",
+          "at": "kawaguchiko-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "kawaguchiko-station"
+            }
+          ]
         },
         {
           "id": "d05-09a",
@@ -1083,10 +1205,14 @@
             {
               "url": "https://www.fujiyamaconnect.jp/mypage/ticket",
               "label": "Bilety (Fujiyama Connect)"
-            },
+            }
+          ],
+          "at": "nihonbashi-exit",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=Tokyo%20Station%20Nihonbashi%20Exit",
-              "label": "Mapa: Nihonbashi Exit"
+              "mode": "ride",
+              "from": "kawaguchiko-station",
+              "to": "nihonbashi-exit"
             }
           ]
         },
@@ -1100,10 +1226,13 @@
           "priority": null,
           "placeId": null,
           "note": null,
-          "links": [
+          "at": "@stay",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
-              "label": "Mapa: hotel"
+              "mode": "transit",
+              "from": "nihonbashi-exit",
+              "to": "@stay",
+              "text": "JR Yamanote albo Keihin-Tōhoku z Tokyo do Ueno, potem pieszo do hotelu."
             }
           ]
         }
@@ -1170,7 +1299,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d06-01a",
@@ -1182,10 +1312,11 @@
           "priority": null,
           "placeId": null,
           "note": "Linia Hibiya bez przesiadek do stacji Tsukiji, ok. 15 min jazdy.",
-          "links": [
+          "at": "tsukiji-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Tsukiji+Outer+Market+Tokyo&travelmode=transit",
-              "label": "Połączenia Ueno → Tsukiji"
+              "mode": "transit",
+              "to": "tsukiji-station"
             }
           ]
         },
@@ -1198,7 +1329,12 @@
           "title": "Tsukiji Outer Market",
           "priority": "must",
           "placeId": "tsukiji",
-          "note": "Przeniesione ze środy 11.11: to dzień zamknięcia rynku hurtowego wg kalendarza Tsukiji, a część sklepów działa według niego."
+          "note": "Przeniesione ze środy 11.11: to dzień zamknięcia rynku hurtowego wg kalendarza Tsukiji, a część sklepów działa według niego.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d06-01c",
@@ -1209,7 +1345,12 @@
           "title": "Tsukiji Hongwanji",
           "priority": "bonus",
           "placeId": "tsukiji-hongwanji",
-          "note": "Kilka minut pieszo od targu, ok. 15 min; tylko jeśli nie opóźni wyjazdu do Meiji Jingu."
+          "note": "Kilka minut pieszo od targu, ok. 15 min; tylko jeśli nie opóźni wyjazdu do Meiji Jingu.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d06-01d",
@@ -1221,10 +1362,11 @@
           "priority": null,
           "placeId": null,
           "note": "Linia Hibiya do stacji Hibiya, przesiadka na linię Chiyoda do Meiji-jingumae 〈Harajuku〉; ok. 20 min jazdy plus przesiadka. Do bramy Meiji Jingu kilka minut pieszo.",
-          "links": [
+          "at": "meiji-jingumae-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Tsukiji+Station+Tokyo&destination=Meiji+Jingu+Tokyo&travelmode=transit",
-              "label": "Połączenia Tsukiji → Meiji Jingu"
+              "mode": "transit",
+              "to": "meiji-jingumae-station"
             }
           ]
         },
@@ -1237,7 +1379,12 @@
           "title": "Meiji Jingu",
           "priority": "must",
           "placeId": "meiji-jingu",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d06-03",
@@ -1253,6 +1400,11 @@
             {
               "kind": "tip",
               "text": "Crepes z Takeshita-dōri (np. Marion Crêpes, Santa Monica Crêpes) je się przy budce, nie w marszu."
+            }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
             }
           ]
         },
@@ -1271,6 +1423,11 @@
               "kind": "tip",
               "text": "Najciekawsza architektura jest na odcinku od Omotesando Hills do skrzyżowania z Aoyama-dōri i w bocznej Miyuki-dōri (Prada); wystarczy 30–45 min spaceru."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
+            }
           ]
         },
         {
@@ -1282,7 +1439,13 @@
           "title": "Shibuya, Hachikō, skrzyżowanie i spacer",
           "priority": "must",
           "placeId": "shibuya",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Z Harajuku/Omotesando 1 przystanek do Shibuyi (JR Yamanote albo metro Ginza) albo ok. 20 min pieszo."
+            }
+          ]
         },
         {
           "id": "d06-08",
@@ -1295,7 +1458,11 @@
           "placeId": null,
           "note": null
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit",
+        "text": "Metro Ginza z Shibuyi do Ueno bez przesiadki, ok. 30 min."
+      }
     },
     {
       "id": "2026-11-14",
@@ -1357,12 +1524,7 @@
           "priority": null,
           "placeId": null,
           "note": null,
-          "links": [
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
-              "label": "Mapa: hotel"
-            }
-          ]
+          "at": "@start"
         },
         {
           "id": "d07-01a",
@@ -1374,10 +1536,11 @@
           "priority": null,
           "placeId": null,
           "note": "Perony Shinkansen są na najniższym poziomie stacji, z wózkiem windą. Zapas na znalezienie właściwego wejścia.",
-          "links": [
+          "at": "ueno-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Ueno%20Station%20Shinkansen",
-              "label": "Mapa: JR Ueno"
+              "mode": "walking",
+              "to": "ueno-station"
             }
           ]
         },
@@ -1396,6 +1559,14 @@
               "url": "https://www.eki-net.com/en/jreast-train-reservation/reserve/wb/ApplicationHistoryList/Index",
               "label": "Moje rezerwacje JR East"
             }
+          ],
+          "at": "utsunomiya-station",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "ueno-station",
+              "to": "utsunomiya-station"
+            }
           ]
         },
         {
@@ -1407,13 +1578,7 @@
           "title": "Utsunomiya: przesiadka na JR Nikkō Line",
           "priority": null,
           "placeId": null,
-          "note": "Z peronów Shinkansen do peronów linii lokalnych; peron sprawdzić na tablicy w dniu podróży.",
-          "links": [
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Utsunomiya%20Station",
-              "label": "Mapa: JR Utsunomiya"
-            }
-          ]
+          "note": "Z peronów Shinkansen do peronów linii lokalnych; peron sprawdzić na tablicy w dniu podróży."
         },
         {
           "id": "d07-02b",
@@ -1434,6 +1599,14 @@
               "url": "https://timetables.jreast.co.jp/en/2611/train/110/113891.html",
               "label": "Kurs 835M"
             }
+          ],
+          "at": "jr-nikko",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "utsunomiya-station",
+              "to": "jr-nikko"
+            }
           ]
         },
         {
@@ -1446,14 +1619,12 @@
           "priority": null,
           "placeId": null,
           "note": "Autobus Tobu „World Heritage Meguri” (世界遺産めぐり) spod JR Nikkō do przystanku „Omotesando” przy Tōshō-gū; rozkład i stanowisko sprawdzić na miejscu, w sobotę możliwa kolejka. Pieszo 30–40 min, częściowo pod górę.",
-          "links": [
+          "at": "toshogu",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=JR+Nikko+Station&destination=Nikko+Toshogu&travelmode=transit",
-              "label": "Dojazd autobusem"
-            },
-            {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=JR+Nikko+Station&destination=Nikko+Toshogu&travelmode=walking",
-              "label": "Dojście pieszo"
+              "mode": "transit",
+              "from": "jr-nikko",
+              "to": "toshogu"
             }
           ]
         },
@@ -1472,7 +1643,8 @@
               "kind": "tip",
               "text": "Trzy mądre małpy są na stajni świętych koni (Shinkyūsha) zaraz za pierwszą bramą, a śpiący kot Nemuri-neko nad przejściem do grobu Ieyasu (Okumiya). Za kotem ok. 200 kamiennych schodów: z dzieckiem nosidło."
             }
-          ]
+          ],
+          "at": "toshogu"
         },
         {
           "id": "d07-05",
@@ -1494,7 +1666,12 @@
           "title": "Rinnō-ji",
           "priority": "want",
           "placeId": "rinno-ji",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d07-07",
@@ -1505,7 +1682,12 @@
           "title": "Most Shinkyo",
           "priority": "want",
           "placeId": "shinkyo",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d07-07a",
@@ -1528,14 +1710,11 @@
           "priority": null,
           "placeId": null,
           "note": "Od Shinkyo pieszo w dół ok. 25–30 min albo autobusem z przystanku „Shinkyo”. Zapas na sobotnie tłumy.",
-          "links": [
+          "at": "jr-nikko",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Shinkyo+Bridge+Nikko&destination=JR+Nikko+Station&travelmode=walking",
-              "label": "Dojście pieszo"
-            },
-            {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Shinkyo+Bridge+Nikko&destination=JR+Nikko+Station&travelmode=transit",
-              "label": "Dojazd autobusem"
+              "mode": "transit",
+              "to": "jr-nikko"
             }
           ]
         },
@@ -1548,13 +1727,7 @@
           "title": "Zapas na stacji JR Nikkō",
           "priority": null,
           "placeId": null,
-          "note": null,
-          "links": [
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Nikko%20Station",
-              "label": "Mapa: JR Nikkō"
-            }
-          ]
+          "note": null
         },
         {
           "id": "d07-10",
@@ -1574,6 +1747,14 @@
             {
               "url": "https://timetables.jreast.co.jp/en/2611/train/110/114091.html",
               "label": "Kurs 862M"
+            }
+          ],
+          "at": "utsunomiya-station",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "jr-nikko",
+              "to": "utsunomiya-station"
             }
           ]
         },
@@ -1603,6 +1784,14 @@
               "url": "https://www.eki-net.com/en/jreast-train-reservation/reserve/wb/ApplicationHistoryList/Index",
               "label": "Moje rezerwacje JR East"
             }
+          ],
+          "at": "ueno-station",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "utsunomiya-station",
+              "to": "ueno-station"
+            }
           ]
         },
         {
@@ -1615,10 +1804,12 @@
           "priority": null,
           "placeId": null,
           "note": null,
-          "links": [
+          "at": "@stay",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
-              "label": "Mapa: hotel"
+              "mode": "walking",
+              "from": "ueno-station",
+              "to": "@stay"
             }
           ]
         }
@@ -1669,7 +1860,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d08-02",
@@ -1680,7 +1872,13 @@
           "title": "Ginza",
           "priority": "want",
           "placeId": "ginza",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Metro Ginza z Ueno do Ginzy bez przesiadki, ok. 12 min."
+            }
+          ]
         },
         {
           "id": "d08-02a",
@@ -1691,7 +1889,12 @@
           "title": "Depachika (hale z jedzeniem w podziemiach)",
           "priority": "bonus",
           "placeId": "depachika-ginza",
-          "note": "W ramach Ginzy albo jako lunch, 30–45 min."
+          "note": "W ramach Ginzy albo jako lunch, 30–45 min.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d08-03",
@@ -1734,7 +1937,13 @@
               "text": "Część sal to woda do kolan i ciemność: ubranie na zmianę dla dziecka zostaje w szafce."
             }
           ],
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Metro Yūrakuchō z Ginza-itchōme do Toyosu, potem Yurikamome 1 przystanek do Shin-Toyosu (albo ok. 10 min pieszo z Toyosu)."
+            }
+          ]
         },
         {
           "id": "d08-06",
@@ -1756,9 +1965,18 @@
           "title": "Toyosu / Odaiba",
           "priority": "bonus",
           "placeId": "toyosu-odaiba",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Yurikamome z Shin-Toyosu do Odaiba-kaihinkōen bez przesiadki."
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit"
+      }
     },
     {
       "id": "2026-11-16",
@@ -1801,7 +2019,8 @@
           "title": "Wyjście z hotelu, gdy będziemy gotowi",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d09-02",
@@ -1823,14 +2042,11 @@
               }
             }
           ],
-          "links": [
+          "at": "kamakura-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Ueno+Station+Tokyo&destination=Kamakura+Station&travelmode=transit",
-              "label": "Połączenia Ueno → Kamakura"
-            },
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=JR%20Kamakura%20Station",
-              "label": "Mapa: JR Kamakura"
+              "mode": "transit",
+              "to": "kamakura-station"
             }
           ]
         },
@@ -1846,12 +2062,16 @@
           "note": "Ok. 5 min, trzeci przystanek w kierunku Fujisawa; bez rezerwacji. Sama kolejka jest atrakcją: stare wagoniki między domami. Z Hase do Hase-dery pieszo ok. 5 min.",
           "links": [
             {
-              "url": "https://www.google.com/maps/search/?api=1&query=Hase%20Station%20Enoden%20Kamakura",
-              "label": "Mapa: Hase (Enoden)"
-            },
-            {
               "url": "https://www.enoden.co.jp/en/tourism/access/",
               "label": "Enoden"
+            }
+          ],
+          "at": "hase-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "kamakura-station",
+              "to": "hase-station"
             }
           ]
         },
@@ -1864,7 +2084,12 @@
           "title": "Hase-dera",
           "priority": "must",
           "placeId": "hase-dera",
-          "note": "Przedpołudnie, ok. 60–90 min. Bilet na miejscu, bez rezerwacji; czynne 8:00–17:00."
+          "note": "Przedpołudnie, ok. 60–90 min. Bilet na miejscu, bez rezerwacji; czynne 8:00–17:00.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d09-04",
@@ -1875,7 +2100,12 @@
           "title": "Wielki Budda",
           "priority": "must",
           "placeId": "daibutsu",
-          "note": "Następnie, ok. 30–60 min; z Hase-dery pieszo ok. 5 min. Bilet na miejscu, bez rezerwacji. Na terenie nie wolno jeść ani pić."
+          "note": "Następnie, ok. 30–60 min; z Hase-dery pieszo ok. 5 min. Bilet na miejscu, bez rezerwacji. Na terenie nie wolno jeść ani pić.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d09-05",
@@ -1898,10 +2128,11 @@
           "priority": null,
           "placeId": null,
           "note": "Ok. 5 min. Komachi-dōri zaczyna się przy wschodnim wyjściu stacji JR Kamakura.",
-          "links": [
+          "at": "kamakura-station",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Kotoku-in+Kamakura&destination=Kamakura+Station&travelmode=transit",
-              "label": "Dojazd do Kamakury"
+              "mode": "transit",
+              "to": "kamakura-station"
             }
           ]
         },
@@ -1914,7 +2145,12 @@
           "title": "Komachi-dōri",
           "priority": "want",
           "placeId": "komachi",
-          "note": "Popołudnie, w dowolnym tempie. Ulica publiczna, bez biletu."
+          "note": "Popołudnie, w dowolnym tempie. Ulica publiczna, bez biletu.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d09-07",
@@ -1925,7 +2161,12 @@
           "title": "Tsurugaoka Hachiman-gū",
           "priority": "want",
           "placeId": "tsurugaoka",
-          "note": "Popołudnie, ok. 30–60 min. Wstęp na główny teren bezpłatny."
+          "note": "Popołudnie, ok. 30–60 min. Wstęp na główny teren bezpłatny.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d09-09",
@@ -1936,7 +2177,12 @@
           "title": "Enoshima",
           "priority": "bonus",
           "placeId": "enoshima",
-          "note": "Nieobowiązkowa opcja: z Hase Enodenem ok. 20 min w stronę Fujisawy, potem ok. 15 min pieszo na wyspę. Kosztem Komachi-dōri lub Tsurugaoka, powrót do Ueno dłuższy."
+          "note": "Nieobowiązkowa opcja: z Hase Enodenem ok. 20 min w stronę Fujisawy, potem ok. 15 min pieszo na wyspę. Kosztem Komachi-dōri lub Tsurugaoka, powrót do Ueno dłuższy.",
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
         },
         {
           "id": "d09-08",
@@ -1948,18 +2194,15 @@
           "priority": null,
           "placeId": null,
           "note": "Z chramu do JR Kamakura pieszo ok. 10–15 min, dalej tą samą trasą: Yokosuka Line do Tokyo, przesiadka do Ueno. Ok. 1,5 h.",
-          "links": [
+          "at": "@stay",
+          "legs": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Tsurugaoka+Hachimangu&destination=Kamakura+Station&travelmode=walking",
-              "label": "Pieszo do JR Kamakura"
+              "to": "kamakura-station"
             },
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Kamakura+Station&destination=Ueno+Station+Tokyo&travelmode=transit",
-              "label": "Połączenia Kamakura → Ueno"
-            },
-            {
-              "url": "https://www.google.com/maps/search/?api=1&query=Mitsui%20Garden%20Hotel%20Ueno",
-              "label": "Mapa: hotel"
+              "mode": "transit",
+              "from": "kamakura-station",
+              "to": "@stay"
             }
           ]
         }
@@ -2010,7 +2253,8 @@
           "title": "Spokojny poranek i wymeldowanie z Mitsui Garden Hotel Ueno",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d10-02",
@@ -2026,6 +2270,13 @@
             {
               "kind": "experience",
               "text": "Największy wybór ekiben (lunchboxów do shinkansena) ma Ekibenya Matsuri wewnątrz bramek dworca Tokio: pudełka z całej Japonii."
+            }
+          ],
+          "at": "tokyo-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "tokyo-station"
             }
           ]
         },
@@ -2055,6 +2306,14 @@
                 "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
               }
             }
+          ],
+          "at": "kyoto-station",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "tokyo-station",
+              "to": "kyoto-station"
+            }
           ]
         },
         {
@@ -2073,7 +2332,15 @@
             "license": "CC BY 2.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shijo_Kawaramachi_2020-04-05.jpg"
           },
-          "note": "Z dworca Kioto do Shijō metrem Karasuma, ok. 15 min."
+          "note": "Z dworca Kioto do Shijō metrem Karasuma, ok. 15 min.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "kyoto-station",
+              "to": "@stay"
+            }
+          ]
         },
         {
           "id": "d10-05",
@@ -2084,7 +2351,12 @@
           "title": "Shijō / Kawaramachi",
           "priority": "want",
           "placeId": "shijo-kawaramachi",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d10-06",
@@ -2095,17 +2367,23 @@
           "title": "Ponto-chō wieczorem",
           "priority": "bonus",
           "placeId": "pontocho",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "walking"
+      }
     },
     {
       "id": "2026-11-18",
       "dayNumber": 11,
       "date": "2026-11-18",
       "weekday": "środa",
-      "title": "Kioto / Arashiyama",
-      "base": "Kioto / Arashiyama",
       "stay": {
         "city": "Kioto",
         "area": "Shijō",
@@ -2113,153 +2391,8 @@
         "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
         "hotelId": "mimaru-kyoto"
       },
-      "earliestDeparture": "07:30",
-      "pace": "medium",
-      "paceLabel": "Średnio",
-      "summary": "Arashiyama, zielona zachodnia część Kioto. Wychodzimy wcześnie, żeby wejść do bambusowego lasu, zanim zrobi się tłum. Potem świątynia zen Tenryū-ji z ogrodem, który wygląda tak samo od 700 lat, spacer nad rzeką i most Togetsukyō na tle gór. W drugiej połowie listopada Arashiyama to jedno z najlepszych miejsc w Kioto na jesienne kolory.",
-      "coverPhoto": null,
-      "priorities": {
-        "must": "Bamboo Grove + Tenryū-ji",
-        "want": "Rzeka + Togetsukyō",
-        "bonus": "Kawa / dłuższy spacer po Arashiyamie"
-      },
-      "booking": {
-        "level": "none",
-        "text": "Arashiyama / Tenryū-ji: bez wcześniejszej rezerwacji; bilety do świątyni na miejscu."
-      },
-      "source": {
-        "orderText": "07:30 wyjście → ~08:15–09:00 Bamboo Grove → 09:00–10:30 Tenryū-ji → 10:30–11:30 spacer nad rzeką → 11:30–12:00 Togetsukyō → 12:00–13:30 lunch → 13:30+ kawa / spacer / powrót"
-      },
-      "todos": [
-        {
-          "id": "todo-bags-tokyo",
-          "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do NOHGA HOTEL UENO TOKYO",
-          "where": "Recepcja MIMARU SUITES Kyoto Shijo",
-          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015, tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
-        }
-      ],
-      "items": [
-        {
-          "id": "d11-01",
-          "start": "07:30",
-          "end": null,
-          "approx": false,
-          "type": "departure",
-          "title": "Wyjście z hotelu",
-          "priority": null,
-          "placeId": null,
-          "note": null
-        },
-        {
-          "id": "d11-02",
-          "start": "08:15",
-          "end": "09:00",
-          "approx": true,
-          "type": "attraction",
-          "title": "Bamboo Grove",
-          "priority": "must",
-          "placeId": "bamboo-grove",
-          "note": null
-        },
-        {
-          "id": "d11-03",
-          "start": "09:00",
-          "end": "10:30",
-          "approx": false,
-          "type": "attraction",
-          "title": "Tenryū-ji",
-          "priority": "must",
-          "placeId": "tenryu-ji",
-          "note": null
-        },
-        {
-          "id": "d11-03a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Ogród Ōkōchi Sansō",
-          "priority": "bonus",
-          "placeId": "okochi-sanso",
-          "note": "Na końcu bambusowej ścieżki, ok. 30–45 min. Po Tenryū-ji wyjść północną bramą w bambusy i dojść ścieżką pod górę, bez osobnego dojazdu.",
-          "tips": [
-            {
-              "kind": "highlight",
-              "text": "Najcenniejszy BONUS dnia, szczególnie jesienią."
-            },
-            {
-              "kind": "tip",
-              "text": "W cenie biletu (ok. 1000 ¥) zwykle matcha ze słodyczą w herbaciarni na koniec spaceru."
-            }
-          ]
-        },
-        {
-          "id": "d11-04",
-          "start": "10:30",
-          "end": "11:30",
-          "approx": false,
-          "type": "walk",
-          "title": "Spacer nad rzeką",
-          "priority": "want",
-          "placeId": "arashiyama-river",
-          "note": null
-        },
-        {
-          "id": "d11-05",
-          "start": "11:30",
-          "end": "12:00",
-          "approx": false,
-          "type": "attraction",
-          "title": "Most Togetsukyō",
-          "priority": "want",
-          "placeId": "togetsukyo",
-          "note": null
-        },
-        {
-          "id": "d11-06",
-          "start": "12:00",
-          "end": "13:30",
-          "approx": false,
-          "type": "meal",
-          "title": "Lunch",
-          "priority": null,
-          "placeId": null,
-          "note": null
-        },
-        {
-          "id": "d11-07",
-          "start": "13:30",
-          "end": null,
-          "approx": false,
-          "type": "walk",
-          "title": "Kawa / dłuższy spacer po Arashiyamie",
-          "priority": "bonus",
-          "placeId": null,
-          "photo": {
-            "src": "img/arashiyama-hills.jpg",
-            "alt": "Zalesione wzgórza Arashiyamy",
-            "credit": "wkc.1 / Wikimedia Commons",
-            "license": "CC BY 2.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ōkōchi_Sansō_garden,_Kyoto;_September_2014_(04).jpg"
-          },
-          "note": null
-        }
-      ]
-    },
-    {
-      "id": "2026-11-19",
-      "dayNumber": 12,
-      "date": "2026-11-19",
-      "weekday": "czwartek",
       "title": "Nara",
       "base": "Nara",
-      "stay": {
-        "city": "Kioto",
-        "area": "Shijō",
-        "hotelName": "MIMARU SUITES Kyoto Shijo",
-        "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
-        "hotelId": "mimaru-kyoto"
-      },
       "earliestDeparture": "07:45",
       "pace": "medium",
       "paceLabel": "Średnio",
@@ -2279,7 +2412,7 @@
       },
       "items": [
         {
-          "id": "d12-01",
+          "id": "d11-01",
           "start": "07:45",
           "end": null,
           "approx": false,
@@ -2287,10 +2420,18 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "shijo-station",
+              "min": 6
+            }
+          ]
         },
         {
-          "id": "d12-02",
+          "id": "d11-02",
           "start": "09:00",
           "end": null,
           "approx": true,
@@ -2298,10 +2439,20 @@
           "title": "Przyjazd do Nary",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Do Kintetsu-Nara, nie do JR Nara: stąd do parku i Tōdai-ji jest dużo bliżej. Np. 07:51 z Shijō, w Kintetsu-Nara 08:49 (wg rozkładu).",
+          "at": "kintetsu-nara",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "shijo-station",
+              "to": "kintetsu-nara",
+              "min": 58,
+              "text": "Metro Karasuma do Takedy, tam Kintetsu Kyoto Line (急行) do Yamato-Saidaiji i przesiadka na Kintetsu Nara Line do Kintetsu-Nara. Albo z Kyōto Station Kintetsu Kyoto Line; Google pokaże najbliższy kurs."
+            }
+          ]
         },
         {
-          "id": "d12-03",
+          "id": "d11-03",
           "start": "09:00",
           "end": "10:30",
           "approx": false,
@@ -2315,10 +2466,16 @@
               "kind": "important",
               "text": "Jelenie są dzikie: gryzą, napierają i potrafią uderzyć głową, zwłaszcza na widok krakersów, a jesienią samce bywają nerwowe. Zosia na rękach lub w nosidle; krakersy trzyma i szybko rozdaje dorosły."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking",
+              "text": "Park i pierwsze jelenie zaczynają się kilka minut od stacji, przy Kōfuku-ji."
+            }
           ]
         },
         {
-          "id": "d12-04",
+          "id": "d11-04",
           "start": "10:45",
           "end": "12:15",
           "approx": false,
@@ -2326,10 +2483,16 @@
           "title": "Tōdai-ji",
           "priority": "must",
           "placeId": "todai-ji",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 12
+            }
+          ]
         },
         {
-          "id": "d12-05",
+          "id": "d11-05",
           "start": null,
           "end": null,
           "approx": false,
@@ -2340,7 +2503,7 @@
           "note": null
         },
         {
-          "id": "d12-06",
+          "id": "d11-06",
           "start": "13:30",
           "end": "15:00",
           "approx": false,
@@ -2348,10 +2511,16 @@
           "title": "Dalszy spacer po parku",
           "priority": "want",
           "placeId": "nara-park",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 12
+            }
+          ]
         },
         {
-          "id": "d12-07",
+          "id": "d11-07",
           "start": null,
           "end": null,
           "approx": false,
@@ -2359,24 +2528,364 @@
           "title": "Kasuga Taisha",
           "priority": "bonus",
           "placeId": "kasuga",
-          "note": "W ramach popołudniowego spaceru."
+          "note": "W ramach popołudniowego spaceru.",
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 16
+            }
+          ]
         },
         {
-          "id": "d12-08",
+          "id": "d11-08",
           "start": "15:30",
-          "end": "16:00",
-          "approx": false,
+          "end": "16:45",
+          "approx": true,
           "type": "transport",
           "title": "Powrót do Kioto",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Ekspres z Kintetsu-Nara w kierunku Kokusaikaikan (国際会館) jedzie bez przesiadki do Shijō, ok. 55 min (np. 15:41 → 16:36 wg rozkładu).",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "kintetsu-nara",
+              "min": {
+                "kasuga": 33,
+                "nara-park": 24,
+                "todai-ji": 24
+              }
+            },
+            {
+              "mode": "transit",
+              "from": "kintetsu-nara",
+              "to": "shijo-station",
+              "min": 55,
+              "text": "Inne kursy: przesiadka w Yamato-Saidaiji albo w Takedzie."
+            },
+            {
+              "mode": "walking",
+              "from": "shijo-station",
+              "to": "@stay",
+              "min": 6
+            }
+          ]
         }
       ],
       "dayTrip": {
         "from": "Kioto",
         "to": "Nara"
-      }
+      },
+      "todos": [
+        {
+          "id": "todo-bags-tokyo",
+          "text": "Zarezerwować w recepcji przewóz bagażu z powrotem do NOHGA HOTEL UENO TOKYO",
+          "where": "Recepcja MIMARU SUITES Kyoto Shijo",
+          "note": "Walizki mają czekać w hotelu w Tokio 24.11. Adres do wysyłki: NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito-ku, Tokio 110-0015, tel. +81-3-5816-0211. Rezerwacja na 24–26.11, 2 pokoje."
+        }
+      ]
+    },
+    {
+      "id": "2026-11-19",
+      "dayNumber": 12,
+      "date": "2026-11-19",
+      "weekday": "czwartek",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
+        "hotelId": "mimaru-kyoto"
+      },
+      "title": "Kioto / Arashiyama",
+      "base": "Kioto / Arashiyama",
+      "earliestDeparture": "07:30",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Arashiyama, zielona zachodnia część Kioto. Wychodzimy wcześnie, żeby wejść do bambusowego lasu, zanim zrobi się tłum. Potem świątynia zen Tenryū-ji z ogrodem, który wygląda tak samo od 700 lat, spacer nad rzeką i most Togetsukyō na tle gór. O 14:02 kupionym Sagano Romantic Train jedziemy wąwozem rzeki Hozu do Kameoki i wracamy JR z Umahori. W drugiej połowie listopada Arashiyama to jedno z najlepszych miejsc w Kioto na jesienne kolory.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Bamboo Grove + Tenryū-ji + Sagano Romantic Train 14:02",
+        "want": "Rzeka + Togetsukyō",
+        "bonus": "Ōkōchi Sansō / kawa przy Togetsukyō"
+      },
+      "booking": {
+        "level": "booked",
+        "text": "Sagano Romantic Train kupiony: Sagano 11, 14:02 z Torokko Saga, wagon 3, miejsca 13A–13D. Bamboo Grove i Tenryū-ji bez rezerwacji."
+      },
+      "source": {
+        "orderText": "07:30 wyjście → ~08:30–09:00 Bamboo Grove → 09:00–10:30 Tenryū-ji → (Ōkōchi Sansō) → 11:15–11:45 rzeka → Togetsukyō → 12:00–13:00 lunch → 13:30–13:40 Torokko Saga → 14:02–14:25 Sagano 11 → JR Umahori → Kyōto → hotel"
+      },
+      "items": [
+        {
+          "id": "d12-01",
+          "start": "07:30",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z hotelu",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "at": "@start",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "shijo-station",
+              "min": 6
+            }
+          ]
+        },
+        {
+          "id": "d12-01a",
+          "start": "07:40",
+          "end": "08:15",
+          "approx": true,
+          "type": "transport",
+          "title": "Metro + JR: Shijō → Kyōto → Saga-Arashiyama",
+          "priority": null,
+          "placeId": null,
+          "note": "Metro Karasuma 2 przystanki do Kyōto, przesiadka na JR Sagano Line (San'in) do Saga-Arashiyama, ok. 18–19 min jazdy (np. 07:55 → 08:13 wg rozkładu). Wysiadamy na JR Saga-Arashiyama, nie na Arashiyama (Hankyū ani Randen).",
+          "at": "saga-arashiyama",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "shijo-station",
+              "to": "saga-arashiyama"
+            }
+          ]
+        },
+        {
+          "id": "d12-02",
+          "start": "08:30",
+          "end": "09:00",
+          "approx": true,
+          "type": "attraction",
+          "title": "Bamboo Grove",
+          "priority": "must",
+          "placeId": "bamboo-grove",
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 18
+            }
+          ]
+        },
+        {
+          "id": "d12-03",
+          "start": "09:00",
+          "end": "10:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tenryū-ji",
+          "priority": "must",
+          "placeId": "tenryu-ji",
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 8
+            }
+          ]
+        },
+        {
+          "id": "d12-03a",
+          "start": "10:30",
+          "end": "11:15",
+          "approx": true,
+          "type": "attraction",
+          "title": "Ogród Ōkōchi Sansō",
+          "priority": "bonus",
+          "placeId": "okochi-sanso",
+          "note": "Na końcu bambusowej ścieżki, ok. 30–45 min. Po Tenryū-ji wyjść północną bramą w bambusy i dojść ścieżką pod górę. Ogród leży na zboczu: z wózkiem wygodniej w nosidle.",
+          "tips": [
+            {
+              "kind": "highlight",
+              "text": "Najcenniejszy BONUS dnia, szczególnie jesienią."
+            },
+            {
+              "kind": "tip",
+              "text": "W cenie biletu (ok. 1000 ¥) zwykle matcha ze słodyczą w herbaciarni na koniec spaceru."
+            }
+          ],
+          "legs": [
+            {
+              "mode": "walking",
+              "min": 10
+            }
+          ]
+        },
+        {
+          "id": "d12-04",
+          "start": "11:15",
+          "end": "11:45",
+          "approx": true,
+          "type": "walk",
+          "title": "Spacer nad rzeką",
+          "priority": "want",
+          "placeId": "arashiyama-river",
+          "note": null,
+          "at": "arashiyama-river",
+          "legs": [
+            {
+              "mode": "walking",
+              "min": {
+                "okochi-sanso": 12,
+                "tenryu-ji": 7,
+                "bamboo-grove": 8
+              }
+            }
+          ]
+        },
+        {
+          "id": "d12-05",
+          "start": "11:45",
+          "end": "12:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Most Togetsukyō",
+          "priority": "want",
+          "placeId": "togetsukyo",
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking",
+              "min": {
+                "arashiyama-river": 7
+              }
+            }
+          ]
+        },
+        {
+          "id": "d12-06",
+          "start": "12:00",
+          "end": "13:00",
+          "approx": false,
+          "type": "meal",
+          "title": "Lunch przy Togetsukyō",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "at": null
+        },
+        {
+          "id": "d12-07",
+          "start": null,
+          "end": null,
+          "approx": false,
+          "type": "walk",
+          "title": "Kawa przy Togetsukyō",
+          "priority": "bonus",
+          "placeId": null,
+          "photo": {
+            "src": "img/arashiyama-hills.jpg",
+            "alt": "Zalesione wzgórza Arashiyamy",
+            "credit": "wkc.1 / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Ōkōchi_Sansō_garden,_Kyoto;_September_2014_(04).jpg"
+          },
+          "note": "Tylko jeśli zostanie czas: o 13:15 wychodzimy na pociąg.",
+          "at": null
+        },
+        {
+          "id": "d12-08",
+          "start": "13:15",
+          "end": "13:35",
+          "approx": false,
+          "type": "walk",
+          "title": "Dojście na Torokko Saga",
+          "priority": null,
+          "placeId": null,
+          "note": "Na stacji 13:30–13:40. Torokko Saga stoi tuż obok JR Saga-Arashiyama.",
+          "at": "torokko-saga",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "torokko-saga",
+              "min": {
+                "togetsukyo": 15,
+                "arashiyama-river": 15
+              }
+            }
+          ]
+        },
+        {
+          "id": "d12-09",
+          "start": "14:02",
+          "end": "14:25",
+          "approx": false,
+          "type": "transport",
+          "title": "Sagano Romantic Train (Sagano 11): Torokko Saga → Torokko Kameoka",
+          "priority": "must",
+          "placeId": null,
+          "note": "Kupione. Wagon 3, miejsca 13A, 13B, 13C, 13D. Bilet ważny tylko na ten pociąg.",
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Kod QR biletu pojawi się dopiero w dniu przejazdu (rezerwacja I-261105-1480751)."
+            }
+          ],
+          "photo": {
+            "src": "img/sagano-train.jpg",
+            "alt": "Pociąg Sagano Romantic Train",
+            "credit": "Agastya Alfath / Wikimedia Commons",
+            "license": "CC BY 2.0",
+            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Sagano_Scenic_Railway_December_2016.jpg"
+          },
+          "at": "torokko-kameoka",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "torokko-saga",
+              "to": "torokko-kameoka",
+              "min": 23,
+              "text": "Sagano Scenic Railway (トロッコ列車), wąwozem rzeki Hozu; przejazd turystyczny, bez trasy w Google Maps."
+            }
+          ]
+        },
+        {
+          "id": "d12-10",
+          "start": "14:25",
+          "end": "15:45",
+          "approx": true,
+          "type": "transport",
+          "title": "Powrót: Torokko Kameoka → JR Umahori → Kyōto → hotel",
+          "priority": null,
+          "placeId": null,
+          "note": "JR Umahori, nie JR Kameoka. Najbliższe pociągi do Kyōto wg rozkładu: 14:39 (w Kyōto 15:04) albo 15:09 (15:34); sprawdzić w dniu przejazdu.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "torokko-kameoka",
+              "to": "umahori",
+              "min": 10
+            },
+            {
+              "mode": "transit",
+              "from": "umahori",
+              "to": "kyoto-station",
+              "min": 25,
+              "text": "JR Sagano Line (嵯峨野線) w kierunku Kyōto, bez przesiadki, peron 1."
+            },
+            {
+              "mode": "transit",
+              "from": "kyoto-station",
+              "to": "shijo-station",
+              "min": 3,
+              "text": "Metro Karasuma w kierunku Kokusaikaikan, 2 przystanki (Gojō, Shijō)."
+            },
+            {
+              "mode": "walking",
+              "from": "shijo-station",
+              "to": "@stay",
+              "min": 6
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "2026-11-20",
@@ -2419,7 +2928,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d13-02",
@@ -2430,7 +2940,13 @@
           "title": "Fushimi Inari",
           "priority": "must",
           "placeId": "fushimi-inari",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Metro Karasuma do Kyōto, JR Nara Line do Inari (ok. 7 min); brama chramu tuż przy stacji."
+            }
+          ]
         },
         {
           "id": "d13-03",
@@ -2441,7 +2957,15 @@
           "title": "Przejazd do Higashiyamy",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "kiyomizu",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "kiyomizu",
+              "text": "Keihan z Fushimi-Inari do Kiyomizu-Gojō (ok. 7 min), dalej pod górę do świątyni."
+            }
+          ]
         },
         {
           "id": "d13-04",
@@ -2452,7 +2976,8 @@
           "title": "Kiyomizu-dera",
           "priority": "must",
           "placeId": "kiyomizu",
-          "note": null
+          "note": null,
+          "at": "kiyomizu"
         },
         {
           "id": "d13-05",
@@ -2463,7 +2988,12 @@
           "title": "Sannenzaka / Ninenzaka + lunch",
           "priority": "want",
           "placeId": "sannenzaka",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d13-06",
@@ -2474,7 +3004,12 @@
           "title": "Yasaka-jinja",
           "priority": "want",
           "placeId": "yasaka",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d13-07",
@@ -2491,6 +3026,11 @@
               "kind": "important",
               "text": "Nie fotografować maiko i geiko bez zgody ani ich nie zatrzymywać; przestrzegać tabliczek z zakazem wejścia do prywatnych uliczek przy Hanami-kōji."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
+            }
           ]
         },
         {
@@ -2502,7 +3042,12 @@
           "title": "Shirakawa",
           "priority": "bonus",
           "placeId": "shirakawa",
-          "note": "W ramach spaceru po Gion."
+          "note": "W ramach spaceru po Gion.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d13-09",
@@ -2523,7 +3068,12 @@
               }
             }
           ],
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d13-10",
@@ -2549,7 +3099,10 @@
           "kind": "important",
           "text": "Fushimi Inari i uliczki Higashiyamy to schody i strome bruki: na cały dzień nosidło zamiast wózka."
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit"
+      }
     },
     {
       "id": "2026-11-21",
@@ -2592,7 +3145,14 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "karasuma-hankyu"
+            }
+          ]
         },
         {
           "id": "d14-02",
@@ -2606,12 +3166,16 @@
           "note": "Hankyū z Karasuma do Ōsaka-umeda, metro Midōsuji do Hommachi, linia Chūō do Ōsakakō i ok. 5–10 min pieszo. Sam przejazd ok. 1–1,5 h, reszta to zapas na przesiadki.",
           "links": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Karasuma+Station+Kyoto&destination=Osaka+Aquarium+Kaiyukan&travelmode=transit",
-              "label": "Połączenia Kioto → Kaiyukan"
-            },
-            {
               "url": "https://www.kaiyukan.com/info/access/",
               "label": "Dojazd (Kaiyukan)"
+            }
+          ],
+          "at": "osakako-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "karasuma-hankyu",
+              "to": "osakako-station"
             }
           ]
         },
@@ -2645,6 +3209,14 @@
               "url": "https://www.kaiyukan.com/info/faq/",
               "label": "FAQ / zasady wejścia"
             }
+          ],
+          "at": "kaiyukan",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "osakako-station",
+              "to": "kaiyukan"
+            }
           ]
         },
         {
@@ -2656,7 +3228,12 @@
           "title": "Diabelski młyn Tempozan",
           "priority": "bonus",
           "placeId": "tempozan-wheel",
-          "note": "Obok Kaiyukan, ok. 15 min jazdy. Tylko przy dobrej pogodzie i krótkiej kolejce."
+          "note": "Obok Kaiyukan, ok. 15 min jazdy. Tylko przy dobrej pogodzie i krótkiej kolejce.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d14-04",
@@ -2678,7 +3255,14 @@
           "title": "Przejazd: Kaiyukan → Dōtonbori",
           "priority": null,
           "placeId": null,
-          "note": "Linia Chūō z Ōsakakō do Hommachi, Midōsuji do Namby; ok. 25 min."
+          "note": "Linia Chūō z Ōsakakō do Hommachi, Midōsuji do Namby; ok. 25 min.",
+          "at": "namba-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "namba-station"
+            }
+          ]
         },
         {
           "id": "d14-05",
@@ -2695,6 +3279,11 @@
               "kind": "tip",
               "text": "Przy kushikatsu sos ze wspólnego pojemnika tylko raz: nadgryzionego nie maczamy ponownie."
             }
+          ],
+          "legs": [
+            {
+              "mode": "walking"
+            }
           ]
         },
         {
@@ -2706,7 +3295,12 @@
           "title": "Shinsaibashi / dodatkowe jedzenie",
           "priority": "bonus",
           "placeId": "shinsaibashi",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d14-07",
@@ -2717,7 +3311,15 @@
           "title": "Powrót do Kioto",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "@stay",
+              "text": "Metro Midōsuji do Umedy, Hankyū Kyoto Line z Ōsaka-umeda do Karasuma, ok. 1 h 10 min."
+            }
+          ]
         }
       ],
       "dayTrip": {
@@ -2794,7 +3396,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d15-02",
@@ -2805,7 +3408,12 @@
           "title": "Kinkaku-ji",
           "priority": "must",
           "placeId": "kinkaku-ji",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
         },
         {
           "id": "d15-02a",
@@ -2816,7 +3424,12 @@
           "title": "Ryōan-ji",
           "priority": "bonus",
           "placeId": "ryoan-ji",
-          "note": "Tylko jeśli zostanie czas: ok. 20 min pieszo lub kilka minut autobusem od Kinkaku-ji, zwiedzanie 30–45 min. Przesuwa Nijō o ok. godzinę."
+          "note": "Tylko jeśli zostanie czas: ok. 20 min pieszo lub kilka minut autobusem od Kinkaku-ji, zwiedzanie 30–45 min. Przesuwa Nijō o ok. godzinę.",
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d15-03",
@@ -2827,7 +3440,12 @@
           "title": "Zamek Nijō: Ninomaru + ogrody",
           "priority": "must",
           "placeId": "nijo-jo",
-          "note": "Honmaru-goten to BONUS: tylko jeśli będą wolne wejścia, czas i ochota (ok. 40 min); nie wydłużamy dla niego dnia."
+          "note": "Honmaru-goten to BONUS: tylko jeśli będą wolne wejścia, czas i ochota (ok. 40 min); nie wydłużamy dla niego dnia.",
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
         },
         {
           "id": "d15-04",
@@ -2844,6 +3462,11 @@
               "kind": "tip",
               "text": "Na Nishiki nie je się w marszu (proszą o to tabliczki): jemy przy stoisku, gdzie kupiliśmy."
             }
+          ],
+          "legs": [
+            {
+              "mode": "transit"
+            }
           ]
         },
         {
@@ -2855,9 +3478,17 @@
           "title": "Wolne / Kawaramachi / Ponto-chō / spokojna kolacja",
           "priority": "bonus",
           "placeId": "pontocho",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "walking"
+      }
     },
     {
       "id": "2026-11-23",
@@ -2900,7 +3531,8 @@
           "title": "Wyjście najwcześniej o 09:00",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d16-02",
@@ -2958,7 +3590,12 @@
           "title": "Pałac Cesarski / zakupy / ulubione miejsce ponownie",
           "priority": "bonus",
           "placeId": "imperial-palace-kyoto",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
         },
         {
           "id": "d16-05a",
@@ -2969,7 +3606,12 @@
           "title": "Sanjūsangen-dō",
           "priority": "bonus",
           "placeId": "sanjusangen-do",
-          "note": "Tylko jeśli będzie ochota na dodatkowe zwiedzanie, ok. 45 min."
+          "note": "Tylko jeśli będzie ochota na dodatkowe zwiedzanie, ok. 45 min.",
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
         },
         {
           "id": "d16-06",
@@ -3035,7 +3677,8 @@
           "title": "Spokojny poranek i wymeldowanie z MIMARU SUITES Kyoto Shijo",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d17-02",
@@ -3046,7 +3689,14 @@
           "title": "Wyjście z hotelu na dworzec Kioto",
           "priority": null,
           "placeId": null,
-          "note": "Shijō → Kioto metrem Karasuma, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu."
+          "note": "Shijō → Kioto metrem Karasuma, ok. 10 min. Na dworcu kupić ekiben na lunch w pociągu.",
+          "at": "kyoto-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "kyoto-station"
+            }
+          ]
         },
         {
           "id": "d17-03",
@@ -3074,6 +3724,14 @@
                 "url": "https://smart-ex.jp/en/entraining/oversized-baggage/"
               }
             }
+          ],
+          "at": "tokyo-station",
+          "legs": [
+            {
+              "mode": "ride",
+              "from": "kyoto-station",
+              "to": "tokyo-station"
+            }
           ]
         },
         {
@@ -3098,6 +3756,14 @@
               "kind": "tip",
               "text": "Check-in od 15:00. Wcześniej mailem potwierdzić, że hotel przyjmie walizki wysłane z Kioto przed naszym przyjazdem."
             }
+          ],
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "tokyo-station",
+              "to": "@stay"
+            }
           ]
         },
         {
@@ -3109,7 +3775,14 @@
           "title": "Shinjuku",
           "priority": "want",
           "placeId": "shinjuku",
-          "note": "Z Ueno do Shinjuku linią Yamanote, ok. 25–30 min."
+          "note": "Z Ueno do Shinjuku linią Yamanote, ok. 25–30 min.",
+          "at": "shinjuku",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "shinjuku"
+            }
+          ]
         },
         {
           "id": "d17-06",
@@ -3120,7 +3793,12 @@
           "title": "Punkt widokowy: Metropolitan Government Building",
           "priority": "want",
           "placeId": "tocho",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         },
         {
           "id": "d17-07",
@@ -3142,9 +3820,20 @@
           "title": "Nocny spacer po Shinjuku",
           "priority": "bonus",
           "placeId": "shinjuku",
-          "note": null
+          "note": null,
+          "at": "shinjuku",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "shinjuku"
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit",
+        "text": "JR Yamanote z Shinjuku do Ueno, ok. 25–30 min."
+      }
     },
     {
       "id": "2026-11-25",
@@ -3187,7 +3876,8 @@
           "title": "Wyjście z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d18-02",
@@ -3207,6 +3897,11 @@
             {
               "kind": "tip",
               "text": "Zajrzeć do sklepów z używanymi grami i do sklepów z setkami automatów gachapon; przygotować monety 100 ¥."
+            }
+          ],
+          "legs": [
+            {
+              "mode": "transit"
             }
           ]
         },
@@ -3244,12 +3939,16 @@
           "note": "JR Sōbu (żółta, kierunek Chiba) 1 przystanek do Asakusabashi, krótkie przejście na linię Toei Asakusa i 4 przystanki do Oshiage 〈SKYTREE〉; ok. 20–25 min z przesiadką.",
           "links": [
             {
-              "url": "https://www.google.com/maps/dir/?api=1&origin=Akihabara+Station+Tokyo&destination=Tokyo+Skytree&travelmode=transit",
-              "label": "Połączenia Akihabara → Skytree"
-            },
-            {
               "url": "https://www.tobu.co.jp/en/access/skytree/",
               "label": "Dojazd (Tobu)"
+            }
+          ],
+          "at": "oshiage-station",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "akihabara",
+              "to": "oshiage-station"
             }
           ]
         },
@@ -3272,6 +3971,14 @@
               "url": "https://www.tokyo-skytree.jp/floor/",
               "label": "Mapa poziomów"
             }
+          ],
+          "at": "skytree",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "oshiage-station",
+              "to": "skytree"
+            }
           ]
         },
         {
@@ -3283,7 +3990,8 @@
           "title": "Tokyo Skytree — Tembo Deck + Tembo Galleria",
           "priority": "must",
           "placeId": "skytree",
-          "note": "Kupione oba poziomy, okno wejścia 15:30–15:59. Kolejność pięter i czas na górze dowolne."
+          "note": "Kupione oba poziomy, okno wejścia 15:30–15:59. Kolejność pięter i czas na górze dowolne.",
+          "at": "skytree"
         },
         {
           "id": "d18-06a",
@@ -3318,6 +4026,13 @@
               "kind": "tip",
               "text": "Pokémon Center Skytree Town: Solamachi, East Yard 4F, codziennie ok. 10:00–21:00."
             }
+          ],
+          "at": "solamachi",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "solamachi"
+            }
           ]
         },
         {
@@ -3340,9 +4055,17 @@
           "title": "Asakusa / Sumida wieczorem",
           "priority": "bonus",
           "placeId": "sumida",
-          "note": null
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
         }
-      ]
+      ],
+      "back": {
+        "mode": "transit"
+      }
     },
     {
       "id": "2026-11-26",
@@ -3396,7 +4119,8 @@
           "title": "Checkout + zostawienie bagaży",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d19-03",
@@ -3465,7 +4189,8 @@
           "title": "Odbiór bagaży z hotelu",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": null,
+          "at": "@start"
         },
         {
           "id": "d19-08",
@@ -3481,6 +4206,20 @@
             {
               "kind": "important",
               "text": "Przy zakupach tax-free doliczyć na lotnisku dodatkowy bufor (ok. 30–60 min) na terminal i ewentualną kontrolę celną przed nadaniem bagażu."
+            }
+          ],
+          "at": "narita-t1",
+          "legs": [
+            {
+              "mode": "walking",
+              "from": "@start",
+              "to": "keisei-ueno"
+            },
+            {
+              "mode": "transit",
+              "from": "keisei-ueno",
+              "to": "narita-t1",
+              "text": "Keisei Skyliner albo Access Express z Keisei Ueno do stacji Narita Airport (成田空港) pod Terminalem 1."
             }
           ]
         },
@@ -3566,7 +4305,8 @@
             "license": "CC BY-SA 4.0",
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Terminal_A_of_Warsaw_Chopin_Airport_July_2024.jpg"
           },
-          "note": "Lądowanie na Lotnisku Chopina (WAW)."
+          "note": "Lądowanie na Lotnisku Chopina (WAW).",
+          "at": "waw-airport"
         }
       ]
     }
@@ -3608,7 +4348,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Ueno Park, Tokyo, Japan",
+      "mapsQuery": "Ueno Park, Taito City, Tokyo",
       "coords": {
         "lat": 35.7148,
         "lng": 139.7737
@@ -3650,7 +4390,7 @@
         "official": "https://www.tokyo-zoo.net/en/ueno/visitor-info/tickets/index.html",
         "maps": null
       },
-      "mapsQuery": "Ueno Zoo, Tokyo, Japan",
+      "mapsQuery": "Ueno Zoo, Tokyo",
       "coords": {
         "lat": 35.7164,
         "lng": 139.7713
@@ -3692,7 +4432,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Yanaka i Nezu, Tokyo, Japan",
+      "mapsQuery": "Yanaka Ginza, Taito City, Tokyo",
       "coords": {
         "lat": 35.7262,
         "lng": 139.7666
@@ -3734,7 +4474,7 @@
         "official": "https://www.tsukiji.or.jp/english/",
         "maps": null
       },
-      "mapsQuery": "Tsukiji Outer Market, Tokyo, Japan",
+      "mapsQuery": "Tsukiji Outer Market, Tokyo",
       "coords": {
         "lat": 35.6655,
         "lng": 139.7707
@@ -3776,7 +4516,7 @@
         "official": "https://www.tokyo-park.or.jp/teien/en/hama-rikyu/",
         "maps": null
       },
-      "mapsQuery": "Hama Rikyu, Tokyo, Japan",
+      "mapsQuery": "Hama-rikyu Gardens, Tokyo",
       "coords": {
         "lat": 35.6597,
         "lng": 139.7634
@@ -3818,7 +4558,7 @@
         "official": "https://www.senso-ji.jp/",
         "maps": null
       },
-      "mapsQuery": "Sensō-ji, Tokyo, Japan",
+      "mapsQuery": "Senso-ji Temple, Asakusa, Tokyo",
       "coords": {
         "lat": 35.7148,
         "lng": 139.7967
@@ -3860,7 +4600,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Rzeka Sumida, Tokyo, Japan",
+      "mapsQuery": "Azumabashi Bridge, Asakusa, Tokyo",
       "coords": {
         "lat": 35.7106,
         "lng": 139.7982
@@ -3900,9 +4640,9 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/dir/?api=1&origin=Momiji+Kairo,+Fujikawaguchiko&destination=Nagasaki+Park,+Fujikawaguchiko&travelmode=walking"
+        "maps": null
       },
-      "mapsQuery": "Jezioro Kawaguchiko, Fujikawaguchiko, Japan",
+      "mapsQuery": "Lake Kawaguchi, Fujikawaguchiko",
       "coords": {
         "lat": 35.5167,
         "lng": 138.7516
@@ -3942,9 +4682,9 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/search/?api=1&query=Oishi%20Park%2C%20Fujikawaguchiko"
+        "maps": null
       },
-      "mapsQuery": "Oishi Park, Fujikawaguchiko, Japan",
+      "mapsQuery": "Oishi Park, Fujikawaguchiko",
       "coords": {
         "lat": 35.5262,
         "lng": 138.7438
@@ -3986,7 +4726,7 @@
         "official": "https://www.meijijingu.or.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Meiji Jingu, Tokyo, Japan",
+      "mapsQuery": "Meiji Jingu, Shibuya City, Tokyo",
       "coords": {
         "lat": 35.6764,
         "lng": 139.6993
@@ -4028,7 +4768,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Harajuku, Tokyo, Japan",
+      "mapsQuery": "Takeshita Street, Harajuku, Tokyo",
       "coords": {
         "lat": 35.6716,
         "lng": 139.7031
@@ -4070,7 +4810,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Omotesando, Tokyo, Japan",
+      "mapsQuery": "Omotesando Hills, Tokyo",
       "coords": {
         "lat": 35.6652,
         "lng": 139.7123
@@ -4112,7 +4852,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Shibuya, Tokyo, Japan",
+      "mapsQuery": "Shibuya Scramble Crossing, Tokyo",
       "coords": {
         "lat": 35.6595,
         "lng": 139.7005
@@ -4154,7 +4894,7 @@
         "official": "https://toshogu.jp/",
         "maps": null
       },
-      "mapsQuery": "Nikkō Tōshō-gū, Nikkō, Japan",
+      "mapsQuery": "Nikko Toshogu Shrine",
       "coords": {
         "lat": 36.7581,
         "lng": 139.5988
@@ -4196,7 +4936,7 @@
         "official": "https://www.rinnoji.or.jp/",
         "maps": null
       },
-      "mapsQuery": "Rinnō-ji, Nikkō, Japan",
+      "mapsQuery": "Rinnoji Temple, Nikko",
       "coords": {
         "lat": 36.7543,
         "lng": 139.6007
@@ -4238,7 +4978,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Most Shinkyo, Nikkō, Japan",
+      "mapsQuery": "Shinkyo Bridge, Nikko",
       "coords": {
         "lat": 36.7536,
         "lng": 139.605
@@ -4280,7 +5020,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Ginza, Tokyo, Japan",
+      "mapsQuery": "Ginza Wako, Chuo City, Tokyo",
       "coords": {
         "lat": 35.6717,
         "lng": 139.765
@@ -4322,7 +5062,7 @@
         "official": "https://teamlabplanets.dmm.com/en",
         "maps": null
       },
-      "mapsQuery": "teamLab Planets, Tokyo, Japan",
+      "mapsQuery": "teamLab Planets TOKYO, Toyosu",
       "coords": {
         "lat": 35.6491,
         "lng": 139.7898
@@ -4364,7 +5104,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Toyosu / Odaiba, Tokyo, Japan",
+      "mapsQuery": "Odaiba Marine Park, Minato City, Tokyo",
       "coords": {
         "lat": 35.6267,
         "lng": 139.7757
@@ -4406,7 +5146,7 @@
         "official": "https://www.hasedera.jp/en/guide/",
         "maps": null
       },
-      "mapsQuery": "Hase-dera, Kamakura, Japan",
+      "mapsQuery": "Hasedera Temple, Kamakura",
       "coords": {
         "lat": 35.3125,
         "lng": 139.533
@@ -4448,7 +5188,7 @@
         "official": "https://www.kotoku-in.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Wielki Budda (Kōtoku-in), Kamakura, Japan",
+      "mapsQuery": "Kotoku-in, Great Buddha of Kamakura",
       "coords": {
         "lat": 35.3167,
         "lng": 139.5358
@@ -4490,7 +5230,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Komachi-dōri, Kamakura, Japan",
+      "mapsQuery": "Komachi-dori Street, Kamakura",
       "coords": {
         "lat": 35.3215,
         "lng": 139.5525
@@ -4532,7 +5272,7 @@
         "official": "https://www.hachimangu.or.jp/",
         "maps": null
       },
-      "mapsQuery": "Tsurugaoka Hachiman-gū, Kamakura, Japan",
+      "mapsQuery": "Tsurugaoka Hachimangu, Kamakura",
       "coords": {
         "lat": 35.3259,
         "lng": 139.5564
@@ -4574,7 +5314,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Enoshima, Fujisawa, Japan",
+      "mapsQuery": "Enoshima Shrine, Fujisawa",
       "coords": {
         "lat": 35.2995,
         "lng": 139.4802
@@ -4616,10 +5356,10 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Shijō / Kawaramachi, Kyoto, Japan",
+      "mapsQuery": null,
       "coords": {
-        "lat": 35.0037,
-        "lng": 135.769
+        "lat": 35.00375,
+        "lng": 135.76885
       }
     },
     "pontocho": {
@@ -4658,7 +5398,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Ponto-chō, Kyoto, Japan",
+      "mapsQuery": "Pontocho Alley, Kyoto",
       "coords": {
         "lat": 35.0048,
         "lng": 135.7709
@@ -4700,7 +5440,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Arashiyama Bamboo Grove, Kyoto, Japan",
+      "mapsQuery": "Arashiyama Bamboo Grove, Kyoto",
       "coords": {
         "lat": 35.017,
         "lng": 135.6713
@@ -4742,7 +5482,7 @@
         "official": "https://www.tenryuji.com/en/visit/index.html",
         "maps": null
       },
-      "mapsQuery": "Tenryū-ji, Kyoto, Japan",
+      "mapsQuery": "Tenryu-ji Temple, Kyoto",
       "coords": {
         "lat": 35.0157,
         "lng": 135.6738
@@ -4784,10 +5524,10 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Rzeka w Arashiyamie (Katsura), Kyoto, Japan",
+      "mapsQuery": null,
       "coords": {
-        "lat": 35.012,
-        "lng": 135.678
+        "lat": 35.0136,
+        "lng": 135.6745
       }
     },
     "togetsukyo": {
@@ -4826,7 +5566,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Most Togetsukyō, Kyoto, Japan",
+      "mapsQuery": "Togetsukyo Bridge, Kyoto",
       "coords": {
         "lat": 35.0129,
         "lng": 135.6776
@@ -4868,7 +5608,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Nara Park, Nara, Japan",
+      "mapsQuery": "Nara Park, Nara",
       "coords": {
         "lat": 34.6851,
         "lng": 135.843
@@ -4910,7 +5650,7 @@
         "official": "https://www.todaiji.or.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Tōdai-ji, Nara, Japan",
+      "mapsQuery": "Todai-ji Temple, Nara",
       "coords": {
         "lat": 34.689,
         "lng": 135.8398
@@ -4952,7 +5692,7 @@
         "official": "https://www.kasugataisha.or.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Kasuga Taisha, Nara, Japan",
+      "mapsQuery": "Kasuga Taisha, Nara",
       "coords": {
         "lat": 34.6812,
         "lng": 135.8484
@@ -4994,7 +5734,7 @@
         "official": "https://inari.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Fushimi Inari Taisha, Kyoto, Japan",
+      "mapsQuery": "Fushimi Inari Taisha, Kyoto",
       "coords": {
         "lat": 34.9671,
         "lng": 135.7727
@@ -5036,7 +5776,7 @@
         "official": "https://www.kiyomizudera.or.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Kiyomizu-dera, Kyoto, Japan",
+      "mapsQuery": "Kiyomizu-dera, Kyoto",
       "coords": {
         "lat": 34.9949,
         "lng": 135.785
@@ -5078,7 +5818,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Sannenzaka i Ninenzaka, Kyoto, Japan",
+      "mapsQuery": "Sannenzaka, Kyoto",
       "coords": {
         "lat": 34.9965,
         "lng": 135.781
@@ -5120,7 +5860,7 @@
         "official": "https://www.yasaka-jinja.or.jp/en/",
         "maps": null
       },
-      "mapsQuery": "Yasaka-jinja, Kyoto, Japan",
+      "mapsQuery": "Yasaka Shrine, Kyoto",
       "coords": {
         "lat": 35.0036,
         "lng": 135.7785
@@ -5162,7 +5902,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Gion, Kyoto, Japan",
+      "mapsQuery": "Hanamikoji Street, Gion, Kyoto",
       "coords": {
         "lat": 35.0037,
         "lng": 135.7752
@@ -5204,7 +5944,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Shirakawa, Kyoto, Japan",
+      "mapsQuery": "Tatsumi Bridge, Gion, Kyoto",
       "coords": {
         "lat": 35.0058,
         "lng": 135.7745
@@ -5246,7 +5986,7 @@
         "official": "https://www.kodaiji.com/saiji.html",
         "maps": null
       },
-      "mapsQuery": "Kōdai-ji (iluminacja), Kyoto, Japan",
+      "mapsQuery": "Kodai-ji Temple, Kyoto",
       "coords": {
         "lat": 35.0008,
         "lng": 135.781
@@ -5288,7 +6028,7 @@
         "official": "https://www.kaiyukan.com/info/ticket/kaiyukan/",
         "maps": null
       },
-      "mapsQuery": "Kaiyukan, Osaka, Japan",
+      "mapsQuery": "Osaka Aquarium Kaiyukan",
       "coords": {
         "lat": 34.6545,
         "lng": 135.429
@@ -5330,7 +6070,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Dōtonbori, Osaka, Japan",
+      "mapsQuery": "Ebisubashi Bridge, Dotonbori, Osaka",
       "coords": {
         "lat": 34.6687,
         "lng": 135.5013
@@ -5372,7 +6112,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Shinsaibashi, Osaka, Japan",
+      "mapsQuery": "Shinsaibashi-suji Shopping Street, Osaka",
       "coords": {
         "lat": 34.6745,
         "lng": 135.5012
@@ -5414,7 +6154,7 @@
         "official": "https://www.shokoku-ji.jp/en/kinkakuji/",
         "maps": null
       },
-      "mapsQuery": "Kinkaku-ji, Kyoto, Japan",
+      "mapsQuery": "Kinkaku-ji, Kyoto",
       "coords": {
         "lat": 35.0394,
         "lng": 135.7292
@@ -5456,7 +6196,7 @@
         "official": "https://nijo-jocastle.city.kyoto.lg.jp/admission/ticket/?lang=en",
         "maps": null
       },
-      "mapsQuery": "Zamek Nijō, Kyoto, Japan",
+      "mapsQuery": "Nijo Castle, Kyoto",
       "coords": {
         "lat": 35.0142,
         "lng": 135.7481
@@ -5498,7 +6238,7 @@
         "official": "https://www.kyoto-nishiki.or.jp/",
         "maps": null
       },
-      "mapsQuery": "Nishiki Market, Kyoto, Japan",
+      "mapsQuery": "Nishiki Market, Kyoto",
       "coords": {
         "lat": 35.005,
         "lng": 135.7649
@@ -5540,7 +6280,7 @@
         "official": "https://sankan.kunaicho.go.jp/english/guide/kyoto.html",
         "maps": null
       },
-      "mapsQuery": "Pałac Cesarski w Kioto, Kyoto, Japan",
+      "mapsQuery": "Kyoto Imperial Palace",
       "coords": {
         "lat": 35.0254,
         "lng": 135.7621
@@ -5582,7 +6322,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Shinjuku, Tokyo, Japan",
+      "mapsQuery": "Shinjuku Station, Tokyo",
       "coords": {
         "lat": 35.6938,
         "lng": 139.7034
@@ -5624,7 +6364,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Tokyo Metropolitan Government Building, Tokyo, Japan",
+      "mapsQuery": "Tokyo Metropolitan Government Building, Shinjuku",
       "coords": {
         "lat": 35.6896,
         "lng": 139.6917
@@ -5666,7 +6406,7 @@
         "official": null,
         "maps": null
       },
-      "mapsQuery": "Akihabara, Tokyo, Japan",
+      "mapsQuery": "Akihabara Station, Tokyo",
       "coords": {
         "lat": 35.6984,
         "lng": 139.7731
@@ -5706,9 +6446,9 @@
       ],
       "links": {
         "official": "https://official-ticket.tokyo-skytree.jp/en/",
-        "maps": "https://www.google.com/maps/search/?api=1&query=Tokyo+Skytree"
+        "maps": null
       },
-      "mapsQuery": "Tokyo Skytree, Tokyo, Japan",
+      "mapsQuery": "Tokyo Skytree",
       "coords": {
         "lat": 35.7101,
         "lng": 139.8107
@@ -5748,7 +6488,7 @@
       ],
       "links": {
         "official": "https://www.uenotoshogu.com/",
-        "maps": "https://www.google.com/maps/search/?api=1&query=Ueno%20Toshogu%20Shrine%2C%20Tokyo"
+        "maps": null
       },
       "mapsQuery": "Ueno Toshogu Shrine, Tokyo",
       "coords": {
@@ -5790,7 +6530,7 @@
       ],
       "links": {
         "official": "https://tsukijihongwanji.jp/",
-        "maps": "https://www.google.com/maps/search/?api=1&query=Tsukiji%20Hongwanji%2C%20Tokyo"
+        "maps": null
       },
       "mapsQuery": "Tsukiji Hongwanji, Tokyo",
       "coords": {
@@ -5832,7 +6572,7 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/search/?api=1&query=Momiji%20Kairo%2C%20Fujikawaguchiko"
+        "maps": null
       },
       "mapsQuery": "Momiji Kairo, Fujikawaguchiko",
       "coords": {
@@ -5874,9 +6614,9 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/search/?api=1&query=Ginza%20Mitsukoshi%20depachika%2C%20Tokyo"
+        "maps": null
       },
-      "mapsQuery": "Ginza Mitsukoshi depachika, Tokyo",
+      "mapsQuery": "Ginza Mitsukoshi, Tokyo",
       "coords": {
         "lat": 35.671,
         "lng": 139.7656
@@ -5916,7 +6656,7 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/search/?api=1&query=Okochi%20Sanso%20Garden%2C%20Kyoto"
+        "maps": null
       },
       "mapsQuery": "Okochi Sanso Garden, Kyoto",
       "coords": {
@@ -5958,9 +6698,9 @@
       ],
       "links": {
         "official": null,
-        "maps": "https://www.google.com/maps/search/?api=1&query=Tempozan%20Ferris%20Wheel%2C%20Osaka"
+        "maps": null
       },
-      "mapsQuery": "Tempozan Ferris Wheel, Osaka",
+      "mapsQuery": "Tempozan Giant Ferris Wheel, Osaka",
       "coords": {
         "lat": 34.6564,
         "lng": 135.431
@@ -6000,9 +6740,9 @@
       ],
       "links": {
         "official": "https://www.ryoanji.jp/",
-        "maps": "https://www.google.com/maps/search/?api=1&query=Ryoan-ji%2C%20Kyoto"
+        "maps": null
       },
-      "mapsQuery": "Ryoan-ji, Kyoto",
+      "mapsQuery": "Ryoan-ji Temple, Kyoto",
       "coords": {
         "lat": 35.0345,
         "lng": 135.7182
@@ -6042,7 +6782,7 @@
       ],
       "links": {
         "official": "https://www.sanjusangendo.jp/",
-        "maps": "https://www.google.com/maps/search/?api=1&query=Sanjusangendo%2C%20Kyoto"
+        "maps": null
       },
       "mapsQuery": "Sanjusangendo, Kyoto",
       "coords": {
@@ -6062,7 +6802,11 @@
       "dayIds": [
         "2026-11-08"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "start-parking",
+        "waw-airport"
+      ]
     },
     {
       "name": "Kołyska LOT dla Zosi",
@@ -6087,7 +6831,12 @@
       "dayIds": [
         "2026-11-12"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "tekko-bus",
+        "kawaguchiko-station",
+        "nihonbashi-exit"
+      ]
     },
     {
       "name": "Shinkansen Ueno ⇄ Utsunomiya — Nikkō 14.11",
@@ -6099,7 +6848,11 @@
       "dayIds": [
         "2026-11-14"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "ueno-station",
+        "utsunomiya-station"
+      ]
     },
     {
       "name": "teamLab Planets",
@@ -6113,7 +6866,10 @@
       "dayIds": [
         "2026-11-15"
       ],
-      "status": "todo"
+      "status": "todo",
+      "points": [
+        "teamlab"
+      ]
     },
     {
       "name": "Shinkansen Tokio → Kioto (17.11)",
@@ -6125,7 +6881,11 @@
       "dayIds": [
         "2026-11-17"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "tokyo-station",
+        "kyoto-station"
+      ]
     },
     {
       "name": "Shinkansen Kioto → Tokio (24.11)",
@@ -6137,7 +6897,59 @@
       "dayIds": [
         "2026-11-24"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "kyoto-station",
+        "tokyo-station"
+      ]
+    },
+    {
+      "name": "Sagano Romantic Train (Sagano Scenic Railway) — 19.11",
+      "checked": "Sagano 11, Torokko Saga → Torokko Kameoka",
+      "conclusion": "Kupione i potwierdzone. Wagon 3, miejsca 13A, 13B, 13C, 13D. Bilet ważny wyłącznie na ten pociąg. Kod QR będzie dostępny dopiero w dniu przejazdu.",
+      "when": "Czw. 19.11.2026, odjazd 14:02 z Torokko Saga (na stacji 13:30–13:40)",
+      "url": "https://www.sagano-kanko.co.jp/en/",
+      "facts": [
+        {
+          "label": "Pociąg",
+          "text": "Sagano 11"
+        },
+        {
+          "label": "Odjazd",
+          "text": "Torokko Saga, 14:02"
+        },
+        {
+          "label": "Przyjazd",
+          "text": "Torokko Kameoka, 14:25"
+        },
+        {
+          "label": "Wagon",
+          "text": "3"
+        },
+        {
+          "label": "Miejsca",
+          "text": "13A, 13B, 13C, 13D"
+        },
+        {
+          "label": "Nr rezerwacji",
+          "text": "I-261105-1480751"
+        },
+        {
+          "label": "Kod QR",
+          "text": "Dopiero w dniu przejazdu"
+        }
+      ],
+      "points": [
+        "torokko-saga",
+        "torokko-kameoka",
+        "umahori"
+      ],
+      "placeIds": [],
+      "dayIds": [
+        "2026-11-19"
+      ],
+      "status": "booked",
+      "statusLabel": "kupione / potwierdzone"
     },
     {
       "name": "Osaka Aquarium Kaiyukan",
@@ -6151,7 +6963,10 @@
       "dayIds": [
         "2026-11-21"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "kaiyukan"
+      ]
     },
     {
       "name": "Tokyo Skytree — Tembo Deck + Tembo Galleria",
@@ -6165,7 +6980,10 @@
       "dayIds": [
         "2026-11-25"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "skytree"
+      ]
     },
     {
       "name": "NOHGA HOTEL UENO TOKYO (24–26.11)",
@@ -6178,7 +6996,10 @@
         "2026-11-24",
         "2026-11-25"
       ],
-      "status": "booked"
+      "status": "booked",
+      "points": [
+        "tokyo-final"
+      ]
     },
     {
       "kind": "experience",
@@ -6868,6 +7689,229 @@
           ]
         }
       ]
+    }
+  },
+  "points": {
+    "mitsui-ueno": {
+      "name": "Mitsui Garden Hotel Ueno",
+      "q": "Mitsui Garden Hotel Ueno, 3-19-7 Higashi-Ueno, Taito City, Tokyo",
+      "lat": 35.7118,
+      "lng": 139.7782
+    },
+    "mimaru-kyoto": {
+      "name": "MIMARU SUITES Kyoto Shijo",
+      "q": "MIMARU SUITES Kyoto Shijo, 717-1 Inabado-cho, Shimogyo-ku, Kyoto",
+      "lat": 34.99983,
+      "lng": 135.76009
+    },
+    "tokyo-final": {
+      "name": "NOHGA HOTEL UENO TOKYO",
+      "q": "NOHGA HOTEL UENO TOKYO, 2-21-10 Higashi-Ueno, Taito City, Tokyo",
+      "lat": 35.71014,
+      "lng": 139.77818
+    },
+    "start-parking": {
+      "name": "START Parking Okęcie",
+      "q": "START Parking Okęcie, Wykusz 56, Warszawa",
+      "lat": 52.152,
+      "lng": 20.964
+    },
+    "waw-airport": {
+      "name": "Lotnisko Chopina (WAW)",
+      "q": "Lotnisko Chopina w Warszawie, Żwirki i Wigury 1",
+      "lat": 52.1672,
+      "lng": 20.9679
+    },
+    "narita-t1": {
+      "name": "Narita, Terminal 1",
+      "q": "Narita International Airport Terminal 1",
+      "lat": 35.7654,
+      "lng": 140.386
+    },
+    "keisei-ueno": {
+      "name": "Keisei Ueno",
+      "q": "Keisei Ueno Station, Tokyo",
+      "lat": 35.7114,
+      "lng": 139.7742
+    },
+    "ueno-station": {
+      "name": "JR Ueno",
+      "q": "JR Ueno Station, Tokyo",
+      "lat": 35.7138,
+      "lng": 139.777
+    },
+    "shimbashi-station": {
+      "name": "Shimbashi",
+      "q": "Shimbashi Station, Tokyo",
+      "lat": 35.6664,
+      "lng": 139.7583
+    },
+    "asakusa-station": {
+      "name": "Asakusa (linia Ginza)",
+      "q": "Asakusa Station, Tokyo Metro Ginza Line",
+      "lat": 35.711,
+      "lng": 139.7976
+    },
+    "tokyo-station": {
+      "name": "Tokyo Station",
+      "q": "Tokyo Station",
+      "lat": 35.6812,
+      "lng": 139.7671
+    },
+    "tekko-bus": {
+      "name": "Przystanek Tekko Building (Yaesu)",
+      "q": "Tekko Building, 1-8-2 Marunouchi, Chiyoda City, Tokyo",
+      "lat": 35.68317,
+      "lng": 139.77028
+    },
+    "nihonbashi-exit": {
+      "name": "Tokyo Station, Nihonbashi Exit",
+      "q": "Tokyo Station Nihonbashi Exit",
+      "lat": 35.6829,
+      "lng": 139.7702
+    },
+    "tsukiji-station": {
+      "name": "Tsukiji (linia Hibiya)",
+      "q": "Tsukiji Station, Tokyo Metro Hibiya Line",
+      "lat": 35.66808,
+      "lng": 139.77259
+    },
+    "meiji-jingumae-station": {
+      "name": "Meiji-jingumae 〈Harajuku〉",
+      "q": "Meiji-jingumae Station, Tokyo",
+      "lat": 35.6687,
+      "lng": 139.70449
+    },
+    "utsunomiya-station": {
+      "name": "JR Utsunomiya",
+      "q": "Utsunomiya Station, Tochigi",
+      "lat": 36.55963,
+      "lng": 139.89831
+    },
+    "jr-nikko": {
+      "name": "JR Nikkō",
+      "q": "JR Nikko Station",
+      "lat": 36.748,
+      "lng": 139.6197
+    },
+    "kamakura-station": {
+      "name": "JR Kamakura",
+      "q": "Kamakura Station, Kanagawa",
+      "lat": 35.319,
+      "lng": 139.55068
+    },
+    "hase-station": {
+      "name": "Hase (Enoden)",
+      "q": "Hase Station, Enoden, Kamakura",
+      "lat": 35.31128,
+      "lng": 139.53587
+    },
+    "oshiage-station": {
+      "name": "Oshiage 〈SKYTREE〉",
+      "q": "Oshiage Station, Sumida City, Tokyo",
+      "lat": 35.71024,
+      "lng": 139.81347
+    },
+    "solamachi": {
+      "name": "Tokyo Solamachi",
+      "q": "Tokyo Solamachi",
+      "lat": 35.71024,
+      "lng": 139.81195
+    },
+    "kawaguchiko-station": {
+      "name": "Kawaguchiko Station",
+      "q": "Kawaguchiko Station, Fujikawaguchiko",
+      "lat": 35.49834,
+      "lng": 138.76878
+    },
+    "nagasaki-park": {
+      "name": "Nagasaki Park (Kawaguchiko)",
+      "q": "Nagasaki Park, Fujikawaguchiko",
+      "lat": 35.5218,
+      "lng": 138.75748
+    },
+    "shijo-station": {
+      "name": "Shijō (metro Karasuma)",
+      "q": "Shijo Station, Karasuma Line, Kyoto",
+      "lat": 35.00247,
+      "lng": 135.75965
+    },
+    "karasuma-hankyu": {
+      "name": "Karasuma (Hankyū)",
+      "q": "Karasuma Station, Hankyu, Kyoto",
+      "lat": 35.00369,
+      "lng": 135.76045
+    },
+    "kyoto-station": {
+      "name": "Kyōto Station",
+      "q": "Kyoto Station",
+      "lat": 34.98535,
+      "lng": 135.75877
+    },
+    "saga-arashiyama": {
+      "name": "JR Saga-Arashiyama",
+      "q": "Saga-Arashiyama Station, JR, Kyoto",
+      "lat": 35.01878,
+      "lng": 135.68141
+    },
+    "torokko-saga": {
+      "name": "Torokko Saga",
+      "q": "Torokko Saga Station, Kyoto",
+      "lat": 35.01856,
+      "lng": 135.68076
+    },
+    "torokko-kameoka": {
+      "name": "Torokko Kameoka",
+      "q": "Torokko Kameoka Station, Kameoka",
+      "lat": 35.01314,
+      "lng": 135.60677
+    },
+    "umahori": {
+      "name": "JR Umahori",
+      "q": "Umahori Station, JR Sagano Line, Kameoka",
+      "lat": 35.0106,
+      "lng": 135.60233
+    },
+    "arashiyama-riverside": {
+      "name": "Brzeg rzeki pod parkiem Kameyama",
+      "lat": 35.0138,
+      "lng": 135.6739
+    },
+    "kintetsu-nara": {
+      "name": "Kintetsu-Nara",
+      "q": "Kintetsu-Nara Station, Nara",
+      "lat": 34.6842,
+      "lng": 135.8282
+    },
+    "inari-station": {
+      "name": "JR Inari",
+      "q": "Inari Station, JR Nara Line, Kyoto",
+      "lat": 34.96674,
+      "lng": 135.77084
+    },
+    "kiyomizu-gojo": {
+      "name": "Kiyomizu-Gojō (Keihan)",
+      "q": "Kiyomizu-Gojo Station, Keihan, Kyoto",
+      "lat": 34.99636,
+      "lng": 135.76867
+    },
+    "osakako-station": {
+      "name": "Ōsakakō (linia Chūō)",
+      "q": "Osakako Station, Osaka Metro",
+      "lat": 34.6549,
+      "lng": 135.438
+    },
+    "namba-station": {
+      "name": "Namba (Midōsuji)",
+      "q": "Namba Station, Osaka Metro Midosuji Line",
+      "lat": 34.6663,
+      "lng": 135.5011
+    },
+    "shinjuku-station": {
+      "name": "Shinjuku Station",
+      "q": "Shinjuku Station, Tokyo",
+      "lat": 35.6896,
+      "lng": 139.7006
     }
   }
 }
