@@ -592,7 +592,7 @@
           ${o.kind ? `<span class="meal-proposal-kind">${esc(o.kind)}</span>` : ""}
           ${o.address ? `<span>${esc(o.address)}</span>` : ""}
           ${o.text ? `<p>${esc(o.text)}</p>` : ""}
-          ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">Strona restauracji</a>` : ""}
+          ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">Google Maps</a>` : ""}
         </div>`).join("")}</div>
       </div>`;
     }
