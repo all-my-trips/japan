@@ -1275,7 +1275,7 @@
       "earliestDeparture": "10:00",
       "pace": "medium",
       "paceLabel": "Średnio (z przerwą w hotelu)",
-      "summary": "Rano Meiji Jingu i spacer po Harajuku, potem lunch w okolicy Omotesando. Po południu wracamy do hotelu na odpoczynek dla Zosi i załatwienie bagażu oraz biletów na Nikkō. Wieczorem Shibuya: Hachikō, słynne skrzyżowanie i rozświetlone ulice.",
+      "summary": "Rano Meiji Jingu i spacer po Harajuku, potem lunch w okolicy Omotesando. Po południu wracamy do hotelu na odpoczynek dla Zosi, a Krzysiu załatwia bagaż i bilety na Nikkō. Wieczorem Shibuya: Hachikō, słynne skrzyżowanie i rozświetlone ulice.",
       "coverPhoto": null,
       "priorities": {
         "must": "Meiji Jingu + Shibuya po zmroku",
@@ -1376,7 +1376,7 @@
               "kind": "Yakiniku / japoński grill",
               "address": "1-10-37 Jingumae, CASCADE HARAJUKU B1, blisko Takeshita Street",
               "text": "Dzieci i wózki są akceptowane; lokal ma prywatne pokoje, których dostępność trzeba potwierdzić. Lunchowe zestawy z ryżem, zupą i sałatką.",
-              "url": "https://kintan.restaurant/shop/harajuku-yakiniku/"
+              "url": "https://www.google.com/maps/search/?api=1&query=Harajuku%20Yakiniku%20KINTAN%2C%201-10-37%20Jingumae%2C%20CASCADE%20HARAJUKU%20B1%2C%20blisko%20Takeshita%20Street"
             },
             {
               "id": "B",
@@ -1384,7 +1384,7 @@
               "kind": "Shabu-shabu / oddzielne kociołki",
               "address": "4-9-4 Jingumae, 2F, niedaleko Omotesando",
               "text": "Akceptują dzieci i wózki. Większość miejsc przy ladzie, są też pokoje prywatne za dopłatą. Gorące kociołki przy każdym miejscu.",
-              "url": "https://www.yamawarau-flavorworks.com/en/shabu-shabu-omotesandou"
+              "url": "https://www.google.com/maps/search/?api=1&query=Shabushabu%20Yamawarau%20Omotesando%2C%204-9-4%20Jingumae%2C%202F%2C%20niedaleko%20Omotesando"
             }
           ]
         },
@@ -1431,7 +1431,7 @@
           "title": "Odpoczynek w hotelu, bagaż i bilety",
           "priority": null,
           "placeId": null,
-          "note": "Czas na drzemkę Zosi. W recepcji ustalamy przewóz walizek do MIMARU SUITES Kyoto Shijo i odbieramy papierowe bilety JR East na jutrzejsze Nikkō.",
+          "note": "Czas na drzemkę Zosi. Krzysiu ustala w recepcji przewóz walizek do MIMARU SUITES Kyoto Shijo i odbiera papierowe bilety JR East na jutrzejsze Nikkō.",
           "at": "@stay"
         },
         {
