@@ -1272,114 +1272,65 @@
         "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
         "hotelId": "mitsui-ueno"
       },
-      "earliestDeparture": "08:15",
-      "pace": "medium-long",
-      "paceLabel": "Średnio / długi",
-      "summary": "Rano targ Tsukiji, gdzie śniadaniem jest świeże sushi i owoce morza prosto ze straganów. Potem cisza leśnego chramu Meiji Jingu i kolorowe Harajuku z modą uliczną. Popołudnie to Shibuya: najsłynniejsze skrzyżowanie świata, pomnik Hachikō i spacer po dzielnicy. Bez biletów i sztywnych godzin, więc tempo dyktuje Zosia.",
+      "earliestDeparture": "10:00",
+      "pace": "medium",
+      "paceLabel": "Średnio (z przerwą w hotelu)",
+      "summary": "Bez targu Tsukiji. Start o 10:00: Meiji Jingu i Harajuku, następnie osobny lunch z dwiema propozycjami A/B (bez zaznaczania). W połowie dnia wracamy do hotelu na przerwę dla Zosi, a dorośli załatwiają istniejące TODO dotyczące walizek do Kioto i biletów JR East na Nikkō. Wieczorem Shibuya po zmroku — Hachikō, skrzyżowanie i neony.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Tsukiji + Meiji Jingu + Shibuya",
+        "must": "Meiji Jingu + Shibuya po zmroku",
         "want": "Harajuku",
-        "bonus": "Omotesando, Tsukiji Hongwanji"
+        "bonus": "Omotesando"
       },
       "booking": {
         "level": "none",
-        "text": "Bez rezerwacji: Tsukiji, Meiji Jingu, Harajuku i Shibuya."
+        "text": "Atrakcje bez rezerwacji. Dwie restauracje lunchowe to wyłącznie propozycje A/B, bez dokonywania wyboru na stronie."
       },
       "source": {
-        "orderText": "08:15–08:30 wyjście → 09:00–10:00 Tsukiji → 10:00–11:00 przejazd → 11:00–12:15 Meiji Jingu → 12:15–14:00 Harajuku i lunch → 14:00–14:45 Omotesando (BONUS) → 15:00–17:30 Shibuya, Hachikō, skrzyżowanie i spacer → po 17:30 kolacja albo powrót do hotelu (godziny orientacyjne)"
+        "orderText": "10:00 wyjście → 10:45–12:00 Meiji Jingu (MUST) → 12:00–12:30 Harajuku (WANT) → 12:30–13:30 lunch A/B (nie do zaznaczania) → 13:30–14:00 Omotesando (BONUS) → 14:00–14:45 hotel → 14:45–16:30 przerwa dla Zosi + istniejące TODO → 16:30–17:15 przejazd → 17:15–19:15 Shibuya (MUST) → 19:15–19:45 kolacja → 19:45–20:30 hotel"
       },
       "items": [
         {
           "id": "d06-01",
-          "start": "08:15",
-          "end": "08:30",
-          "approx": true,
+          "start": "10:00",
+          "end": null,
+          "approx": false,
           "type": "departure",
-          "title": "Wyjście z hotelu",
+          "title": "Wyjście z hotelu w Ueno",
           "priority": null,
           "placeId": null,
           "note": null,
           "at": "@start"
         },
         {
-          "id": "d06-01a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "transport",
-          "title": "Metro: Ueno → Tsukiji",
-          "priority": null,
-          "placeId": null,
-          "note": "Linia Hibiya bez przesiadek do stacji Tsukiji, ok. 15 min jazdy.",
-          "at": "tsukiji-station",
-          "legs": [
-            {
-              "mode": "transit",
-              "to": "tsukiji-station"
-            }
-          ]
-        },
-        {
-          "id": "d06-01b",
-          "start": "09:00",
-          "end": "10:00",
-          "approx": true,
-          "type": "attraction",
-          "title": "Tsukiji Outer Market",
-          "priority": "must",
-          "placeId": "tsukiji",
-          "note": "Przeniesione ze środy 11.11: to dzień zamknięcia rynku hurtowego wg kalendarza Tsukiji, a część sklepów działa według niego.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
-          "id": "d06-01c",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Tsukiji Hongwanji",
-          "priority": "bonus",
-          "placeId": "tsukiji-hongwanji",
-          "note": "Kilka minut pieszo od targu, ok. 15 min; tylko jeśli nie opóźni wyjazdu do Meiji Jingu.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
           "id": "d06-01d",
           "start": "10:00",
-          "end": "11:00",
+          "end": "10:45",
           "approx": true,
           "type": "transport",
-          "title": "Metro: Tsukiji → Meiji-jingumae",
+          "title": "Ueno → Meiji Jingu / Harajuku",
           "priority": null,
           "placeId": null,
-          "note": "Linia Hibiya do stacji Hibiya, przesiadka na linię Chiyoda do Meiji-jingumae 〈Harajuku〉; ok. 20 min jazdy plus przesiadka. Do bramy Meiji Jingu kilka minut pieszo.",
-          "at": "meiji-jingumae-station",
+          "note": "JR Yamanote do Harajuku, następnie spacer do chramu; z wózkiem zapas na windy.",
+          "at": "meiji-jingu",
           "legs": [
             {
               "mode": "transit",
-              "to": "meiji-jingumae-station"
+              "from": "@start",
+              "to": "meiji-jingu"
             }
           ]
         },
         {
           "id": "d06-02",
-          "start": "11:00",
-          "end": "12:15",
+          "start": "10:45",
+          "end": "12:00",
           "approx": true,
           "type": "attraction",
           "title": "Meiji Jingu",
           "priority": "must",
           "placeId": "meiji-jingu",
-          "note": null,
+          "note": "Spacer leśną aleją, spokojne tempo z Zosią.",
           "legs": [
             {
               "mode": "walking"
@@ -1388,42 +1339,65 @@
         },
         {
           "id": "d06-03",
-          "start": "12:15",
-          "end": "14:00",
+          "start": "12:00",
+          "end": "12:30",
           "approx": true,
           "type": "attraction",
-          "title": "Harajuku i lunch",
+          "title": "Harajuku / Takeshita Street",
           "priority": "want",
           "placeId": "harajuku",
-          "note": null,
+          "note": "Krótki spacer po dzielnicy; w tłumie można skrócić.",
           "tips": [
             {
               "kind": "tip",
-              "text": "Crepes z Takeshita-dōri (np. Marion Crêpes, Santa Monica Crêpes) je się przy budce, nie w marszu."
+              "text": "Crepes na Takeshita Street jako przekąska — lunch jest osobnym punktem."
             }
           ],
           "legs": [
             {
               "mode": "walking"
+            }
+          ]
+        },
+        {
+          "id": "d06-lunch",
+          "start": "12:30",
+          "end": "13:30",
+          "approx": true,
+          "type": "meal",
+          "title": "Lunch — propozycje A/B",
+          "priority": null,
+          "placeId": null,
+          "note": "Opcje wyłącznie informacyjne, bez możliwości zaznaczania. Sprawdzić dostępność miejsc z wózkiem, prywatnego pokoju i skład dań przy alergiach Zosi; gorący grill/bulion wymaga ostrożności.",
+          "options": [
+            {
+              "id": "A",
+              "name": "Harajuku Yakiniku KINTAN",
+              "kind": "Yakiniku / japoński grill",
+              "address": "1-10-37 Jingumae, CASCADE HARAJUKU B1, blisko Takeshita Street",
+              "text": "Dzieci i wózki są akceptowane; lokal ma prywatne pokoje, których dostępność trzeba potwierdzić. Lunchowe zestawy z ryżem, zupą i sałatką.",
+              "url": "https://kintan.restaurant/shop/harajuku-yakiniku/"
+            },
+            {
+              "id": "B",
+              "name": "Shabushabu Yamawarau Omotesando",
+              "kind": "Shabu-shabu / oddzielne kociołki",
+              "address": "4-9-4 Jingumae, 2F, niedaleko Omotesando",
+              "text": "Akceptują dzieci i wózki. Większość miejsc przy ladzie, są też pokoje prywatne za dopłatą. Gorące kociołki przy każdym miejscu.",
+              "url": "https://www.yamawarau-flavorworks.com/en/shabu-shabu-omotesandou"
             }
           ]
         },
         {
           "id": "d06-05",
-          "start": "14:00",
-          "end": "14:45",
+          "start": "13:30",
+          "end": "14:00",
           "approx": true,
           "type": "attraction",
-          "title": "Omotesando",
+          "title": "Omotesando — krótki spacer",
           "priority": "bonus",
           "placeId": "omotesando",
-          "note": "Przy opóźnieniu pomijamy.",
-          "tips": [
-            {
-              "kind": "tip",
-              "text": "Najciekawsza architektura jest na odcinku od Omotesando Hills do skrzyżowania z Aoyama-dōri i w bocznej Miyuki-dōri (Prada); wystarczy 30–45 min spaceru."
-            }
-          ],
+          "note": "Pierwsze do pominięcia, gdyby trzeba było wcześniej wrócić do hotelu.",
           "legs": [
             {
               "mode": "walking"
@@ -1431,38 +1405,102 @@
           ]
         },
         {
-          "id": "d06-06",
-          "start": "15:00",
-          "end": "17:30",
+          "id": "d06-back-day",
+          "start": "14:00",
+          "end": "14:45",
           "approx": true,
-          "type": "attraction",
-          "title": "Shibuya, Hachikō, skrzyżowanie i spacer",
-          "priority": "must",
-          "placeId": "shibuya",
-          "note": null,
+          "type": "transport",
+          "title": "Powrót do hotelu w Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": "Dojazd i dojście, z wózkiem uwzględnić windy.",
+          "at": "@stay",
           "legs": [
             {
               "mode": "transit",
-              "text": "Z Harajuku/Omotesando 1 przystanek do Shibuyi (JR Yamanote albo metro Ginza) albo ok. 20 min pieszo."
+              "to": "@stay"
+            }
+          ]
+        },
+        {
+          "id": "d06-pause",
+          "start": "14:45",
+          "end": "16:30",
+          "approx": true,
+          "type": "rest",
+          "title": "Przerwa dla Zosi / TODO",
+          "priority": null,
+          "placeId": null,
+          "note": "Zosia: odpoczynek / drzemka w hotelu. Dorośli: istniejące TODO z 10.11 i 14.11 — zorganizowanie przewozu walizek Mitsui Garden Ueno → MIMARU SUITES Kyoto Shijo oraz odbiór papierowych biletów JR East na sobotnie Nikkō. Bez dodatkowych checkboxów.",
+          "at": "@stay"
+        },
+        {
+          "id": "d06-shibuya-ride",
+          "start": "16:30",
+          "end": "17:15",
+          "approx": true,
+          "type": "transport",
+          "title": "Dojazd do Shibuyi",
+          "priority": null,
+          "placeId": null,
+          "note": "Metro Ginza z Ueno do Shibuyi, bez przesiadki.",
+          "at": "shibuya",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "@stay",
+              "to": "shibuya"
+            }
+          ]
+        },
+        {
+          "id": "d06-06",
+          "start": "17:15",
+          "end": "19:15",
+          "approx": true,
+          "type": "attraction",
+          "title": "Shibuya po zmroku — Hachikō, Crossing, neony",
+          "priority": "must",
+          "placeId": "shibuya",
+          "note": "Wieczorna atmosfera dzielnicy. Bez Shibuya Sky.",
+          "legs": [
+            {
+              "mode": "walking"
             }
           ]
         },
         {
           "id": "d06-08",
-          "start": "17:30",
-          "end": null,
+          "start": "19:15",
+          "end": "19:45",
           "approx": true,
           "type": "meal",
-          "title": "Kolacja w Shibuyi albo powrót do hotelu",
+          "title": "Kolacja w Shibuyi",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Można skrócić, jeśli Zosia będzie zmęczona."
+        },
+        {
+          "id": "d06-return",
+          "start": "19:45",
+          "end": "20:30",
+          "approx": true,
+          "type": "transport",
+          "title": "Powrót do hotelu w Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": "Metro Ginza i dojście do hotelu.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "from": "shibuya",
+              "to": "@stay"
+            }
+          ]
         }
       ],
-      "back": {
-        "mode": "transit",
-        "text": "Metro Ginza z Shibuyi do Ueno bez przesiadki, ok. 30 min."
-      }
+      "back": false
     },
     {
       "id": "2026-11-14",

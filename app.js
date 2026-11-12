@@ -581,6 +581,21 @@
         ${tipList(i.tips, true)}
         <div class="seg">${(i.options || []).map((o) => `<button type="button" data-variant="${esc(o.id)}" data-day="${esc(day.id)}" aria-pressed="${chosen === o.id}"><b>WARIANT ${esc(o.id)}</b>${esc(o.label)}</button>`).join("")}</div></div>`;
     }
+    // Informacyjne restauracje A/B bez zaznaczania i zapisywania wyboru.
+    if (i.type === "meal" && Array.isArray(i.options) && i.options.length) {
+      return `<div class="meal-proposals">
+        <div class="meal-proposals-head">${icon("meal")}<div><div class="meal-proposals-title">${esc(i.title)}</div>
+          ${i.note ? `<p class="meal-proposals-note">${esc(i.note)}</p>` : ""}</div></div>
+        <div class="meal-proposals-list">${i.options.map((o) => `<div class="meal-proposal">
+          <span class="meal-proposal-tag">PROPOZYCJA ${esc(o.id)}</span>
+          <strong>${esc(o.name)}</strong>
+          ${o.kind ? `<span class="meal-proposal-kind">${esc(o.kind)}</span>` : ""}
+          ${o.address ? `<span>${esc(o.address)}</span>` : ""}
+          ${o.text ? `<p>${esc(o.text)}</p>` : ""}
+          ${o.url ? `<a href="${esc(o.url)}" target="_blank" rel="noopener">Strona restauracji</a>` : ""}
+        </div>`).join("")}</div>
+      </div>`;
+    }
     if (place || i.priority) {
       const short = place && place.short ? `<span class="short">${esc(place.short)}</span>` : place ? `<span class="short empty">Opis miejsca pojawi się wkrótce.</span>` : "";
       const dur = duration(i);

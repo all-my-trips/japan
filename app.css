@@ -395,6 +395,19 @@ svg { width: 1.25em; height: 1.25em; fill: none; stroke: currentColor; stroke-wi
 .seg button b { font-size: .72rem; letter-spacing: .06em; color: var(--ai); }
 .seg button[aria-pressed="true"] { border-color: var(--ai); box-shadow: inset 0 0 0 1px var(--ai); }
 
+/* Nieinteraktywne propozycje restauracji pod jednym punktem lunchu. */
+.meal-proposals { background: var(--surface-2); border: 1px solid var(--line); border-radius: var(--r); padding: 12px 14px; display: grid; gap: 12px; }
+.meal-proposals-head { display: flex; align-items: flex-start; gap: 10px; }
+.meal-proposals-head svg { flex: 0 0 auto; margin-top: 3px; color: var(--ai); }
+.meal-proposals-title { color: var(--ink); font-weight: 700; }
+.meal-proposals-note { margin: 4px 0 0; color: var(--muted); font-size: .84rem; }
+.meal-proposals-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 235px), 1fr)); gap: 8px; }
+.meal-proposal { background: var(--surface); border: 1px solid var(--line); border-radius: 10px; padding: 11px; display: grid; align-content: start; gap: 4px; font-size: .85rem; }
+.meal-proposal-tag { color: var(--ai); font-size: .7rem; font-weight: 700; letter-spacing: .06em; }
+.meal-proposal-kind, .meal-proposal > span:not(.meal-proposal-tag) { color: var(--muted); }
+.meal-proposal p { margin: 3px 0; line-height: 1.45; }
+.meal-proposal a { width: fit-content; margin-top: 3px; color: var(--ai); font-weight: 600; }
+
 /* photo placeholder */
 .ph {
   --h: 210;
