@@ -1275,7 +1275,7 @@
       "earliestDeparture": "10:00",
       "pace": "medium",
       "paceLabel": "Średnio (z przerwą w hotelu)",
-      "summary": "Bez targu Tsukiji. Start o 10:00: Meiji Jingu i Harajuku, następnie osobny lunch z dwiema propozycjami A/B (bez zaznaczania). W połowie dnia wracamy do hotelu na przerwę dla Zosi, a dorośli załatwiają istniejące TODO dotyczące walizek do Kioto i biletów JR East na Nikkō. Wieczorem Shibuya po zmroku — Hachikō, skrzyżowanie i neony.",
+      "summary": "Rano Meiji Jingu i spacer po Harajuku, potem lunch w okolicy Omotesando. Po południu wracamy do hotelu na odpoczynek dla Zosi i załatwienie bagażu oraz biletów na Nikkō. Wieczorem Shibuya: Hachikō, słynne skrzyżowanie i rozświetlone ulice.",
       "coverPhoto": null,
       "priorities": {
         "must": "Meiji Jingu + Shibuya po zmroku",
@@ -1284,10 +1284,10 @@
       },
       "booking": {
         "level": "none",
-        "text": "Atrakcje bez rezerwacji. Dwie restauracje lunchowe to wyłącznie propozycje A/B, bez dokonywania wyboru na stronie."
+        "text": "Meiji Jingu i spacer po Shibuyi nie wymagają rezerwacji. W restauracji warto wcześniej zapytać o miejsce z wózkiem."
       },
       "source": {
-        "orderText": "10:00 wyjście → 10:45–12:00 Meiji Jingu (MUST) → 12:00–12:30 Harajuku (WANT) → 12:30–13:30 lunch A/B (nie do zaznaczania) → 13:30–14:00 Omotesando (BONUS) → 14:00–14:45 hotel → 14:45–16:30 przerwa dla Zosi + istniejące TODO → 16:30–17:15 przejazd → 17:15–19:15 Shibuya (MUST) → 19:15–19:45 kolacja → 19:45–20:30 hotel"
+        "orderText": "10:00 wyjście → 10:45–12:00 Meiji Jingu (MUST) → 12:00–12:30 Harajuku (WANT) → 12:30–13:30 lunch → 13:30–14:00 Omotesando (BONUS) → 14:00–14:45 hotel → 14:45–16:30 przerwa dla Zosi + bagaż i bilety → 16:30–17:15 przejazd → 17:15–19:15 Shibuya (MUST) → 19:15–19:45 kolacja → 19:45–20:30 hotel"
       },
       "items": [
         {
@@ -1350,7 +1350,7 @@
           "tips": [
             {
               "kind": "tip",
-              "text": "Crepes na Takeshita Street jako przekąska — lunch jest osobnym punktem."
+              "text": "Na Takeshita Street można zatrzymać się na crêpe, np. w Marion Crêpes."
             }
           ],
           "legs": [
@@ -1365,10 +1365,10 @@
           "end": "13:30",
           "approx": true,
           "type": "meal",
-          "title": "Lunch — propozycje A/B",
+          "title": "Lunch w Harajuku / Omotesando",
           "priority": null,
           "placeId": null,
-          "note": "Opcje wyłącznie informacyjne, bez możliwości zaznaczania. Sprawdzić dostępność miejsc z wózkiem, prywatnego pokoju i skład dań przy alergiach Zosi; gorący grill/bulion wymaga ostrożności.",
+          "note": "Dwa miejsca do wyboru. Przed zamówieniem sprawdzamy skład dań dla Zosi i pytamy o miejsce z wózkiem.",
           "options": [
             {
               "id": "A",
@@ -1428,10 +1428,10 @@
           "end": "16:30",
           "approx": true,
           "type": "rest",
-          "title": "Przerwa dla Zosi / TODO",
+          "title": "Odpoczynek w hotelu, bagaż i bilety",
           "priority": null,
           "placeId": null,
-          "note": "Zosia: odpoczynek / drzemka w hotelu. Dorośli: istniejące TODO z 10.11 i 14.11 — zorganizowanie przewozu walizek Mitsui Garden Ueno → MIMARU SUITES Kyoto Shijo oraz odbiór papierowych biletów JR East na sobotnie Nikkō. Bez dodatkowych checkboxów.",
+          "note": "Czas na drzemkę Zosi. W recepcji ustalamy przewóz walizek do MIMARU SUITES Kyoto Shijo i odbieramy papierowe bilety JR East na jutrzejsze Nikkō.",
           "at": "@stay"
         },
         {
@@ -1462,7 +1462,7 @@
           "title": "Shibuya po zmroku — Hachikō, Crossing, neony",
           "priority": "must",
           "placeId": "shibuya",
-          "note": "Wieczorna atmosfera dzielnicy. Bez Shibuya Sky.",
+          "note": "Spacer wokół skrzyżowania, spotkanie z Hachikō i wieczorne ulice Shibuyi.",
           "legs": [
             {
               "mode": "walking"
