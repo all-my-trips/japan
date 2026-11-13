@@ -1862,7 +1862,281 @@
       "dayNumber": 8,
       "date": "2026-11-15",
       "weekday": "niedziela",
-      "title": "Tokio / Ginza-Toyosu",
+      "title": "Tokio / Ueno i Harry Potter",
+      "base": "Tokio / Ueno i Nerima",
+      "stay": {
+        "city": "Tokio",
+        "area": "Ueno",
+        "hotelName": "Mitsui Garden Hotel Ueno",
+        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
+        "hotelId": "mitsui-ueno"
+      },
+      "earliestDeparture": "09:00",
+      "pace": "long",
+      "paceLabel": "Długi dzień, z przerwą w hotelu",
+      "summary": "Rano oglądamy japońską sztukę w Muzeum Narodowym i jemy lunch w Ueno. Potem wracamy do hotelu na drzemkę Zosi. O 13:30 msza w kościele Ueno, a wieczorem zwiedzamy studio Harry’ego Pottera.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Tokyo National Museum + msza 13:30 + Harry Potter",
+        "want": "",
+        "bonus": ""
+      },
+      "booking": {
+        "level": "required",
+        "text": "Harry Potter: kupić bilety na 15.11 o 17:00. Slot był dostępny przy sprawdzaniu 13.11; nie jest zarezerwowany. Muzeum: bilet na kolekcję stałą, online lub na miejscu."
+      },
+      "source": {
+        "orderText": "09:00 wyjście → 09:30–11:00 Tokyo National Museum (MUST) → 11:00–11:45 lunch w Ueno → 11:45–13:00 hotel i drzemka → 13:00–13:20 spacer do kościoła → 13:30–14:30 msza (MUST) → 14:40–15:50 przejazd do studia → 16:00–17:00 przekąska i toalety → 17:00–20:30 Harry Potter (MUST) → 20:30–21:30 powrót do hotelu"
+      },
+      "items": [
+        {
+          "id": "d08-01",
+          "start": "09:00",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z Mitsui Garden Hotel Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "at": "@start"
+        },
+        {
+          "id": "d08-museum-walk",
+          "start": "09:00",
+          "end": "09:30",
+          "approx": true,
+          "type": "transport",
+          "title": "Spacer do Muzeum Narodowego",
+          "priority": null,
+          "placeId": null,
+          "note": "Przez park Ueno, z zapasem na wejście i zakup biletów.",
+          "at": "tokyo-national-museum",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "tokyo-national-museum",
+              "from": "@start",
+              "min": 30
+            }
+          ]
+        },
+        {
+          "id": "d08-museum",
+          "start": "09:30",
+          "end": "11:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Tokyo National Museum — galeria japońska",
+          "priority": "must",
+          "placeId": "tokyo-national-museum",
+          "note": "Honkan: wybieramy kilka sal i zwiedzamy w spokojnym tempie.",
+          "legs": [],
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Joolz Aer 2 można zabrać do sal. Windy i pokój do karmienia są w Honkan.",
+              "link": {
+                "url": "https://www.tnm.jp/modules/r_free_page/index.php?id=2670&lang=en",
+                "label": "Udogodnienia dla rodzin"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d08-03",
+          "start": "11:00",
+          "end": "11:45",
+          "approx": true,
+          "type": "meal",
+          "title": "Lunch w okolicy Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": "Wybieramy miejsce po drodze do hotelu.",
+          "at": "ueno-station",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "ueno-station",
+              "min": 15
+            }
+          ]
+        },
+        {
+          "id": "d08-04",
+          "start": "11:45",
+          "end": "13:00",
+          "approx": true,
+          "type": "rest",
+          "title": "Powrót do hotelu i drzemka Zosi",
+          "priority": null,
+          "placeId": null,
+          "note": "Wracamy po lunchu. Czas na odpoczynek i przebranie Zosi.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "@stay"
+            }
+          ]
+        },
+        {
+          "id": "d08-church-walk",
+          "start": "13:00",
+          "end": "13:20",
+          "approx": true,
+          "type": "transport",
+          "title": "Spacer do Catholic Ueno Church",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "at": "catholic-ueno-church",
+          "legs": [
+            {
+              "mode": "walking",
+              "to": "catholic-ueno-church",
+              "from": "@stay",
+              "min": 20
+            }
+          ]
+        },
+        {
+          "id": "d08-mass",
+          "start": "13:30",
+          "end": "14:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Msza święta — Catholic Ueno Church",
+          "priority": "must",
+          "placeId": "catholic-ueno-church",
+          "note": "Msza o 13:30 w języku chińskim. Przychodzimy chwilę wcześniej.",
+          "legs": [],
+          "tips": [
+            {
+              "kind": "important",
+              "text": "Godzina 13:30 potwierdzona w rozkładzie archidiecezji Tokio.",
+              "link": {
+                "url": "https://tokyo.catholic.jp/archdiocese/parishes/tokyo/ueno/",
+                "label": "Rozkład mszy"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d08-studio-ride",
+          "start": "14:40",
+          "end": "15:50",
+          "approx": true,
+          "type": "transport",
+          "title": "Ueno → Warner Bros. Studio Tour Tokyo",
+          "priority": null,
+          "placeId": null,
+          "note": "Dojazd do Toshimaen, np. przez Ikebukuro. Z wózkiem wybieramy windy; aktualne połączenie sprawdzamy w mapach.",
+          "at": "warner-bros-studio-tokyo",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "warner-bros-studio-tokyo",
+              "from": "catholic-ueno-church",
+              "min": 70
+            }
+          ]
+        },
+        {
+          "id": "d08-studio-break",
+          "start": "16:00",
+          "end": "17:00",
+          "approx": true,
+          "type": "rest",
+          "title": "Przekąska, toalety i odpoczynek przed zwiedzaniem",
+          "priority": null,
+          "placeId": null,
+          "note": "Z biletem na 17:00 hol i strefa gastronomiczna są dostępne od 16:00. Czas na przewinięcie i posiłek Zosi.",
+          "at": "warner-bros-studio-tokyo",
+          "legs": []
+        },
+        {
+          "id": "d08-harry-potter",
+          "start": "17:00",
+          "end": "20:30",
+          "approx": false,
+          "type": "attraction",
+          "title": "Warner Bros. Studio Tour Tokyo — Harry Potter",
+          "priority": "must",
+          "placeId": "warner-bros-studio-tokyo",
+          "note": "Na zwiedzanie mamy 3,5 godziny. Kończymy wcześniej, jeśli Zosia będzie zmęczona.",
+          "legs": [],
+          "tips": [
+            {
+              "kind": "booking",
+              "text": "Kupić bilet na 15.11 o 17:00. Dostępny przy sprawdzaniu 13.11; zakup nadal przed nami.",
+              "link": {
+                "url": "https://www.wbstudiotour.jp/en/tickets/",
+                "label": "Bilety Harry Potter"
+              }
+            },
+            {
+              "kind": "tip",
+              "text": "15.11: otwarcie 8:30, pierwsze wejście 9:00, ostatnie 17:00, zamknięcie 21:00. Organizator zaleca 3–4 godziny zwiedzania.",
+              "link": {
+                "url": "https://www.wbstudiotour.jp/en/plan-your-visit/opening-times/",
+                "label": "Kalendarz godzin"
+              }
+            },
+            {
+              "kind": "tip",
+              "text": "Joolz Aer 2 można zabrać na trasę zwiedzania.",
+              "link": {
+                "url": "https://www.wbstudiotour.jp/en/plan-your-visit/help-centre/accessibility/",
+                "label": "Wózki i dostępność"
+              }
+            }
+          ]
+        },
+        {
+          "id": "d08-return",
+          "start": "20:30",
+          "end": "21:30",
+          "approx": true,
+          "type": "transport",
+          "title": "Powrót do hotelu w Ueno",
+          "priority": null,
+          "placeId": null,
+          "note": "Powrót z Toshimaen do Ueno. W hotelu od razu szykujemy Zosię do snu.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "@stay",
+              "from": "warner-bros-studio-tokyo",
+              "min": 60
+            }
+          ]
+        }
+      ],
+      "back": false,
+      "todos": [
+        {
+          "id": "todo-harry-potter-tickets",
+          "text": "Kupić bilety do studia Harry’ego Pottera na 15.11 o 17:00",
+          "priority": "must",
+          "where": "Oficjalna sprzedaż Warner Bros. Studio Tour Tokyo",
+          "note": "3 dorosłych i bezpłatne wejście dla Zosi poniżej 4 lat. Slot dostępny przy sprawdzaniu 13.11; sprawdzić ponownie przed zakupem.",
+          "links": [
+            {
+              "url": "https://www.wbstudiotour.jp/en/tickets/",
+              "label": "Bilety Harry Potter"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "2026-11-16",
+      "dayNumber": 9,
+      "date": "2026-11-16",
+      "weekday": "poniedziałek",
+      "title": "Tokio / Ginza i teamLab",
       "base": "Tokio / Ginza-Toyosu",
       "stay": {
         "city": "Tokio",
@@ -1873,61 +2147,76 @@
       },
       "earliestDeparture": "09:30",
       "pace": "light",
-      "paceLabel": "Lekko",
-      "summary": "Dzień regeneracyjny po Nikkō. Przed południem spacerujemy po eleganckiej Ginzie z domami towarowymi i halami z jedzeniem w piwnicach, potem odpoczynek w hotelu. Wieczorem największa atrakcja dnia: teamLab Planets, muzeum cyfrowej sztuki, w którym chodzi się boso po wodzie wśród świetlistych kwiatów. Jeśli zostanie energii, wieczorny widok na zatokę z Toyosu lub Odaiby.",
+      "paceLabel": "Lekko, z dłuższą przerwą w hotelu",
+      "summary": "Spokojne śniadanie, spacer po Ginzie i trochę zakupów. Po lunchu wracamy do hotelu na dłuższy odpoczynek Zosi. O 17:00 teamLab Planets, a potem kolacja w Toyosu.",
       "coverPhoto": null,
       "priorities": {
         "must": "teamLab Planets",
-        "want": "Ginza",
-        "bonus": "Toyosu / Odaiba"
+        "want": "Ginza + kolacja w Toyosu",
+        "bonus": "Depachika"
       },
       "booking": {
         "level": "required",
-        "text": "teamLab Planets: bilet na 16:00 tylko online, nie ma sprzedaży na miejscu; dzieci do 3 lat bezpłatnie."
+        "text": "teamLab Planets: kupić 3 bilety dla dorosłych na 16.11, wejście 17:00–17:30. Zosia bezpłatnie. Slot był dostępny przy sprawdzaniu 13.11; bilety nie są kupione."
       },
       "source": {
-        "orderText": "09:30 wyjście → 10:00–12:30 Ginza → lunch → 13:30–15:30 odpoczynek → 16:00–18:00 teamLab → kolacja"
+        "orderText": "09:30 śniadanie i wyjście → 10:15–12:00 Ginza (WANT) → 12:00–13:00 lunch, depachika (BONUS) → 13:00–16:00 powrót do hotelu i odpoczynek → 16:00–16:50 przejazd do Toyosu → 17:00–19:00 teamLab Planets (MUST) → 19:00–20:00 kolacja w Toyosu (WANT) → 20:00–20:45 powrót do hotelu"
       },
       "items": [
         {
-          "id": "d08-01",
+          "id": "d09-01",
           "start": "09:30",
           "end": null,
           "approx": false,
           "type": "departure",
-          "title": "Wyjście z hotelu",
+          "title": "Spokojne śniadanie i wyjście z hotelu",
           "priority": null,
           "placeId": null,
           "note": null,
           "at": "@start"
         },
         {
-          "id": "d08-02",
-          "start": "10:00",
-          "end": "12:30",
-          "approx": false,
-          "type": "attraction",
-          "title": "Ginza",
-          "priority": "want",
-          "placeId": "ginza",
-          "note": null,
+          "id": "d09-ginza-ride",
+          "start": "09:30",
+          "end": "10:15",
+          "approx": true,
+          "type": "transport",
+          "title": "Ueno → Ginza",
+          "priority": null,
+          "placeId": null,
+          "note": "Metro Ginza bez przesiadki, z czasem na dojście i windy.",
+          "at": "ginza",
           "legs": [
             {
               "mode": "transit",
-              "text": "Metro Ginza z Ueno do Ginzy bez przesiadki, ok. 12 min."
+              "to": "ginza",
+              "from": "@start",
+              "min": 45
             }
           ]
         },
         {
-          "id": "d08-02a",
-          "start": null,
-          "end": null,
+          "id": "d08-02",
+          "start": "10:15",
+          "end": "12:00",
           "approx": false,
           "type": "attraction",
-          "title": "Depachika (hale z jedzeniem w podziemiach)",
+          "title": "Ginza — spacer i zakupy",
+          "priority": "want",
+          "placeId": "ginza",
+          "note": "Rano spacer, potem sklepy w miarę ich otwierania. Wiele domów towarowych rusza dopiero około 10:30–11:00.",
+          "legs": []
+        },
+        {
+          "id": "d08-02a",
+          "start": "12:00",
+          "end": "13:00",
+          "approx": false,
+          "type": "attraction",
+          "title": "Depachika — hale z jedzeniem",
           "priority": "bonus",
           "placeId": "depachika-ginza",
-          "note": "W ramach Ginzy albo jako lunch, 30–45 min.",
+          "note": "Opcja na lunch na wynos w podziemiach Mitsukoshi. To część przerwy lunchowej.",
           "legs": [
             {
               "mode": "walking"
@@ -1935,31 +2224,58 @@
           ]
         },
         {
-          "id": "d08-03",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "id": "d09-lunch",
+          "start": "12:00",
+          "end": "13:00",
+          "approx": true,
           "type": "meal",
-          "title": "Lunch",
+          "title": "Lunch w Ginzie",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Restaurację wybieramy na miejscu; zamiast niej można zajrzeć do depachika."
         },
         {
-          "id": "d08-04",
-          "start": "13:30",
-          "end": "15:30",
-          "approx": false,
+          "id": "d09-hotel-break",
+          "start": "13:00",
+          "end": "16:00",
+          "approx": true,
           "type": "rest",
-          "title": "Odpoczynek",
+          "title": "Powrót do hotelu i dłuższy odpoczynek Zosi",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Najpierw przejazd do Ueno, potem drzemka i spokojne przygotowanie do wieczoru.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "@stay"
+            }
+          ]
+        },
+        {
+          "id": "d09-toyosu-ride",
+          "start": "16:00",
+          "end": "16:50",
+          "approx": true,
+          "type": "transport",
+          "title": "Ueno → Toyosu",
+          "priority": null,
+          "placeId": null,
+          "note": "Metro do Toyosu i około 10 min pieszo do teamLab albo Yurikamome do Shin-Toyosu. Zapas na windy i zostawienie wózka.",
+          "at": "teamlab",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "teamlab",
+              "from": "@stay",
+              "min": 50
+            }
+          ]
         },
         {
           "id": "d08-05",
-          "start": "16:00",
-          "end": "18:00",
+          "start": "17:00",
+          "end": "19:00",
           "approx": false,
           "type": "attraction",
           "title": "teamLab Planets",
@@ -1967,288 +2283,74 @@
           "placeId": "teamlab",
           "tips": [
             {
+              "kind": "booking",
+              "text": "Kupić bilet na 16.11, wejście 17:00–17:30. Slot był dostępny przy sprawdzaniu 13.11; nie jest zarezerwowany.",
+              "link": {
+                "url": "https://teamlabplanets.dmm.com/en",
+                "label": "Bilety teamLab"
+              }
+            },
+            {
               "kind": "important",
-              "text": "Wózków nie wpuszcza się na wystawę (zostają przed wejściem), nosidło jest dozwolone."
+              "text": "Joolz Aer 2 zostaje przed wystawą. Dla Zosi zabieramy nosidło z przodu i ubranie na zmianę.",
+              "link": {
+                "url": "https://art.team-lab.cn/en/e/planets/",
+                "label": "Zasady zwiedzania z dzieckiem"
+              }
             },
             {
               "kind": "tip",
-              "text": "Część sal to woda do kolan i ciemność: ubranie na zmianę dla dziecka zostaje w szafce."
-            }
-          ],
-          "note": null,
-          "legs": [
-            {
-              "mode": "transit",
-              "text": "Metro Yūrakuchō z Ginza-itchōme do Toyosu, potem Yurikamome 1 przystanek do Shin-Toyosu (albo ok. 10 min pieszo z Toyosu)."
-            }
-          ]
-        },
-        {
-          "id": "d08-06",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "meal",
-          "title": "Kolacja",
-          "priority": null,
-          "placeId": null,
-          "note": null
-        },
-        {
-          "id": "d08-07",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Toyosu / Odaiba",
-          "priority": "bonus",
-          "placeId": "toyosu-odaiba",
-          "note": null,
-          "legs": [
-            {
-              "mode": "transit",
-              "text": "Yurikamome z Shin-Toyosu do Odaiba-kaihinkōen bez przesiadki."
-            }
-          ]
-        }
-      ],
-      "back": {
-        "mode": "transit"
-      }
-    },
-    {
-      "id": "2026-11-16",
-      "dayNumber": 9,
-      "date": "2026-11-16",
-      "weekday": "poniedziałek",
-      "title": "Kamakura",
-      "base": "Kamakura",
-      "stay": {
-        "city": "Tokio",
-        "area": "Ueno",
-        "hotelName": "Mitsui Garden Hotel Ueno",
-        "address": "3-19-7 Higashi-Ueno, Taito-ku, Tokio 110-0015",
-        "hotelId": "mitsui-ueno"
-      },
-      "earliestDeparture": "08:30",
-      "pace": "light-medium",
-      "paceLabel": "Lekko / średnio",
-      "summary": "Wycieczka do Kamakury, dawnej stolicy samurajów, bez żadnych rezerwacji: zwykłe pociągi JR i kolejka Enoden, bilety do świątyń na miejscu. Przed południem świątynia Hase-dera z wielką drewnianą Kannon i Wielki Budda z brązu, po lunchu uliczka Komachi-dōri i chram Tsurugaoka Hachiman-gū. Kolejność jest tylko sugestią, tempo i godzinę powrotu dopasowujemy do Zosi. Następnego dnia shinkansen do Kioto.",
-      "coverPhoto": null,
-      "priorities": {
-        "must": "Hase-dera + Wielki Budda",
-        "want": "Komachi-dōri + Tsurugaoka",
-        "bonus": "Enoshima (opcja)"
-      },
-      "booking": {
-        "level": "none",
-        "text": "Bez rezerwacji. Pociągi JR i Enoden na bieżąco, bilety do świątyń na miejscu"
-      },
-      "source": {
-        "orderText": "08:30–09:00 wyjście → przedpołudnie: JR do Kamakury, Enoden do Hase, Hase-dera → następnie Wielki Budda → południe: lunch i odpoczynek → popołudnie: Komachi-dōri i Tsurugaoka Hachiman-gū → powrót do Ueno, kiedy będziemy gotowi"
-      },
-      "items": [
-        {
-          "id": "d09-01",
-          "start": "08:30",
-          "end": "09:00",
-          "approx": true,
-          "type": "departure",
-          "title": "Wyjście z hotelu, gdy będziemy gotowi",
-          "priority": null,
-          "placeId": null,
-          "note": null,
-          "at": "@start"
-        },
-        {
-          "id": "d09-02",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "transport",
-          "title": "JR: Ueno → Tokyo → Kamakura",
-          "priority": null,
-          "placeId": null,
-          "note": "Przedpołudnie, razem ok. 1,5 h. Ueno → Tokyo linią Yamanote lub Keihin-Tōhoku (ok. 7 min), potem Yokosuka Line bez przesiadek do Kamakury (ok. 1 h). Perony Yokosuka Line w Tokyo są głęboko pod ziemią: z wózkiem windy, na przejście ok. 10–15 min.",
-          "tips": [
-            {
-              "kind": "tip",
-              "text": "Jeżeli pociąg będzie zatłoczony, można wybrać Green Car — wygodniejszy wagon z szerszymi siedzeniami. Wymaga dodatkowego biletu, który można kupić na bieżąco przez Suicę lub w odpowiednim automacie. Miejsca nie są rezerwowane ani gwarantowane. Zosia może zająć wolne miejsce bez osobnego biletu, ale przy tłoku obsługa może poprosić o wzięcie jej na kolana.",
+              "text": "Czynne 8:00–22:00, ostatnie wejście o 21:00. Na wizytę planujemy dwie godziny.",
               "link": {
-                "label": "Green Car (JR East)",
-                "url": "https://www.jreast.co.jp/en/multi/green/"
+                "url": "https://art.team-lab.cn/en/e/planets/",
+                "label": "Godziny otwarcia"
               }
             }
           ],
-          "at": "kamakura-station",
-          "legs": [
-            {
-              "mode": "transit",
-              "to": "kamakura-station"
-            }
-          ]
+          "note": "Wejście planujemy na 17:00–17:30. Po wystawie kolacja w Toyosu.",
+          "legs": []
         },
         {
-          "id": "d09-02a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "transport",
-          "title": "Enoden: Kamakura → Hase",
-          "priority": null,
-          "placeId": null,
-          "note": "Ok. 5 min, trzeci przystanek w kierunku Fujisawa; bez rezerwacji. Sama kolejka jest atrakcją: stare wagoniki między domami. Z Hase do Hase-dery pieszo ok. 5 min.",
-          "links": [
-            {
-              "url": "https://www.enoden.co.jp/en/tourism/access/",
-              "label": "Enoden"
-            }
-          ],
-          "at": "hase-station",
-          "legs": [
-            {
-              "mode": "transit",
-              "from": "kamakura-station",
-              "to": "hase-station"
-            }
-          ]
-        },
-        {
-          "id": "d09-03",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Hase-dera",
-          "priority": "must",
-          "placeId": "hase-dera",
-          "note": "Przedpołudnie, ok. 60–90 min. Bilet na miejscu, bez rezerwacji; czynne 8:00–17:00.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
-          "id": "d09-04",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Wielki Budda",
-          "priority": "must",
-          "placeId": "daibutsu",
-          "note": "Następnie, ok. 30–60 min; z Hase-dery pieszo ok. 5 min. Bilet na miejscu, bez rezerwacji. Na terenie nie wolno jeść ani pić.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
-          "id": "d09-05",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "id": "d09-dinner",
+          "start": "19:00",
+          "end": "20:00",
+          "approx": true,
           "type": "meal",
-          "title": "Lunch i odpoczynek",
-          "priority": null,
-          "placeId": null,
-          "note": "Południe, miejsce wybieramy na bieżąco."
-        },
-        {
-          "id": "d09-05a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "transport",
-          "title": "Enoden: Hase → Kamakura",
-          "priority": null,
-          "placeId": null,
-          "note": "Ok. 5 min. Komachi-dōri zaczyna się przy wschodnim wyjściu stacji JR Kamakura.",
-          "at": "kamakura-station",
-          "legs": [
-            {
-              "mode": "transit",
-              "to": "kamakura-station"
-            }
-          ]
-        },
-        {
-          "id": "d09-06",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Komachi-dōri",
+          "title": "Kolacja w Toyosu",
           "priority": "want",
-          "placeId": "komachi",
-          "note": "Popołudnie, w dowolnym tempie. Ulica publiczna, bez biletu.",
+          "placeId": null,
+          "note": "Okolice stacji Toyosu lub LaLaport. Wybieramy miejsce z wolnym stolikiem i sprawdzamy skład dań dla Zosi.",
+          "at": "toyosu-station",
           "legs": [
             {
-              "mode": "walking"
+              "mode": "walking",
+              "to": "toyosu-station",
+              "min": 10
             }
           ]
         },
         {
-          "id": "d09-07",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Tsurugaoka Hachiman-gū",
-          "priority": "want",
-          "placeId": "tsurugaoka",
-          "note": "Popołudnie, ok. 30–60 min. Wstęp na główny teren bezpłatny.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
-          "id": "d09-09",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Enoshima",
-          "priority": "bonus",
-          "placeId": "enoshima",
-          "note": "Nieobowiązkowa opcja: z Hase Enodenem ok. 20 min w stronę Fujisawy, potem ok. 15 min pieszo na wyspę. Kosztem Komachi-dōri lub Tsurugaoka, powrót do Ueno dłuższy.",
-          "legs": [
-            {
-              "mode": "transit"
-            }
-          ]
-        },
-        {
-          "id": "d09-08",
-          "start": null,
-          "end": null,
-          "approx": false,
+          "id": "d09-return",
+          "start": "20:00",
+          "end": "20:45",
+          "approx": true,
           "type": "transport",
-          "title": "Powrót do Ueno, kiedy będziemy gotowi",
+          "title": "Powrót do hotelu w Ueno",
           "priority": null,
           "placeId": null,
-          "note": "Z chramu do JR Kamakura pieszo ok. 10–15 min, dalej tą samą trasą: Yokosuka Line do Tokyo, przesiadka do Ueno. Ok. 1,5 h.",
+          "note": null,
           "at": "@stay",
           "legs": [
             {
-              "to": "kamakura-station"
-            },
-            {
               "mode": "transit",
-              "from": "kamakura-station",
-              "to": "@stay"
+              "to": "@stay",
+              "from": "toyosu-station",
+              "min": 45
             }
           ]
         }
       ],
-      "dayTrip": {
-        "from": "Tokio",
-        "to": "Kamakura"
-      }
+      "back": false
     },
     {
       "id": "2026-11-17",
@@ -5030,7 +5132,7 @@
       "area": "Ginza",
       "category": "district",
       "short": "Elegancka dzielnica domów towarowych, butików i zegara Wakō.",
-      "description": "Ginza to najbardziej luksusowa dzielnica handlowa Tokio. Na skrzyżowaniu Ginza 4-chōme stoi budynek Wakō z zegarem, symbol dzielnicy od lat 30. XX wieku. Wokół są wielkie domy towarowe (Mitsukoshi, Matsuya, Ginza Six z ogrodem na dachu), flagowe sklepy marek i ogromny Uniqlo. W weekendowe popołudnia główna ulica Chūō-dōri bywa zamykana dla samochodów i można iść środkiem jezdni; 15.11 to niedziela. W piwnicach domów towarowych (depachika) są piękne hale z jedzeniem.",
+      "description": "Ginza to najbardziej luksusowa dzielnica handlowa Tokio. Na skrzyżowaniu Ginza 4-chōme stoi budynek Wakō z zegarem, symbol dzielnicy od lat 30. XX wieku. Wokół są wielkie domy towarowe (Mitsukoshi, Matsuya, Ginza Six z ogrodem na dachu), flagowe sklepy marek i ogromny Uniqlo. W weekendowe popołudnia główna ulica Chūō-dōri bywa zamykana dla samochodów i można iść środkiem jezdni. W piwnicach domów towarowych (depachika) są piękne hale z jedzeniem.",
       "photo": {
         "src": "img/ginza.jpg",
         "alt": "Ginza",
@@ -6827,6 +6929,63 @@
         "lat": 34.9879,
         "lng": 135.7718
       }
+    },
+    "tokyo-national-museum": {
+      "id": "tokyo-national-museum",
+      "city": "Tokio",
+      "name": "Tokyo National Museum",
+      "nameJa": "東京国立博物館",
+      "area": "Ueno",
+      "category": "museum",
+      "short": "Japońska sztuka, zbroje samurajskie i ceramika w parku Ueno.",
+      "description": "Zaczynamy od Honkan, galerii sztuki japońskiej. Na półtorej godziny wybieramy kilka sal ze zbrojami, mieczami, ceramiką i malarstwem. Muzeum otwiera się o 9:30. Wózek można zabrać do sal; w Honkan są windy i pokój do karmienia. Sala 4 jest czasowo zamknięta.",
+      "address": "13-9 Uenokoen, Taito City, Tokyo 110-8712",
+      "photo": null,
+      "gallery": [],
+      "links": {
+        "official": "https://www.tnm.jp/modules/r_free_page/index.php?id=113l&lang=en",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Tokyo%20National%20Museum%2C%2013-9%20Uenokoen%2C%20Taito%20City%2C%20Tokyo%20110-8712"
+      },
+      "mapsQuery": "Tokyo National Museum, 13-9 Uenokoen, Taito City, Tokyo 110-8712",
+      "coords": null
+    },
+    "catholic-ueno-church": {
+      "id": "catholic-ueno-church",
+      "city": "Tokio",
+      "name": "Catholic Ueno Church",
+      "nameJa": "カトリック上野教会",
+      "area": "Ueno / Shitaya",
+      "category": "church",
+      "short": "Kościół św. Bernadety w pobliżu Ueno. Niedzielna msza o 13:30 jest po chińsku.",
+      "description": "Niewielki katolicki kościół w Shitaya. Archidiecezja Tokio podaje niedzielną mszę o 13:30 w języku chińskim, we wspólnocie Jesuit Chinese Center. Na miejscu pytamy o wejście z wózkiem i miejsce, w którym można go ustawić.",
+      "address": "1 Chome-5-9 Shitaya, Taito City, Tokyo 110-0004",
+      "photo": null,
+      "gallery": [],
+      "links": {
+        "official": "https://tokyo.catholic.jp/archdiocese/parishes/tokyo/ueno/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Catholic%20Ueno%20Church%2C%201%20Chome-5-9%20Shitaya%2C%20Taito%20City%2C%20Tokyo%20110-0004"
+      },
+      "mapsQuery": "Catholic Ueno Church, 1 Chome-5-9 Shitaya, Taito City, Tokyo 110-0004",
+      "coords": null
+    },
+    "warner-bros-studio-tokyo": {
+      "id": "warner-bros-studio-tokyo",
+      "city": "Tokio",
+      "name": "Warner Bros. Studio Tour Tokyo — Harry Potter",
+      "nameJa": "ワーナー ブラザース スタジオツアー東京",
+      "area": "Nerima / Toshimaen",
+      "category": "museum",
+      "short": "Filmowe dekoracje, kostiumy i rekwizyty z Harry’ego Pottera.",
+      "description": "Spacer przez filmowe wnętrza, od Wielkiej Sali po ulicę Pokątną. Organizator zaleca 3–4 godziny; planujemy 17:00–20:30. Z biletem na 17:00 można wejść do holu godzinę wcześniej. Własny wózek jest dozwolony, więc Joolz Aer 2 przyda się podczas długiego wieczoru.",
+      "address": "1-1-7 Kasugacho, Nerima City, Tokyo 179-0074",
+      "photo": null,
+      "gallery": [],
+      "links": {
+        "official": "https://www.wbstudiotour.jp/en/",
+        "maps": "https://www.google.com/maps/search/?api=1&query=Warner%20Bros.%20Studio%20Tour%20Tokyo%2C%201-1-7%20Kasugacho%2C%20Nerima%20City%2C%20Tokyo%20179-0074"
+      },
+      "mapsQuery": "Warner Bros. Studio Tour Tokyo, 1-1-7 Kasugacho, Nerima City, Tokyo 179-0074",
+      "coords": null
     }
   },
   "bookings": [
@@ -6894,15 +7053,15 @@
     },
     {
       "name": "teamLab Planets",
-      "checked": "Bilet czasowy",
-      "conclusion": "3 bilety dla dorosłych na 15.11, wejście ok. 16:00; Zosia bezpłatnie. Kupno tylko online, brak sprzedaży na miejscu. Bilety szybko schodzą.",
-      "when": "Kupić do śr. 11.11",
+      "checked": "Bilet czasowy — do kupienia",
+      "conclusion": "Kupić 3 bilety dla dorosłych na 16.11, wejście 17:00–17:30; Zosia bezpłatnie. Slot dostępny w oficjalnej sprzedaży przy sprawdzaniu 13.11. Czynne 8:00–22:00. Bilety nie są kupione.",
+      "when": "Pon. 16.11.2026, wejście 17:00–17:30",
       "url": "https://teamlabplanets.dmm.com/en",
       "placeIds": [
         "teamlab"
       ],
       "dayIds": [
-        "2026-11-15"
+        "2026-11-16"
       ],
       "status": "todo",
       "points": [
@@ -7050,6 +7209,23 @@
         "harajuku"
       ],
       "dayIds": [],
+      "status": "todo"
+    },
+    {
+      "name": "Warner Bros. Studio Tour Tokyo — Harry Potter",
+      "checked": "Bilet na 17:00 — do kupienia",
+      "conclusion": "Kupić 3 bilety dla dorosłych i dodać bezpłatne wejście dla Zosi (poniżej 4 lat) na 15.11 o 17:00. Slot był dostępny przy sprawdzaniu 13.11 dla 3 dorosłych. Zwiedzanie 17:00–20:30, zamknięcie o 21:00. Bilety nie są kupione.",
+      "when": "Niedz. 15.11.2026, wejście 17:00 (hol od 16:00)",
+      "url": "https://www.wbstudiotour.jp/en/tickets/",
+      "placeIds": [
+        "warner-bros-studio-tokyo"
+      ],
+      "dayIds": [
+        "2026-11-15"
+      ],
+      "points": [
+        "warner-bros-studio-tokyo"
+      ],
       "status": "todo"
     }
   ],
@@ -7950,6 +8126,25 @@
       "q": "Shinjuku Station, Tokyo",
       "lat": 35.6896,
       "lng": 139.7006
+    },
+    "toyosu-station": {
+      "name": "Toyosu Station",
+      "q": "Toyosu Station, Koto City, Tokyo",
+      "lat": 35.6549,
+      "lng": 139.7964
+    }
+  },
+  "todoUpdates": {
+    "todo-teamlab-tickets": {
+      "dayId": "2026-11-16",
+      "text": "Kupić bilety na teamLab Planets na 16.11, wejście 17:00–17:30",
+      "note": "3 bilety dla dorosłych; Zosia bezpłatnie. Slot dostępny przy sprawdzaniu 13.11. Przed zakupem sprawdzić ponownie dostępność.",
+      "links": [
+        {
+          "url": "https://teamlabplanets.dmm.com/en",
+          "label": "Bilety teamLab"
+        }
+      ]
     }
   }
 }

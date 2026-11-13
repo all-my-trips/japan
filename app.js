@@ -64,7 +64,12 @@
     ? `<span class="tips">${tips.map((x) => `<span class="tip k-${esc(x.kind || "tip")}"><b>${esc(TIP_LABEL[x.kind] || TIP_LABEL.tip)}</b> ${esc(x.text)}${links ? (x.links || (x.link ? [x.link] : [])).map((l) => `<a href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join(" · ").replace(/^/, " ") : ""}</span>`).join("")}</span>`
     : "";
   // TODO bez wykonanych: done:true w danych albo odhaczone w tej przeglądarce
-  const openTodos = (d) => (d.todos || []).filter((x) => !x.done && !S.done[x.id]);
+  // Aktualizacja zadania po ID zachowuje jego jedyny wpis i zapisane odhaczenie.
+  // Pozwala przenieść zadanie bez przepisywania danych wcześniejszych dni.
+  const openTodos = (d) => S.trip.days.flatMap((owner) => (owner.todos || [])
+    .filter((x) => ((S.trip.todoUpdates || {})[x.id]?.dayId || owner.id) === d.id)
+    .map((x) => Object.assign({}, x, (S.trip.todoUpdates || {})[x.id])))
+    .filter((x) => !x.done && !S.done[x.id]);
   const legend = (group, id) => (S.trip.legend[group] || []).find((x) => x.id === id) || { id, label: id, meaning: "" };
 
   function nowTokyo(tz) {
