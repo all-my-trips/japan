@@ -11,4 +11,10 @@ Interaktywny przewodnik po podróży do Japonii (8–27 listopada 2026), działa
 Nawigacja Google Maps (bez klucza API, oficjalne Maps URLs): `points{}` w `trip.json` to stacje, hotele i przystanki (`{name, q, lat, lng}`, `q` to zapytanie dla Google, bez `q` używane są współrzędne); `places[].mapsQuery` to dokładna nazwa miejsca. Punkt planu może mieć `at` (id z `points`/`places`, `"@start"` = hotel z poprzedniej nocy, `"@stay"` = hotel na tę noc; domyślnie `placeId`) i `legs` (`[{mode, from?, to?, min?, text?}]`, `mode`: `walking`, `transit`, `driving` albo `ride` = kupiony kurs bez nawigacji Google; `from` domyślnie poprzedni punkt, `to` domyślnie `at`; `min` to liczba albo `{idPoprzedniegoPunktu: min}`). Pod punktem pojawiają się „📍 Mapa”, „🧭 Nawiguj” i „Z mojej lokalizacji”; na końcu dnia „Powrót do hotelu” (`days[].back = {mode, text?}`, `false` wyłącza) i „🗺️ Trasa dnia pieszo” (ciągi odcinków pieszych, maks. 3 punkty pośrednie). Czasy przejść pieszych w 18–19.11: trasa OpenStreetMap + ok. 20% zapasu na wózek; godziny pociągów wg rozkładu Yahoo! 乗換案内 z 4.11.2026. `bookings[].facts` (`[{label, text}]`), `bookings[].points` (mapy) i `bookings[].statusLabel` (własna etykieta statusu).
 
 Publikacja: GitHub Pages z gałęzi `main`, folder `/`.
+
+`todoUpdates{}` opcjonalnie aktualizuje istniejące zadanie po jego `id`
+(`{dayId?, text?, note?, links?}`). Zadanie ma nadal jeden wpis w `days[].todos`;
+`dayId` wskazuje dzień, przy którym jest wyświetlane, a zapisane odhaczenie
+pozostaje przypisane do tego samego ID. Dzięki temu można zmienić termin
+zadania bez zmieniania danych archiwalnego dnia.
 Lokalnie: `python3 -m http.server` w tym folderze, potem http://localhost:8000/.
