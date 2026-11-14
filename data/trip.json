@@ -1874,7 +1874,7 @@
       "earliestDeparture": "09:00",
       "pace": "long",
       "paceLabel": "Długi dzień, z przerwą w hotelu",
-      "summary": "Rano oglądamy japońską sztukę w Muzeum Narodowym i jemy lunch w Ueno. Potem wracamy do hotelu na drzemkę Zosi. O 13:30 msza w kościele Ueno, a wieczorem zwiedzamy studio Harry’ego Pottera.",
+      "summary": "Rano oglądamy japońską sztukę w Muzeum Narodowym i jemy lunch w Ueno. Potem wracamy do hotelu na drzemkę Zosi. O 13:30 msza w kościele Ueno, a wieczorem Krzysiu i Ania zwiedzają studio Harry’ego Pottera.",
       "coverPhoto": null,
       "priorities": {
         "must": "Tokyo National Museum + msza 13:30 + Harry Potter",
@@ -1882,11 +1882,11 @@
         "bonus": ""
       },
       "booking": {
-        "level": "required",
-        "text": "Harry Potter: kupić bilety na 15.11 o 17:00. Slot był dostępny przy sprawdzaniu 13.11; nie jest zarezerwowany. Muzeum: bilet na kolekcję stałą, online lub na miejscu."
+        "level": "recommended",
+        "text": "Harry Potter: 2 bilety dla Krzysia i Ani na 15.11 o 17:00 są kupione. Muzeum: bilet na kolekcję stałą można kupić online lub na miejscu."
       },
       "source": {
-        "orderText": "09:00 wyjście → 09:30–11:00 Tokyo National Museum (MUST) → 11:00–11:45 lunch w Ueno → 11:45–13:00 hotel i drzemka → 13:00–13:20 spacer do kościoła → 13:30–14:30 msza (MUST) → 14:40–15:50 przejazd do studia → 16:00–17:00 przekąska i toalety → 17:00–20:30 Harry Potter (MUST) → 20:30–21:30 powrót do hotelu"
+        "orderText": "09:00 wyjście → 09:30–11:00 Tokyo National Museum (MUST) → 11:00–11:45 lunch w Ueno → 11:45–13:00 hotel i drzemka → 13:00–13:20 spacer do kościoła → 13:30–14:30 msza (MUST) → 15:30–16:40 Krzysiu i Ania: przejazd do studia → 17:00–20:30 Harry Potter (MUST, bilety kupione) → 20:30–21:30 powrót do hotelu"
       },
       "items": [
         {
@@ -2024,14 +2024,14 @@
         },
         {
           "id": "d08-studio-ride",
-          "start": "14:40",
-          "end": "15:50",
+          "start": "15:30",
+          "end": "16:40",
           "approx": true,
           "type": "transport",
-          "title": "Ueno → Warner Bros. Studio Tour Tokyo",
+          "title": "Krzysiu i Ania: przejazd do studia Harry’ego Pottera",
           "priority": null,
           "placeId": null,
-          "note": "Dojazd do Toshimaen, np. przez Ikebukuro. Z wózkiem wybieramy windy; aktualne połączenie sprawdzamy w mapach.",
+          "note": "Dojazd do Toshimaen, np. przez Ikebukuro. Na miejscu około 20 minut przed wejściem.",
           "at": "warner-bros-studio-tokyo",
           "legs": [
             {
@@ -2043,19 +2043,6 @@
           ]
         },
         {
-          "id": "d08-studio-break",
-          "start": "16:00",
-          "end": "17:00",
-          "approx": true,
-          "type": "rest",
-          "title": "Przekąska, toalety i odpoczynek przed zwiedzaniem",
-          "priority": null,
-          "placeId": null,
-          "note": "Z biletem na 17:00 hol i strefa gastronomiczna są dostępne od 16:00. Czas na przewinięcie i posiłek Zosi.",
-          "at": "warner-bros-studio-tokyo",
-          "legs": []
-        },
-        {
           "id": "d08-harry-potter",
           "start": "17:00",
           "end": "20:30",
@@ -2064,12 +2051,12 @@
           "title": "Warner Bros. Studio Tour Tokyo — Harry Potter",
           "priority": "must",
           "placeId": "warner-bros-studio-tokyo",
-          "note": "Na zwiedzanie mamy 3,5 godziny. Kończymy wcześniej, jeśli Zosia będzie zmęczona.",
+          "note": "Krzysiu i Ania. Dwa bilety na 17:00 są kupione; na zwiedzanie mamy 3,5 godziny.",
           "legs": [],
           "tips": [
             {
               "kind": "booking",
-              "text": "Kupić bilet na 15.11 o 17:00. Dostępny przy sprawdzaniu 13.11; zakup nadal przed nami.",
+              "text": "2 bilety dla Krzysia i Ani na 15.11 o 17:00 kupione.",
               "link": {
                 "url": "https://www.wbstudiotour.jp/en/tickets/",
                 "label": "Bilety Harry Potter"
@@ -2082,14 +2069,6 @@
                 "url": "https://www.wbstudiotour.jp/en/plan-your-visit/opening-times/",
                 "label": "Kalendarz godzin"
               }
-            },
-            {
-              "kind": "tip",
-              "text": "Joolz Aer 2 można zabrać na trasę zwiedzania.",
-              "link": {
-                "url": "https://www.wbstudiotour.jp/en/plan-your-visit/help-centre/accessibility/",
-                "label": "Wózki i dostępność"
-              }
             }
           ]
         },
@@ -2099,10 +2078,10 @@
           "end": "21:30",
           "approx": true,
           "type": "transport",
-          "title": "Powrót do hotelu w Ueno",
+          "title": "Krzysiu i Ania: powrót do hotelu w Ueno",
           "priority": null,
           "placeId": null,
-          "note": "Powrót z Toshimaen do Ueno. W hotelu od razu szykujemy Zosię do snu.",
+          "note": "Powrót z Toshimaen do Ueno.",
           "at": "@stay",
           "legs": [
             {
@@ -2118,16 +2097,17 @@
       "todos": [
         {
           "id": "todo-harry-potter-tickets",
-          "text": "Kupić bilety do studia Harry’ego Pottera na 15.11 o 17:00",
+          "text": "Bilety do studia Harry’ego Pottera — kupione",
           "priority": "must",
           "where": "Oficjalna sprzedaż Warner Bros. Studio Tour Tokyo",
-          "note": "3 dorosłych i bezpłatne wejście dla Zosi poniżej 4 lat. Slot dostępny przy sprawdzaniu 13.11; sprawdzić ponownie przed zakupem.",
+          "note": "2 bilety dla Krzysia i Ani na 15.11 o 17:00.",
           "links": [
             {
               "url": "https://www.wbstudiotour.jp/en/tickets/",
               "label": "Bilety Harry Potter"
             }
-          ]
+          ],
+          "done": true
         }
       ]
     },
@@ -6976,7 +6956,7 @@
       "area": "Nerima / Toshimaen",
       "category": "museum",
       "short": "Filmowe dekoracje, kostiumy i rekwizyty z Harry’ego Pottera.",
-      "description": "Spacer przez filmowe wnętrza, od Wielkiej Sali po ulicę Pokątną. Organizator zaleca 3–4 godziny; planujemy 17:00–20:30. Z biletem na 17:00 można wejść do holu godzinę wcześniej. Własny wózek jest dozwolony, więc Joolz Aer 2 przyda się podczas długiego wieczoru.",
+      "description": "Spacer przez filmowe wnętrza, od Wielkiej Sali po ulicę Pokątną. Organizator zaleca 3–4 godziny; Krzysiu i Ania planują zwiedzanie 17:00–20:30. Dwa bilety na 15.11 o 17:00 są kupione.",
       "address": "1-1-7 Kasugacho, Nerima City, Tokyo 179-0074",
       "photo": null,
       "gallery": [],
@@ -7213,9 +7193,9 @@
     },
     {
       "name": "Warner Bros. Studio Tour Tokyo — Harry Potter",
-      "checked": "Bilet na 17:00 — do kupienia",
-      "conclusion": "Kupić 3 bilety dla dorosłych i dodać bezpłatne wejście dla Zosi (poniżej 4 lat) na 15.11 o 17:00. Slot był dostępny przy sprawdzaniu 13.11 dla 3 dorosłych. Zwiedzanie 17:00–20:30, zamknięcie o 21:00. Bilety nie są kupione.",
-      "when": "Niedz. 15.11.2026, wejście 17:00 (hol od 16:00)",
+      "checked": "2 bilety — kupione",
+      "conclusion": "Kupione 2 bilety dla Krzysia i Ani na 15.11 o 17:00. Zwiedzanie 17:00–20:30.",
+      "when": "Niedz. 15.11.2026, wejście 17:00",
       "url": "https://www.wbstudiotour.jp/en/tickets/",
       "placeIds": [
         "warner-bros-studio-tokyo"
@@ -7226,7 +7206,7 @@
       "points": [
         "warner-bros-studio-tokyo"
       ],
-      "status": "todo"
+      "status": "booked"
     }
   ],
   "food": {
