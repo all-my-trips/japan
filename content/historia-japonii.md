@@ -24,7 +24,7 @@ Rodzima religijność nie opierała się na jednym założycielu ani jednej ksi�
 
 Widać to dobrze w dwóch punktach naszej trasy. **Fuji i jezioro Kawaguchiko (12 listopada)** są dziś celem wycieczek krajobrazowych, lecz sama góra od dawna była obiektem kultu i pielgrzymek. Jej stożek odnajdziemy później także w drzeworytach epoki Edo, zwłaszcza u Hokusaia i Hiroshigego. Jesienny **Momiji Kairō**, aleja czerwieniejących klonów, nie jest starożytnym sanktuarium. Pomaga jednak zrozumieć, jak ważne w japońskiej kulturze stało się uważne obserwowanie pór roku.
 
-Drugi przykład to **Fushimi Inari Taisha w Kioto (20 listopada)**. Tradycja wiąże jego początki z rokiem **711**. Inari czczono w związku z ryżem, urodzajem i pomyślnością; z czasem także z powodzeniem w handlu i działalności gospodarczej. Wizerunki lisów przy świątyni przedstawiają **posłańców Inari**, nie samo bóstwo. Tysiące czerwono-pomarańczowych torii są darami ludzi i przedsiębiorstw składanymi na przestrzeni wielu pokoleń. Na odwrocie bram widać nazwiska lub nazwy ofiarodawców. Spacer przez tunel torii to spacer po historii tych darowizn, a nie po konstrukcji zachowanej od VIII wieku.
+Drugi przykład to **Fushimi Inari Taisha w Kioto (22 listopada)**. Tradycja wiąże jego początki z rokiem **711**. Inari czczono w związku z ryżem, urodzajem i pomyślnością; z czasem także z powodzeniem w handlu i działalności gospodarczej. Wizerunki lisów przy świątyni przedstawiają **posłańców Inari**, nie samo bóstwo. Tysiące czerwono-pomarańczowych torii są darami ludzi i przedsiębiorstw składanymi na przestrzeni wielu pokoleń. Na odwrocie bram widać nazwiska lub nazwy ofiarodawców. Spacer przez tunel torii to spacer po historii tych darowizn, a nie po konstrukcji zachowanej od VIII wieku.
 
 **Podczas zwiedzania:** w Fushimi Inari warto przyjrzeć się inskrypcjom na bramach i temu, jak chram przechodzi w górski las. Nad Kawaguchiko spójrzmy na Fuji nie tylko jako na wulkan, lecz także jako na dawny cel pielgrzymek.
 
@@ -86,7 +86,7 @@ Z tym światem wiąże się **Tenryū-ji w Arashiyamie (18 listopada)**. Klaszto
 
 Nie wszystko w Arashiyamie pochodzi z czasów samurajów. **Las bambusowy** jest przede wszystkim współczesnym szlakiem spacerowym po historycznej okolicy. **Most Togetsukyō** ma wielowiekową tradycję, choć obecna konstrukcja jest nowsza. **Ogród Ōkōchi Sansō (BONUS)** powstał w XX wieku z inicjatywy aktora Ōkōchi Denjirō, znanego z filmów samurajskich. Jeżeli uda się kupić bilety na **Sagano Romantic Train**, przejedziemy turystyczną kolejką przez dolinę, której krajobraz od dawna przyciągał poetów i pielgrzymów; sam pociąg nie jest jednak zabytkiem średniowiecza.
 
-Najbardziej rozpoznawalnym śladem potęgi Ashikagów jest **Kinkaku-ji, Złoty Pawilon (22 listopada)**. W **1397 roku** szogun **Ashikaga Yoshimitsu** rozpoczął budowę rezydencji Kitayama. Złocony pawilon, staw i otaczający ogród podkreślały jego prestiż. Po śmierci Yoshimitsu rezydencję przekształcono w świątynię zen. Obecny pawilon nie jest średniowiecznym oryginałem: spłonął w **1950 roku**, a odbudowano go w **1955 roku**. Nadal można jednak odczytać zamysł całego założenia — architektura miała być oglądana razem z wodą, roślinnością i wzgórzami.
+Najbardziej rozpoznawalnym śladem potęgi Ashikagów jest **Kinkaku-ji, Złoty Pawilon (20 listopada)**. W **1397 roku** szogun **Ashikaga Yoshimitsu** rozpoczął budowę rezydencji Kitayama. Złocony pawilon, staw i otaczający ogród podkreślały jego prestiż. Po śmierci Yoshimitsu rezydencję przekształcono w świątynię zen. Obecny pawilon nie jest średniowiecznym oryginałem: spłonął w **1950 roku**, a odbudowano go w **1955 roku**. Nadal można jednak odczytać zamysł całego założenia — architektura miała być oglądana razem z wodą, roślinnością i wzgórzami.
 
 Jeśli wystarczy czasu na **Ryōan-ji (BONUS)**, zobaczymy zupełnie inną odmianę estetyki zen. W ogrodzie kamiennym nie ma złota ani bogatej dekoracji. Są kamienie, żwir, mur i starannie wyważone proporcje. Nie znamy na pewno ani autora ogrodu, ani jednej powszechnie uznanej interpretacji jego układu.
 
@@ -104,7 +104,7 @@ Wielcy panowie, **daimyō**, podlegali między innymi obowiązkowi naprzemienneg
 
 Trzy odwiedzane przez nas miejsca pozwalają zobaczyć, czym była władza Tokugawów.
 
-**Nijō-jō w Kioto (22 listopada)** pokazuje jej polityczny wymiar. Zamek ukończono w **1603 roku** jako rezydencję szoguna w mieście cesarza. W pałacu **Ninomaru** zachowały się bogato dekorowane wnętrza i słynne „słowicze podłogi”, które wydają dźwięk podczas chodzenia. Popularna opowieść głosi, że miały ostrzegać przed skrytobójcami. To atrakcyjna legenda, ale nie ma pewności, że właśnie taki był pierwotny cel ich konstrukcji. Najważniejsze wydarzenie związane z zamkiem rozegrało się w **1867 roku**, gdy ostatni szogun, **Tokugawa Yoshinobu**, ogłosił tam zamiar przekazania władzy politycznej cesarzowi. W Nijō-jō można zatem zobaczyć zarówno ambicje założyciela szogunatu, jak i świadectwo jego upadku.
+**Nijō-jō w Kioto (20 listopada)** pokazuje jej polityczny wymiar. Zamek ukończono w **1603 roku** jako rezydencję szoguna w mieście cesarza. W pałacu **Ninomaru** zachowały się bogato dekorowane wnętrza i słynne „słowicze podłogi”, które wydają dźwięk podczas chodzenia. Popularna opowieść głosi, że miały ostrzegać przed skrytobójcami. To atrakcyjna legenda, ale nie ma pewności, że właśnie taki był pierwotny cel ich konstrukcji. Najważniejsze wydarzenie związane z zamkiem rozegrało się w **1867 roku**, gdy ostatni szogun, **Tokugawa Yoshinobu**, ogłosił tam zamiar przekazania władzy politycznej cesarzowi. W Nijō-jō można zatem zobaczyć zarówno ambicje założyciela szogunatu, jak i świadectwo jego upadku.
 
 **Nikkō Tōshō-gū (14 listopada)** przedstawia religijny wymiar tej samej dynastii. Ieyasu zmarł w **1616 roku**, a w kolejnym roku przeniesiono jego szczątki do Nikkō i ustanowiono tam sanktuarium. W **1636 roku** jego wnuk, szogun **Tokugawa Iemitsu**, polecił je wspaniale rozbudować. Bogate złocenia, rzeźbione zwierzęta i fantastyczne stworzenia nie służyły jedynie ozdobie: upamiętniały założyciela dynastii, czczonego jako opiekuńcze bóstwo. Wśród detali odszukamy **trzy mądre małpy** i **śpiącego kota**. W sąsiedztwie znajduje się buddyjskie **Rinnō-ji**, przypominające, że przed XIX wiekiem shintō i buddyzm były w Nikkō ściśle powiązane. **Most Shinkyō** należy do starszej religijnej tradycji tego miejsca, związanej z legendą o mnichu Shōdō.
 
@@ -169,16 +169,16 @@ Nie wszystko, co stare, przetrwało w oryginalnej postaci. Nie wszystko, co trad
 |---|---|---|
 | Przed VI w. | Społeczności Jōmon i Yayoi; rozwój uprawy ryżu i ośrodka Yamato | Kontekst dla Fuji i sinto |
 | VI w. | Rozpowszechnianie buddyzmu na archipelagu | Tōdai-ji, Hase-dera, Kiyomizu-dera |
-| 711 | Tradycyjna data powstania Fushimi Inari | Fushimi Inari, 20.11 |
+| 711 | Tradycyjna data powstania Fushimi Inari | Fushimi Inari, 22.11 |
 | 710–784 | Nara jako stolica państwa | Nara, 19.11 |
 | 752 | Uroczyste poświęcenie Wielkiego Buddy w Tōdai-ji | Tōdai-ji, 19.11 |
 | 794 | Założenie Heian-kyō — późniejszego Kioto | Kioto, 17–24.11 |
 | 1185–1192 | Zwycięstwo Minamoto; ukształtowanie szogunatu | Kamakura, 16.11 |
 | XIII w. | Wielki Budda w Kamakurze; najazdy mongolskie | Kōtoku-in, 16.11 |
 | 1339 | Założenie Tenryū-ji | Arashiyama, 18.11 |
-| 1397 | Powstaje rezydencja Yoshimitsu z pawilonem Kinkaku | Kinkaku-ji, 22.11 |
+| 1397 | Powstaje rezydencja Yoshimitsu z pawilonem Kinkaku | Kinkaku-ji, 20.11 |
 | 1467–1477 | Wojna Ōnin i zniszczenie dużej części Kioto | Historyczne centrum Kioto |
-| 1600–1603 | Sekigahara i początek szogunatu Tokugawa | Nijō-jō, 22.11 |
+| 1600–1603 | Sekigahara i początek szogunatu Tokugawa | Nijō-jō, 20.11 |
 | 1617 / 1636 | Powstanie i wielka przebudowa Tōshō-gū | Nikkō, 14.11 |
 | 1603–1867 | Epoka Edo; rozwój miast i kultury kupieckiej | Asakusa, Hama-rikyū, Dōtonbori |
 | 1867–1868 | Koniec szogunatu, restauracja Meiji | Nijō-jō, Meiji Jingū, Ueno |
