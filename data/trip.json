@@ -3019,47 +3019,25 @@
         "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
         "hotelId": "mimaru-kyoto"
       },
-      "title": "Kioto / centrum + Kinkaku-ji",
-      "base": "Kioto / centrum + Kinkaku-ji",
+      "title": "Kioto / Kinkaku-ji",
+      "base": "Kioto / Kinkaku-ji",
       "earliestDeparture": "11:00",
       "pace": "medium",
       "paceLabel": "Średnio",
-      "summary": "Zaczynamy od Złotego Pawilonu Kinkaku-ji, potem zwiedzamy pałac Ninomaru i ogrody zamku Nijō. Po południu przekąski na Nishiki Market, spacer przy Kawaramachi i Ponto-chō oraz kolacja.",
+      "summary": "Zrealizowane: Kinkaku-ji. Pozostałe punkty przeniesione na 22.11: Ryōan-ji (bonus), Nijō-jō, Nishiki Market, Kawaramachi i Ponto-chō.",
       "coverPhoto": null,
       "priorities": {
-        "must": "Kinkaku-ji + Nijō-jō (Ninomaru i ogrody)",
-        "want": "Nishiki",
-        "bonus": "Honmaru-goten / Ponto-chō / Kawaramachi / spokojna kolacja"
+        "must": "Kinkaku-ji — zrealizowane",
+        "want": "",
+        "bonus": ""
       },
       "booking": {
         "level": "none",
-        "text": "Bez wcześniejszej rezerwacji. Bilety do Kinkaku-ji i Nijō-jō kupujemy na miejscu; Honmaru-goten tylko opcjonalnie, jeśli będą wolne wejścia."
+        "text": "Kinkaku-ji zwiedzone. Bilety i opcjonalne wejścia do Nijō dotyczą 22.11."
       },
       "source": {
-        "orderText": "11:00 wyjście → ~11:45–12:45 Kinkaku-ji → ~13:25–14:45 Nijō-jō: Ninomaru i ogrody → ~15:10–16:15 Nishiki Market i przekąski → ~16:30+ Kawaramachi / Ponto-chō / kolacja. Ryōan-ji jako BONUS, najlepiej pominąć przy wyjściu o 11:00; Honmaru opcjonalnie, jeśli będą bilety na miejscu."
+        "orderText": "Zrealizowane: Kinkaku-ji. Niezrealizowaną resztę dnia przeniesiono na 22.11."
       },
-      "todos": [
-        {
-          "id": "todo-nijo-tickets",
-          "priority": "must",
-          "text": "Kupić bilety do Nijō-jō (Ninomaru + ogrody)",
-          "where": "Kasa przy wejściu do zamku, na miejscu",
-          "note": "Na miejscu kupić standardowe bilety do zamku Nijō-jō, obejmujące pałac Ninomaru i ogrody. Nie rezerwować wcześniej. 3 dorosłych, ok. 1 300 JPY za osobę (zamek + Ninomaru); Zosia bezpłatnie."
-        },
-        {
-          "id": "todo-nijo-honmaru",
-          "priority": "bonus",
-          "text": "Opcjonalnie: kupić bilety do pałacu Honmaru",
-          "where": "Punkt informacji na terenie zamku, na miejscu",
-          "note": "Jeśli będzie czas i ochota, sprawdzić dostępność wejść do Honmaru w punkcie informacji na terenie zamku. Jeśli będą miejsca, dokupić bilet. W przeciwnym razie pominąć bez zmiany pozostałego planu. Dopłata ok. 1 000 JPY za dorosłego, wejście na konkretną godzinę; w długi weekend miejsc może nie być.",
-          "links": [
-            {
-              "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/honmaru/?lang=en",
-              "label": "Honmaru-goten (oficjalna strona)"
-            }
-          ]
-        }
-      ],
       "items": [
         {
           "id": "d15-01",
@@ -3082,80 +3060,10 @@
           "title": "Kinkaku-ji",
           "priority": "must",
           "placeId": "kinkaku-ji",
-          "note": null,
+          "note": "Zwiedzone 20.11.",
           "legs": [
             {
               "mode": "transit"
-            }
-          ]
-        },
-        {
-          "id": "d15-02a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Ryōan-ji",
-          "priority": "bonus",
-          "placeId": "ryoan-ji",
-          "note": "Przy wyjściu o 11:00 najlepiej pominąć. Dojście i zwiedzanie przesunęłyby Nijō o około godzinę.",
-          "legs": [
-            {
-              "mode": "walking"
-            }
-          ]
-        },
-        {
-          "id": "d15-03",
-          "start": "13:25",
-          "end": "14:45",
-          "approx": true,
-          "type": "attraction",
-          "title": "Zamek Nijō: Ninomaru + ogrody",
-          "priority": "must",
-          "placeId": "nijo-jo",
-          "note": "Pałac Ninomaru i ogrody. Honmaru opcjonalnie, jeśli będą wolne bilety na miejscu i wystarczy czasu.",
-          "legs": [
-            {
-              "mode": "transit"
-            }
-          ]
-        },
-        {
-          "id": "d15-04",
-          "start": "15:10",
-          "end": "16:15",
-          "approx": true,
-          "type": "meal",
-          "title": "Nishiki Market i przekąski",
-          "priority": "want",
-          "placeId": "nishiki",
-          "note": null,
-          "tips": [
-            {
-              "kind": "tip",
-              "text": "Na Nishiki nie je się w marszu (proszą o to tabliczki): jemy przy stoisku, gdzie kupiliśmy."
-            }
-          ],
-          "legs": [
-            {
-              "mode": "transit"
-            }
-          ]
-        },
-        {
-          "id": "d15-05",
-          "start": "16:30",
-          "end": null,
-          "approx": true,
-          "type": "free",
-          "title": "Kawaramachi, Ponto-chō i kolacja",
-          "priority": "bonus",
-          "placeId": "pontocho",
-          "note": null,
-          "legs": [
-            {
-              "mode": "walking"
             }
           ]
         }
@@ -3405,12 +3313,164 @@
         "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
         "hotelId": "mimaru-kyoto"
       },
+      "title": "Kioto / Ryōan-ji + Nijō + centrum",
+      "base": "Kioto / Ryōan-ji + Nijō + centrum",
+      "earliestDeparture": "10:00",
+      "pace": "medium",
+      "paceLabel": "Średnio",
+      "summary": "Wyjście o 10:00. Opcjonalnie Ryōan-ji, następnie pałac Ninomaru i ogrody zamku Nijō. Po południu Nishiki Market i przekąski, potem Kawaramachi, Ponto-chō i kolacja. Kinkaku-ji zwiedzone 20.11.",
+      "coverPhoto": null,
+      "priorities": {
+        "must": "Nijō-jō (Ninomaru i ogrody)",
+        "want": "Nishiki Market",
+        "bonus": "Ryōan-ji / Honmaru-goten / Kawaramachi / Ponto-chō / kolacja"
+      },
+      "booking": {
+        "level": "none",
+        "text": "Bez wcześniejszej rezerwacji. Bilety do Ryōan-ji i Nijō-jō kupujemy na miejscu; Honmaru opcjonalnie, jeśli będą dostępne wejścia."
+      },
+      "source": {
+        "orderText": "10:00 wyjście → ~10:50–11:40 Ryōan-ji (BONUS) → ~12:30–14:00 Nijō-jō: Ninomaru i ogrody → ~14:30–16:00 Nishiki Market i przekąski → ~16:15+ Kawaramachi / Ponto-chō / kolacja. Jeśli pomijamy Ryōan-ji, jedziemy prosto do Nijō i zaczynamy wcześniej. Honmaru opcjonalnie; bilety na miejscu."
+      },
+      "todos": [
+        {
+          "id": "todo-nijo-tickets",
+          "priority": "must",
+          "text": "Kupić bilety do Nijō-jō (Ninomaru + ogrody)",
+          "where": "Kasa przy wejściu do zamku, na miejscu",
+          "note": "Na miejscu kupić standardowe bilety do zamku Nijō-jō, obejmujące pałac Ninomaru i ogrody. Nie rezerwować wcześniej. 3 dorosłych, ok. 1 300 JPY za osobę (zamek + Ninomaru); Zosia bezpłatnie."
+        },
+        {
+          "id": "todo-nijo-honmaru",
+          "priority": "bonus",
+          "text": "Opcjonalnie: kupić bilety do pałacu Honmaru",
+          "where": "Punkt informacji na terenie zamku, na miejscu",
+          "note": "Jeśli będzie czas i ochota, sprawdzić dostępność wejść do Honmaru w punkcie informacji na terenie zamku. Jeśli będą miejsca, dokupić bilet. W przeciwnym razie pominąć bez zmiany pozostałego planu. Dopłata ok. 1 000 JPY za dorosłego, wejście na konkretną godzinę; w długi weekend miejsc może nie być.",
+          "links": [
+            {
+              "url": "https://nijo-jocastle.city.kyoto.lg.jp/admission/honmaru/?lang=en",
+              "label": "Honmaru-goten (oficjalna strona)"
+            }
+          ]
+        }
+      ],
+      "items": [
+        {
+          "id": "d22-departure",
+          "start": "10:00",
+          "end": null,
+          "approx": false,
+          "type": "departure",
+          "title": "Wyjście z MIMARU SUITES Kyoto Shijo",
+          "priority": null,
+          "placeId": null,
+          "note": null,
+          "at": "@start"
+        },
+        {
+          "id": "d15-02a",
+          "start": "10:50",
+          "end": "11:40",
+          "approx": true,
+          "type": "attraction",
+          "title": "Ryōan-ji",
+          "priority": "bonus",
+          "placeId": "ryoan-ji",
+          "note": "Opcjonalny początek dnia. Jeśli pomijamy, jedziemy z hotelu prosto do Nijō i zwiedzamy wcześniej.",
+          "legs": [
+            {
+              "mode": "transit",
+              "text": "Dojazd z hotelu; zapas na niedzielny ruch."
+            }
+          ]
+        },
+        {
+          "id": "d15-03",
+          "start": "12:30",
+          "end": "14:00",
+          "approx": true,
+          "type": "attraction",
+          "title": "Zamek Nijō: Ninomaru + ogrody",
+          "priority": "must",
+          "placeId": "nijo-jo",
+          "note": "Pałac Ninomaru i ogrody. Honmaru opcjonalnie, jeśli będą wolne bilety na miejscu i wystarczy czasu.",
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
+        },
+        {
+          "id": "d15-04",
+          "start": "14:30",
+          "end": "16:00",
+          "approx": true,
+          "type": "meal",
+          "title": "Nishiki Market i przekąski",
+          "priority": "want",
+          "placeId": "nishiki",
+          "note": null,
+          "tips": [
+            {
+              "kind": "tip",
+              "text": "Na Nishiki nie je się w marszu (proszą o to tabliczki): jemy przy stoisku, gdzie kupiliśmy."
+            }
+          ],
+          "legs": [
+            {
+              "mode": "transit"
+            }
+          ]
+        },
+        {
+          "id": "d15-05",
+          "start": "16:15",
+          "end": null,
+          "approx": true,
+          "type": "free",
+          "title": "Kawaramachi, Ponto-chō i kolacja",
+          "priority": "bonus",
+          "placeId": "pontocho",
+          "note": null,
+          "legs": [
+            {
+              "mode": "walking"
+            }
+          ]
+        }
+      ],
+      "back": {
+        "mode": "walking"
+      },
+      "tips": [
+        {
+          "kind": "tip",
+          "text": "Cała trasa w Google Maps obejmuje opcjonalny Ryōan-ji. Dłuższe odcinki komunikacją; link służy do podglądu kolejności punktów.",
+          "link": {
+            "label": "Google Maps — cała trasa 22.11",
+            "url": "https://www.google.com/maps/dir/MIMARU%20SUITES%20Kyoto%20Shijo/Ryoan-ji%20Temple%20Kyoto/Nijo%20Castle%20Kyoto/Nishiki%20Market%20Kyoto/Kyoto%20Kawaramachi%20Station/Pontocho%20Alley%20Kyoto/MIMARU%20SUITES%20Kyoto%20Shijo/"
+          }
+        }
+      ]
+    },
+    {
+      "id": "2026-11-23",
+      "dayNumber": 16,
+      "date": "2026-11-23",
+      "weekday": "poniedziałek",
+      "stay": {
+        "city": "Kioto",
+        "area": "Shijō",
+        "hotelName": "MIMARU SUITES Kyoto Shijo",
+        "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
+        "hotelId": "mimaru-kyoto"
+      },
       "title": "Kioto / Fushimi + Higashiyama",
       "base": "Kioto / Fushimi + Higashiyama",
       "earliestDeparture": "07:30",
       "pace": "long",
       "paceLabel": "Długi",
-      "summary": "Rano Fushimi Inari, potem Kiyomizu-dera i spacer uliczkami Sannenzaka oraz Ninenzaka. Po południu Yasaka i Gion, a wieczorem opcjonalnie iluminacja Kōdai-ji. Do Higashiyamy jedziemy koleją Keihan do Kiyomizu-Gojō, dalej pieszo; zostawiamy zapas na niedzielne kolejki.",
+      "summary": "Rano Fushimi Inari, potem Kiyomizu-dera i uliczki Sannenzaka oraz Ninenzaka z lunchem. Po południu Yasaka i Gion; Shirakawa i iluminacja Kōdai-ji opcjonalnie. Świąteczny poniedziałek: zapas na tłok i kolejki. Wieczorem pakowanie przed powrotem do Tokio.",
       "coverPhoto": null,
       "priorities": {
         "must": "Fushimi Inari + Kiyomizu-dera + Gion",
@@ -3422,7 +3482,7 @@
         "text": "Bez rezerwacji; iluminacja Kōdai-ji: bilet na miejscu."
       },
       "source": {
-        "orderText": "07:30 wyjście → ~08:00–10:00 Fushimi Inari → ~10:00–10:45 przejazd → 11:00–12:30 Kiyomizu-dera → 12:30–14:00 Sannenzaka/Ninenzaka + lunch → 14:30 Yasaka → 15:00–17:30 Gion / Shirakawa → BONUS: ~18:00+ Kōdai-ji illumination / dłuższa kolacja; do Higashiyamy Keihan do Kiyomizu-Gojō, dalej pieszo, z zapasem na niedzielne kolejki i ograniczenia drogowe."
+        "orderText": "07:30 wyjście → ~08:00–10:00 Fushimi Inari → ~10:00–10:45 przejazd Keihan do Kiyomizu-Gojō i dojście pieszo → 11:00–12:30 Kiyomizu-dera → 12:30–14:00 Sannenzaka/Ninenzaka + lunch → 14:30 Yasaka → 15:00–17:30 Gion / Shirakawa → BONUS: ~18:00+ Kōdai-ji / kolacja → hotel i pakowanie. Zapas na świąteczne kolejki; bonusy tylko jeśli zostanie czas."
       },
       "items": [
         {
@@ -3463,7 +3523,7 @@
           "title": "Przejazd do Higashiyamy",
           "priority": null,
           "placeId": null,
-          "note": "Niedzielne ograniczenia drogowe w Higashiyamie: wybieramy Keihan do Kiyomizu-Gojō i dojście pieszo. Zapas na kolejki; w razie opóźnienia skracamy późniejsze spacery.",
+          "note": "W świąteczny poniedziałek wybieramy Keihan do Kiyomizu-Gojō i dojście pieszo, aby ograniczyć ryzyko stania autobusem w korkach. Zapas na kolejki; w razie opóźnienia skracamy późniejsze spacery.",
           "at": "kiyomizu",
           "legs": [
             {
@@ -3609,144 +3669,6 @@
             "sourceUrl": "https://commons.wikimedia.org/wiki/File:Shabu-shabu-01.jpg"
           },
           "note": null
-        }
-      ],
-      "tips": [
-        {
-          "kind": "important",
-          "text": "Fushimi Inari i uliczki Higashiyamy to schody i strome bruki: na cały dzień nosidło zamiast wózka."
-        },
-        {
-          "kind": "important",
-          "text": "W niedzielę w Higashiyamie obowiązują ograniczenia drogowe. Z Fushimi-Inari jedziemy Keihan do Kiyomizu-Gojō, dalej pieszo pod górę do Kiyomizu-dera. Zostawiamy zapas na kolejki i tłok."
-        }
-      ],
-      "back": {
-        "mode": "transit"
-      }
-    },
-    {
-      "id": "2026-11-23",
-      "dayNumber": 16,
-      "date": "2026-11-23",
-      "weekday": "poniedziałek",
-      "title": "Kioto / bufor",
-      "base": "Kioto / bufor",
-      "stay": {
-        "city": "Kioto",
-        "area": "Shijō",
-        "hotelName": "MIMARU SUITES Kyoto Shijo",
-        "address": "717-1 Inabado-cho, Karasuma-dori Matsubara-agaru, Shimogyo-ku, Kioto 600-8415",
-        "hotelId": "mimaru-kyoto"
-      },
-      "earliestDeparture": "09:00 lub później",
-      "pace": "very-light",
-      "paceLabel": "Bardzo lekko",
-      "summary": "Dzień buforowy i japońskie święto Dzień Dziękczynienia za Pracę. Bez budzika i bez dużej atrakcji: późne śniadanie, zakupy, spacer po centrum. To dobry moment, żeby nadrobić coś, co wcześniej wypadło z planu, albo wrócić do ulubionego miejsca. Wieczorem pakujemy się na powrót do Tokio.",
-      "coverPhoto": null,
-      "priorities": {
-        "must": "Bufor + odpoczynek",
-        "want": "Nadrobienie czegoś z Kioto",
-        "bonus": "Pałac Cesarski / zakupy / ulubione miejsce ponownie"
-      },
-      "booking": {
-        "level": "none",
-        "text": "Bufor — nic nie rezerwować z góry; zachować pełną elastyczność."
-      },
-      "source": {
-        "orderText": "Bez sztywnego planu → późne śniadanie → odpoczynek / zakupy / spacer po centrum → ewentualne nadrobienie odpuszczonego miejsca → spokojne pakowanie przed wyjazdem do Tokio"
-      },
-      "items": [
-        {
-          "id": "d16-01",
-          "start": "09:00",
-          "end": null,
-          "approx": true,
-          "type": "departure",
-          "title": "Wyjście najwcześniej o 09:00",
-          "priority": null,
-          "placeId": null,
-          "note": null,
-          "at": "@start"
-        },
-        {
-          "id": "d16-02",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "meal",
-          "title": "Późne śniadanie",
-          "priority": null,
-          "placeId": null,
-          "note": null
-        },
-        {
-          "id": "d16-03",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "free",
-          "title": "Odpoczynek / zakupy / spacer po centrum",
-          "priority": "must",
-          "placeId": null,
-          "photo": {
-            "src": "img/teramachi.jpg",
-            "alt": "Pasaż handlowy Teramachi w Kioto",
-            "credit": "Celuici / Wikimedia Commons",
-            "license": "CC BY-SA 3.0",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:Teramachi_shopping_street,_Kyoto,_May_2017.jpg"
-          },
-          "note": null
-        },
-        {
-          "id": "d16-04",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "free",
-          "title": "Nadrobienie czegoś z Kioto",
-          "priority": "want",
-          "placeId": null,
-          "photo": {
-            "src": "img/gion.jpg",
-            "alt": "Gion",
-            "credit": "663highland / Wikimedia Commons",
-            "license": "CC BY 2.5",
-            "sourceUrl": "https://commons.wikimedia.org/wiki/File:150124_Gion_Kyoto_Japan01s3.jpg"
-          },
-          "note": null
-        },
-        {
-          "id": "d16-05",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Pałac Cesarski / zakupy / ulubione miejsce ponownie",
-          "priority": "bonus",
-          "placeId": "imperial-palace-kyoto",
-          "note": null,
-          "legs": [
-            {
-              "mode": "transit"
-            }
-          ]
-        },
-        {
-          "id": "d16-05a",
-          "start": null,
-          "end": null,
-          "approx": false,
-          "type": "attraction",
-          "title": "Sanjūsangen-dō",
-          "priority": "bonus",
-          "placeId": "sanjusangen-do",
-          "note": "Tylko jeśli będzie ochota na dodatkowe zwiedzanie, ok. 45 min.",
-          "legs": [
-            {
-              "mode": "transit"
-            }
-          ]
         },
         {
           "id": "d16-06",
@@ -3757,19 +3679,35 @@
           "title": "Spokojne pakowanie przed wyjazdem do Tokio",
           "priority": null,
           "placeId": null,
-          "note": null
+          "note": "Po kolacji wracamy do hotelu. Iluminacja i dłuższa kolacja tylko jeśli zostanie czas na pakowanie.",
+          "at": "@stay",
+          "legs": [
+            {
+              "mode": "transit",
+              "to": "@stay"
+            }
+          ]
         }
       ],
       "tips": [
         {
           "kind": "important",
-          "text": "Święto państwowe: atrakcje otwarte, ale tłoczno."
+          "text": "Fushimi Inari i uliczki Higashiyamy to schody i strome bruki: na cały dzień nosidło zamiast wózka."
+        },
+        {
+          "kind": "important",
+          "text": "23.11 to święto państwowe i ostatni pełny dzień w Kioto. Wyjście o 7:30; zapas na tłok i kolejki oraz wieczorne pakowanie. Do Higashiyamy jedziemy Keihan do Kiyomizu-Gojō, dalej pieszo."
         },
         {
           "kind": "tip",
-          "text": "Wieczorem ewentualnie iluminacja Kiyomizu-dera: wg tenki.jp 21–30.11, świątynia jeszcze jej nie ogłosiła."
+          "text": "Cała trasa obejmuje również bonusy: Shirakawa i Kōdai-ji. Dłuższe przejazdy sprawdzamy osobno w trybie komunikacji.",
+          "link": {
+            "label": "Google Maps — cała trasa 23.11",
+            "url": "https://www.google.com/maps/dir/MIMARU%20SUITES%20Kyoto%20Shijo/Fushimi%20Inari%20Taisha%20Kyoto/Kiyomizu-dera%20Kyoto/Sannenzaka%20Kyoto/Ninenzaka%20Kyoto/Yasaka%20Shrine%20Kyoto/Hanamikoji%20Street%20Kyoto/Gion%20Shirakawa%20Kyoto/Kodai-ji%20Kyoto/MIMARU%20SUITES%20Kyoto%20Shijo/"
+          }
         }
-      ]
+      ],
+      "back": false
     },
     {
       "id": "2026-11-24",
